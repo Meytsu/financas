@@ -85,7 +85,7 @@ export default function Home() {
   const [anoCalendario, setAnoCalendario] = useState(2026);
 
   useEffect(() => {
-    fetch("/data.json")
+    fetch(`${process.env.NEXT_PUBLIC_BASE_PATH || ""}/data.json`)
       .then((r) => r.json())
       .then(setData);
   }, []);
