@@ -250,6 +250,22 @@ export default function Home() {
       .sort((a, b) => b.value - a.value)
       .slice(0, 5);
 
+    // Nubank: parcelas restantes e progresso de eliminação
+    const nuParcelas = todas.filter((t) => t.banco === "NUBANK" && t.parcela !== "-" && t.mes_fatura > mesAtual);
+    const nuParcelasPorMes: Record<string, { total: number; itens: { estab: string; parcela: string; valor: number; portador: string }[] }> = {};
+    for (const t of nuParcelas) {
+      if (!nuParcelasPorMes[t.mes_fatura]) nuParcelasPorMes[t.mes_fatura] = { total: 0, itens: [] };
+      nuParcelasPorMes[t.mes_fatura].total += t.valor;
+      nuParcelasPorMes[t.mes_fatura].itens.push({ estab: t.estabelecimento, parcela: t.parcela, valor: t.valor, portador: t.portador });
+    }
+    const nuTotalRestante = nuParcelas.reduce((a, t) => a + t.valor, 0);
+    const nuUltimaMes = nuParcelas.length > 0 ? nuParcelas.reduce((a, t) => t.mes_fatura > a ? t.mes_fatura : a, "") : "";
+    // Progresso: de Jan/26 (início) até Out/26 (previsão fim)
+    const nuMesesTotal = 10; // jan a out = 10 meses
+    const mesAtualNum = parseInt(mesAtual.split("-")[1]);
+    const nuMesesPassados = Math.max(mesAtualNum - 1, 0); // meses desde jan
+    const nuProgresso = Math.min((nuMesesPassados / nuMesesTotal) * 100, 100);
+
     return {
       mesesDisponiveis,
       categoriasDisponiveis,
@@ -270,6 +286,7 @@ export default function Home() {
       gastoXPMes, gastoNuMes, mesLimite,
       parcelasAtivas, comprometidoPorMes,
       topEstabelecimentos,
+      nuParcelasPorMes, nuTotalRestante, nuUltimaMes, nuProgresso, nuParcelas,
     };
   }, [data, filtroPortador, filtroMes, filtroCategoria, filtroBanco]);
 
@@ -281,7 +298,7 @@ export default function Home() {
     );
   }
 
-  const { mesesDisponiveis, categoriasDisponiveis, dadosMensais, evolucaoData, dadosBanco, categorias, mesAtual, gastoMesAtual, gastoMesAtualH, gastoMesAtualB, gastoMesAnteriorB, variacao, variacaoH, variacaoB, mediaMensal, mediaMensalH, mediaMensalB, ultimasTx, totalRegistros, txH, txB, tetosGasto, tetoTotalGasto, mesTetoLabel, mostrarTetos, gastoXPMes, gastoNuMes, mesLimite, parcelasAtivas, comprometidoPorMes, topEstabelecimentos } = computed;
+  const { mesesDisponiveis, categoriasDisponiveis, dadosMensais, evolucaoData, dadosBanco, categorias, mesAtual, gastoMesAtual, gastoMesAtualH, gastoMesAtualB, gastoMesAnteriorB, variacao, variacaoH, variacaoB, mediaMensal, mediaMensalH, mediaMensalB, ultimasTx, totalRegistros, txH, txB, tetosGasto, tetoTotalGasto, mesTetoLabel, mostrarTetos, gastoXPMes, gastoNuMes, mesLimite, parcelasAtivas, comprometidoPorMes, topEstabelecimentos, nuParcelasPorMes, nuTotalRestante, nuUltimaMes, nuProgresso, nuParcelas } = computed;
 
   const pieData = categorias.slice(0, 5);
   const filtrosAtivos = [filtroPortador, filtroMes, filtroCategoria, filtroBanco].filter((f) => f !== "TODOS").length;
@@ -719,6 +736,59 @@ export default function Home() {
               );
             })()}
           </div>
+
+          {/* Nubank - Progresso de eliminação */}
+          {nuParcelas.length > 0 && (
+          <div className="grid grid-cols-1 gap-3 mb-3">
+            <Card title="Meta — Eliminar Nubank">
+              <div>
+                {/* Progresso */}
+                <div className="flex justify-between items-baseline mb-2">
+                  <div>
+                    <span className="text-lg font-bold" style={{ color: "#7c3aed" }}>
+                      {nuParcelas.length} parcelas restantes
+                    </span>
+                    <span className="text-sm text-slate-400 ml-2">({formatBRL(nuTotalRestante)})</span>
+                  </div>
+                  <span className="text-sm text-slate-500">
+                    Previsao: <strong>{nuUltimaMes ? formatMonth(nuUltimaMes) : "—"}</strong>
+                  </span>
+                </div>
+                <div className="h-3 bg-slate-100 rounded-full overflow-hidden mb-3">
+                  <div className="h-full rounded-full transition-all" style={{ width: `${nuProgresso}%`, backgroundColor: "#7c3aed" }} />
+                </div>
+
+                {/* Timeline por mês */}
+                <div className="flex gap-2 flex-wrap">
+                  {Object.entries(nuParcelasPorMes).sort(([a], [b]) => a.localeCompare(b)).map(([mes, info]) => (
+                    <div key={mes} className="bg-purple-50 rounded-lg px-3 py-2 flex-1 min-w-[120px]">
+                      <p className="text-[10px] font-semibold text-purple-400 uppercase">{formatMonth(mes)}</p>
+                      <p className="text-sm font-bold" style={{ color: "#7c3aed" }}>{formatBRL(info.total)}</p>
+                      <div className="mt-1">
+                        {info.itens.map((item, i) => (
+                          <p key={i} className="text-[10px] text-slate-500 truncate" title={item.estab}>
+                            <span style={{ color: item.portador === "BEATRIZ WERNECK" ? "#CD3278" : "#9E9E80" }}>
+                              {item.portador === "BEATRIZ WERNECK" ? "B" : "H"}
+                            </span>{" "}
+                            {item.estab.substring(0, 15)} ({item.parcela})
+                          </p>
+                        ))}
+                      </div>
+                    </div>
+                  ))}
+                  {/* Card de conclusão */}
+                  <div className="bg-green-50 rounded-lg px-3 py-2 flex-1 min-w-[120px] flex flex-col items-center justify-center">
+                    <p className="text-[10px] font-semibold text-green-500 uppercase">
+                      {nuUltimaMes ? formatMonth(nuUltimaMes.replace(/-(\d+)$/, (_, m) => `-${String(parseInt(m) + 1).padStart(2, "0")}`)) : ""}
+                    </p>
+                    <p className="text-lg">&#10003;</p>
+                    <p className="text-[10px] text-green-600 font-medium">Nubank livre</p>
+                  </div>
+                </div>
+              </div>
+            </Card>
+          </div>
+          )}
 
           {/* Row 3 - Pra onde vai o dinheiro (Categorias + Top 5) */}
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-3 mb-3">
