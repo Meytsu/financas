@@ -631,27 +631,45 @@ export default function Home() {
             <Card title={`Teto mensal — Henrique (${mesTetoLabel})`}>
               {(() => {
                 const tetos = data.tetos_henrique;
-                const tetoTotal = data.teto_total_henrique;
-                const pctTotal = tetoTotal > 0 ? (tetoTotalGasto / tetoTotal) * 100 : 0;
-                const corTotal = pctTotal > 100 ? "#DC2626" : pctTotal > 80 ? "#D97706" : "#059669";
+                const tetoMeta = data.teto_total_henrique; // R$ 1.390
+                const tetoLimite = 1700; // limite máximo
+                const pctMeta = tetoMeta > 0 ? (tetoTotalGasto / tetoMeta) * 100 : 0;
+                const pctLimite = tetoLimite > 0 ? (tetoTotalGasto / tetoLimite) * 100 : 0;
+                const corBarra = tetoTotalGasto > tetoLimite ? "#DC2626" : tetoTotalGasto > tetoMeta ? "#D97706" : "#059669";
+                const marcaMeta = (tetoMeta / tetoLimite) * 100; // posição da marca na barra
 
                 return (
                   <div>
-                    {/* Barra total */}
+                    {/* Barra total com meta + limite */}
                     <div className="mb-5 pb-4 border-b border-slate-100">
                       <div className="flex justify-between text-sm mb-1">
                         <span className="font-semibold" style={{ color: "#1A1A2E" }}>TOTAL</span>
-                        <span className="font-semibold" style={{ color: corTotal }}>
-                          {formatBRL(tetoTotalGasto)} / {formatBRL(tetoTotal)}
+                        <span className="font-semibold" style={{ color: corBarra }}>
+                          {formatBRL(tetoTotalGasto)}
                         </span>
                       </div>
-                      <div className="h-3 bg-slate-100 rounded-full overflow-hidden">
-                        <div className="h-full rounded-full transition-all" style={{ width: `${Math.min(pctTotal, 100)}%`, backgroundColor: corTotal }} />
+                      {/* Barra com duas marcações */}
+                      <div className="relative h-4 bg-slate-100 rounded-full overflow-hidden">
+                        {/* Preenchimento */}
+                        <div className="h-full rounded-full transition-all" style={{ width: `${Math.min(pctLimite, 100)}%`, backgroundColor: corBarra }} />
+                        {/* Marca da meta (R$ 1.390) */}
+                        <div className="absolute top-0 h-full" style={{ left: `${marcaMeta}%`, width: 2, backgroundColor: "#1A1A2E" }} />
                       </div>
-                      <p className="text-xs mt-1" style={{ color: corTotal }}>
-                        {pctTotal > 100
-                          ? `Excedeu ${formatBRL(tetoTotalGasto - tetoTotal)} (${pctTotal.toFixed(0)}%)`
-                          : `Restam ${formatBRL(tetoTotal - tetoTotalGasto)} (${pctTotal.toFixed(0)}% usado)`
+                      {/* Labels embaixo da barra */}
+                      <div className="relative mt-1" style={{ height: 16 }}>
+                        <span className="absolute text-[10px] text-slate-500" style={{ left: `${marcaMeta}%`, transform: "translateX(-50%)" }}>
+                          Meta {formatBRL(tetoMeta)}
+                        </span>
+                        <span className="absolute text-[10px] text-slate-500 right-0">
+                          Limite {formatBRL(tetoLimite)}
+                        </span>
+                      </div>
+                      <p className="text-xs mt-1" style={{ color: corBarra }}>
+                        {tetoTotalGasto > tetoLimite
+                          ? `ESTOUROU o limite! ${formatBRL(tetoTotalGasto - tetoLimite)} acima`
+                          : tetoTotalGasto > tetoMeta
+                          ? `Passou a meta em ${formatBRL(tetoTotalGasto - tetoMeta)} — ainda tem ${formatBRL(tetoLimite - tetoTotalGasto)} ate o limite`
+                          : `Dentro da meta — restam ${formatBRL(tetoMeta - tetoTotalGasto)}`
                         }
                       </p>
                     </div>
