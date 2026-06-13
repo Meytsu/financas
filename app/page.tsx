@@ -90,6 +90,20 @@ export default function Home() {
       .then(setData);
   }, []);
 
+  // Abre já marcado na fatura atual (automático): XP fecha dia 02, então após o dia 02
+  // o mês corrente cai na fatura do mês seguinte. Clampa ao que existe nos dados.
+  useEffect(() => {
+    if (!data) return;
+    const meses = [...new Set(data.transacoes.map((t) => t.mes_fatura))].sort();
+    if (!meses.length) return;
+    const hoje = new Date();
+    const m = hoje.getMonth() + (hoje.getDate() > 2 ? 1 : 0);
+    const cur = `${hoje.getFullYear() + Math.floor(m / 12)}-${String((m % 12) + 1).padStart(2, "0")}`;
+    const alvo = meses.includes(cur) ? cur : meses[meses.length - 1];
+    setFiltroMes(alvo);
+    setAnoCalendario(parseInt(alvo.split("-")[0]));
+  }, [data]);
+
   // Todos os cálculos derivados dos filtros
   const computed = useMemo(() => {
     if (!data) return null;
