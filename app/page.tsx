@@ -24,6 +24,7 @@ interface Transacao {
   valor: number;
   categoria: string;
   parcela: string;
+  split?: string;
 }
 
 interface DashboardData {
@@ -1104,8 +1105,16 @@ export default function Home() {
                         <td className="py-2 text-slate-600 whitespace-nowrap text-xs">
                           {tx.banco}
                         </td>
-                        <td className="py-2 text-slate-700 truncate max-w-[150px]" title={tx.estabelecimento}>
+                        <td className="py-2 text-slate-700 truncate max-w-[180px]" title={tx.estabelecimento}>
                           {tx.estabelecimento}
+                          {tx.split && (
+                            <span
+                              className="ml-1.5 align-middle text-[10px] font-semibold text-amber-600 underline decoration-dotted underline-offset-2"
+                              title={`Dividido ${tx.split} com Beatriz`}
+                            >
+                              {tx.split}
+                            </span>
+                          )}
                         </td>
                         <td className="py-2 text-slate-500 text-xs whitespace-nowrap">
                           {tx.categoria}
@@ -1113,8 +1122,10 @@ export default function Home() {
                         <td className="py-2 text-center text-slate-400 text-xs whitespace-nowrap">
                           {tx.parcela !== "-" ? tx.parcela : ""}
                         </td>
-                        <td className="py-2 text-right text-slate-800 font-medium whitespace-nowrap">
-                          {formatBRL(tx.valor)}
+                        <td className="py-2 text-right font-medium whitespace-nowrap">
+                          <span className={tx.split ? "text-amber-700 underline decoration-dotted underline-offset-2" : "text-slate-800"} title={tx.split ? `Metade sua — dividido ${tx.split}` : undefined}>
+                            {formatBRL(tx.valor)}
+                          </span>
                         </td>
                       </tr>
                     ))}
