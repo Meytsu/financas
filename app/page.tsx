@@ -25,6 +25,8 @@ interface Transacao {
   categoria: string;
   parcela: string;
   split?: string;
+  abatido?: boolean;
+  valor_bruto?: number;
 }
 
 interface DashboardData {
@@ -1109,7 +1111,7 @@ export default function Home() {
                           {tx.estabelecimento}
                           {tx.split && (
                             <span
-                              className="ml-1.5 align-middle text-[10px] font-semibold text-amber-600 underline decoration-dotted underline-offset-2"
+                              className="ml-1.5 align-middle text-[10px] font-semibold text-amber-600"
                               title={`Dividido ${tx.split} com Beatriz`}
                             >
                               {tx.split}
@@ -1123,9 +1125,16 @@ export default function Home() {
                           {tx.parcela !== "-" ? tx.parcela : ""}
                         </td>
                         <td className="py-2 text-right font-medium whitespace-nowrap">
-                          <span className={tx.split ? "text-amber-700 underline decoration-dotted underline-offset-2" : "text-slate-800"} title={tx.split ? `Metade sua — dividido ${tx.split}` : undefined}>
-                            {formatBRL(tx.valor)}
-                          </span>
+                          {tx.abatido ? (
+                            <span
+                              className="text-slate-400 line-through"
+                              title={`Abatido — metade da Beatriz (dividido ${tx.split ?? "50/50"}), reembolsada em dinheiro`}
+                            >
+                              {formatBRL(tx.valor_bruto ?? tx.valor)}
+                            </span>
+                          ) : (
+                            <span className="text-slate-800">{formatBRL(tx.valor)}</span>
+                          )}
                         </td>
                       </tr>
                     ))}
