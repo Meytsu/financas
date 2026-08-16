@@ -1,5 +1,5 @@
 {
-  "total_registros": 883,
+  "total_registros": 903,
   "transacoes": [
     {
       "data": "2024-12-20",
@@ -9674,6 +9674,228 @@
       "portador": "BEATRIZ WERNECK",
       "valor": 11.12,
       "categoria": "TRANSPORTE",
+      "parcela": "-"
+    },
+    {
+      "data": "2026-08-05",
+      "mes": "2026-08",
+      "mes_fatura": "2026-09",
+      "banco": "XP",
+      "estabelecimento": "EMPORIO DO SERTAO",
+      "portador": "BEATRIZ WERNECK",
+      "valor": 25.22,
+      "categoria": "ALIMENTAÇÃO",
+      "parcela": "-"
+    },
+    {
+      "data": "2026-08-05",
+      "mes": "2026-08",
+      "mes_fatura": "2026-09",
+      "banco": "XP",
+      "estabelecimento": "IFD*PESTO PROJECTS RES",
+      "portador": "BEATRIZ WERNECK",
+      "valor": 92.46,
+      "categoria": "ALIMENTAÇÃO",
+      "parcela": "-"
+    },
+    {
+      "data": "2026-08-05",
+      "mes": "2026-08",
+      "mes_fatura": "2026-09",
+      "banco": "XP",
+      "estabelecimento": "POSTO CUNHA",
+      "portador": "HENRIQUE ALVES",
+      "valor": 20.0,
+      "categoria": "COMBUSTÍVEL",
+      "parcela": "-"
+    },
+    {
+      "data": "2026-08-06",
+      "mes": "2026-08",
+      "mes_fatura": "2026-09",
+      "banco": "XP",
+      "estabelecimento": "CARLOSANDRE",
+      "portador": "BEATRIZ WERNECK",
+      "valor": 27.0,
+      "categoria": "ALIMENTAÇÃO",
+      "parcela": "-"
+    },
+    {
+      "data": "2026-08-06",
+      "mes": "2026-08",
+      "mes_fatura": "2026-09",
+      "banco": "XP",
+      "estabelecimento": "MERCADOLIVRE*MERCADOLIVRE",
+      "portador": "HENRIQUE ALVES",
+      "valor": -19.0,
+      "categoria": "COMPRAS ONLINE",
+      "parcela": "-"
+    },
+    {
+      "data": "2026-08-07",
+      "mes": "2026-08",
+      "mes_fatura": "2026-09",
+      "banco": "XP",
+      "estabelecimento": "WILLIAMLANCHES",
+      "portador": "BEATRIZ WERNECK",
+      "valor": 3.5,
+      "categoria": "ALIMENTAÇÃO",
+      "parcela": "-"
+    },
+    {
+      "data": "2026-08-07",
+      "mes": "2026-08",
+      "mes_fatura": "2026-09",
+      "banco": "XP",
+      "estabelecimento": "EMPORIO DO SERTAO",
+      "portador": "BEATRIZ WERNECK",
+      "valor": 28.9,
+      "categoria": "ALIMENTAÇÃO",
+      "parcela": "-"
+    },
+    {
+      "data": "2026-08-07",
+      "mes": "2026-08",
+      "mes_fatura": "2026-09",
+      "banco": "XP",
+      "estabelecimento": "247 COMERCIO LTDA",
+      "portador": "HENRIQUE ALVES",
+      "valor": 19.71,
+      "categoria": "COMBUSTÍVEL",
+      "parcela": "-"
+    },
+    {
+      "data": "2026-08-08",
+      "mes": "2026-08",
+      "mes_fatura": "2026-09",
+      "banco": "XP",
+      "estabelecimento": "ATACAREJO BONGI",
+      "portador": "HENRIQUE ALVES",
+      "valor": 243.07,
+      "categoria": "MERCADO",
+      "parcela": "-",
+      "split": "50/50"
+    },
+    {
+      "data": "2026-08-08",
+      "mes": "2026-08",
+      "mes_fatura": "2026-09",
+      "banco": "XP",
+      "estabelecimento": "ATACAREJO BONGI",
+      "portador": "BEATRIZ WERNECK",
+      "valor": 243.07,
+      "categoria": "MERCADO",
+      "parcela": "-",
+      "split": "50/50"
+    },
+    {
+      "data": "2026-08-08",
+      "mes": "2026-08",
+      "mes_fatura": "2026-09",
+      "banco": "XP",
+      "estabelecimento": "99FOOD *SUSHI DO VASCO PE",
+      "portador": "BEATRIZ WERNECK",
+      "valor": 43.54,
+      "categoria": "ALIMENTAÇÃO",
+      "parcela": "-"
+    },
+    {
+      "data": "2026-08-09",
+      "mes": "2026-08",
+      "mes_fatura": "2026-09",
+      "banco": "XP",
+      "estabelecimento": "A98  - Compra ShellBox",
+      "portador": "HENRIQUE ALVES",
+      "valor": 55.04,
+      "categoria": "COMBUSTÍVEL",
+      "parcela": " de 1"
+    },
+    {
+      "data": "2026-08-09",
+      "mes": "2026-08",
+      "mes_fatura": "2026-09",
+      "banco": "XP",
+      "estabelecimento": "CARREFOUR REC 45",
+      "portador": "HENRIQUE ALVES",
+      "valor": 34.19,
+      "categoria": "MERCADO",
+      "parcela": "-"
+    },
+    {
+      "data": "2026-08-09",
+      "mes": "2026-08",
+      "mes_fatura": "2026-09",
+      "banco": "XP",
+      "estabelecimento": "CARREFOUR REC 45",
+      "portador": "BEATRIZ WERNECK",
+      "valor": 67.87,
+      "categoria": "MERCADO",
+      "parcela": "-"
+    },
+    {
+      "data": "2026-08-11",
+      "mes": "2026-08",
+      "mes_fatura": "2026-09",
+      "banco": "XP",
+      "estabelecimento": "MG COMERCIO DE AL",
+      "portador": "HENRIQUE ALVES",
+      "valor": 4.99,
+      "categoria": "ALIMENTAÇÃO",
+      "parcela": "-"
+    },
+    {
+      "data": "2026-08-13",
+      "mes": "2026-08",
+      "mes_fatura": "2026-09",
+      "banco": "XP",
+      "estabelecimento": "WILLIAMLANCHES",
+      "portador": "BEATRIZ WERNECK",
+      "valor": 6.0,
+      "categoria": "ALIMENTAÇÃO",
+      "parcela": "-"
+    },
+    {
+      "data": "2026-08-13",
+      "mes": "2026-08",
+      "mes_fatura": "2026-09",
+      "banco": "XP",
+      "estabelecimento": "CARLAANDREADELIMA",
+      "portador": "BEATRIZ WERNECK",
+      "valor": 27.0,
+      "categoria": "ALIMENTAÇÃO",
+      "parcela": "-"
+    },
+    {
+      "data": "2026-08-13",
+      "mes": "2026-08",
+      "mes_fatura": "2026-09",
+      "banco": "XP",
+      "estabelecimento": "BELLAS FESTAS",
+      "portador": "BEATRIZ WERNECK",
+      "valor": 9.2,
+      "categoria": "LAZER",
+      "parcela": "-"
+    },
+    {
+      "data": "2026-08-13",
+      "mes": "2026-08",
+      "mes_fatura": "2026-09",
+      "banco": "XP",
+      "estabelecimento": "ANGEL COMERCIO",
+      "portador": "BEATRIZ WERNECK",
+      "valor": 22.0,
+      "categoria": "ALIMENTAÇÃO",
+      "parcela": "-"
+    },
+    {
+      "data": "2026-08-13",
+      "mes": "2026-08",
+      "mes_fatura": "2026-09",
+      "banco": "XP",
+      "estabelecimento": "MP*OATACADAODOSM",
+      "portador": "BEATRIZ WERNECK",
+      "valor": 8.85,
+      "categoria": "OUTROS",
       "parcela": "-"
     },
     {
