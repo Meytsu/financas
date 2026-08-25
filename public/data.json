@@ -1,5 +1,5 @@
 {
-  "total_registros": 903,
+  "total_registros": 921,
   "transacoes": [
     {
       "data": "2024-12-20",
@@ -9896,6 +9896,204 @@
       "portador": "BEATRIZ WERNECK",
       "valor": 8.85,
       "categoria": "OUTROS",
+      "parcela": "-"
+    },
+    {
+      "data": "2026-08-14",
+      "mes": "2026-08",
+      "mes_fatura": "2026-09",
+      "banco": "XP",
+      "estabelecimento": "99FOOD *PESTO PIZZA PENDI",
+      "portador": "BEATRIZ WERNECK",
+      "valor": 72.11,
+      "categoria": "ALIMENTAÇÃO",
+      "parcela": "-"
+    },
+    {
+      "data": "2026-08-16",
+      "mes": "2026-08",
+      "mes_fatura": "2026-09",
+      "banco": "XP",
+      "estabelecimento": "A98  - Compra ShellBox",
+      "portador": "HENRIQUE ALVES",
+      "valor": 56.64,
+      "categoria": "COMBUSTÍVEL",
+      "parcela": " de 1"
+    },
+    {
+      "data": "2026-08-16",
+      "mes": "2026-08",
+      "mes_fatura": "2026-09",
+      "banco": "XP",
+      "estabelecimento": "GRAVATINHAGAS24H",
+      "portador": "HENRIQUE ALVES",
+      "valor": 135.0,
+      "categoria": "MERCADO",
+      "parcela": "-"
+    },
+    {
+      "data": "2026-08-16",
+      "mes": "2026-08",
+      "mes_fatura": "2026-09",
+      "banco": "XP",
+      "estabelecimento": "PIZZARIA ATLANTIC",
+      "portador": "HENRIQUE ALVES",
+      "valor": 101.7,
+      "categoria": "ALIMENTAÇÃO",
+      "parcela": "-"
+    },
+    {
+      "data": "2026-08-17",
+      "mes": "2026-08",
+      "mes_fatura": "2026-09",
+      "banco": "XP",
+      "estabelecimento": "WILLIAMLANCHES",
+      "portador": "BEATRIZ WERNECK",
+      "valor": 6.5,
+      "categoria": "ALIMENTAÇÃO",
+      "parcela": "-"
+    },
+    {
+      "data": "2026-08-18",
+      "mes": "2026-08",
+      "mes_fatura": "2026-09",
+      "banco": "XP",
+      "estabelecimento": "WILLIAMLANCHES",
+      "portador": "BEATRIZ WERNECK",
+      "valor": 6.5,
+      "categoria": "ALIMENTAÇÃO",
+      "parcela": "-"
+    },
+    {
+      "data": "2026-08-19",
+      "mes": "2026-08",
+      "mes_fatura": "2026-09",
+      "banco": "XP",
+      "estabelecimento": "WILLIAMLANCHES",
+      "portador": "BEATRIZ WERNECK",
+      "valor": 4.5,
+      "categoria": "ALIMENTAÇÃO",
+      "parcela": "-"
+    },
+    {
+      "data": "2026-08-19",
+      "mes": "2026-08",
+      "mes_fatura": "2026-09",
+      "banco": "XP",
+      "estabelecimento": "WILLIAMLANCHES",
+      "portador": "BEATRIZ WERNECK",
+      "valor": 6.5,
+      "categoria": "ALIMENTAÇÃO",
+      "parcela": "-"
+    },
+    {
+      "data": "2026-08-20",
+      "mes": "2026-08",
+      "mes_fatura": "2026-09",
+      "banco": "XP",
+      "estabelecimento": "DL*GOOGLE KINGSH",
+      "portador": "HENRIQUE ALVES",
+      "valor": 24.9,
+      "categoria": "LAZER",
+      "parcela": "-"
+    },
+    {
+      "data": "2026-08-20",
+      "mes": "2026-08",
+      "mes_fatura": "2026-09",
+      "banco": "XP",
+      "estabelecimento": "DL*GOOGLE KINGSH",
+      "portador": "HENRIQUE ALVES",
+      "valor": 6.0,
+      "categoria": "LAZER",
+      "parcela": "-"
+    },
+    {
+      "data": "2026-08-20",
+      "mes": "2026-08",
+      "mes_fatura": "2026-09",
+      "banco": "XP",
+      "estabelecimento": "WILLIAMLANCHES",
+      "portador": "BEATRIZ WERNECK",
+      "valor": 6.3,
+      "categoria": "ALIMENTAÇÃO",
+      "parcela": "-"
+    },
+    {
+      "data": "2026-08-20",
+      "mes": "2026-08",
+      "mes_fatura": "2026-09",
+      "banco": "XP",
+      "estabelecimento": "DM*SPOTIFY",
+      "portador": "HENRIQUE ALVES",
+      "valor": 23.9,
+      "categoria": "ASSINATURA",
+      "parcela": "-"
+    },
+    {
+      "data": "2026-08-20",
+      "mes": "2026-08",
+      "mes_fatura": "2026-09",
+      "banco": "XP",
+      "estabelecimento": "WILLIAMLANCHES",
+      "portador": "BEATRIZ WERNECK",
+      "valor": 10.0,
+      "categoria": "ALIMENTAÇÃO",
+      "parcela": "-"
+    },
+    {
+      "data": "2026-08-21",
+      "mes": "2026-08",
+      "mes_fatura": "2026-09",
+      "banco": "XP",
+      "estabelecimento": "MP*LOTERIASONLINEXXTP",
+      "portador": "HENRIQUE ALVES",
+      "valor": 9.75,
+      "categoria": "LOTERIA",
+      "parcela": "-"
+    },
+    {
+      "data": "2026-08-22",
+      "mes": "2026-08",
+      "mes_fatura": "2026-09",
+      "banco": "XP",
+      "estabelecimento": "ATACAREJO BONGI",
+      "portador": "HENRIQUE ALVES",
+      "valor": 136.22,
+      "categoria": "MERCADO",
+      "parcela": "-"
+    },
+    {
+      "data": "2026-08-23",
+      "mes": "2026-08",
+      "mes_fatura": "2026-09",
+      "banco": "XP",
+      "estabelecimento": "MILK CHURROS",
+      "portador": "HENRIQUE ALVES",
+      "valor": 64.0,
+      "categoria": "ALIMENTAÇÃO",
+      "parcela": "-"
+    },
+    {
+      "data": "2026-08-23",
+      "mes": "2026-08",
+      "mes_fatura": "2026-09",
+      "banco": "XP",
+      "estabelecimento": "CARREFOUR REC 45",
+      "portador": "BEATRIZ WERNECK",
+      "valor": 21.07,
+      "categoria": "MERCADO",
+      "parcela": "-"
+    },
+    {
+      "data": "2026-08-23",
+      "mes": "2026-08",
+      "mes_fatura": "2026-09",
+      "banco": "XP",
+      "estabelecimento": "DROG CARREFOUR DRT 494",
+      "portador": "HENRIQUE ALVES",
+      "valor": 16.9,
+      "categoria": "FARMÁCIA",
       "parcela": "-"
     },
     {
