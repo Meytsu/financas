@@ -1,5 +1,5 @@
 {
-  "total_registros": 921,
+  "total_registros": 936,
   "transacoes": [
     {
       "data": "2024-12-20",
@@ -10094,6 +10094,171 @@
       "portador": "HENRIQUE ALVES",
       "valor": 16.9,
       "categoria": "FARMÁCIA",
+      "parcela": "-"
+    },
+    {
+      "data": "2026-08-24",
+      "mes": "2026-08",
+      "mes_fatura": "2026-09",
+      "banco": "XP",
+      "estabelecimento": "WILLIAMLANCHES",
+      "portador": "BEATRIZ WERNECK",
+      "valor": 4.5,
+      "categoria": "ALIMENTAÇÃO",
+      "parcela": "-"
+    },
+    {
+      "data": "2026-08-24",
+      "mes": "2026-08",
+      "mes_fatura": "2026-09",
+      "banco": "XP",
+      "estabelecimento": "MERCADOLIVRE*STRONGROCKNE",
+      "portador": "HENRIQUE ALVES",
+      "valor": 35.83,
+      "categoria": "COMPRAS ONLINE",
+      "parcela": "1 de 5"
+    },
+    {
+      "data": "2026-08-25",
+      "mes": "2026-08",
+      "mes_fatura": "2026-09",
+      "banco": "XP",
+      "estabelecimento": "EMPORIO DO SERTAO",
+      "portador": "BEATRIZ WERNECK",
+      "valor": 36.9,
+      "categoria": "ALIMENTAÇÃO",
+      "parcela": "-"
+    },
+    {
+      "data": "2026-08-25",
+      "mes": "2026-08",
+      "mes_fatura": "2026-09",
+      "banco": "XP",
+      "estabelecimento": "NETFLIX ENTRETENIMENTO",
+      "portador": "HENRIQUE ALVES",
+      "valor": 20.9,
+      "categoria": "ASSINATURA",
+      "parcela": "-"
+    },
+    {
+      "data": "2026-08-26",
+      "mes": "2026-08",
+      "mes_fatura": "2026-09",
+      "banco": "XP",
+      "estabelecimento": "WILLIAMLANCHES",
+      "portador": "BEATRIZ WERNECK",
+      "valor": 11.5,
+      "categoria": "ALIMENTAÇÃO",
+      "parcela": "-"
+    },
+    {
+      "data": "2026-08-26",
+      "mes": "2026-08",
+      "mes_fatura": "2026-09",
+      "banco": "XP",
+      "estabelecimento": "POSTO CUNHA",
+      "portador": "HENRIQUE ALVES",
+      "valor": 10.0,
+      "categoria": "COMBUSTÍVEL",
+      "parcela": "-"
+    },
+    {
+      "data": "2026-08-26",
+      "mes": "2026-08",
+      "mes_fatura": "2026-09",
+      "banco": "XP",
+      "estabelecimento": "99FOOD *PESTO PIZZA PENDI",
+      "portador": "BEATRIZ WERNECK",
+      "valor": 72.11,
+      "categoria": "ALIMENTAÇÃO",
+      "parcela": "-"
+    },
+    {
+      "data": "2026-08-27",
+      "mes": "2026-08",
+      "mes_fatura": "2026-09",
+      "banco": "XP",
+      "estabelecimento": "WILLIAMLANCHES",
+      "portador": "BEATRIZ WERNECK",
+      "valor": 4.7,
+      "categoria": "ALIMENTAÇÃO",
+      "parcela": "-"
+    },
+    {
+      "data": "2026-08-28",
+      "mes": "2026-08",
+      "mes_fatura": "2026-09",
+      "banco": "XP",
+      "estabelecimento": "WILLIAMLANCHES",
+      "portador": "BEATRIZ WERNECK",
+      "valor": 10.0,
+      "categoria": "ALIMENTAÇÃO",
+      "parcela": "-"
+    },
+    {
+      "data": "2026-08-29",
+      "mes": "2026-08",
+      "mes_fatura": "2026-09",
+      "banco": "XP",
+      "estabelecimento": "COXINHANOPORTE",
+      "portador": "HENRIQUE ALVES",
+      "valor": 27.0,
+      "categoria": "ALIMENTAÇÃO",
+      "parcela": "-"
+    },
+    {
+      "data": "2026-08-29",
+      "mes": "2026-08",
+      "mes_fatura": "2026-09",
+      "banco": "XP",
+      "estabelecimento": "CACAU SHOW",
+      "portador": "HENRIQUE ALVES",
+      "valor": 57.98,
+      "categoria": "ALIMENTAÇÃO",
+      "parcela": "-"
+    },
+    {
+      "data": "2026-08-29",
+      "mes": "2026-08",
+      "mes_fatura": "2026-09",
+      "banco": "XP",
+      "estabelecimento": "CARREFOUR REC 45",
+      "portador": "HENRIQUE ALVES",
+      "valor": 76.95,
+      "categoria": "MERCADO",
+      "parcela": "-"
+    },
+    {
+      "data": "2026-09-01",
+      "mes": "2026-09",
+      "mes_fatura": "2026-09",
+      "banco": "XP",
+      "estabelecimento": "RINALDODASILVA",
+      "portador": "HENRIQUE ALVES",
+      "valor": 4.0,
+      "categoria": "OUTROS",
+      "parcela": "-"
+    },
+    {
+      "data": "2026-09-01",
+      "mes": "2026-09",
+      "mes_fatura": "2026-09",
+      "banco": "XP",
+      "estabelecimento": "IFD*PESTO PROJECTS RES",
+      "portador": "BEATRIZ WERNECK",
+      "valor": 71.58,
+      "categoria": "ALIMENTAÇÃO",
+      "parcela": "-"
+    },
+    {
+      "data": "2026-09-01",
+      "mes": "2026-09",
+      "mes_fatura": "2026-09",
+      "banco": "XP",
+      "estabelecimento": "MP*LOTERIASONLINEY7UJ",
+      "portador": "HENRIQUE ALVES",
+      "valor": 23.62,
+      "categoria": "LOTERIA",
       "parcela": "-"
     },
     {
