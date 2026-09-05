@@ -35,6 +35,11 @@ interface DashboardData {
   tetos_henrique: Record<string, number>;
   teto_total_henrique: number;
   limites: Record<string, number>;
+  resumo_financeiro_henrique?: {
+    renda_liquida_estimada: number;
+    despesas_fixas: { nome: string; valor: number }[];
+    reservas_investimentos: { nome: string; valor: number }[];
+  };
 }
 
 const COLORS = [

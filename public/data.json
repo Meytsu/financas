@@ -10338,5 +10338,48 @@
   "meta_nubank": {
     "objetivo": "Eliminar Nubank",
     "prazo": "2026-10"
+  },
+  "resumo_financeiro_henrique": {
+    "renda_liquida_estimada": 4390.8,
+    "despesas_fixas": [
+      {
+        "nome": "Aluguel",
+        "valor": 800.0
+      },
+      {
+        "nome": "Feira",
+        "valor": 300.0
+      },
+      {
+        "nome": "Google One",
+        "valor": 35.9
+      },
+      {
+        "nome": "Netflix",
+        "valor": 20.9
+      },
+      {
+        "nome": "Dados móveis",
+        "valor": 15.0
+      }
+    ],
+    "reservas_investimentos": [
+      {
+        "nome": "99Pay",
+        "valor": 2000.0
+      },
+      {
+        "nome": "Nubank (Caixinha)",
+        "valor": 5000.0
+      },
+      {
+        "nome": "Mercado Pago",
+        "valor": 1100.0
+      },
+      {
+        "nome": "XP Investimentos",
+        "valor": 9000.0
+      }
+    ]
   }
 }
