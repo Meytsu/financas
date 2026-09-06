@@ -40,6 +40,9 @@ interface DashboardData {
     despesas_fixas: { nome: string; valor: number }[];
     reservas_investimentos: { nome: string; valor: number }[];
   };
+  resumo_financeiro_beatriz?: {
+    despesas_fixas: { nome: string; valor: number }[];
+  };
 }
 
 const COLORS = [
@@ -289,6 +292,11 @@ export default function Home() {
     const nuMesesPassados = Math.max(mesAtualNum - 1, 0); // meses desde jan
     const nuProgresso = Math.min((nuMesesPassados / nuMesesTotal) * 100, 100);
 
+    // Despesas fixas
+    const despesasFixasH = data.resumo_financeiro_henrique?.despesas_fixas?.reduce((a: any, item: any) => a + item.valor, 0) || 0;
+    const despesasFixasB = data.resumo_financeiro_beatriz?.despesas_fixas?.reduce((a: any, item: any) => a + item.valor, 0) || 0;
+    const despesasFixasTotal = despesasFixasH + despesasFixasB;
+
     return {
       mesesDisponiveis,
       categoriasDisponiveis,
@@ -310,6 +318,7 @@ export default function Home() {
       parcelasAtivas, comprometidoPorMes,
       topEstabelecimentos,
       nuParcelasPorMes, nuTotalRestante, nuUltimaMes, nuProgresso, nuParcelas,
+      despesasFixasH, despesasFixasB, despesasFixasTotal,
     };
   }, [data, filtroPortador, filtroMes, filtroCategoria, filtroBanco]);
 
@@ -321,7 +330,7 @@ export default function Home() {
     );
   }
 
-  const { mesesDisponiveis, categoriasDisponiveis, dadosMensais, evolucaoData, dadosBanco, categorias, mesAtual, gastoMesAtual, gastoMesAtualH, gastoMesAtualB, gastoMesAnteriorB, variacao, variacaoH, variacaoB, mediaMensal, mediaMensalH, mediaMensalB, ultimasTx, totalRegistros, txH, txB, tetosGasto, tetoTotalGasto, mesTetoLabel, mostrarTetos, gastoXPMes, gastoNuMes, mesLimite, parcelasAtivas, comprometidoPorMes, topEstabelecimentos, nuParcelasPorMes, nuTotalRestante, nuUltimaMes, nuProgresso, nuParcelas } = computed;
+  const { mesesDisponiveis, categoriasDisponiveis, dadosMensais, evolucaoData, dadosBanco, categorias, mesAtual, gastoMesAtual, gastoMesAtualH, gastoMesAtualB, gastoMesAnteriorB, variacao, variacaoH, variacaoB, mediaMensal, mediaMensalH, mediaMensalB, ultimasTx, totalRegistros, txH, txB, tetosGasto, tetoTotalGasto, mesTetoLabel, mostrarTetos, gastoXPMes, gastoNuMes, mesLimite, parcelasAtivas, comprometidoPorMes, topEstabelecimentos, nuParcelasPorMes, nuTotalRestante, nuUltimaMes, nuProgresso, nuParcelas, despesasFixasH, despesasFixasB, despesasFixasTotal } = computed;
 
   const pieData = categorias.slice(0, 5);
   const filtrosAtivos = [filtroPortador, filtroMes, filtroCategoria, filtroBanco].filter((f) => f !== "TODOS").length;
@@ -339,9 +348,9 @@ export default function Home() {
 
       {/* Filtros Modal */}
       <aside className={`
-        fixed top-0 right-0 z-40 h-screen w-80 bg-white border-l border-slate-200 shadow-2xl
+        fixed top-0 left-0 z-40 h-screen w-80 bg-white border-r border-slate-200 shadow-2xl
         flex flex-col overflow-y-auto transition-transform duration-300
-        ${sidebarOpen ? "translate-x-0" : "translate-x-full"}
+        ${sidebarOpen ? "translate-x-0" : "-translate-x-full"}
       `}>
         <div className="p-6 border-b border-slate-100 flex items-center justify-between">
           <div>
@@ -504,80 +513,34 @@ export default function Home() {
       {/* Main */}
       <main className="flex-1 min-w-0 flex flex-col">
         {/* Header */}
-        <div className="sticky top-0 z-20 bg-white/90 backdrop-blur border-b border-slate-200 px-4 lg:px-6 py-4 flex items-center justify-between">
-          <h1 className="text-xl font-bold text-slate-800">Finanças</h1>
-          <button onClick={() => setSidebarOpen(true)} className="flex items-center gap-2 px-3 py-1.5 lg:px-4 lg:py-2 bg-slate-100 hover:bg-slate-200 text-slate-700 rounded-lg text-sm font-medium transition-colors">
-            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4" />
-            </svg>
-            Filtros
-            {filtrosAtivos > 0 && <span className="bg-blue-600 text-white text-[10px] px-1.5 py-0.5 rounded-full">{filtrosAtivos}</span>}
-          </button>
+        <div className="sticky top-0 z-20 bg-white/90 backdrop-blur border-b border-slate-200 px-4 lg:px-6 py-4 relative flex items-center">
+          <div className="flex-1 flex justify-start">
+            <button onClick={() => setSidebarOpen(true)} className="group cursor-pointer flex items-center bg-white border border-slate-300 hover:border-slate-400 active:scale-95 active:bg-slate-50 text-slate-700 rounded-lg text-sm font-medium transition-all duration-300 overflow-hidden h-9 lg:h-10 px-3">
+              <div className="relative flex items-center justify-center shrink-0">
+                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4" />
+                </svg>
+                {filtrosAtivos > 0 && (
+                  <span className="absolute -bottom-1 -right-1 w-2 h-2 rounded-full bg-blue-600 border border-white group-hover:opacity-0 transition-opacity duration-300"></span>
+                )}
+              </div>
+              <span className="max-w-0 opacity-0 group-hover:max-w-[100px] group-hover:opacity-100 group-hover:ml-2 transition-all duration-300 ease-in-out whitespace-nowrap overflow-hidden flex items-center">
+                Filtros
+                {filtrosAtivos > 0 && <span className="ml-1.5 bg-blue-600 text-white text-[10px] px-1.5 py-0.5 rounded-full">{filtrosAtivos}</span>}
+              </span>
+            </button>
+          </div>
+          <h1 className="text-2xl lg:text-3xl font-extrabold text-slate-800 absolute left-1/2 -translate-x-1/2 tracking-tight">Finanças</h1>
+          <div className="flex-1"></div>
         </div>
 
         <div className="p-3 lg:p-5">
-          {/* Resumo em texto */}
-          <div className="mb-3 p-4" style={cardStyle}>
-            <p className="text-sm text-slate-700 leading-relaxed text-center">
-              {(() => {
-                const mesLabel = formatMonth(mesAtual);
-                const mesAntLabel = dadosMensais.length > 1 ? dadosMensais[dadosMensais.length - 2]?.mes : "";
-                const varDir = variacao <= 0 ? "a menos" : "a mais";
-                const varAbs = Math.abs(variacao).toFixed(1);
 
-                const topCat = categorias[0];
-
-                let fraseH = "";
-                if (variacaoH <= 0) {
-                  fraseH = `Henrique reduziu ${Math.abs(variacaoH).toFixed(0)}%`;
-                } else {
-                  fraseH = `Henrique aumentou ${variacaoH.toFixed(0)}%`;
-                }
-
-                let fraseB = "";
-                if (gastoMesAtualB > 0 && computed.gastoMesAnteriorB > 0) {
-                  if (variacaoB <= 0) {
-                    fraseB = `Beatriz reduziu ${Math.abs(variacaoB).toFixed(0)}%`;
-                  } else {
-                    fraseB = `Beatriz aumentou ${variacaoB.toFixed(0)}%`;
-                  }
-                } else if (gastoMesAtualB > 0) {
-                  fraseB = `Beatriz gastou ${formatBRL(gastoMesAtualB)}`;
-                }
-
-                // Insight sobre tetos
-                const tetoTotal = data.teto_total_henrique;
-                const tetoPct = tetoTotal > 0 ? (tetoTotalGasto / tetoTotal) * 100 : 0;
-                const categoriasEstouradas = Object.entries(data.tetos_henrique).filter(([cat, teto]) => (tetosGasto[cat] || 0) > teto);
-
-                let fraseTeto = "";
-                if (tetoPct > 100) {
-                  fraseTeto = ` Henrique estourou o teto em ${(tetoPct - 100).toFixed(0)}% (${formatBRL(tetoTotalGasto - tetoTotal)} acima).`;
-                } else if (tetoPct > 80) {
-                  fraseTeto = ` Henrique usou ${tetoPct.toFixed(0)}% do teto — atencao.`;
-                } else {
-                  fraseTeto = ` Henrique esta dentro do teto (${tetoPct.toFixed(0)}%).`;
-                }
-                if (categoriasEstouradas.length > 0) {
-                  fraseTeto += ` ${categoriasEstouradas.length} categoria${categoriasEstouradas.length > 1 ? "s" : ""} estourou: ${categoriasEstouradas.map(([c]) => c).join(", ")}.`;
-                }
-
-                return (
-                  <>
-                    Em <strong>{mesLabel}</strong> voces gastaram <strong>{formatBRL(gastoMesAtual)}</strong>, {varAbs}% {varDir} que {mesAntLabel}.{" "}
-                    {fraseH}{fraseB ? `, ${fraseB}` : ""}.{" "}
-                    {topCat && <>A maior categoria foi <strong>{topCat.name}</strong> com {formatBRL(topCat.value)}.</>}
-                    {fraseTeto}
-                  </>
-                );
-              })()}
-            </p>
-          </div>
 
           {/* Stats */}
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 mb-3">
+          <div className="grid grid-cols-2 lg:grid-cols-5 gap-3 mb-3">
             {/* Gasto mês atual */}
-            <div className="p-5" style={cardStyle}>
+            <div className="p-5 hover:-translate-y-1 hover:shadow-xl transition-all duration-300" style={cardStyle}>
               <p className="text-xs font-medium text-slate-400 uppercase tracking-wide text-center">
                 {filtroMes !== "TODOS" ? `Gasto ${formatMonth(filtroMes)}` : `Gasto ${formatMonth(mesAtual)}`}
               </p>
@@ -597,7 +560,7 @@ export default function Home() {
             </div>
 
             {/* Média mensal */}
-            <div className="p-5" style={cardStyle}>
+            <div className="p-5 hover:-translate-y-1 hover:shadow-xl transition-all duration-300" style={cardStyle}>
               <p className="text-xs font-medium text-slate-400 uppercase tracking-wide text-center">Media mensal (6m)</p>
               <p className="text-2xl font-bold mt-1 text-emerald-600 text-center">{formatBRL(mediaMensal)}</p>
               <div className="mt-3 pt-3 border-t border-slate-100 flex justify-between">
@@ -613,7 +576,7 @@ export default function Home() {
             </div>
 
             {/* Variação mensal */}
-            <div className="p-5" style={cardStyle}>
+            <div className="p-5 hover:-translate-y-1 hover:shadow-xl transition-all duration-300" style={cardStyle}>
               <p className="text-xs font-medium text-slate-400 uppercase tracking-wide text-center">Variacao mensal</p>
               <p className={`text-2xl font-bold mt-1 text-center ${variacao <= 0 ? "text-emerald-600" : "text-red-600"}`}>
                 {variacao >= 0 ? "+" : ""}{variacao.toFixed(1)}%
@@ -634,8 +597,24 @@ export default function Home() {
               </div>
             </div>
 
+            {/* Despesas Fixas */}
+            <div className="p-5 hover:-translate-y-1 hover:shadow-xl transition-all duration-300" style={cardStyle}>
+              <p className="text-xs font-medium text-slate-400 uppercase tracking-wide text-center">Despesas Fixas</p>
+              <p className="text-2xl font-bold mt-1 text-center text-slate-700">{formatBRL(despesasFixasTotal)}</p>
+              <div className="mt-3 pt-3 border-t border-slate-100 flex justify-between">
+                <div>
+                  <p className="text-[10px] text-slate-400 uppercase">Henrique</p>
+                  <p className="text-sm font-semibold" style={{ color: "#9E9E80" }}>{formatBRL(despesasFixasH)}</p>
+                </div>
+                <div className="text-right">
+                  <p className="text-[10px] text-slate-400 uppercase">Beatriz</p>
+                  <p className="text-sm font-semibold" style={{ color: "#CD3278" }}>{formatBRL(despesasFixasB)}</p>
+                </div>
+              </div>
+            </div>
+
             {/* Transações */}
-            <div className="p-5" style={cardStyle}>
+            <div className="p-5 hover:-translate-y-1 hover:shadow-xl transition-all duration-300" style={cardStyle}>
               <p className="text-xs font-medium text-slate-400 uppercase tracking-wide text-center">Transacoes</p>
               <p className="text-2xl font-bold mt-1 text-violet-600 text-center">{totalRegistros}</p>
               <div className="mt-3 pt-3 border-t border-slate-100 flex justify-between">

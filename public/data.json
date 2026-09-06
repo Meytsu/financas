@@ -10381,5 +10381,14 @@
         "valor": 9000.0
       }
     ]
+  },
+  "resumo_financeiro_beatriz": {
+    "despesas_fixas": [
+      { "nome": "Celular", "valor": 42.0 },
+      { "nome": "Internet", "valor": 80.0 },
+      { "nome": "Feira", "valor": 300.0 },
+      { "nome": "Ração", "valor": 40.0 },
+      { "nome": "Energia", "valor": 150.0 }
+    ]
   }
 }
