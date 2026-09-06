@@ -63,11 +63,12 @@ const cardStyle = {
   border: "1px solid #B3B3B3",
   borderRadius: "5px",
   boxShadow: "0 0 8px 1px rgba(37, 36, 35, 0.25)",
+  animation: "fadeIn 0.5s ease-out forwards",
 };
 
 function Card({ title, children }: { title: string; children: React.ReactNode }) {
   return (
-    <div className="p-5" style={cardStyle}>
+    <div className="p-5 hover:-translate-y-1 hover:shadow-xl transition-all duration-300" style={cardStyle}>
       <h3 className="text-sm font-semibold text-slate-500 mb-4 uppercase tracking-wide text-center">{title}</h3>
       {children}
     </div>
@@ -76,7 +77,7 @@ function Card({ title, children }: { title: string; children: React.ReactNode })
 
 function StatCard({ label, value, color = "text-slate-800" }: { label: string; value: string; color?: string }) {
   return (
-    <div className="p-5" style={cardStyle}>
+    <div className="p-5 hover:-translate-y-1 hover:shadow-xl transition-all duration-300" style={cardStyle}>
       <p className="text-xs font-medium text-slate-400 uppercase tracking-wide">{label}</p>
       <p className={`text-2xl font-bold mt-1 ${color}`}>{value}</p>
     </div>
@@ -333,18 +334,23 @@ export default function Home() {
   return (
     <div className="flex min-h-screen">
       {sidebarOpen && (
-        <div className="fixed inset-0 bg-black/30 z-30 lg:hidden" onClick={() => setSidebarOpen(false)} />
+        <div className="fixed inset-0 bg-black/30 z-30" onClick={() => setSidebarOpen(false)} />
       )}
 
-      {/* Sidebar */}
+      {/* Filtros Modal */}
       <aside className={`
-        fixed lg:sticky top-0 left-0 z-40 h-screen w-72 bg-white border-r border-slate-200 shadow-lg lg:shadow-none
-        flex flex-col overflow-y-auto transition-transform duration-200
-        ${sidebarOpen ? "translate-x-0" : "-translate-x-full lg:translate-x-0"}
+        fixed top-0 right-0 z-40 h-screen w-80 bg-white border-l border-slate-200 shadow-2xl
+        flex flex-col overflow-y-auto transition-transform duration-300
+        ${sidebarOpen ? "translate-x-0" : "translate-x-full"}
       `}>
-        <div className="p-6 border-b border-slate-100">
-          <h1 className="text-xl font-bold text-slate-800">Financas</h1>
-          <p className="text-sm text-slate-400 mt-0.5">Henrique & Beatriz</p>
+        <div className="p-6 border-b border-slate-100 flex items-center justify-between">
+          <div>
+            <h2 className="text-lg font-bold text-slate-800">Filtros</h2>
+            <p className="text-xs text-slate-400 mt-0.5">Henrique & Beatriz</p>
+          </div>
+          <button onClick={() => setSidebarOpen(false)} className="p-2 hover:bg-slate-100 rounded-lg text-slate-500">
+            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" /></svg>
+          </button>
         </div>
 
         <div className="p-6 flex flex-col gap-6 flex-1">
@@ -496,22 +502,20 @@ export default function Home() {
       </aside>
 
       {/* Main */}
-      <main className="flex-1 min-w-0">
-        <div className="lg:hidden sticky top-0 z-20 bg-white border-b border-slate-200 px-4 py-3 flex items-center gap-3">
-          <button onClick={() => setSidebarOpen(true)} className="p-2 hover:bg-slate-100 rounded-lg">
-            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+      <main className="flex-1 min-w-0 flex flex-col">
+        {/* Header */}
+        <div className="sticky top-0 z-20 bg-white/90 backdrop-blur border-b border-slate-200 px-4 lg:px-6 py-4 flex items-center justify-between">
+          <h1 className="text-xl font-bold text-slate-800">Finanças</h1>
+          <button onClick={() => setSidebarOpen(true)} className="flex items-center gap-2 px-3 py-1.5 lg:px-4 lg:py-2 bg-slate-100 hover:bg-slate-200 text-slate-700 rounded-lg text-sm font-medium transition-colors">
+            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4" />
             </svg>
+            Filtros
+            {filtrosAtivos > 0 && <span className="bg-blue-600 text-white text-[10px] px-1.5 py-0.5 rounded-full">{filtrosAtivos}</span>}
           </button>
-          <h1 className="text-lg font-bold">Financas</h1>
-          {filtrosAtivos > 0 && (
-            <span className="bg-blue-100 text-blue-700 text-xs font-medium px-2 py-0.5 rounded-full">
-              {filtrosAtivos} filtro{filtrosAtivos > 1 ? "s" : ""}
-            </span>
-          )}
         </div>
 
-        <div className="p-3 lg:p-5 max-w-7xl mx-auto">
+        <div className="p-3 lg:p-5">
           {/* Resumo em texto */}
           <div className="mb-3 p-4" style={cardStyle}>
             <p className="text-sm text-slate-700 leading-relaxed text-center">
