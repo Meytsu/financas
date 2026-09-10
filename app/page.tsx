@@ -42,6 +42,7 @@ interface DashboardData {
   };
   resumo_financeiro_beatriz?: {
     despesas_fixas: { nome: string; valor: number }[];
+    reservas_investimentos?: { nome: string; valor: number }[];
   };
 }
 
