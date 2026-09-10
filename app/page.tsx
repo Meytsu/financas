@@ -94,6 +94,7 @@ export default function Home() {
   const [filtroCategoria, setFiltroCategoria] = useState("TODOS");
   const [filtroBanco, setFiltroBanco] = useState("TODOS");
   const [sidebarOpen, setSidebarOpen] = useState(false);
+  const [modalTransacoesOpen, setModalTransacoesOpen] = useState(false);
   const [anoCalendario, setAnoCalendario] = useState(2026);
 
   useEffect(() => {
@@ -115,6 +116,28 @@ export default function Home() {
     setFiltroMes(alvo);
     setAnoCalendario(parseInt(alvo.split("-")[0]));
   }, [data]);
+
+  useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === "Escape") {
+        setModalTransacoesOpen(false);
+        setSidebarOpen(false);
+      }
+    };
+    
+    window.addEventListener("keydown", handleKeyDown);
+
+    if (modalTransacoesOpen || sidebarOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "unset";
+    }
+
+    return () => {
+      window.removeEventListener("keydown", handleKeyDown);
+      document.body.style.overflow = "unset";
+    };
+  }, [modalTransacoesOpen, sidebarOpen]);
 
   // Todos os cálculos derivados dos filtros
   const computed = useMemo(() => {
@@ -144,11 +167,68 @@ export default function Home() {
 
     const ultimos12 = mesesDisponiveis.slice(-12);
 
-    // Dados mensais por fatura (respeitam filtro de portador)
+    // Função para calcular despesas fixas ajustadas (deduzindo Feira consumida no cartão)
+    const getFixasAjustadas = (mes_fatura: string, portador: string) => {
+      const originais = portador === "HENRIQUE ALVES" 
+        ? data.resumo_financeiro_henrique?.despesas_fixas || []
+        : data.resumo_financeiro_beatriz?.despesas_fixas || [];
+      
+      const ccMercado = todas.filter(t => t.mes_fatura === mes_fatura && t.portador === portador && t.categoria === "MERCADO").reduce((a, t) => a + t.valor, 0);
+      let saldoMercadoCC = ccMercado;
+      
+      return originais.map((df: any) => {
+        if (df.nome === "Feira" && saldoMercadoCC > 0) {
+           const descontado = Math.min(df.valor, saldoMercadoCC);
+           saldoMercadoCC -= descontado;
+           return { ...df, valor: df.valor - descontado, original: df.valor, descontado };
+        }
+        return { ...df, original: df.valor, descontado: 0 };
+      });
+    };
+
+    // O mês atual selecionado (ou o último)
+    const mesAtual = filtroMes !== "TODOS" ? filtroMes : ultimos12[ultimos12.length - 1];
+
+    // Despesas fixas ajustadas do mês ATUAL (para cards e modais)
+    const fixasH_mesAtual = getFixasAjustadas(mesAtual, "HENRIQUE ALVES");
+    const fixasB_mesAtual = getFixasAjustadas(mesAtual, "BEATRIZ WERNECK");
+    const rawDespesasFixasH = fixasH_mesAtual.reduce((a, item) => a + item.valor, 0);
+    const rawDespesasFixasB = fixasB_mesAtual.reduce((a, item) => a + item.valor, 0);
+
+    const baseDespesasFixasH = (filtroPortador === "TODOS" || filtroPortador === "HENRIQUE ALVES") ? rawDespesasFixasH : 0;
+    const baseDespesasFixasB = (filtroPortador === "TODOS" || filtroPortador === "BEATRIZ WERNECK") ? rawDespesasFixasB : 0;
+    
+    // As despesas fixas não devem aparecer se filtrarmos por categoria ou banco específico (pois elas não tem banco/categoria)
+    const applyDespesas = filtroCategoria === "TODOS" && filtroBanco === "TODOS";
+    const despesasFixasH = applyDespesas ? baseDespesasFixasH : 0;
+    const despesasFixasB = applyDespesas ? baseDespesasFixasB : 0;
+    const despesasFixasTotal = despesasFixasH + despesasFixasB;
+    
+    // Para manter a variável exportada p/ o card "Despesas Fixas" intocada pelos filtros de categoria/banco:
+    const cardDespesasFixasH = baseDespesasFixasH;
+    const cardDespesasFixasB = baseDespesasFixasB;
+    const cardDespesasFixasTotal = baseDespesasFixasH + baseDespesasFixasB;
+
+    // Listas detalhadas para o modal (já ajustadas)
+    const listaDespesasFixasH = (filtroPortador === "TODOS" || filtroPortador === "HENRIQUE ALVES") 
+      ? fixasH_mesAtual.map(i => ({ ...i, portador: "HENRIQUE ALVES" })) 
+      : [];
+    const listaDespesasFixasB = (filtroPortador === "TODOS" || filtroPortador === "BEATRIZ WERNECK") 
+      ? fixasB_mesAtual.map(i => ({ ...i, portador: "BEATRIZ WERNECK" })) 
+      : [];
+    const listaDespesasFixas = applyDespesas ? [...listaDespesasFixasH, ...listaDespesasFixasB] : [];
+
+    // Dados mensais por fatura (respeitam filtro de portador e deduzem fixas dinamicamente mês a mês)
     const dadosMensais = ultimos12.map((mes) => {
       const doMes = filtradasPortador.filter((t) => t.mes_fatura === mes);
-      const henrique = doMes.filter((t) => t.portador === "HENRIQUE ALVES").reduce((a, t) => a + t.valor, 0);
-      const beatriz = doMes.filter((t) => t.portador === "BEATRIZ WERNECK").reduce((a, t) => a + t.valor, 0);
+      
+      const fixasH_mes = applyDespesas && (filtroPortador === "TODOS" || filtroPortador === "HENRIQUE ALVES")
+        ? getFixasAjustadas(mes, "HENRIQUE ALVES").reduce((a, item) => a + item.valor, 0) : 0;
+      const fixasB_mes = applyDespesas && (filtroPortador === "TODOS" || filtroPortador === "BEATRIZ WERNECK")
+        ? getFixasAjustadas(mes, "BEATRIZ WERNECK").reduce((a, item) => a + item.valor, 0) : 0;
+
+      const henrique = doMes.filter((t) => t.portador === "HENRIQUE ALVES").reduce((a, t) => a + t.valor, 0) + fixasH_mes;
+      const beatriz = doMes.filter((t) => t.portador === "BEATRIZ WERNECK").reduce((a, t) => a + t.valor, 0) + fixasB_mes;
       return {
         mes: formatMonth(mes),
         mesKey: mes,
@@ -161,10 +241,15 @@ export default function Home() {
     // Evolução (respeitam filtro de portador, por fatura)
     const evolucaoData = ultimos12.map((mes) => {
       const doMes = filtradasPortador.filter((t) => t.mes_fatura === mes);
+      const fixasH_mes = applyDespesas && (filtroPortador === "TODOS" || filtroPortador === "HENRIQUE ALVES")
+        ? getFixasAjustadas(mes, "HENRIQUE ALVES").reduce((a, item) => a + item.valor, 0) : 0;
+      const fixasB_mes = applyDespesas && (filtroPortador === "TODOS" || filtroPortador === "BEATRIZ WERNECK")
+        ? getFixasAjustadas(mes, "BEATRIZ WERNECK").reduce((a, item) => a + item.valor, 0) : 0;
+      
       return {
         mes: formatMonth(mes),
-        Henrique: Math.round(doMes.filter((t) => t.portador === "HENRIQUE ALVES").reduce((a, t) => a + t.valor, 0) * 100) / 100,
-        Beatriz: Math.round(doMes.filter((t) => t.portador === "BEATRIZ WERNECK").reduce((a, t) => a + t.valor, 0) * 100) / 100,
+        Henrique: Math.round((doMes.filter((t) => t.portador === "HENRIQUE ALVES").reduce((a, t) => a + t.valor, 0) + fixasH_mes) * 100) / 100,
+        Beatriz: Math.round((doMes.filter((t) => t.portador === "BEATRIZ WERNECK").reduce((a, t) => a + t.valor, 0) + fixasB_mes) * 100) / 100,
       };
     });
 
@@ -186,10 +271,14 @@ export default function Home() {
       .sort((a, b) => b.value - a.value);
 
     // Stats (respeitam TODOS os filtros)
-    const totalFiltrado = filtradas.reduce((a, t) => a + t.valor, 0);
-    const mesAtual = ultimos12[ultimos12.length - 1];
-    const mesAtualData = dadosMensais[dadosMensais.length - 1];
-    const mesAnteriorData = dadosMensais.length > 1 ? dadosMensais[dadosMensais.length - 2] : null;
+    const totalFiltrado = filtradas.reduce((a, t) => a + t.valor, 0) + despesasFixasTotal;
+    
+    // Usa o mês do filtro ou o último mês disponível (já definido acima)
+    
+    // Localiza os dados do mês atual no array de dadosMensais (que já tem despesas fixas embutidas)
+    const mesAtualIdx = dadosMensais.findIndex(d => d.mesKey === mesAtual);
+    const mesAtualData = mesAtualIdx >= 0 ? dadosMensais[mesAtualIdx] : { Total: 0, Henrique: 0, Beatriz: 0 };
+    const mesAnteriorData = mesAtualIdx > 0 ? dadosMensais[mesAtualIdx - 1] : { Total: 0, Henrique: 0, Beatriz: 0 };
 
     // Gasto mês atual (total + por pessoa)
     const gastoMesAtual = mesAtualData?.Total || 0;
@@ -218,7 +307,7 @@ export default function Home() {
     const txB = filtradas.filter((t) => t.portador === "BEATRIZ WERNECK").length;
 
     // Últimas transações (respeitam TODOS os filtros)
-    const ultimasTx = [...filtradas].sort((a, b) => b.data.localeCompare(a.data)).slice(0, 50);
+    const ultimasTx = [...filtradas].sort((a, b) => b.data.localeCompare(a.data));
 
     // Tetos: respeitam filtro de portador
     // Se filtro = Beatriz, esconde tetos (ela não tem teto definido ainda)
@@ -238,10 +327,10 @@ export default function Home() {
     const tetoTotalGasto = hTetoFilter.reduce((a, t) => a + t.valor, 0);
     const mesTetoLabel = formatMonth(mesTeto);
 
-    // Limite dos cartões no mês da fatura selecionado
+    // Limite dos cartões (Mês atual + todas as parcelas/dívidas futuras)
     const mesLimite = filtroMes !== "TODOS" ? filtroMes : mesAtual;
-    const gastoXPMes = todas.filter((t) => t.mes_fatura === mesLimite && t.banco === "XP").reduce((a, t) => a + t.valor, 0);
-    const gastoNuMes = todas.filter((t) => t.mes_fatura === mesLimite && t.banco === "NUBANK").reduce((a, t) => a + t.valor, 0);
+    const gastoXPMes = todas.filter((t) => t.mes_fatura >= mesLimite && t.banco === "XP").reduce((a, t) => a + t.valor, 0);
+    const gastoNuMes = todas.filter((t) => t.mes_fatura >= mesLimite && t.banco === "NUBANK").reduce((a, t) => a + t.valor, 0);
 
     // Parcelas ativas (futuras, após mês atual)
     const parcelasAtivas: { estab: string; parcela: string; valor: number; mesFatura: string; portador: string; banco: string }[] = [];
@@ -276,26 +365,6 @@ export default function Home() {
       .sort((a, b) => b.value - a.value)
       .slice(0, 5);
 
-    // Nubank: parcelas restantes e progresso de eliminação
-    const nuParcelas = todas.filter((t) => t.banco === "NUBANK" && t.parcela !== "-" && t.mes_fatura > mesAtual);
-    const nuParcelasPorMes: Record<string, { total: number; itens: { estab: string; parcela: string; valor: number; portador: string }[] }> = {};
-    for (const t of nuParcelas) {
-      if (!nuParcelasPorMes[t.mes_fatura]) nuParcelasPorMes[t.mes_fatura] = { total: 0, itens: [] };
-      nuParcelasPorMes[t.mes_fatura].total += t.valor;
-      nuParcelasPorMes[t.mes_fatura].itens.push({ estab: t.estabelecimento, parcela: t.parcela, valor: t.valor, portador: t.portador });
-    }
-    const nuTotalRestante = nuParcelas.reduce((a, t) => a + t.valor, 0);
-    const nuUltimaMes = nuParcelas.length > 0 ? nuParcelas.reduce((a, t) => t.mes_fatura > a ? t.mes_fatura : a, "") : "";
-    // Progresso: de Jan/26 (início) até Out/26 (previsão fim)
-    const nuMesesTotal = 10; // jan a out = 10 meses
-    const mesAtualNum = parseInt(mesAtual.split("-")[1]);
-    const nuMesesPassados = Math.max(mesAtualNum - 1, 0); // meses desde jan
-    const nuProgresso = Math.min((nuMesesPassados / nuMesesTotal) * 100, 100);
-
-    // Despesas fixas
-    const despesasFixasH = data.resumo_financeiro_henrique?.despesas_fixas?.reduce((a: any, item: any) => a + item.valor, 0) || 0;
-    const despesasFixasB = data.resumo_financeiro_beatriz?.despesas_fixas?.reduce((a: any, item: any) => a + item.valor, 0) || 0;
-    const despesasFixasTotal = despesasFixasH + despesasFixasB;
 
     return {
       mesesDisponiveis,
@@ -317,8 +386,9 @@ export default function Home() {
       gastoXPMes, gastoNuMes, mesLimite,
       parcelasAtivas, comprometidoPorMes,
       topEstabelecimentos,
-      nuParcelasPorMes, nuTotalRestante, nuUltimaMes, nuProgresso, nuParcelas,
+      cardDespesasFixasH, cardDespesasFixasB, cardDespesasFixasTotal,
       despesasFixasH, despesasFixasB, despesasFixasTotal,
+      listaDespesasFixas,
     };
   }, [data, filtroPortador, filtroMes, filtroCategoria, filtroBanco]);
 
@@ -330,7 +400,7 @@ export default function Home() {
     );
   }
 
-  const { mesesDisponiveis, categoriasDisponiveis, dadosMensais, evolucaoData, dadosBanco, categorias, mesAtual, gastoMesAtual, gastoMesAtualH, gastoMesAtualB, gastoMesAnteriorB, variacao, variacaoH, variacaoB, mediaMensal, mediaMensalH, mediaMensalB, ultimasTx, totalRegistros, txH, txB, tetosGasto, tetoTotalGasto, mesTetoLabel, mostrarTetos, gastoXPMes, gastoNuMes, mesLimite, parcelasAtivas, comprometidoPorMes, topEstabelecimentos, nuParcelasPorMes, nuTotalRestante, nuUltimaMes, nuProgresso, nuParcelas, despesasFixasH, despesasFixasB, despesasFixasTotal } = computed;
+  const { mesesDisponiveis, categoriasDisponiveis, dadosMensais, evolucaoData, dadosBanco, categorias, mesAtual, gastoMesAtual, gastoMesAtualH, gastoMesAtualB, gastoMesAnteriorB, variacao, variacaoH, variacaoB, mediaMensal, mediaMensalH, mediaMensalB, ultimasTx, totalRegistros, txH, txB, tetosGasto, tetoTotalGasto, mesTetoLabel, mostrarTetos, gastoXPMes, mesLimite, parcelasAtivas, comprometidoPorMes, topEstabelecimentos, cardDespesasFixasH, cardDespesasFixasB, cardDespesasFixasTotal, despesasFixasH, despesasFixasB, despesasFixasTotal, listaDespesasFixas } = computed;
 
   const pieData = categorias.slice(0, 5);
   const filtrosAtivos = [filtroPortador, filtroMes, filtroCategoria, filtroBanco].filter((f) => f !== "TODOS").length;
@@ -514,7 +584,7 @@ export default function Home() {
       <main className="flex-1 min-w-0 flex flex-col">
         {/* Header */}
         <div className="sticky top-0 z-20 bg-white/90 backdrop-blur border-b border-slate-200 px-4 lg:px-6 py-4 relative flex items-center">
-          <div className="flex-1 flex justify-start">
+          <div className="flex-1 flex justify-start gap-2">
             <button onClick={() => setSidebarOpen(true)} className="group cursor-pointer flex items-center bg-white border border-slate-300 hover:border-slate-400 active:scale-95 active:bg-slate-50 text-slate-700 rounded-lg text-sm font-medium transition-all duration-300 overflow-hidden h-9 lg:h-10 px-3">
               <div className="relative flex items-center justify-center shrink-0">
                 <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -527,6 +597,16 @@ export default function Home() {
               <span className="max-w-0 opacity-0 group-hover:max-w-[100px] group-hover:opacity-100 group-hover:ml-2 transition-all duration-300 ease-in-out whitespace-nowrap overflow-hidden flex items-center">
                 Filtros
                 {filtrosAtivos > 0 && <span className="ml-1.5 bg-blue-600 text-white text-[10px] px-1.5 py-0.5 rounded-full">{filtrosAtivos}</span>}
+              </span>
+            </button>
+            <button onClick={() => setModalTransacoesOpen(true)} className="group cursor-pointer flex items-center bg-white border border-slate-300 hover:border-slate-400 active:scale-95 active:bg-slate-50 text-slate-700 rounded-lg text-sm font-medium transition-all duration-300 overflow-hidden h-9 lg:h-10 px-3">
+              <div className="relative flex items-center justify-center shrink-0">
+                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01" />
+                </svg>
+              </div>
+              <span className="max-w-0 opacity-0 group-hover:max-w-[120px] group-hover:opacity-100 group-hover:ml-2 transition-all duration-300 ease-in-out whitespace-nowrap overflow-hidden flex items-center">
+                Transações
               </span>
             </button>
           </div>
@@ -559,39 +639,24 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Média mensal */}
-            <div className="p-5 hover:-translate-y-1 hover:shadow-xl transition-all duration-300" style={cardStyle}>
-              <p className="text-xs font-medium text-slate-400 uppercase tracking-wide text-center">Media mensal (6m)</p>
-              <p className="text-2xl font-bold mt-1 text-emerald-600 text-center">{formatBRL(mediaMensal)}</p>
-              <div className="mt-3 pt-3 border-t border-slate-100 flex justify-between">
-                <div>
-                  <p className="text-[10px] text-slate-400 uppercase">Henrique</p>
-                  <p className="text-sm font-semibold" style={{ color: "#9E9E80" }}>{formatBRL(mediaMensalH)}</p>
-                </div>
-                <div className="text-right">
-                  <p className="text-[10px] text-slate-400 uppercase">Beatriz</p>
-                  <p className="text-sm font-semibold" style={{ color: "#CD3278" }}>{formatBRL(mediaMensalB)}</p>
-                </div>
-              </div>
-            </div>
 
-            {/* Variação mensal */}
+            {/* Despesas Variáveis */}
             <div className="p-5 hover:-translate-y-1 hover:shadow-xl transition-all duration-300" style={cardStyle}>
-              <p className="text-xs font-medium text-slate-400 uppercase tracking-wide text-center">Variacao mensal</p>
-              <p className={`text-2xl font-bold mt-1 text-center ${variacao <= 0 ? "text-emerald-600" : "text-red-600"}`}>
-                {variacao >= 0 ? "+" : ""}{variacao.toFixed(1)}%
+              <p className="text-xs font-medium text-slate-400 uppercase tracking-wide text-center">Despesas Variáveis</p>
+              <p className="text-2xl font-bold mt-1 text-center" style={{ color: "#1a1a1a" }}>
+                {formatBRL(Math.max(0, (filtroMes !== "TODOS" ? computed.totalFiltrado : gastoMesAtual) - despesasFixasTotal))}
               </p>
               <div className="mt-3 pt-3 border-t border-slate-100 flex justify-between">
                 <div>
                   <p className="text-[10px] text-slate-400 uppercase">Henrique</p>
-                  <p className={`text-sm font-semibold ${variacaoH <= 0 ? "text-emerald-600" : "text-red-600"}`}>
-                    {variacaoH >= 0 ? "+" : ""}{variacaoH.toFixed(1)}%
+                  <p className="text-sm font-semibold" style={{ color: "#9E9E80" }}>
+                    {formatBRL(Math.max(0, gastoMesAtualH - despesasFixasH))}
                   </p>
                 </div>
                 <div className="text-right">
                   <p className="text-[10px] text-slate-400 uppercase">Beatriz</p>
-                  <p className={`text-sm font-semibold ${variacaoB <= 0 ? "text-emerald-600" : "text-red-600"}`}>
-                    {variacaoB >= 0 ? "+" : ""}{variacaoB.toFixed(1)}%
+                  <p className="text-sm font-semibold" style={{ color: "#CD3278" }}>
+                    {formatBRL(Math.max(0, gastoMesAtualB - despesasFixasB))}
                   </p>
                 </div>
               </div>
@@ -600,15 +665,15 @@ export default function Home() {
             {/* Despesas Fixas */}
             <div className="p-5 hover:-translate-y-1 hover:shadow-xl transition-all duration-300" style={cardStyle}>
               <p className="text-xs font-medium text-slate-400 uppercase tracking-wide text-center">Despesas Fixas</p>
-              <p className="text-2xl font-bold mt-1 text-center text-slate-700">{formatBRL(despesasFixasTotal)}</p>
+              <p className="text-2xl font-bold mt-1 text-center text-slate-700">{formatBRL(cardDespesasFixasTotal)}</p>
               <div className="mt-3 pt-3 border-t border-slate-100 flex justify-between">
                 <div>
                   <p className="text-[10px] text-slate-400 uppercase">Henrique</p>
-                  <p className="text-sm font-semibold" style={{ color: "#9E9E80" }}>{formatBRL(despesasFixasH)}</p>
+                  <p className="text-sm font-semibold" style={{ color: "#9E9E80" }}>{formatBRL(cardDespesasFixasH)}</p>
                 </div>
                 <div className="text-right">
                   <p className="text-[10px] text-slate-400 uppercase">Beatriz</p>
-                  <p className="text-sm font-semibold" style={{ color: "#CD3278" }}>{formatBRL(despesasFixasB)}</p>
+                  <p className="text-sm font-semibold" style={{ color: "#CD3278" }}>{formatBRL(cardDespesasFixasB)}</p>
                 </div>
               </div>
             </div>
@@ -628,6 +693,22 @@ export default function Home() {
                 </div>
               </div>
             </div>
+            
+            {/* Média mensal */}
+            <div className="p-5 hover:-translate-y-1 hover:shadow-xl transition-all duration-300" style={cardStyle}>
+              <p className="text-xs font-medium text-slate-400 uppercase tracking-wide text-center">Media mensal (6m)</p>
+              <p className="text-2xl font-bold mt-1 text-emerald-600 text-center">{formatBRL(mediaMensal)}</p>
+              <div className="mt-3 pt-3 border-t border-slate-100 flex justify-between">
+                <div>
+                  <p className="text-[10px] text-slate-400 uppercase">Henrique</p>
+                  <p className="text-sm font-semibold" style={{ color: "#9E9E80" }}>{formatBRL(mediaMensalH)}</p>
+                </div>
+                <div className="text-right">
+                  <p className="text-[10px] text-slate-400 uppercase">Beatriz</p>
+                  <p className="text-sm font-semibold" style={{ color: "#CD3278" }}>{formatBRL(mediaMensalB)}</p>
+                </div>
+              </div>
+            </div>
           </div>
 
           {/* Row 1 - Tetos mensais (Henrique) + Limites */}
@@ -637,7 +718,7 @@ export default function Home() {
               {(() => {
                 const tetos = data.tetos_henrique;
                 const tetoMeta = data.teto_total_henrique; // R$ 1.390
-                const tetoLimite = 1700; // limite máximo
+                const tetoLimite = 1500; // limite máximo
                 const pctMeta = tetoMeta > 0 ? (tetoTotalGasto / tetoMeta) * 100 : 0;
                 const pctLimite = tetoLimite > 0 ? (tetoTotalGasto / tetoLimite) * 100 : 0;
                 const corBarra = tetoTotalGasto > tetoLimite ? "#DC2626" : tetoTotalGasto > tetoMeta ? "#D97706" : "#059669";
@@ -712,7 +793,7 @@ export default function Home() {
           )}
 
           {/* Row 2 - Limites dos cartões */}
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-3 mb-3">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 mb-3">
             {/* XP */}
             {(() => {
               const limite = data.limites.XP;
@@ -736,82 +817,63 @@ export default function Home() {
               );
             })()}
 
-            {/* Nubank */}
-            {(() => {
-              const limite = data.limites.NUBANK;
-              const gasto = Math.round(gastoNuMes * 100) / 100;
-              const pct = limite > 0 ? (gasto / limite) * 100 : 0;
-              const cor = pct > 90 ? "#DC2626" : pct > 70 ? "#D97706" : "#059669";
-              return (
-                <Card title={`Limite Nubank — ${formatMonth(mesLimite)}`}>
+            {/* Reserva de Emergência */}
+            <Card title={`Reserva de Emergência ${filtroPortador === "TODOS" ? "(Casal)" : filtroPortador === "HENRIQUE ALVES" ? "(Henrique)" : "(Beatriz)"}`}>
+              {(() => {
+                const hRes = data.resumo_financeiro_henrique?.reservas_investimentos?.filter((i: any) => i.nome !== "XP Investimentos").reduce((a: any, i: any) => a + i.valor, 0) || 0;
+                const bRes = data.resumo_financeiro_beatriz?.reservas_investimentos?.reduce((a: any, i: any) => a + i.valor, 0) || 0;
+                
+                let atual = 0;
+                let meta = 0;
+                if (filtroPortador === "HENRIQUE ALVES") {
+                  atual = hRes;
+                  meta = 30000;
+                } else if (filtroPortador === "BEATRIZ WERNECK") {
+                  atual = bRes;
+                  meta = 10000;
+                } else {
+                  atual = hRes + bRes;
+                  meta = 40000;
+                }
+                
+                const pct = meta > 0 ? Math.min((atual / meta) * 100, 100) : 0;
+                const color = filtroPortador === "BEATRIZ WERNECK" ? "#CD3278" : filtroPortador === "HENRIQUE ALVES" ? "#9E9E80" : "#1E40AF";
+                
+                return (<div>
                   <div className="flex justify-between items-baseline mb-2">
-                    <span className="text-2xl font-bold" style={{ color: cor }}>{formatBRL(gasto)}</span>
-                    <span className="text-sm text-slate-400">de {formatBRL(limite)}</span>
+                    <span className="text-2xl font-bold" style={{ color }}>{formatBRL(atual)}</span>
+                    <span className="text-sm text-slate-400">meta {formatBRL(meta)}</span>
                   </div>
-                  <div className="h-3 bg-slate-100 rounded-full overflow-hidden mb-2">
-                    <div className="h-full rounded-full transition-all" style={{ width: `${Math.min(pct, 100)}%`, backgroundColor: cor }} />
+                  <div className="h-4 bg-slate-100 rounded-full overflow-hidden mb-2">
+                    <div className="h-full rounded-full transition-all" style={{ width: `${pct}%`, backgroundColor: color }} />
                   </div>
-                  <div className="flex justify-between text-xs">
-                    <span style={{ color: cor }}>{pct.toFixed(1)}% usado</span>
-                    <span className="text-slate-500">Restam {formatBRL(Math.max(limite - gasto, 0))}</span>
-                  </div>
-                </Card>
-              );
-            })()}
-          </div>
+                  <p className="text-xs text-slate-500">{pct.toFixed(0)}% concluído — faltam {formatBRL(Math.max(meta - atual, 0))}</p>
+                </div>);
+              })()}
+            </Card>
 
-          {/* Nubank - Progresso de eliminação */}
-          {nuParcelas.length > 0 && (
-          <div className="grid grid-cols-1 gap-3 mb-3">
-            <Card title="Meta — Eliminar Nubank">
-              <div>
-                {/* Progresso */}
-                <div className="flex justify-between items-baseline mb-2">
-                  <div>
-                    <span className="text-lg font-bold" style={{ color: "#7c3aed" }}>
-                      {nuParcelas.length} parcelas restantes
-                    </span>
-                    <span className="text-sm text-slate-400 ml-2">({formatBRL(nuTotalRestante)})</span>
+            {/* Caixinha BMW */}
+            <Card title={`Provisão 2027 — Caixinha BMW`}>
+              {(() => {
+                const atual = data.resumo_financeiro_henrique?.caixinha_bmw || 0;
+                const meta = 5000; // Meta sugerida até dez/2026
+                const pct = meta > 0 ? Math.min((atual / meta) * 100, 100) : 0;
+                const color = "#D97706"; // Cor de atenção/foco
+                
+                return (<div>
+                  <div className="flex justify-between items-baseline mb-2">
+                    <span className="text-2xl font-bold" style={{ color }}>{formatBRL(atual)}</span>
+                    <span className="text-sm text-slate-400">meta {formatBRL(meta)}</span>
                   </div>
-                  <span className="text-sm text-slate-500">
-                    Previsao: <strong>{nuUltimaMes ? formatMonth(nuUltimaMes) : "—"}</strong>
-                  </span>
-                </div>
-                <div className="h-3 bg-slate-100 rounded-full overflow-hidden mb-3">
-                  <div className="h-full rounded-full transition-all" style={{ width: `${nuProgresso}%`, backgroundColor: "#7c3aed" }} />
-                </div>
-
-                {/* Timeline por mês */}
-                <div className="flex gap-2 flex-wrap">
-                  {Object.entries(nuParcelasPorMes).sort(([a], [b]) => a.localeCompare(b)).map(([mes, info]) => (
-                    <div key={mes} className="bg-purple-50 rounded-lg px-3 py-2 flex-1 min-w-[120px]">
-                      <p className="text-[10px] font-semibold text-purple-400 uppercase">{formatMonth(mes)}</p>
-                      <p className="text-sm font-bold" style={{ color: "#7c3aed" }}>{formatBRL(info.total)}</p>
-                      <div className="mt-1">
-                        {info.itens.map((item, i) => (
-                          <p key={i} className="text-[10px] text-slate-500 truncate" title={item.estab}>
-                            <span style={{ color: item.portador === "BEATRIZ WERNECK" ? "#CD3278" : "#9E9E80" }}>
-                              {item.portador === "BEATRIZ WERNECK" ? "B" : "H"}
-                            </span>{" "}
-                            {item.estab.substring(0, 15)} ({item.parcela})
-                          </p>
-                        ))}
-                      </div>
-                    </div>
-                  ))}
-                  {/* Card de conclusão */}
-                  <div className="bg-green-50 rounded-lg px-3 py-2 flex-1 min-w-[120px] flex flex-col items-center justify-center">
-                    <p className="text-[10px] font-semibold text-green-500 uppercase">
-                      {nuUltimaMes ? formatMonth(nuUltimaMes.replace(/-(\d+)$/, (_, m) => `-${String(parseInt(m) + 1).padStart(2, "0")}`)) : ""}
-                    </p>
-                    <p className="text-lg">&#10003;</p>
-                    <p className="text-[10px] text-green-600 font-medium">Nubank livre</p>
+                  <div className="h-4 bg-slate-100 rounded-full overflow-hidden mb-2">
+                    <div className="h-full rounded-full transition-all" style={{ width: `${pct}%`, backgroundColor: color }} />
                   </div>
-                </div>
-              </div>
+                  <p className="text-xs text-slate-500">{pct.toFixed(0)}% concluído — faltam {formatBRL(Math.max(meta - atual, 0))}</p>
+                </div>);
+              })()}
             </Card>
           </div>
-          )}
+
 
           {/* Row 3 - Pra onde vai o dinheiro (Categorias + Top 5) */}
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-3 mb-3">
@@ -963,179 +1025,173 @@ export default function Home() {
             </Card>
           </div>
 
-          {/* Row 5 - Comprometimento + Metas */}
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-3 mb-3">
-            {/* Parcelas ativas - só mostra se tiver */}
-            {parcelasAtivas.length > 0 ? (
-              <Card title="Parcelas ativas">
-                <div>
-                  <div className="mb-4 pb-3 border-b border-slate-100">
-                    <div className="flex gap-2 flex-wrap">
-                      {Object.entries(comprometidoPorMes).map(([mes, val]) => (
-                        <div key={mes} className="bg-slate-50 rounded-lg px-3 py-2 text-center">
-                          <p className="text-[10px] text-slate-400 uppercase">{formatMonth(mes)}</p>
-                          <p className="text-sm font-bold text-slate-700">{formatBRL(val)}</p>
-                        </div>
-                      ))}
-                    </div>
-                  </div>
-                  <div className="h-[180px] overflow-y-auto">
-                    <table className="w-full text-xs">
-                      <thead className="text-slate-400 sticky top-0 bg-white">
-                        <tr>
-                          <th className="text-left py-1">Fatura</th>
-                          <th className="text-left py-1">Compra</th>
-                          <th className="text-center py-1">Parcela</th>
-                          <th className="text-right py-1">Valor</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        {parcelasAtivas.map((p, i) => (
-                          <tr key={i} className="border-t border-slate-50">
-                            <td className="py-1 text-slate-400">{formatMonth(p.mesFatura)}</td>
-                            <td className="py-1 text-slate-700 truncate max-w-[120px]" title={p.estab}>
-                              {p.estab}
-                              <span className="text-[10px] ml-1" style={{ color: p.portador === "BEATRIZ WERNECK" ? "#CD3278" : "#9E9E80" }}>
-                                {p.portador === "BEATRIZ WERNECK" ? "B" : "H"}
-                              </span>
-                            </td>
-                            <td className="py-1 text-center text-slate-400">{p.parcela}</td>
-                            <td className="py-1 text-right font-medium text-slate-700">{formatBRL(p.valor)}</td>
-                          </tr>
-                        ))}
-                      </tbody>
-                    </table>
-                  </div>
-                </div>
-              </Card>
-            ) : (
-              <Card title="Meta — Reserva de emergencia">
-                {(() => {
-                  const atual = 7277; const meta = 12000; const pct = (atual / meta) * 100;
-                  return (<div>
-                    <div className="flex justify-between items-baseline mb-2">
-                      <span className="text-2xl font-bold" style={{ color: "#1E40AF" }}>{formatBRL(atual)}</span>
-                      <span className="text-sm text-slate-400">meta {formatBRL(meta)}</span>
-                    </div>
-                    <div className="h-4 bg-slate-100 rounded-full overflow-hidden mb-2">
-                      <div className="h-full rounded-full" style={{ width: `${pct}%`, backgroundColor: "#1E40AF" }} />
-                    </div>
-                    <p className="text-xs text-slate-500">{pct.toFixed(0)}% concluido — faltam {formatBRL(meta - atual)}</p>
-                  </div>);
-                })()}
-              </Card>
-            )}
-
-            {/* Metas sempre visíveis */}
-            <div className="flex flex-col gap-3">
-              {parcelasAtivas.length > 0 && (
-                <div className="p-5" style={cardStyle}>
-                  <h3 className="text-sm font-semibold text-slate-500 mb-4 uppercase tracking-wide text-center">Meta — Reserva de emergencia</h3>
-                  {(() => {
-                    const atual = 7277; const meta = 12000; const pct = (atual / meta) * 100;
-                    return (<div>
-                      <div className="flex justify-between items-baseline mb-2">
-                        <span className="text-xl font-bold" style={{ color: "#1E40AF" }}>{formatBRL(atual)}</span>
-                        <span className="text-sm text-slate-400">meta {formatBRL(meta)}</span>
-                      </div>
-                      <div className="h-3 bg-slate-100 rounded-full overflow-hidden mb-1">
-                        <div className="h-full rounded-full" style={{ width: `${pct}%`, backgroundColor: "#1E40AF" }} />
-                      </div>
-                      <p className="text-xs text-slate-500">{pct.toFixed(0)}% — faltam {formatBRL(meta - atual)}</p>
-                    </div>);
-                  })()}
-                </div>
-              )}
-              <div className="p-5" style={cardStyle}>
-                <h3 className="text-sm font-semibold text-slate-500 mb-4 uppercase tracking-wide text-center">Meta — Fundo Versys 650</h3>
-                {(() => {
-                  const atual = 0; const meta = 15000; const pct = meta > 0 ? (atual / meta) * 100 : 0;
-                  return (<div>
-                    <div className="flex justify-between items-baseline mb-2">
-                      <span className="text-xl font-bold" style={{ color: "#059669" }}>{formatBRL(atual)}</span>
-                      <span className="text-sm text-slate-400">meta {formatBRL(meta)}</span>
-                    </div>
-                    <div className="h-3 bg-slate-100 rounded-full overflow-hidden mb-1">
-                      <div className="h-full rounded-full" style={{ width: `${Math.max(pct, 1)}%`, backgroundColor: "#059669" }} />
-                    </div>
-                    <p className="text-xs text-slate-500">{pct.toFixed(0)}% — faltam {formatBRL(meta - atual)}</p>
-                  </div>);
-                })()}
-              </div>
-            </div>
-          </div>
-
-          {/* Row 6 - Transações */}
-          <div className="grid grid-cols-1 gap-3 mb-3">
-            <Card title="Ultimas transacoes">
-              <div className="h-[300px] overflow-y-auto">
-                <table className="w-full text-sm">
-                  <thead className="text-slate-400 sticky top-0 bg-white">
-                    <tr>
-                      <th className="text-left py-2 font-medium">Data</th>
-                      <th className="text-left py-2 font-medium">Responsavel</th>
-                      <th className="text-left py-2 font-medium">Banco</th>
-                      <th className="text-left py-2 font-medium">Local</th>
-                      <th className="text-left py-2 font-medium">Categoria</th>
-                      <th className="text-center py-2 font-medium">Parcela</th>
-                      <th className="text-right py-2 font-medium">Valor</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    {ultimasTx.map((tx, i) => (
-                      <tr key={i} className="border-t border-slate-100">
-                        <td className="py-2 text-slate-400 whitespace-nowrap">
-                          {new Date(tx.data + "T12:00:00").toLocaleDateString("pt-BR", { day: "2-digit", month: "2-digit" })}
-                        </td>
-                        <td className="py-2 whitespace-nowrap">
-                          <span className="font-medium" style={{ color: tx.portador === "BEATRIZ WERNECK" ? "#CD3278" : "#9E9E80" }}>
-                            {tx.portador === "BEATRIZ WERNECK" ? "Beatriz" : "Henrique"}
-                          </span>
-                        </td>
-                        <td className="py-2 text-slate-600 whitespace-nowrap text-xs">
-                          {tx.banco}
-                        </td>
-                        <td className="py-2 text-slate-700 truncate max-w-[180px]" title={tx.estabelecimento}>
-                          {tx.estabelecimento}
-                          {tx.split && (
-                            <span
-                              className="ml-1.5 align-middle text-[10px] font-semibold text-amber-600"
-                              title={`Dividido ${tx.split} com Beatriz`}
-                            >
-                              {tx.split}
-                            </span>
-                          )}
-                        </td>
-                        <td className="py-2 text-slate-500 text-xs whitespace-nowrap">
-                          {tx.categoria}
-                        </td>
-                        <td className="py-2 text-center text-slate-400 text-xs whitespace-nowrap">
-                          {tx.parcela !== "-" ? tx.parcela : ""}
-                        </td>
-                        <td className="py-2 text-right font-medium whitespace-nowrap">
-                          {tx.abatido ? (
-                            <span
-                              className="text-slate-400 line-through"
-                              title={`Abatido — metade da Beatriz (dividido ${tx.split ?? "50/50"}), reembolsada em dinheiro`}
-                            >
-                              {formatBRL(tx.valor_bruto ?? tx.valor)}
-                            </span>
-                          ) : (
-                            <span className="text-slate-800">{formatBRL(tx.valor)}</span>
-                          )}
-                        </td>
-                      </tr>
-                    ))}
-                  </tbody>
-                </table>
-              </div>
-            </Card>
-          </div>
 
           <p className="text-center text-slate-400 text-xs mt-8 pb-4">
             Atualizado em {new Date().toLocaleDateString("pt-BR")}
           </p>
         </div>
+
+        {/* Modal de Transações */}
+        <div className={`fixed inset-0 bg-slate-900/50 backdrop-blur-sm z-50 flex items-center justify-center p-4 lg:p-8 transition-opacity duration-500 ease-out ${modalTransacoesOpen ? "opacity-100" : "opacity-0 pointer-events-none"}`} onClick={() => setModalTransacoesOpen(false)}>
+          <div className={`w-full max-w-[95%] lg:max-w-[1600px] xl:max-w-[1800px] bg-white rounded-2xl shadow-2xl flex flex-col overflow-hidden transition-all duration-500 ease-out max-h-[90vh] ${modalTransacoesOpen ? "scale-100 translate-y-0 opacity-100" : "scale-95 translate-y-12 opacity-0"}`} onClick={(e) => e.stopPropagation()}>
+            <div className="flex items-center justify-between p-6 border-b border-slate-200 bg-white">
+              <h2 className="text-xl font-bold text-slate-800 tracking-tight">Detalhamento Financeiro</h2>
+              <button onClick={() => setModalTransacoesOpen(false)} className="p-2 text-slate-400 hover:text-slate-600 bg-white border border-slate-200 hover:border-slate-300 hover:bg-slate-50 rounded-lg transition-colors">
+                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" /></svg>
+              </button>
+            </div>
+            
+            <div className="flex-1 overflow-hidden p-6 bg-slate-50/50 min-h-0">
+              <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 h-full min-h-0">
+                
+                {/* Lado Esquerdo: Despesas Variáveis */}
+                <div className="lg:col-span-8 lg:relative min-h-[400px] lg:min-h-0">
+                  <div className="flex flex-col h-full min-h-0 lg:absolute lg:inset-0">
+                    <h3 className="text-lg font-bold text-slate-700 mb-3 flex items-center gap-2">
+                      <svg className="w-5 h-5 text-indigo-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z" /></svg>
+                      Despesas Variáveis
+                    </h3>
+                    <div className="bg-white rounded-xl border border-slate-200 shadow-sm overflow-hidden flex-1 flex flex-col">
+                      <div className="overflow-y-auto flex-1">
+                        <table className="w-full text-sm">
+                          <thead className="text-slate-400 sticky top-0 bg-white/95 backdrop-blur shadow-[0_1px_2px_rgba(0,0,0,0.05)] z-10">
+                          <tr>
+                            <th className="text-left py-3 px-4 font-medium border-b border-slate-100">Data</th>
+                            <th className="text-left py-3 px-4 font-medium border-b border-slate-100">Resp.</th>
+                            <th className="text-left py-3 px-4 font-medium border-b border-slate-100">Banco</th>
+                            <th className="text-left py-3 px-4 font-medium border-b border-slate-100">Local</th>
+                            <th className="text-left py-3 px-4 font-medium border-b border-slate-100">Categoria</th>
+                            <th className="text-center py-3 px-4 font-medium border-b border-slate-100">Parc.</th>
+                            <th className="text-right py-3 px-4 font-medium border-b border-slate-100">Valor</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          {ultimasTx.length === 0 ? (
+                            <tr>
+                              <td colSpan={7} className="py-8 text-center text-slate-400">Nenhuma transação encontrada com os filtros atuais.</td>
+                            </tr>
+                          ) : (
+                            ultimasTx.map((tx, i) => (
+                              <tr key={i} className="border-b border-slate-50 hover:bg-slate-50/80 transition-colors">
+                                <td className="py-3 px-4 text-slate-500 whitespace-nowrap text-xs">
+                                  {new Date(tx.data + "T12:00:00").toLocaleDateString("pt-BR", { day: "2-digit", month: "2-digit", year: "2-digit" })}
+                                </td>
+                                <td className="py-3 px-4 whitespace-nowrap">
+                                  <span className="font-medium px-2 py-1 rounded-full text-[10px]" style={{ 
+                                    color: tx.portador === "BEATRIZ WERNECK" ? "#CD3278" : "#9E9E80",
+                                    backgroundColor: tx.portador === "BEATRIZ WERNECK" ? "#fdf2f8" : "#f4f4f0" 
+                                  }}>
+                                    {tx.portador === "BEATRIZ WERNECK" ? "B" : "H"}
+                                  </span>
+                                </td>
+                                <td className="py-3 px-4 text-slate-600 whitespace-nowrap text-xs font-medium">
+                                  {tx.banco}
+                                </td>
+                                <td className="py-3 px-4 text-slate-700 truncate max-w-[150px] text-xs" title={tx.estabelecimento}>
+                                  {tx.estabelecimento}
+                                  {tx.split && (
+                                    <span className="ml-1 align-middle text-[9px] font-semibold text-amber-600 bg-amber-50 px-1 py-0.5 rounded" title={`Dividido ${tx.split} com Beatriz`}>
+                                      {tx.split}
+                                    </span>
+                                  )}
+                                </td>
+                                <td className="py-3 px-4 text-slate-500 text-xs whitespace-nowrap">
+                                  <span className="bg-slate-100 text-slate-600 px-2 py-1 rounded-md">{tx.categoria}</span>
+                                </td>
+                                <td className="py-3 px-4 text-center text-slate-400 text-xs whitespace-nowrap">
+                                  {tx.parcela !== "-" ? tx.parcela : ""}
+                                </td>
+                                <td className="py-3 px-4 text-right font-medium whitespace-nowrap text-xs">
+                                  {tx.abatido ? (
+                                    <span className="text-slate-400 line-through decoration-slate-300" title={`Abatido — metade da Beatriz (dividido ${tx.split ?? "50/50"}), reembolsada em dinheiro`}>
+                                      {formatBRL(tx.valor_bruto ?? tx.valor)}
+                                    </span>
+                                  ) : (
+                                    <span className="text-slate-800">{formatBRL(tx.valor)}</span>
+                                  )}
+                                </td>
+                              </tr>
+                            ))
+                          )}
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+                </div>
+
+                {/* Lado Direito: Despesas Fixas */}
+                <div className="flex flex-col h-full min-h-0 lg:col-span-4">
+                  <h3 className="text-lg font-bold text-slate-700 mb-3 flex items-center gap-2">
+                    <svg className="w-5 h-5 text-emerald-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                    Despesas Fixas
+                  </h3>
+                  <div className="bg-white rounded-xl border border-slate-200 shadow-sm overflow-hidden flex-1 flex flex-col">
+                    <div className="overflow-y-auto flex-1">
+                      <table className="w-full text-sm">
+                        <thead className="text-slate-400 sticky top-0 bg-white/95 backdrop-blur shadow-[0_1px_2px_rgba(0,0,0,0.05)] z-10">
+                          <tr>
+                            <th className="text-left py-3 px-4 font-medium border-b border-slate-100">Responsável</th>
+                            <th className="text-left py-3 px-4 font-medium border-b border-slate-100">Despesa</th>
+                            <th className="text-right py-3 px-4 font-medium border-b border-slate-100">Valor</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          {listaDespesasFixas.length === 0 ? (
+                            <tr>
+                              <td colSpan={3} className="py-8 text-center text-slate-400">Nenhuma despesa fixa encontrada.</td>
+                            </tr>
+                          ) : (
+                            listaDespesasFixas.map((df, i) => (
+                              <tr key={i} className="border-b border-slate-50 hover:bg-slate-50/80 transition-colors">
+                                <td className="py-3 px-4 whitespace-nowrap w-24">
+                                  <span className="font-medium px-2 py-1 rounded-full text-xs" style={{ 
+                                    color: df.portador === "BEATRIZ WERNECK" ? "#CD3278" : "#9E9E80",
+                                    backgroundColor: df.portador === "BEATRIZ WERNECK" ? "#fdf2f8" : "#f4f4f0" 
+                                  }}>
+                                    {df.portador === "BEATRIZ WERNECK" ? "Beatriz" : "Henrique"}
+                                  </span>
+                                </td>
+                                <td className="py-3 px-4 text-slate-700 font-medium">
+                                  {df.nome}
+                                  {df.descontado > 0 && (
+                                    <span className="block text-[10px] text-emerald-600 font-normal mt-0.5" title="Consumido no cartão de crédito (Mercado)">
+                                      Cartão: -{formatBRL(df.descontado)}
+                                    </span>
+                                  )}
+                                </td>
+                                <td className="py-3 px-4 text-right font-medium text-slate-800 whitespace-nowrap">
+                                  {df.descontado > 0 ? (
+                                    <div className="flex flex-col items-end">
+                                      <span className="text-[10px] text-slate-400 line-through mb-0.5" title="Orçamento total mensal">{formatBRL(df.original)}</span>
+                                      <span title="Saldo restante em dinheiro/pix">{formatBRL(df.valor)}</span>
+                                    </div>
+                                  ) : (
+                                    formatBRL(df.valor)
+                                  )}
+                                </td>
+                              </tr>
+                            ))
+                          )}
+                        </tbody>
+                        <tfoot className="sticky bottom-0 bg-slate-50 border-t border-slate-200 shadow-[0_-1px_2px_rgba(0,0,0,0.05)] z-10">
+                          {listaDespesasFixas.length > 0 && (
+                            <tr className="font-bold">
+                              <td colSpan={2} className="py-4 px-4 text-right text-slate-600">Total Fixas:</td>
+                              <td className="py-4 px-4 text-right text-slate-800">{formatBRL(listaDespesasFixas.reduce((acc, df) => acc + df.valor, 0))}</td>
+                            </tr>
+                          )}
+                        </tfoot>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+
       </main>
     </div>
   );
