@@ -39,6 +39,7 @@ interface DashboardData {
     renda_liquida_estimada: number;
     despesas_fixas: { nome: string; valor: number }[];
     reservas_investimentos: { nome: string; valor: number }[];
+    caixinha_bmw?: number;
   };
   resumo_financeiro_beatriz?: {
     despesas_fixas: { nome: string; valor: number }[];
