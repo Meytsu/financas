@@ -1,0 +1,7642 @@
+{
+ "gerado_em": "2026-11-05",
+ "portador": "HENRIQUE ALVES",
+ "renda": {
+  "liquida_mensal": 4390.8,
+  "estimado": true,
+  "entradas": [
+   {
+    "nome": "Salário (fechamento)",
+    "dia": 5,
+    "valor": 2232.48
+   },
+   {
+    "nome": "Adiantamento",
+    "dia": 20,
+    "valor": 2158.32
+   }
+  ],
+  "realizados": [
+   {
+    "mes": "2026-11",
+    "nome": "Salário (fechamento)",
+    "valor": 2094.0,
+    "obs": "saldo do salário de outubro"
+   }
+  ]
+ },
+ "teto_cartao": 1200.0,
+ "limite_comprometimento": 0.3,
+ "fatura_vencimento_dia": 10,
+ "reserva": {
+  "contas": [
+   {
+    "nome": "Caixinha Nubank",
+    "valor": 5000.0
+   }
+  ],
+  "meta_meses": 6,
+  "atualizado": "2026-11-05"
+ },
+ "variaveis_fora_cartao": [
+  {
+   "nome": "Energia",
+   "mes": "2026-11",
+   "dia": 10,
+   "valor": 33.88,
+   "obs": "conta R$ 153,88 − R$ 120,00 da Beatriz"
+  }
+ ],
+ "despesas_fixas": [
+  {
+   "nome": "Aluguel",
+   "valor": 800.0,
+   "dia": 20
+  },
+  {
+   "nome": "Dados móveis",
+   "valor": 30.0,
+   "dia": 20
+  }
+ ],
+ "parcelas_boletos": [
+  {
+   "nome": "Kabum (Mercado Pago)",
+   "parcela": "1/2",
+   "valor": 159.5,
+   "mes": "2026-09"
+  },
+  {
+   "nome": "Seguro Suhai",
+   "parcela": "1/3",
+   "valor": 650.91,
+   "mes": "2026-09",
+   "dia": 10
+  },
+  {
+   "nome": "Kabum (Mercado Pago)",
+   "parcela": "2/2",
+   "valor": 159.5,
+   "mes": "2026-10"
+  },
+  {
+   "nome": "Seguro Suhai",
+   "parcela": "2/3",
+   "valor": 650.93,
+   "mes": "2026-10",
+   "dia": 10
+  },
+  {
+   "nome": "Seguro Suhai",
+   "parcela": "3/3",
+   "valor": 650.93,
+   "mes": "2026-11",
+   "dia": 10
+  },
+  {
+   "nome": "Financiamento BMW",
+   "parcela": "1/12",
+   "valor": 1395.93,
+   "mes": "2027-01"
+  },
+  {
+   "nome": "Financiamento BMW",
+   "parcela": "2/12",
+   "valor": 1395.93,
+   "mes": "2027-02"
+  },
+  {
+   "nome": "Financiamento BMW",
+   "parcela": "3/12",
+   "valor": 1395.93,
+   "mes": "2027-03"
+  },
+  {
+   "nome": "Financiamento BMW",
+   "parcela": "4/12",
+   "valor": 1395.93,
+   "mes": "2027-04"
+  },
+  {
+   "nome": "Financiamento BMW",
+   "parcela": "5/12",
+   "valor": 1395.93,
+   "mes": "2027-05"
+  },
+  {
+   "nome": "Financiamento BMW",
+   "parcela": "6/12",
+   "valor": 1395.93,
+   "mes": "2027-06"
+  },
+  {
+   "nome": "Financiamento BMW",
+   "parcela": "7/12",
+   "valor": 1395.93,
+   "mes": "2027-07"
+  },
+  {
+   "nome": "Financiamento BMW",
+   "parcela": "8/12",
+   "valor": 1395.93,
+   "mes": "2027-08"
+  },
+  {
+   "nome": "Financiamento BMW",
+   "parcela": "9/12",
+   "valor": 1395.93,
+   "mes": "2027-09"
+  },
+  {
+   "nome": "Financiamento BMW",
+   "parcela": "10/12",
+   "valor": 1395.93,
+   "mes": "2027-10"
+  },
+  {
+   "nome": "Financiamento BMW",
+   "parcela": "11/12",
+   "valor": 1395.93,
+   "mes": "2027-11"
+  },
+  {
+   "nome": "Financiamento BMW",
+   "parcela": "12/12",
+   "valor": 1395.93,
+   "mes": "2027-12"
+  }
+ ],
+ "transacoes": [
+  {
+   "data": "2024-12-20",
+   "mes_fatura": "2025-01",
+   "banco": "XP",
+   "estabelecimento": "A98  - COMPRA SHELLBOX",
+   "categoria": "COMBUSTÍVEL",
+   "parcela": "DE 1",
+   "valor": 51.52,
+   "fonte": "historico"
+  },
+  {
+   "data": "2024-12-22",
+   "mes_fatura": "2025-01",
+   "banco": "XP",
+   "estabelecimento": "PREMIERE",
+   "categoria": "LAZER",
+   "parcela": "-",
+   "valor": 47.99,
+   "fonte": "historico"
+  },
+  {
+   "data": "2024-12-24",
+   "mes_fatura": "2025-01",
+   "banco": "XP",
+   "estabelecimento": "DELICIARTE REFEIC",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 5.0,
+   "fonte": "historico"
+  },
+  {
+   "data": "2024-12-27",
+   "mes_fatura": "2025-01",
+   "banco": "XP",
+   "estabelecimento": "JAMESFOOD",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 28.3,
+   "fonte": "historico"
+  },
+  {
+   "data": "2024-12-27",
+   "mes_fatura": "2025-01",
+   "banco": "XP",
+   "estabelecimento": "A98  - COMPRA SHELLBOX",
+   "categoria": "COMBUSTÍVEL",
+   "parcela": "DE 1",
+   "valor": 60.38,
+   "fonte": "historico"
+  },
+  {
+   "data": "2024-12-28",
+   "mes_fatura": "2025-01",
+   "banco": "XP",
+   "estabelecimento": "ACAI DA PRACA",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 13.0,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-01-02",
+   "mes_fatura": "2025-01",
+   "banco": "XP",
+   "estabelecimento": "Q HORTA",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 5.64,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-01-03",
+   "mes_fatura": "2025-02",
+   "banco": "XP",
+   "estabelecimento": "PASSIRA LANCHES",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 84.48,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-01-09",
+   "mes_fatura": "2025-02",
+   "banco": "XP",
+   "estabelecimento": "DL *GOOGLE CABAL RETUR",
+   "categoria": "LAZER",
+   "parcela": "-",
+   "valor": 24.99,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-01-10",
+   "mes_fatura": "2025-02",
+   "banco": "XP",
+   "estabelecimento": "DONNA GRACA BAR E REST",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 59.38,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-01-10",
+   "mes_fatura": "2025-02",
+   "banco": "XP",
+   "estabelecimento": "ECOPOSTO BEBERIBE",
+   "categoria": "COMBUSTÍVEL",
+   "parcela": "-",
+   "valor": 50.04,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-01-11",
+   "mes_fatura": "2025-02",
+   "banco": "XP",
+   "estabelecimento": "A98  - COMPRA SHELLBOX",
+   "categoria": "COMBUSTÍVEL",
+   "parcela": "DE 1",
+   "valor": 52.12,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-01-17",
+   "mes_fatura": "2025-02",
+   "banco": "XP",
+   "estabelecimento": "A98  - COMPRA SHELLBOX",
+   "categoria": "COMBUSTÍVEL",
+   "parcela": "DE 1",
+   "valor": 50.8,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-01-20",
+   "mes_fatura": "2025-02",
+   "banco": "XP",
+   "estabelecimento": "40026-CARREFOUR WRC SH",
+   "categoria": "MERCADO",
+   "parcela": "-",
+   "valor": 1.89,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-01-23",
+   "mes_fatura": "2025-02",
+   "banco": "XP",
+   "estabelecimento": "PETROCAL IMBIRIBEIRA",
+   "categoria": "COMBUSTÍVEL",
+   "parcela": "-",
+   "valor": 10.0,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-01-24",
+   "mes_fatura": "2025-02",
+   "banco": "XP",
+   "estabelecimento": "MONTENESES LTDA",
+   "categoria": "OUTROS",
+   "parcela": "-",
+   "valor": 20.0,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-01-27",
+   "mes_fatura": "2025-02",
+   "banco": "XP",
+   "estabelecimento": "A98  - COMPRA SHELLBOX",
+   "categoria": "COMBUSTÍVEL",
+   "parcela": "DE 1",
+   "valor": 65.82,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-01-27",
+   "mes_fatura": "2025-02",
+   "banco": "XP",
+   "estabelecimento": "VAREJAO PRECO BOM",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 10.97,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-01-30",
+   "mes_fatura": "2025-02",
+   "banco": "XP",
+   "estabelecimento": "CACAU SHOW",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 9.98,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-02-03",
+   "mes_fatura": "2025-03",
+   "banco": "XP",
+   "estabelecimento": "A98  - COMPRA SHELLBOX",
+   "categoria": "COMBUSTÍVEL",
+   "parcela": "DE 1",
+   "valor": 57.51,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-02-04",
+   "mes_fatura": "2025-03",
+   "banco": "XP",
+   "estabelecimento": "VAREJAO PRECO BOM",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 5.98,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-02-06",
+   "mes_fatura": "2025-03",
+   "banco": "XP",
+   "estabelecimento": "BLUM COMERCIO DE",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 3.87,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-02-09",
+   "mes_fatura": "2025-03",
+   "banco": "XP",
+   "estabelecimento": "MANOELFELIX",
+   "categoria": "MERCADO",
+   "parcela": "-",
+   "valor": 12.0,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-02-12",
+   "mes_fatura": "2025-03",
+   "banco": "XP",
+   "estabelecimento": "A98  - COMPRA SHELLBOX",
+   "categoria": "COMBUSTÍVEL",
+   "parcela": "DE 1",
+   "valor": 61.42,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-02-12",
+   "mes_fatura": "2025-03",
+   "banco": "XP",
+   "estabelecimento": "POSTO AZUL 5",
+   "categoria": "COMBUSTÍVEL",
+   "parcela": "-",
+   "valor": 10.0,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-02-14",
+   "mes_fatura": "2025-03",
+   "banco": "XP",
+   "estabelecimento": "MG COMERCIO DE AL",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 9.99,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-02-15",
+   "mes_fatura": "2025-03",
+   "banco": "XP",
+   "estabelecimento": "CARREFOUR RECIFE",
+   "categoria": "MERCADO",
+   "parcela": "-",
+   "valor": 31.69,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-02-17",
+   "mes_fatura": "2025-03",
+   "banco": "XP",
+   "estabelecimento": "MP*RIBAFARMA",
+   "categoria": "FARMÁCIA",
+   "parcela": "-",
+   "valor": 60.0,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-02-17",
+   "mes_fatura": "2025-03",
+   "banco": "XP",
+   "estabelecimento": "MERCADINHO ESPERANCA",
+   "categoria": "VIAGEM",
+   "parcela": "-",
+   "valor": 6.5,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-02-18",
+   "mes_fatura": "2025-03",
+   "banco": "XP",
+   "estabelecimento": "A98  - COMPRA SHELLBOX",
+   "categoria": "COMBUSTÍVEL",
+   "parcela": "DE 1",
+   "valor": 60.76,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-02-19",
+   "mes_fatura": "2025-03",
+   "banco": "XP",
+   "estabelecimento": "PANIFICADORA",
+   "categoria": "MERCADO",
+   "parcela": "-",
+   "valor": 10.11,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-02-21",
+   "mes_fatura": "2025-03",
+   "banco": "XP",
+   "estabelecimento": "DESKONTAO",
+   "categoria": "MERCADO",
+   "parcela": "-",
+   "valor": 17.98,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-02-22",
+   "mes_fatura": "2025-03",
+   "banco": "XP",
+   "estabelecimento": "R D MINIMERCADO",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 7.98,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-02-26",
+   "mes_fatura": "2025-03",
+   "banco": "XP",
+   "estabelecimento": "A98  - COMPRA SHELLBOX",
+   "categoria": "COMBUSTÍVEL",
+   "parcela": "DE 1",
+   "valor": 66.43,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-03-08",
+   "mes_fatura": "2025-04",
+   "banco": "XP",
+   "estabelecimento": "VAREJAO PRECO BOM",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 21.97,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-03-08",
+   "mes_fatura": "2025-04",
+   "banco": "XP",
+   "estabelecimento": "COMERCIAL RECIFE",
+   "categoria": "OUTROS",
+   "parcela": "-",
+   "valor": 40.0,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-03-08",
+   "mes_fatura": "2025-04",
+   "banco": "XP",
+   "estabelecimento": "PASSIRA LANCHES",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 56.21,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-03-09",
+   "mes_fatura": "2025-04",
+   "banco": "XP",
+   "estabelecimento": "MANOELFELIX",
+   "categoria": "MERCADO",
+   "parcela": "-",
+   "valor": 10.0,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-03-11",
+   "mes_fatura": "2025-04",
+   "banco": "XP",
+   "estabelecimento": "IRMAOS CRUZ LTDAIRMAOS",
+   "categoria": "MANUTENÇÃO VEÍCULO",
+   "parcela": "1 DE 2",
+   "valor": 50.0,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-03-11",
+   "mes_fatura": "2025-04",
+   "banco": "XP",
+   "estabelecimento": "MOTO46",
+   "categoria": "MANUTENÇÃO VEÍCULO",
+   "parcela": "7 DE 7",
+   "valor": 99.98,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-03-11",
+   "mes_fatura": "2025-04",
+   "banco": "XP",
+   "estabelecimento": "MOTO46",
+   "categoria": "MANUTENÇÃO VEÍCULO",
+   "parcela": "1 DE 7",
+   "valor": 100.02,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-03-11",
+   "mes_fatura": "2025-04",
+   "banco": "XP",
+   "estabelecimento": "PASSIRA LANCHES",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 81.29,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-03-11",
+   "mes_fatura": "2025-04",
+   "banco": "XP",
+   "estabelecimento": "MIX MATEUS",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 11.81,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-03-11",
+   "mes_fatura": "2025-04",
+   "banco": "XP",
+   "estabelecimento": "MOTO46",
+   "categoria": "MANUTENÇÃO VEÍCULO",
+   "parcela": "6 DE 7",
+   "valor": 99.98,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-03-11",
+   "mes_fatura": "2025-04",
+   "banco": "XP",
+   "estabelecimento": "MOTO46",
+   "categoria": "MANUTENÇÃO VEÍCULO",
+   "parcela": "5 DE 7",
+   "valor": 99.98,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-03-11",
+   "mes_fatura": "2025-04",
+   "banco": "XP",
+   "estabelecimento": "MOTO46",
+   "categoria": "MANUTENÇÃO VEÍCULO",
+   "parcela": "4 DE 7",
+   "valor": 99.98,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-03-11",
+   "mes_fatura": "2025-04",
+   "banco": "XP",
+   "estabelecimento": "MOTO46",
+   "categoria": "MANUTENÇÃO VEÍCULO",
+   "parcela": "2 DE 7",
+   "valor": 99.98,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-03-11",
+   "mes_fatura": "2025-04",
+   "banco": "XP",
+   "estabelecimento": "IRMAOS CRUZ LTDAIRMAOS",
+   "categoria": "MANUTENÇÃO VEÍCULO",
+   "parcela": "2 DE 2",
+   "valor": 50.0,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-03-11",
+   "mes_fatura": "2025-04",
+   "banco": "XP",
+   "estabelecimento": "MOTO46",
+   "categoria": "MANUTENÇÃO VEÍCULO",
+   "parcela": "3 DE 7",
+   "valor": 99.98,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-03-14",
+   "mes_fatura": "2025-04",
+   "banco": "XP",
+   "estabelecimento": "VAREJAO PRECO BOM",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 14.89,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-03-20",
+   "mes_fatura": "2025-04",
+   "banco": "XP",
+   "estabelecimento": "ASTROS BARBEARIA",
+   "categoria": "BELEZA",
+   "parcela": "-",
+   "valor": 35.0,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-03-20",
+   "mes_fatura": "2025-04",
+   "banco": "XP",
+   "estabelecimento": "VAREJAO PRECO BOM",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 12.06,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-03-22",
+   "mes_fatura": "2025-04",
+   "banco": "XP",
+   "estabelecimento": "CARREFOUR RECIFE",
+   "categoria": "MERCADO",
+   "parcela": "-",
+   "valor": 64.9,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-03-22",
+   "mes_fatura": "2025-04",
+   "banco": "XP",
+   "estabelecimento": "THYAGO GOES KETTNER",
+   "categoria": "OUTROS",
+   "parcela": "-",
+   "valor": 39.0,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-03-22",
+   "mes_fatura": "2025-04",
+   "banco": "XP",
+   "estabelecimento": "PETROCAL TORRE",
+   "categoria": "COMBUSTÍVEL",
+   "parcela": "-",
+   "valor": 20.0,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-03-25",
+   "mes_fatura": "2025-04",
+   "banco": "XP",
+   "estabelecimento": "POSTO ARRUDA",
+   "categoria": "COMBUSTÍVEL",
+   "parcela": "-",
+   "valor": 20.0,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-03-25",
+   "mes_fatura": "2025-04",
+   "banco": "XP",
+   "estabelecimento": "PASSIRA LANCHES",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 59.73,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-03-26",
+   "mes_fatura": "2025-04",
+   "banco": "XP",
+   "estabelecimento": "ARRAIAL COMERCIO DE COM",
+   "categoria": "COMBUSTÍVEL",
+   "parcela": "-",
+   "valor": 20.0,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-03-26",
+   "mes_fatura": "2025-04",
+   "banco": "XP",
+   "estabelecimento": "MANOELFELIX",
+   "categoria": "MERCADO",
+   "parcela": "-",
+   "valor": 8.0,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-03-28",
+   "mes_fatura": "2025-04",
+   "banco": "XP",
+   "estabelecimento": "COMERCIO DE MOBILIDADE",
+   "categoria": "COMPRAS ONLINE",
+   "parcela": "3 DE 10",
+   "valor": 450.0,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-03-28",
+   "mes_fatura": "2025-04",
+   "banco": "XP",
+   "estabelecimento": "COMERCIO DE MOBILIDADE",
+   "categoria": "COMPRAS ONLINE",
+   "parcela": "6 DE 10",
+   "valor": 450.0,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-03-28",
+   "mes_fatura": "2025-04",
+   "banco": "XP",
+   "estabelecimento": "COMERCIO DE MOBILIDADE",
+   "categoria": "COMPRAS ONLINE",
+   "parcela": "5 DE 10",
+   "valor": 450.0,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-03-28",
+   "mes_fatura": "2025-04",
+   "banco": "XP",
+   "estabelecimento": "COMERCIO DE MOBILIDADE",
+   "categoria": "COMPRAS ONLINE",
+   "parcela": "1 DE 10",
+   "valor": 450.0,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-03-28",
+   "mes_fatura": "2025-04",
+   "banco": "XP",
+   "estabelecimento": "COMERCIO DE MOBILIDADE",
+   "categoria": "COMPRAS ONLINE",
+   "parcela": "2 DE 10",
+   "valor": 450.0,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-03-28",
+   "mes_fatura": "2025-04",
+   "banco": "XP",
+   "estabelecimento": "COMERCIO DE MOBILIDADE",
+   "categoria": "COMPRAS ONLINE",
+   "parcela": "10 DE 10",
+   "valor": 450.0,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-03-28",
+   "mes_fatura": "2025-04",
+   "banco": "XP",
+   "estabelecimento": "COMERCIO DE MOBILIDADE",
+   "categoria": "COMPRAS ONLINE",
+   "parcela": "9 DE 10",
+   "valor": 450.0,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-03-28",
+   "mes_fatura": "2025-04",
+   "banco": "XP",
+   "estabelecimento": "COMERCIO DE MOBILIDADE",
+   "categoria": "COMPRAS ONLINE",
+   "parcela": "4 DE 10",
+   "valor": 450.0,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-03-28",
+   "mes_fatura": "2025-04",
+   "banco": "XP",
+   "estabelecimento": "A98  - COMPRA SHELLBOX",
+   "categoria": "COMBUSTÍVEL",
+   "parcela": "DE 1",
+   "valor": 61.28,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-03-28",
+   "mes_fatura": "2025-04",
+   "banco": "XP",
+   "estabelecimento": "COMERCIO DE MOBILIDADE",
+   "categoria": "COMPRAS ONLINE",
+   "parcela": "8 DE 10",
+   "valor": 450.0,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-03-28",
+   "mes_fatura": "2025-04",
+   "banco": "XP",
+   "estabelecimento": "COMERCIO DE MOBILIDADE",
+   "categoria": "COMPRAS ONLINE",
+   "parcela": "7 DE 10",
+   "valor": 450.0,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-04-04",
+   "mes_fatura": "2025-05",
+   "banco": "XP",
+   "estabelecimento": "A98  - COMPRA SHELLBOX",
+   "categoria": "COMBUSTÍVEL",
+   "parcela": "DE 1",
+   "valor": 49.62,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-04-05",
+   "mes_fatura": "2025-05",
+   "banco": "XP",
+   "estabelecimento": "MERCADO EXTRA-2360",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 3.29,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-04-09",
+   "mes_fatura": "2025-05",
+   "banco": "XP",
+   "estabelecimento": "DELICIARTE REFEICOES",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 5.5,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-04-17",
+   "mes_fatura": "2025-05",
+   "banco": "XP",
+   "estabelecimento": "RECIFE PARKING",
+   "categoria": "TRANSPORTE",
+   "parcela": "-",
+   "valor": 8.5,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-04-17",
+   "mes_fatura": "2025-05",
+   "banco": "XP",
+   "estabelecimento": "MARALCO COMERCIO DE AL",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 12.0,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-04-19",
+   "mes_fatura": "2025-05",
+   "banco": "XP",
+   "estabelecimento": "PASSIRA LANCHES",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 30.0,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-04-20",
+   "mes_fatura": "2025-05",
+   "banco": "XP",
+   "estabelecimento": "MP*EBAZARCOMBRLTDA",
+   "categoria": "ELETRÔNICOS",
+   "parcela": "6 DE 8",
+   "valor": 241.12,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-04-20",
+   "mes_fatura": "2025-05",
+   "banco": "XP",
+   "estabelecimento": "MP*EBAZARCOMBRLTDA",
+   "categoria": "ELETRÔNICOS",
+   "parcela": "3 DE 8",
+   "valor": 241.12,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-04-20",
+   "mes_fatura": "2025-05",
+   "banco": "XP",
+   "estabelecimento": "MP*EBAZARCOMBRLTDA",
+   "categoria": "ELETRÔNICOS",
+   "parcela": "2 DE 8",
+   "valor": 241.12,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-04-20",
+   "mes_fatura": "2025-05",
+   "banco": "XP",
+   "estabelecimento": "MP*EBAZARCOMBRLTDA",
+   "categoria": "ELETRÔNICOS",
+   "parcela": "4 DE 8",
+   "valor": 241.12,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-04-20",
+   "mes_fatura": "2025-05",
+   "banco": "XP",
+   "estabelecimento": "MP*EBAZARCOMBRLTDA",
+   "categoria": "ELETRÔNICOS",
+   "parcela": "8 DE 8",
+   "valor": 241.12,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-04-20",
+   "mes_fatura": "2025-05",
+   "banco": "XP",
+   "estabelecimento": "MP*EBAZARCOMBRLTDA",
+   "categoria": "ELETRÔNICOS",
+   "parcela": "5 DE 8",
+   "valor": 241.12,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-04-20",
+   "mes_fatura": "2025-05",
+   "banco": "XP",
+   "estabelecimento": "MP*EBAZARCOMBRLTDA",
+   "categoria": "ELETRÔNICOS",
+   "parcela": "7 DE 8",
+   "valor": 241.12,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-04-20",
+   "mes_fatura": "2025-05",
+   "banco": "XP",
+   "estabelecimento": "MP*EBAZARCOMBRLTDA",
+   "categoria": "ELETRÔNICOS",
+   "parcela": "1 DE 8",
+   "valor": 241.16,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-04-21",
+   "mes_fatura": "2025-05",
+   "banco": "XP",
+   "estabelecimento": "PETROCAL IMBIRIBEIRA",
+   "categoria": "COMBUSTÍVEL",
+   "parcela": "-",
+   "valor": 20.0,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-04-23",
+   "mes_fatura": "2025-05",
+   "banco": "XP",
+   "estabelecimento": "A98  - COMPRA SHELLBOX",
+   "categoria": "COMBUSTÍVEL",
+   "parcela": "DE 1",
+   "valor": 30.0,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-04-28",
+   "mes_fatura": "2025-05",
+   "banco": "XP",
+   "estabelecimento": "MP*RIBAFARMA",
+   "categoria": "FARMÁCIA",
+   "parcela": "-",
+   "valor": 65.0,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-04-28",
+   "mes_fatura": "2025-05",
+   "banco": "XP",
+   "estabelecimento": "A98  - COMPRA SHELLBOX",
+   "categoria": "COMBUSTÍVEL",
+   "parcela": "DE 1",
+   "valor": 40.0,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-05-03",
+   "mes_fatura": "2025-06",
+   "banco": "XP",
+   "estabelecimento": "NEW ARABIAN RESTA",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 46.9,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-05-03",
+   "mes_fatura": "2025-06",
+   "banco": "XP",
+   "estabelecimento": "VAREJAO PRECO BOM",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 10.76,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-05-04",
+   "mes_fatura": "2025-06",
+   "banco": "XP",
+   "estabelecimento": "BLUM COMERCIO DE",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 27.97,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-05-05",
+   "mes_fatura": "2025-06",
+   "banco": "XP",
+   "estabelecimento": "A98  - COMPRA SHELLBOX",
+   "categoria": "COMBUSTÍVEL",
+   "parcela": "DE 1",
+   "valor": 60.0,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-05-05",
+   "mes_fatura": "2025-06",
+   "banco": "XP",
+   "estabelecimento": "PANIFICADORA",
+   "categoria": "MERCADO",
+   "parcela": "-",
+   "valor": 1.0,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-05-06",
+   "mes_fatura": "2025-06",
+   "banco": "XP",
+   "estabelecimento": "R D MINIMERCADO",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 16.97,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-05-09",
+   "mes_fatura": "2025-06",
+   "banco": "XP",
+   "estabelecimento": "VAREJAO PRECO BOM",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 2.99,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-05-10",
+   "mes_fatura": "2025-06",
+   "banco": "XP",
+   "estabelecimento": "TACARUNA PARKING",
+   "categoria": "TRANSPORTE",
+   "parcela": "-",
+   "valor": 14.0,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-05-10",
+   "mes_fatura": "2025-06",
+   "banco": "XP",
+   "estabelecimento": "ST SAO BRAZ",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 101.75,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-05-11",
+   "mes_fatura": "2025-06",
+   "banco": "XP",
+   "estabelecimento": "RECIBOM SUPERMERCADOS",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 16.66,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-05-12",
+   "mes_fatura": "2025-06",
+   "banco": "XP",
+   "estabelecimento": "A98  - COMPRA SHELLBOX",
+   "categoria": "COMBUSTÍVEL",
+   "parcela": "DE 1",
+   "valor": 60.17,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-05-12",
+   "mes_fatura": "2025-06",
+   "banco": "XP",
+   "estabelecimento": "VAREJAO PRECO BOM",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 3.98,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-05-15",
+   "mes_fatura": "2025-06",
+   "banco": "XP",
+   "estabelecimento": "AMERICANAS SA",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 20.36,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-05-15",
+   "mes_fatura": "2025-06",
+   "banco": "XP",
+   "estabelecimento": "CASA FORTE 306",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 36.0,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-05-17",
+   "mes_fatura": "2025-06",
+   "banco": "XP",
+   "estabelecimento": "DROGARIA SAO PAULO SA",
+   "categoria": "FARMÁCIA",
+   "parcela": "-",
+   "valor": 21.99,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-05-20",
+   "mes_fatura": "2025-06",
+   "banco": "XP",
+   "estabelecimento": "VAREJAO PRECO BOM",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 2.99,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-05-21",
+   "mes_fatura": "2025-06",
+   "banco": "XP",
+   "estabelecimento": "A98  - COMPRA SHELLBOX",
+   "categoria": "COMBUSTÍVEL",
+   "parcela": "DE 1",
+   "valor": 75.92,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-05-21",
+   "mes_fatura": "2025-06",
+   "banco": "XP",
+   "estabelecimento": "MG COMERCIO DE AL",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 10.98,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-05-21",
+   "mes_fatura": "2025-06",
+   "banco": "XP",
+   "estabelecimento": "POSTO MAIS",
+   "categoria": "MOTEL",
+   "parcela": "-",
+   "valor": 77.0,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-05-22",
+   "mes_fatura": "2025-06",
+   "banco": "XP",
+   "estabelecimento": "ESPETINHO DO ADAO",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 25.0,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-05-24",
+   "mes_fatura": "2025-06",
+   "banco": "XP",
+   "estabelecimento": "SUBWAY",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 66.5,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-05-28",
+   "mes_fatura": "2025-06",
+   "banco": "XP",
+   "estabelecimento": "POSTO CEMOPEL II",
+   "categoria": "COMBUSTÍVEL",
+   "parcela": "-",
+   "valor": 30.0,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-05-28",
+   "mes_fatura": "2025-06",
+   "banco": "XP",
+   "estabelecimento": "SAO BRAZ SHOPPING PLAZ",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 50.38,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-05-30",
+   "mes_fatura": "2025-06",
+   "banco": "XP",
+   "estabelecimento": "A98  - COMPRA SHELLBOX",
+   "categoria": "COMBUSTÍVEL",
+   "parcela": "DE 1",
+   "valor": 20.0,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-05-31",
+   "mes_fatura": "2025-06",
+   "banco": "XP",
+   "estabelecimento": "POSTO MAIS",
+   "categoria": "MOTEL",
+   "parcela": "-",
+   "valor": 124.0,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-06-01",
+   "mes_fatura": "2025-06",
+   "banco": "XP",
+   "estabelecimento": "CARREFOUR RECIFE",
+   "categoria": "MERCADO",
+   "parcela": "-",
+   "valor": 11.55,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-06-01",
+   "mes_fatura": "2025-06",
+   "banco": "XP",
+   "estabelecimento": "AMERICANAS SA",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 2.99,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-06-03",
+   "mes_fatura": "2025-07",
+   "banco": "XP",
+   "estabelecimento": "A98  - COMPRA SHELLBOX",
+   "categoria": "COMBUSTÍVEL",
+   "parcela": "DE 1",
+   "valor": 69.79,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-06-06",
+   "mes_fatura": "2025-07",
+   "banco": "XP",
+   "estabelecimento": "MATEUS SUPERMERCA",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 37.56,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-06-07",
+   "mes_fatura": "2025-07",
+   "banco": "XP",
+   "estabelecimento": "POSTO MAIS",
+   "categoria": "MOTEL",
+   "parcela": "-",
+   "valor": 116.0,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-06-09",
+   "mes_fatura": "2025-07",
+   "banco": "XP",
+   "estabelecimento": "A98  - COMPRA SHELLBOX",
+   "categoria": "COMBUSTÍVEL",
+   "parcela": "DE 1",
+   "valor": 30.0,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-06-10",
+   "mes_fatura": "2025-07",
+   "banco": "XP",
+   "estabelecimento": "VAREJAO PRECO BOM",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 2.99,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-06-11",
+   "mes_fatura": "2025-07",
+   "banco": "XP",
+   "estabelecimento": "LIVRARIA LEITURA",
+   "categoria": "LAZER",
+   "parcela": "-",
+   "valor": 59.9,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-06-11",
+   "mes_fatura": "2025-07",
+   "banco": "XP",
+   "estabelecimento": "PLANETABOMBOMRECI",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 44.99,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-06-12",
+   "mes_fatura": "2025-07",
+   "banco": "XP",
+   "estabelecimento": "A98  - COMPRA SHELLBOX",
+   "categoria": "COMBUSTÍVEL",
+   "parcela": "DE 1",
+   "valor": 67.48,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-06-13",
+   "mes_fatura": "2025-07",
+   "banco": "XP",
+   "estabelecimento": "BOBS CASA FORTE",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 29.8,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-06-18",
+   "mes_fatura": "2025-07",
+   "banco": "XP",
+   "estabelecimento": "SHOPEE *FLYELETRO7529L",
+   "categoria": "COMPRAS ONLINE",
+   "parcela": "-",
+   "valor": 66.25,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-06-18",
+   "mes_fatura": "2025-07",
+   "banco": "XP",
+   "estabelecimento": "MERCADOPAGO*GIRASSOLPASTE",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 39.0,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-06-18",
+   "mes_fatura": "2025-07",
+   "banco": "XP",
+   "estabelecimento": "A98  - COMPRA SHELLBOX",
+   "categoria": "COMBUSTÍVEL",
+   "parcela": "DE 1",
+   "valor": 65.17,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-06-19",
+   "mes_fatura": "2025-07",
+   "banco": "XP",
+   "estabelecimento": "SHOPPING PLAZA CASA FO",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 24.0,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-06-21",
+   "mes_fatura": "2025-07",
+   "banco": "XP",
+   "estabelecimento": "MARALCO COMERCIO DE AL",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 29.8,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-06-22",
+   "mes_fatura": "2025-07",
+   "banco": "XP",
+   "estabelecimento": "PASSARELA DA ALIMENTAC",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 20.0,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-06-22",
+   "mes_fatura": "2025-07",
+   "banco": "XP",
+   "estabelecimento": "POSTO MAIS",
+   "categoria": "MOTEL",
+   "parcela": "-",
+   "valor": 147.0,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-06-23",
+   "mes_fatura": "2025-07",
+   "banco": "XP",
+   "estabelecimento": "MERCADOPAGO*DELICIASDATAT",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 31.0,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-06-24",
+   "mes_fatura": "2025-07",
+   "banco": "XP",
+   "estabelecimento": "KFC",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 39.6,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-06-24",
+   "mes_fatura": "2025-07",
+   "banco": "XP",
+   "estabelecimento": "POSTO PROGRESSO",
+   "categoria": "MOTEL",
+   "parcela": "-",
+   "valor": 85.0,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-06-25",
+   "mes_fatura": "2025-07",
+   "banco": "XP",
+   "estabelecimento": "AC COMBUSTIVEIS",
+   "categoria": "COMBUSTÍVEL",
+   "parcela": "-",
+   "valor": 20.0,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-06-25",
+   "mes_fatura": "2025-07",
+   "banco": "XP",
+   "estabelecimento": "FERREIRA COSTA",
+   "categoria": "ELETRÔNICOS",
+   "parcela": "-",
+   "valor": 5.9,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-06-26",
+   "mes_fatura": "2025-07",
+   "banco": "XP",
+   "estabelecimento": "A98  - COMPRA SHELLBOX",
+   "categoria": "COMBUSTÍVEL",
+   "parcela": "DE 1",
+   "valor": 54.37,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-06-26",
+   "mes_fatura": "2025-07",
+   "banco": "XP",
+   "estabelecimento": "RECIFE ROSA E SILVA",
+   "categoria": "LAZER",
+   "parcela": "-",
+   "valor": 14.5,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-06-28",
+   "mes_fatura": "2025-07",
+   "banco": "XP",
+   "estabelecimento": "VAREJAO PRECO BOM",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 15.47,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-06-28",
+   "mes_fatura": "2025-07",
+   "banco": "XP",
+   "estabelecimento": "MATUTO BURGUER",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 9.0,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-06-28",
+   "mes_fatura": "2025-07",
+   "banco": "XP",
+   "estabelecimento": "ZP*SPEED SHOOTING RANG",
+   "categoria": "LAZER",
+   "parcela": "-",
+   "valor": 82.32,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-06-28",
+   "mes_fatura": "2025-07",
+   "banco": "XP",
+   "estabelecimento": "MG COMERCIO DE AL",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 4.99,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-07-01",
+   "mes_fatura": "2025-07",
+   "banco": "XP",
+   "estabelecimento": "MG COMERCIO DE AL",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 1.29,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-07-02",
+   "mes_fatura": "2025-07",
+   "banco": "XP",
+   "estabelecimento": "A98  - COMPRA SHELLBOX",
+   "categoria": "COMBUSTÍVEL",
+   "parcela": "DE 1",
+   "valor": 71.9,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-07-03",
+   "mes_fatura": "2025-08",
+   "banco": "XP",
+   "estabelecimento": "DELICIARTE REFEICOES",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 5.5,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-07-04",
+   "mes_fatura": "2025-08",
+   "banco": "XP",
+   "estabelecimento": "IFD*RAFAELA CONCEICAO",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 83.49,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-07-05",
+   "mes_fatura": "2025-08",
+   "banco": "XP",
+   "estabelecimento": "DROGARIA CARREFOUR - R",
+   "categoria": "FARMÁCIA",
+   "parcela": "-",
+   "valor": 11.9,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-07-05",
+   "mes_fatura": "2025-08",
+   "banco": "XP",
+   "estabelecimento": "SUBWAY",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 38.5,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-07-06",
+   "mes_fatura": "2025-08",
+   "banco": "XP",
+   "estabelecimento": "RECIFE 301",
+   "categoria": "OUTROS",
+   "parcela": "-",
+   "valor": 86.0,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-07-06",
+   "mes_fatura": "2025-08",
+   "banco": "XP",
+   "estabelecimento": "BOBS SHP RECIFE I",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 25.0,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-07-08",
+   "mes_fatura": "2025-08",
+   "banco": "XP",
+   "estabelecimento": "A98  - COMPRA SHELLBOX",
+   "categoria": "COMBUSTÍVEL",
+   "parcela": "DE 1",
+   "valor": 40.0,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-07-11",
+   "mes_fatura": "2025-08",
+   "banco": "XP",
+   "estabelecimento": "FAMIGLIA LUCCO PIZZA",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 69.5,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-07-12",
+   "mes_fatura": "2025-08",
+   "banco": "XP",
+   "estabelecimento": "ASTROS BARBEARIA",
+   "categoria": "BELEZA",
+   "parcela": "-",
+   "valor": 35.0,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-07-12",
+   "mes_fatura": "2025-08",
+   "banco": "XP",
+   "estabelecimento": "CASA DOS DOCES",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 47.8,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-07-13",
+   "mes_fatura": "2025-08",
+   "banco": "XP",
+   "estabelecimento": "MATUTO BURGUER",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 28.5,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-07-14",
+   "mes_fatura": "2025-08",
+   "banco": "XP",
+   "estabelecimento": "POSTO AZUL 5",
+   "categoria": "COMBUSTÍVEL",
+   "parcela": "-",
+   "valor": 10.0,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-07-14",
+   "mes_fatura": "2025-08",
+   "banco": "XP",
+   "estabelecimento": "BAZAR DO PRAZER",
+   "categoria": "LAZER",
+   "parcela": "-",
+   "valor": 14.28,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-07-15",
+   "mes_fatura": "2025-08",
+   "banco": "XP",
+   "estabelecimento": "A98  - COMPRA SHELLBOX",
+   "categoria": "COMBUSTÍVEL",
+   "parcela": "DE 1",
+   "valor": 71.28,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-07-15",
+   "mes_fatura": "2025-08",
+   "banco": "XP",
+   "estabelecimento": "MATEUS SUPERMERCA",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 44.49,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-07-16",
+   "mes_fatura": "2025-08",
+   "banco": "XP",
+   "estabelecimento": "POSTO MAIS",
+   "categoria": "MOTEL",
+   "parcela": "-",
+   "valor": 95.0,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-07-16",
+   "mes_fatura": "2025-08",
+   "banco": "XP",
+   "estabelecimento": "SHOPPING PLAZA CASA FO",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 28.9,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-07-16",
+   "mes_fatura": "2025-08",
+   "banco": "XP",
+   "estabelecimento": "SUBWAY",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 42.5,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-07-18",
+   "mes_fatura": "2025-08",
+   "banco": "XP",
+   "estabelecimento": "IFD*WILLIAM SUSHI LTDA",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 60.98,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-07-18",
+   "mes_fatura": "2025-08",
+   "banco": "XP",
+   "estabelecimento": "ATACADO DOS PRESE",
+   "categoria": "MERCADO",
+   "parcela": "-",
+   "valor": 118.79,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-07-18",
+   "mes_fatura": "2025-08",
+   "banco": "XP",
+   "estabelecimento": "MATEUS SUPERMERCA",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 15.43,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-07-19",
+   "mes_fatura": "2025-08",
+   "banco": "XP",
+   "estabelecimento": "POSTO MAIS",
+   "categoria": "MOTEL",
+   "parcela": "-",
+   "valor": 119.0,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-07-20",
+   "mes_fatura": "2025-08",
+   "banco": "XP",
+   "estabelecimento": "THAMIRISLUCIANA",
+   "categoria": "OUTROS",
+   "parcela": "-",
+   "valor": 8.0,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-07-20",
+   "mes_fatura": "2025-08",
+   "banco": "XP",
+   "estabelecimento": "SANDROCASSIANOPER",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 64.0,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-07-21",
+   "mes_fatura": "2025-08",
+   "banco": "XP",
+   "estabelecimento": "MILKY MOO JAQUEIRA",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 42.0,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-07-21",
+   "mes_fatura": "2025-08",
+   "banco": "XP",
+   "estabelecimento": "A98  - COMPRA SHELLBOX",
+   "categoria": "COMBUSTÍVEL",
+   "parcela": "DE 1",
+   "valor": 63.33,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-07-21",
+   "mes_fatura": "2025-08",
+   "banco": "XP",
+   "estabelecimento": "MG COMERCIO DE AL",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 4.99,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-07-21",
+   "mes_fatura": "2025-08",
+   "banco": "XP",
+   "estabelecimento": "SHOPEE *ANIMALYMODAS",
+   "categoria": "COMPRAS ONLINE",
+   "parcela": "-",
+   "valor": 56.61,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-07-22",
+   "mes_fatura": "2025-08",
+   "banco": "XP",
+   "estabelecimento": "MERCADOPAGO*VIBEDOACAI",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 16.0,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-07-23",
+   "mes_fatura": "2025-08",
+   "banco": "XP",
+   "estabelecimento": "FERREIRA COSTA",
+   "categoria": "ELETRÔNICOS",
+   "parcela": "2 DE 3",
+   "valor": 99.96,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-07-23",
+   "mes_fatura": "2025-08",
+   "banco": "XP",
+   "estabelecimento": "FERREIRA COSTA",
+   "categoria": "ELETRÔNICOS",
+   "parcela": "1 DE 3",
+   "valor": 99.98,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-07-23",
+   "mes_fatura": "2025-08",
+   "banco": "XP",
+   "estabelecimento": "FERREIRA COSTA",
+   "categoria": "ELETRÔNICOS",
+   "parcela": "3 DE 3",
+   "valor": 99.96,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-07-24",
+   "mes_fatura": "2025-08",
+   "banco": "XP",
+   "estabelecimento": "VAREJAO PRECO BOM",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 32.24,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-07-25",
+   "mes_fatura": "2025-08",
+   "banco": "XP",
+   "estabelecimento": "IFD*50.951.165 JONATAS SI",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 44.89,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-07-26",
+   "mes_fatura": "2025-08",
+   "banco": "XP",
+   "estabelecimento": "POSTO MAIS",
+   "categoria": "MOTEL",
+   "parcela": "-",
+   "valor": 131.0,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-07-26",
+   "mes_fatura": "2025-08",
+   "banco": "XP",
+   "estabelecimento": "JC CONGELADOS LIM",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 46.51,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-07-27",
+   "mes_fatura": "2025-08",
+   "banco": "XP",
+   "estabelecimento": "MANOELFELIX",
+   "categoria": "MERCADO",
+   "parcela": "-",
+   "valor": 16.0,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-07-28",
+   "mes_fatura": "2025-08",
+   "banco": "XP",
+   "estabelecimento": "CASA DOS DOCES",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 7.98,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-07-30",
+   "mes_fatura": "2025-08",
+   "banco": "XP",
+   "estabelecimento": "VAREJAO PRECO BOM",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 5.58,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-07-30",
+   "mes_fatura": "2025-08",
+   "banco": "XP",
+   "estabelecimento": "AC MORAIS FILIAL LL",
+   "categoria": "COMBUSTÍVEL",
+   "parcela": "-",
+   "valor": 40.0,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-07-31",
+   "mes_fatura": "2025-08",
+   "banco": "XP",
+   "estabelecimento": "RECIBOM SUPERMERCADOS",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 11.27,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-08-02",
+   "mes_fatura": "2025-08",
+   "banco": "XP",
+   "estabelecimento": "FAMIGLIA LUCCO PIZZA",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 87.5,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-08-02",
+   "mes_fatura": "2025-08",
+   "banco": "XP",
+   "estabelecimento": "A98  - COMPRA SHELLBOX",
+   "categoria": "COMBUSTÍVEL",
+   "parcela": "DE 1",
+   "valor": 58.28,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-08-02",
+   "mes_fatura": "2025-08",
+   "banco": "XP",
+   "estabelecimento": "ALBUQUERQUE PNEUS",
+   "categoria": "COMBUSTÍVEL",
+   "parcela": "-",
+   "valor": 2.99,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-08-02",
+   "mes_fatura": "2025-08",
+   "banco": "XP",
+   "estabelecimento": "SHOPPING TACARUNA 2",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 33.8,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-08-04",
+   "mes_fatura": "2025-09",
+   "banco": "XP",
+   "estabelecimento": "MG COMERCIO DE AL",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 4.99,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-08-05",
+   "mes_fatura": "2025-09",
+   "banco": "XP",
+   "estabelecimento": "SHOPPING TACARUNA 2",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 32.9,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-08-05",
+   "mes_fatura": "2025-09",
+   "banco": "XP",
+   "estabelecimento": "TACARUNA PARKING",
+   "categoria": "TRANSPORTE",
+   "parcela": "-",
+   "valor": 14.0,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-08-06",
+   "mes_fatura": "2025-09",
+   "banco": "XP",
+   "estabelecimento": "VAREJAO PRECO BOM",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 26.98,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-08-06",
+   "mes_fatura": "2025-09",
+   "banco": "XP",
+   "estabelecimento": "YANTAYEXPRESS",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 65.9,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-08-07",
+   "mes_fatura": "2025-09",
+   "banco": "XP",
+   "estabelecimento": "AIRBNB * HMRA4E5",
+   "categoria": "VIAGEM",
+   "parcela": "4 DE 4",
+   "valor": 400.25,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-08-07",
+   "mes_fatura": "2025-09",
+   "banco": "XP",
+   "estabelecimento": "AIRBNB * HMRA4E5",
+   "categoria": "VIAGEM",
+   "parcela": "3 DE 4",
+   "valor": 400.25,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-08-07",
+   "mes_fatura": "2025-09",
+   "banco": "XP",
+   "estabelecimento": "AIRBNB * HMRA4E5",
+   "categoria": "VIAGEM",
+   "parcela": "1 DE 4",
+   "valor": 400.27,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-08-07",
+   "mes_fatura": "2025-09",
+   "banco": "XP",
+   "estabelecimento": "AIRBNB * HMRA4E5",
+   "categoria": "VIAGEM",
+   "parcela": "2 DE 4",
+   "valor": 400.25,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-08-08",
+   "mes_fatura": "2025-09",
+   "banco": "XP",
+   "estabelecimento": "VAREJAO PRECO BOM",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 5.98,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-08-09",
+   "mes_fatura": "2025-09",
+   "banco": "XP",
+   "estabelecimento": "VAREJAO PRECO BOM",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 23.65,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-08-09",
+   "mes_fatura": "2025-09",
+   "banco": "XP",
+   "estabelecimento": "A98  - COMPRA SHELLBOX",
+   "categoria": "COMBUSTÍVEL",
+   "parcela": "DE 1",
+   "valor": 40.0,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-08-10",
+   "mes_fatura": "2025-09",
+   "banco": "XP",
+   "estabelecimento": "CONI MOVEL",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 79.53,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-08-11",
+   "mes_fatura": "2025-09",
+   "banco": "XP",
+   "estabelecimento": "FERREIRA COSTA",
+   "categoria": "ELETRÔNICOS",
+   "parcela": "5 DE 8",
+   "valor": 129.54,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-08-11",
+   "mes_fatura": "2025-09",
+   "banco": "XP",
+   "estabelecimento": "CLINICASIM",
+   "categoria": "CONSULTA",
+   "parcela": "3 DE 10",
+   "valor": 137.78,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-08-11",
+   "mes_fatura": "2025-09",
+   "banco": "XP",
+   "estabelecimento": "CLINICASIM",
+   "categoria": "CONSULTA",
+   "parcela": "5 DE 10",
+   "valor": 137.78,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-08-11",
+   "mes_fatura": "2025-09",
+   "banco": "XP",
+   "estabelecimento": "CLINICASIM",
+   "categoria": "CONSULTA",
+   "parcela": "4 DE 10",
+   "valor": 137.78,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-08-11",
+   "mes_fatura": "2025-09",
+   "banco": "XP",
+   "estabelecimento": "CLINICASIM",
+   "categoria": "CONSULTA",
+   "parcela": "1 DE 10",
+   "valor": 137.83,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-08-11",
+   "mes_fatura": "2025-09",
+   "banco": "XP",
+   "estabelecimento": "CLINICASIM",
+   "categoria": "CONSULTA",
+   "parcela": "7 DE 10",
+   "valor": 137.78,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-08-11",
+   "mes_fatura": "2025-09",
+   "banco": "XP",
+   "estabelecimento": "CLINICASIM",
+   "categoria": "CONSULTA",
+   "parcela": "6 DE 10",
+   "valor": 137.78,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-08-11",
+   "mes_fatura": "2025-09",
+   "banco": "XP",
+   "estabelecimento": "CLINICASIM",
+   "categoria": "CONSULTA",
+   "parcela": "2 DE 10",
+   "valor": 137.78,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-08-11",
+   "mes_fatura": "2025-09",
+   "banco": "XP",
+   "estabelecimento": "CLINICASIM",
+   "categoria": "CONSULTA",
+   "parcela": "8 DE 10",
+   "valor": 137.78,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-08-11",
+   "mes_fatura": "2025-09",
+   "banco": "XP",
+   "estabelecimento": "CLINICASIM",
+   "categoria": "CONSULTA",
+   "parcela": "-",
+   "valor": 155.0,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-08-13",
+   "mes_fatura": "2025-09",
+   "banco": "XP",
+   "estabelecimento": "MC COMERCIO DE PE",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 10.0,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-08-14",
+   "mes_fatura": "2025-09",
+   "banco": "XP",
+   "estabelecimento": "TACARUNA PARKING",
+   "categoria": "TRANSPORTE",
+   "parcela": "-",
+   "valor": 14.0,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-08-14",
+   "mes_fatura": "2025-09",
+   "banco": "XP",
+   "estabelecimento": "MC COMERCIO DE PE",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 10.0,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-08-14",
+   "mes_fatura": "2025-09",
+   "banco": "XP",
+   "estabelecimento": "L   L TACARUNA",
+   "categoria": "LAZER",
+   "parcela": "-",
+   "valor": 35.9,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-08-15",
+   "mes_fatura": "2025-09",
+   "banco": "XP",
+   "estabelecimento": "IFD*J. P. DOS SANTOS ALIM",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 64.8,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-08-15",
+   "mes_fatura": "2025-09",
+   "banco": "XP",
+   "estabelecimento": "A98  - COMPRA SHELLBOX",
+   "categoria": "COMBUSTÍVEL",
+   "parcela": "DE 1",
+   "valor": 30.0,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-08-16",
+   "mes_fatura": "2025-09",
+   "banco": "XP",
+   "estabelecimento": "BLUM COMERCIO DE",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 9.98,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-08-16",
+   "mes_fatura": "2025-09",
+   "banco": "XP",
+   "estabelecimento": "JC CONGELADOS LIM",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 38.26,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-08-16",
+   "mes_fatura": "2025-09",
+   "banco": "XP",
+   "estabelecimento": "POSTO PROGRESSO",
+   "categoria": "MOTEL",
+   "parcela": "-",
+   "valor": 160.0,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-08-16",
+   "mes_fatura": "2025-09",
+   "banco": "XP",
+   "estabelecimento": "BETE ALIMENTOS",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 20.0,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-08-16",
+   "mes_fatura": "2025-09",
+   "banco": "XP",
+   "estabelecimento": "IFD*JOSEANE DA SILVA FERR",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 58.89,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-08-17",
+   "mes_fatura": "2025-09",
+   "banco": "XP",
+   "estabelecimento": "FUTEBOLCARD",
+   "categoria": "LAZER",
+   "parcela": "-",
+   "valor": 44.0,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-08-17",
+   "mes_fatura": "2025-09",
+   "banco": "XP",
+   "estabelecimento": "CARREFOUR RECIFE",
+   "categoria": "MERCADO",
+   "parcela": "-",
+   "valor": 51.66,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-08-17",
+   "mes_fatura": "2025-09",
+   "banco": "XP",
+   "estabelecimento": "PETROCAL TORRE",
+   "categoria": "COMBUSTÍVEL",
+   "parcela": "-",
+   "valor": 62.34,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-08-17",
+   "mes_fatura": "2025-09",
+   "banco": "XP",
+   "estabelecimento": "POSTO PROGRESSO",
+   "categoria": "MOTEL",
+   "parcela": "-",
+   "valor": 305.0,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-08-19",
+   "mes_fatura": "2025-09",
+   "banco": "XP",
+   "estabelecimento": "MP*VIBEDOACAI",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 4.0,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-08-19",
+   "mes_fatura": "2025-09",
+   "banco": "XP",
+   "estabelecimento": "FARMACIA VEM TRABALHAD",
+   "categoria": "FARMÁCIA",
+   "parcela": "-",
+   "valor": 4.0,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-08-19",
+   "mes_fatura": "2025-09",
+   "banco": "XP",
+   "estabelecimento": "MATUTO BURGUER",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 15.0,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-08-20",
+   "mes_fatura": "2025-09",
+   "banco": "XP",
+   "estabelecimento": "DESKONTAO",
+   "categoria": "MERCADO",
+   "parcela": "-",
+   "valor": 60.87,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-08-21",
+   "mes_fatura": "2025-09",
+   "banco": "XP",
+   "estabelecimento": "CASA DOS DOCES",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 33.63,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-08-22",
+   "mes_fatura": "2025-09",
+   "banco": "XP",
+   "estabelecimento": "A98  - COMPRA SHELLBOX",
+   "categoria": "COMBUSTÍVEL",
+   "parcela": "DE 1",
+   "valor": 64.58,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-08-23",
+   "mes_fatura": "2025-09",
+   "banco": "XP",
+   "estabelecimento": "DESKONTAO",
+   "categoria": "MERCADO",
+   "parcela": "-",
+   "valor": 6.61,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-08-23",
+   "mes_fatura": "2025-09",
+   "banco": "XP",
+   "estabelecimento": "DESKONTAO",
+   "categoria": "MERCADO",
+   "parcela": "-",
+   "valor": 2.49,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-08-23",
+   "mes_fatura": "2025-09",
+   "banco": "XP",
+   "estabelecimento": "ANDRADE E AMORIM",
+   "categoria": "OUTROS",
+   "parcela": "-",
+   "valor": 47.0,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-08-23",
+   "mes_fatura": "2025-09",
+   "banco": "XP",
+   "estabelecimento": "FERREIRA COSTA",
+   "categoria": "ELETRÔNICOS",
+   "parcela": "-",
+   "valor": 299.9,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-08-23",
+   "mes_fatura": "2025-09",
+   "banco": "XP",
+   "estabelecimento": "CASA DOS DOCES",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 25.71,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-08-24",
+   "mes_fatura": "2025-09",
+   "banco": "XP",
+   "estabelecimento": "POSTO PROGRESSO",
+   "categoria": "MOTEL",
+   "parcela": "-",
+   "valor": 136.8,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-08-29",
+   "mes_fatura": "2025-09",
+   "banco": "XP",
+   "estabelecimento": "CARREFOUR RECIFE",
+   "categoria": "MERCADO",
+   "parcela": "-",
+   "valor": 39.4,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-08-29",
+   "mes_fatura": "2025-09",
+   "banco": "XP",
+   "estabelecimento": "A98  - COMPRA SHELLBOX",
+   "categoria": "COMBUSTÍVEL",
+   "parcela": "DE 1",
+   "valor": 68.14,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-08-30",
+   "mes_fatura": "2025-09",
+   "banco": "XP",
+   "estabelecimento": "VAREJAO PRECO BOM",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 5.18,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-08-30",
+   "mes_fatura": "2025-09",
+   "banco": "XP",
+   "estabelecimento": "CARREFOUR RECIFE",
+   "categoria": "MERCADO",
+   "parcela": "-",
+   "valor": 18.47,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-08-30",
+   "mes_fatura": "2025-09",
+   "banco": "XP",
+   "estabelecimento": "VAREJAO PRECO BOM",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 4.99,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-08-30",
+   "mes_fatura": "2025-09",
+   "banco": "XP",
+   "estabelecimento": "PAGUE MENOS",
+   "categoria": "FARMÁCIA",
+   "parcela": "-",
+   "valor": 78.0,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-08-31",
+   "mes_fatura": "2025-09",
+   "banco": "XP",
+   "estabelecimento": "PAGUE MENOS",
+   "categoria": "FARMÁCIA",
+   "parcela": "-",
+   "valor": 19.98,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-08-31",
+   "mes_fatura": "2025-09",
+   "banco": "XP",
+   "estabelecimento": "CEFETAOCAFETERIA",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 40.5,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-09-01",
+   "mes_fatura": "2025-09",
+   "banco": "XP",
+   "estabelecimento": "FARMACIA DO TRABALHA",
+   "categoria": "FARMÁCIA",
+   "parcela": "-",
+   "valor": 21.0,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-09-01",
+   "mes_fatura": "2025-09",
+   "banco": "XP",
+   "estabelecimento": "RI HAPPY",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 21.99,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-09-01",
+   "mes_fatura": "2025-09",
+   "banco": "XP",
+   "estabelecimento": "NETFLIX.COM",
+   "categoria": "ASSINATURA",
+   "parcela": "-",
+   "valor": 20.9,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-09-02",
+   "mes_fatura": "2025-09",
+   "banco": "XP",
+   "estabelecimento": "DIMA COSMETICOS LTDA",
+   "categoria": "BELEZA",
+   "parcela": "-",
+   "valor": 11.99,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-09-02",
+   "mes_fatura": "2025-09",
+   "banco": "XP",
+   "estabelecimento": "CASA DOS DOCES",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 34.6,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-09-03",
+   "mes_fatura": "2025-10",
+   "banco": "XP",
+   "estabelecimento": "FERREIRA COSTA",
+   "categoria": "ELETRÔNICOS",
+   "parcela": "-",
+   "valor": 190.9,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-09-03",
+   "mes_fatura": "2025-10",
+   "banco": "XP",
+   "estabelecimento": "MATEUS SUPERMERCA",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 325.84,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-09-03",
+   "mes_fatura": "2025-10",
+   "banco": "XP",
+   "estabelecimento": "POSTO OPCAO",
+   "categoria": "COMBUSTÍVEL",
+   "parcela": "-",
+   "valor": 59.38,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-09-03",
+   "mes_fatura": "2025-10",
+   "banco": "XP",
+   "estabelecimento": "LOJA DE CONVENIENCIA C",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 22.4,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-09-04",
+   "mes_fatura": "2025-10",
+   "banco": "XP",
+   "estabelecimento": "MP*SPETINGOURMET",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 33.0,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-09-04",
+   "mes_fatura": "2025-10",
+   "banco": "XP",
+   "estabelecimento": "CABO BRANCO CHOCOLATES",
+   "categoria": "VIAGEM",
+   "parcela": "-",
+   "valor": 71.8,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-09-04",
+   "mes_fatura": "2025-10",
+   "banco": "XP",
+   "estabelecimento": "54690783 ALCILENE RIBE",
+   "categoria": "OUTROS",
+   "parcela": "-",
+   "valor": 20.0,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-09-06",
+   "mes_fatura": "2025-10",
+   "banco": "XP",
+   "estabelecimento": "SAUCE",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 83.99,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-09-06",
+   "mes_fatura": "2025-10",
+   "banco": "XP",
+   "estabelecimento": "CARREFOUR - JOAO PESSO",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 40.25,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-09-08",
+   "mes_fatura": "2025-10",
+   "banco": "XP",
+   "estabelecimento": "LOJAS AMERICANAS",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 32.94,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-09-08",
+   "mes_fatura": "2025-10",
+   "banco": "XP",
+   "estabelecimento": "VALDIVIA F R NOBREGA B",
+   "categoria": "OUTROS",
+   "parcela": "-",
+   "valor": 50.0,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-09-09",
+   "mes_fatura": "2025-10",
+   "banco": "XP",
+   "estabelecimento": "LUANADEANDRADEMUN",
+   "categoria": "OUTROS",
+   "parcela": "-",
+   "valor": 36.0,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-09-09",
+   "mes_fatura": "2025-10",
+   "banco": "XP",
+   "estabelecimento": "REDE MENOR PRECO SUPERM",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 24.47,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-09-11",
+   "mes_fatura": "2025-10",
+   "banco": "XP",
+   "estabelecimento": "24 HORAS SUPERMERCADO",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 34.84,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-09-11",
+   "mes_fatura": "2025-10",
+   "banco": "XP",
+   "estabelecimento": "ARRENILSONDASILVA",
+   "categoria": "OUTROS",
+   "parcela": "-",
+   "valor": 127.6,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-09-13",
+   "mes_fatura": "2025-10",
+   "banco": "XP",
+   "estabelecimento": "POSTO CINCO ESTRE",
+   "categoria": "COMBUSTÍVEL",
+   "parcela": "-",
+   "valor": 40.0,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-09-13",
+   "mes_fatura": "2025-10",
+   "banco": "XP",
+   "estabelecimento": "J AMP A SUPERMERCADO D",
+   "categoria": "VIAGEM",
+   "parcela": "-",
+   "valor": 12.0,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-09-14",
+   "mes_fatura": "2025-10",
+   "banco": "XP",
+   "estabelecimento": "SHOPPING PLAZA CASA FO",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 34.8,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-09-14",
+   "mes_fatura": "2025-10",
+   "banco": "XP",
+   "estabelecimento": "PASSIRA LANCHES",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 65.78,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-09-15",
+   "mes_fatura": "2025-10",
+   "banco": "XP",
+   "estabelecimento": "FERREIRA COSTA",
+   "categoria": "ELETRÔNICOS",
+   "parcela": "-",
+   "valor": 70.0,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-09-15",
+   "mes_fatura": "2025-10",
+   "banco": "XP",
+   "estabelecimento": "PLUSHPLAYING",
+   "categoria": "LAZER",
+   "parcela": "-",
+   "valor": 2.0,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-09-15",
+   "mes_fatura": "2025-10",
+   "banco": "XP",
+   "estabelecimento": "JC CONGELADOS LIM",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 50.08,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-09-17",
+   "mes_fatura": "2025-10",
+   "banco": "XP",
+   "estabelecimento": "NORTE BRAZ LTDA",
+   "categoria": "COMBUSTÍVEL",
+   "parcela": "-",
+   "valor": 29.99,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-09-17",
+   "mes_fatura": "2025-10",
+   "banco": "XP",
+   "estabelecimento": "POSTO MAIS",
+   "categoria": "MOTEL",
+   "parcela": "-",
+   "valor": 135.0,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-09-17",
+   "mes_fatura": "2025-10",
+   "banco": "XP",
+   "estabelecimento": "MAXPINADO",
+   "categoria": "OUTROS",
+   "parcela": "-",
+   "valor": 14.0,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-09-17",
+   "mes_fatura": "2025-10",
+   "banco": "XP",
+   "estabelecimento": "SUBWAY - PLAZA",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 32.0,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-09-18",
+   "mes_fatura": "2025-10",
+   "banco": "XP",
+   "estabelecimento": "FERREIRA COSTA",
+   "categoria": "ELETRÔNICOS",
+   "parcela": "-",
+   "valor": 33.9,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-09-19",
+   "mes_fatura": "2025-10",
+   "banco": "XP",
+   "estabelecimento": "SHOPPING PLAZA CASA FO",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 33.8,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-09-20",
+   "mes_fatura": "2025-10",
+   "banco": "XP",
+   "estabelecimento": "A98  - COMPRA SHELLBOX",
+   "categoria": "COMBUSTÍVEL",
+   "parcela": "DE 1",
+   "valor": 62.9,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-09-20",
+   "mes_fatura": "2025-10",
+   "banco": "XP",
+   "estabelecimento": "POSTO MAIS",
+   "categoria": "MOTEL",
+   "parcela": "-",
+   "valor": 119.0,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-09-21",
+   "mes_fatura": "2025-10",
+   "banco": "XP",
+   "estabelecimento": "FERREIRA COSTA",
+   "categoria": "ELETRÔNICOS",
+   "parcela": "-",
+   "valor": 28.9,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-09-21",
+   "mes_fatura": "2025-10",
+   "banco": "XP",
+   "estabelecimento": "YANTAYEXPRESS",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 90.0,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-09-24",
+   "mes_fatura": "2025-10",
+   "banco": "XP",
+   "estabelecimento": "A98  - COMPRA SHELLBOX",
+   "categoria": "COMBUSTÍVEL",
+   "parcela": "DE 1",
+   "valor": 30.0,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-09-25",
+   "mes_fatura": "2025-10",
+   "banco": "XP",
+   "estabelecimento": "NETFLIX.COM",
+   "categoria": "ASSINATURA",
+   "parcela": "-",
+   "valor": 20.9,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-09-26",
+   "mes_fatura": "2025-10",
+   "banco": "XP",
+   "estabelecimento": "POSTO CASA FORTE",
+   "categoria": "COMBUSTÍVEL",
+   "parcela": "-",
+   "valor": 10.0,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-09-27",
+   "mes_fatura": "2025-10",
+   "banco": "XP",
+   "estabelecimento": "CARREFOUR RECIFE",
+   "categoria": "MERCADO",
+   "parcela": "-",
+   "valor": 5.87,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-09-27",
+   "mes_fatura": "2025-10",
+   "banco": "XP",
+   "estabelecimento": "NORTE BRAZ LTDA",
+   "categoria": "COMBUSTÍVEL",
+   "parcela": "-",
+   "valor": 40.03,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-09-28",
+   "mes_fatura": "2025-10",
+   "banco": "XP",
+   "estabelecimento": "POSTO MAIS",
+   "categoria": "MOTEL",
+   "parcela": "-",
+   "valor": 132.0,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-09-28",
+   "mes_fatura": "2025-10",
+   "banco": "XP",
+   "estabelecimento": "JC CONGELADOS LIM",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 27.71,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-09-28",
+   "mes_fatura": "2025-10",
+   "banco": "XP",
+   "estabelecimento": "CARREFOUR RECIFE",
+   "categoria": "MERCADO",
+   "parcela": "-",
+   "valor": 9.38,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-09-29",
+   "mes_fatura": "2025-10",
+   "banco": "XP",
+   "estabelecimento": "A98  - COMPRA SHELLBOX",
+   "categoria": "COMBUSTÍVEL",
+   "parcela": "DE 1",
+   "valor": 30.0,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-09-30",
+   "mes_fatura": "2025-10",
+   "banco": "XP",
+   "estabelecimento": "SHOPPING PLAZA CASA FO",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 31.8,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-10-01",
+   "mes_fatura": "2025-10",
+   "banco": "XP",
+   "estabelecimento": "A98  - COMPRA SHELLBOX",
+   "categoria": "COMBUSTÍVEL",
+   "parcela": "DE 1",
+   "valor": 20.0,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-10-02",
+   "mes_fatura": "2025-10",
+   "banco": "XP",
+   "estabelecimento": "A98  - COMPRA SHELLBOX",
+   "categoria": "COMBUSTÍVEL",
+   "parcela": "DE 1",
+   "valor": 30.0,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-10-02",
+   "mes_fatura": "2025-10",
+   "banco": "XP",
+   "estabelecimento": "FERREIRA COSTA",
+   "categoria": "ELETRÔNICOS",
+   "parcela": "-",
+   "valor": 3.6,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-10-03",
+   "mes_fatura": "2025-11",
+   "banco": "XP",
+   "estabelecimento": "IFD*50.951.165 JONATAS SI",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 41.89,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-10-03",
+   "mes_fatura": "2025-11",
+   "banco": "XP",
+   "estabelecimento": "CARREFOUR RECIFE",
+   "categoria": "MERCADO",
+   "parcela": "-",
+   "valor": 22.06,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-10-03",
+   "mes_fatura": "2025-11",
+   "banco": "XP",
+   "estabelecimento": "BAZAR DO PRAZER",
+   "categoria": "LAZER",
+   "parcela": "-",
+   "valor": 34.85,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-10-05",
+   "mes_fatura": "2025-11",
+   "banco": "XP",
+   "estabelecimento": "BURGER KING",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 53.8,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-10-06",
+   "mes_fatura": "2025-11",
+   "banco": "XP",
+   "estabelecimento": "ALBUQUERQUE PNEUS",
+   "categoria": "COMBUSTÍVEL",
+   "parcela": "-",
+   "valor": 65.7,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-10-07",
+   "mes_fatura": "2025-11",
+   "banco": "XP",
+   "estabelecimento": "CASA DOS DOCES",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 15.48,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-10-10",
+   "mes_fatura": "2025-11",
+   "banco": "XP",
+   "estabelecimento": "IFD*JADILSON PEREIRA DOS",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 50.89,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-10-11",
+   "mes_fatura": "2025-11",
+   "banco": "XP",
+   "estabelecimento": "A98  - COMPRA SHELLBOX",
+   "categoria": "COMBUSTÍVEL",
+   "parcela": "DE 1",
+   "valor": 71.68,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-10-11",
+   "mes_fatura": "2025-11",
+   "banco": "XP",
+   "estabelecimento": "POSTO MAIS",
+   "categoria": "MOTEL",
+   "parcela": "-",
+   "valor": 119.0,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-10-11",
+   "mes_fatura": "2025-11",
+   "banco": "XP",
+   "estabelecimento": "SUBWAY - PLAZA",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 35.9,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-10-16",
+   "mes_fatura": "2025-11",
+   "banco": "XP",
+   "estabelecimento": "POSTO SAO JOSE",
+   "categoria": "COMBUSTÍVEL",
+   "parcela": "-",
+   "valor": 20.0,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-10-17",
+   "mes_fatura": "2025-11",
+   "banco": "XP",
+   "estabelecimento": "CARREFOUR RECIFE",
+   "categoria": "MERCADO",
+   "parcela": "-",
+   "valor": 28.45,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-10-17",
+   "mes_fatura": "2025-11",
+   "banco": "XP",
+   "estabelecimento": "FERREIRA COSTA",
+   "categoria": "ELETRÔNICOS",
+   "parcela": "-",
+   "valor": 109.8,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-10-17",
+   "mes_fatura": "2025-11",
+   "banco": "XP",
+   "estabelecimento": "ALBUQUERQUE PNEUS",
+   "categoria": "COMBUSTÍVEL",
+   "parcela": "-",
+   "valor": 69.64,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-10-18",
+   "mes_fatura": "2025-11",
+   "banco": "XP",
+   "estabelecimento": "CARREFOUR RECIFE",
+   "categoria": "MERCADO",
+   "parcela": "-",
+   "valor": 69.08,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-10-18",
+   "mes_fatura": "2025-11",
+   "banco": "XP",
+   "estabelecimento": "MP*CATDOGRACOESA",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 31.0,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-10-18",
+   "mes_fatura": "2025-11",
+   "banco": "XP",
+   "estabelecimento": "RAIADROGASILSA",
+   "categoria": "FARMÁCIA",
+   "parcela": "-",
+   "valor": 115.43,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-10-19",
+   "mes_fatura": "2025-11",
+   "banco": "XP",
+   "estabelecimento": "PAGUE MENOS 142",
+   "categoria": "FARMÁCIA",
+   "parcela": "-",
+   "valor": 19.99,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-10-19",
+   "mes_fatura": "2025-11",
+   "banco": "XP",
+   "estabelecimento": "PASSIRA PIZZARIA",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 68.9,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-10-19",
+   "mes_fatura": "2025-11",
+   "banco": "XP",
+   "estabelecimento": "CARREFOUR RECIFE",
+   "categoria": "MERCADO",
+   "parcela": "-",
+   "valor": 49.17,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-10-19",
+   "mes_fatura": "2025-11",
+   "banco": "XP",
+   "estabelecimento": "57126111CARMEM",
+   "categoria": "OUTROS",
+   "parcela": "-",
+   "valor": 14.0,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-10-20",
+   "mes_fatura": "2025-11",
+   "banco": "XP",
+   "estabelecimento": "FERREIRA COSTA",
+   "categoria": "ELETRÔNICOS",
+   "parcela": "3 DE 10",
+   "valor": 438.15,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-10-20",
+   "mes_fatura": "2025-11",
+   "banco": "XP",
+   "estabelecimento": "FERREIRA COSTA",
+   "categoria": "ELETRÔNICOS",
+   "parcela": "2 DE 10",
+   "valor": 438.15,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-10-20",
+   "mes_fatura": "2025-11",
+   "banco": "XP",
+   "estabelecimento": "FERREIRA COSTA",
+   "categoria": "ELETRÔNICOS",
+   "parcela": "5 DE 10",
+   "valor": 438.15,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-10-20",
+   "mes_fatura": "2025-11",
+   "banco": "XP",
+   "estabelecimento": "FERREIRA COSTA",
+   "categoria": "ELETRÔNICOS",
+   "parcela": "5 DE 10",
+   "valor": 438.15,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-10-20",
+   "mes_fatura": "2025-11",
+   "banco": "XP",
+   "estabelecimento": "FERREIRA COSTA",
+   "categoria": "ELETRÔNICOS",
+   "parcela": "4 DE 10",
+   "valor": 438.15,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-10-20",
+   "mes_fatura": "2025-11",
+   "banco": "XP",
+   "estabelecimento": "FERREIRA COSTA",
+   "categoria": "ELETRÔNICOS",
+   "parcela": "1 DE 10",
+   "valor": 438.21,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-10-20",
+   "mes_fatura": "2025-11",
+   "banco": "XP",
+   "estabelecimento": "POSTO MAIS",
+   "categoria": "MOTEL",
+   "parcela": "-",
+   "valor": 95.0,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-10-21",
+   "mes_fatura": "2025-11",
+   "banco": "XP",
+   "estabelecimento": "A98  - COMPRA SHELLBOX",
+   "categoria": "COMBUSTÍVEL",
+   "parcela": "DE 1",
+   "valor": 69.35,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-10-22",
+   "mes_fatura": "2025-11",
+   "banco": "XP",
+   "estabelecimento": "CARREFOUR RECIFE",
+   "categoria": "MERCADO",
+   "parcela": "-",
+   "valor": 26.55,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-10-22",
+   "mes_fatura": "2025-11",
+   "banco": "XP",
+   "estabelecimento": "CARREFOUR RECIFE",
+   "categoria": "MERCADO",
+   "parcela": "-",
+   "valor": 15.71,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-10-23",
+   "mes_fatura": "2025-11",
+   "banco": "XP",
+   "estabelecimento": "STM COMPROFARMA",
+   "categoria": "FARMÁCIA",
+   "parcela": "-",
+   "valor": 35.45,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-10-23",
+   "mes_fatura": "2025-11",
+   "banco": "XP",
+   "estabelecimento": "FERREIRA COSTA",
+   "categoria": "ELETRÔNICOS",
+   "parcela": "1 DE 3",
+   "valor": 56.6,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-10-23",
+   "mes_fatura": "2025-11",
+   "banco": "XP",
+   "estabelecimento": "SHOPEE *ACASADOLAR",
+   "categoria": "COMPRAS ONLINE",
+   "parcela": "2 DE 2",
+   "valor": 64.38,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-10-23",
+   "mes_fatura": "2025-11",
+   "banco": "XP",
+   "estabelecimento": "SHOPEE *ACASADOLAR",
+   "categoria": "COMPRAS ONLINE",
+   "parcela": "1 DE 2",
+   "valor": 64.38,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-10-23",
+   "mes_fatura": "2025-11",
+   "banco": "XP",
+   "estabelecimento": "FERREIRA COSTA",
+   "categoria": "ELETRÔNICOS",
+   "parcela": "3 DE 3",
+   "valor": 56.6,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-10-23",
+   "mes_fatura": "2025-11",
+   "banco": "XP",
+   "estabelecimento": "FERREIRA COSTA",
+   "categoria": "ELETRÔNICOS",
+   "parcela": "2 DE 3",
+   "valor": 56.6,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-10-23",
+   "mes_fatura": "2025-11",
+   "banco": "XP",
+   "estabelecimento": "ATACAREJO BONGI",
+   "categoria": "MERCADO",
+   "parcela": "-",
+   "valor": 7.16,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-10-23",
+   "mes_fatura": "2025-11",
+   "banco": "XP",
+   "estabelecimento": "ATACAREJO BONGI",
+   "categoria": "MERCADO",
+   "parcela": "-",
+   "valor": 31.64,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-10-23",
+   "mes_fatura": "2025-11",
+   "banco": "XP",
+   "estabelecimento": "PASSIRA PIZZARIA",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 49.4,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-10-24",
+   "mes_fatura": "2025-11",
+   "banco": "XP",
+   "estabelecimento": "ATACAREJO BONGI",
+   "categoria": "MERCADO",
+   "parcela": "-",
+   "valor": 116.99,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-10-25",
+   "mes_fatura": "2025-11",
+   "banco": "XP",
+   "estabelecimento": "NETFLIX.COM",
+   "categoria": "ASSINATURA",
+   "parcela": "-",
+   "valor": 20.9,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-10-25",
+   "mes_fatura": "2025-11",
+   "banco": "XP",
+   "estabelecimento": "CARREFOUR RECIFE",
+   "categoria": "MERCADO",
+   "parcela": "-",
+   "valor": 73.73,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-10-26",
+   "mes_fatura": "2025-11",
+   "banco": "XP",
+   "estabelecimento": "IFD*JEAN CLEIDE DA SILVA",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 63.96,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-10-26",
+   "mes_fatura": "2025-11",
+   "banco": "XP",
+   "estabelecimento": "A98  - COMPRA SHELLBOX",
+   "categoria": "COMBUSTÍVEL",
+   "parcela": "DE 1",
+   "valor": 20.0,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-10-27",
+   "mes_fatura": "2025-11",
+   "banco": "XP",
+   "estabelecimento": "A98  - COMPRA SHELLBOX",
+   "categoria": "COMBUSTÍVEL",
+   "parcela": "DE 1",
+   "valor": 68.27,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-10-28",
+   "mes_fatura": "2025-11",
+   "banco": "XP",
+   "estabelecimento": "CARREFOUR RECIFE",
+   "categoria": "MERCADO",
+   "parcela": "-",
+   "valor": 54.11,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-10-29",
+   "mes_fatura": "2025-11",
+   "banco": "XP",
+   "estabelecimento": "RAIADROGASILSA",
+   "categoria": "FARMÁCIA",
+   "parcela": "-",
+   "valor": 19.99,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-10-30",
+   "mes_fatura": "2025-11",
+   "banco": "XP",
+   "estabelecimento": "MG COMERCIO DE AL",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 9.98,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-10-30",
+   "mes_fatura": "2025-11",
+   "banco": "XP",
+   "estabelecimento": "CARREFOUR RECIFE",
+   "categoria": "MERCADO",
+   "parcela": "-",
+   "valor": 41.06,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-10-31",
+   "mes_fatura": "2025-11",
+   "banco": "XP",
+   "estabelecimento": "A98  - COMPRA SHELLBOX",
+   "categoria": "COMBUSTÍVEL",
+   "parcela": "DE 1",
+   "valor": 30.0,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-10-31",
+   "mes_fatura": "2025-11",
+   "banco": "XP",
+   "estabelecimento": "CARREFOUR RECIFE",
+   "categoria": "MERCADO",
+   "parcela": "-",
+   "valor": 56.97,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-11-01",
+   "mes_fatura": "2025-11",
+   "banco": "XP",
+   "estabelecimento": "CASA DOS DOCES",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 3.9,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-11-01",
+   "mes_fatura": "2025-11",
+   "banco": "XP",
+   "estabelecimento": "VAREJAO PRECO BOM",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 27.77,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-11-01",
+   "mes_fatura": "2025-11",
+   "banco": "XP",
+   "estabelecimento": "COXINHA NO POTE CASA A",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 14.0,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-11-02",
+   "mes_fatura": "2025-11",
+   "banco": "XP",
+   "estabelecimento": "A98  - COMPRA SHELLBOX",
+   "categoria": "COMBUSTÍVEL",
+   "parcela": "DE 1",
+   "valor": 40.0,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-11-03",
+   "mes_fatura": "2025-12",
+   "banco": "XP",
+   "estabelecimento": "PADARIA PARIS",
+   "categoria": "MERCADO",
+   "parcela": "-",
+   "valor": 15.47,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-11-03",
+   "mes_fatura": "2025-12",
+   "banco": "XP",
+   "estabelecimento": "CARREFOUR RECIFE",
+   "categoria": "MERCADO",
+   "parcela": "-",
+   "valor": 36.35,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-11-05",
+   "mes_fatura": "2025-12",
+   "banco": "XP",
+   "estabelecimento": "A98  - COMPRA SHELLBOX",
+   "categoria": "COMBUSTÍVEL",
+   "parcela": "DE 1",
+   "valor": 20.0,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-11-06",
+   "mes_fatura": "2025-12",
+   "banco": "XP",
+   "estabelecimento": "MP*LOTERIASONLINELQUM",
+   "categoria": "LOTERIA",
+   "parcela": "-",
+   "valor": 3.5,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-11-06",
+   "mes_fatura": "2025-12",
+   "banco": "XP",
+   "estabelecimento": "A98  - COMPRA SHELLBOX",
+   "categoria": "COMBUSTÍVEL",
+   "parcela": "DE 1",
+   "valor": 30.0,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-11-07",
+   "mes_fatura": "2025-12",
+   "banco": "XP",
+   "estabelecimento": "MP*LOTERIASONLINEME7T",
+   "categoria": "LOTERIA",
+   "parcela": "-",
+   "valor": 6.5,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-11-07",
+   "mes_fatura": "2025-12",
+   "banco": "XP",
+   "estabelecimento": "CARREFOUR RECIFE",
+   "categoria": "MERCADO",
+   "parcela": "-",
+   "valor": 1.7,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-11-08",
+   "mes_fatura": "2025-12",
+   "banco": "XP",
+   "estabelecimento": "PADARIA PARIS",
+   "categoria": "MERCADO",
+   "parcela": "-",
+   "valor": 8.8,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-11-08",
+   "mes_fatura": "2025-12",
+   "banco": "XP",
+   "estabelecimento": "FERREIRA COSTA",
+   "categoria": "ELETRÔNICOS",
+   "parcela": "4 DE 8",
+   "valor": 129.54,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-11-08",
+   "mes_fatura": "2025-12",
+   "banco": "XP",
+   "estabelecimento": "FERREIRA COSTA",
+   "categoria": "ELETRÔNICOS",
+   "parcela": "1 DE 8",
+   "valor": 129.56,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-11-08",
+   "mes_fatura": "2025-12",
+   "banco": "XP",
+   "estabelecimento": "FERREIRA COSTA",
+   "categoria": "ELETRÔNICOS",
+   "parcela": "2 DE 8",
+   "valor": 129.54,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-11-08",
+   "mes_fatura": "2025-12",
+   "banco": "XP",
+   "estabelecimento": "MP*LOTERIASONLINETXNC",
+   "categoria": "LOTERIA",
+   "parcela": "-",
+   "valor": 3.5,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-11-08",
+   "mes_fatura": "2025-12",
+   "banco": "XP",
+   "estabelecimento": "FERREIRA COSTA",
+   "categoria": "ELETRÔNICOS",
+   "parcela": "5 DE 8",
+   "valor": 129.54,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-11-08",
+   "mes_fatura": "2025-12",
+   "banco": "XP",
+   "estabelecimento": "FERREIRA COSTA",
+   "categoria": "ELETRÔNICOS",
+   "parcela": "3 DE 8",
+   "valor": 129.54,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-11-08",
+   "mes_fatura": "2025-12",
+   "banco": "XP",
+   "estabelecimento": "CLINICASIM",
+   "categoria": "CONSULTA",
+   "parcela": "8 DE 10",
+   "valor": 137.78,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-11-10",
+   "mes_fatura": "2025-12",
+   "banco": "XP",
+   "estabelecimento": "MP*LOTERIASONLINEDU7S",
+   "categoria": "LOTERIA",
+   "parcela": "-",
+   "valor": 6.5,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-11-10",
+   "mes_fatura": "2025-12",
+   "banco": "XP",
+   "estabelecimento": "POSTO CUNHA",
+   "categoria": "COMBUSTÍVEL",
+   "parcela": "-",
+   "valor": 20.0,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-11-12",
+   "mes_fatura": "2025-12",
+   "banco": "XP",
+   "estabelecimento": "A98  - COMPRA SHELLBOX",
+   "categoria": "COMBUSTÍVEL",
+   "parcela": "DE 1",
+   "valor": 40.0,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-11-12",
+   "mes_fatura": "2025-12",
+   "banco": "XP",
+   "estabelecimento": "MP*LOTERIASONLINEYNAJ",
+   "categoria": "LOTERIA",
+   "parcela": "-",
+   "valor": 6.5,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-11-13",
+   "mes_fatura": "2025-12",
+   "banco": "XP",
+   "estabelecimento": "PADARIA PARIS",
+   "categoria": "MERCADO",
+   "parcela": "-",
+   "valor": 6.0,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-11-14",
+   "mes_fatura": "2025-12",
+   "banco": "XP",
+   "estabelecimento": "CARREFOUR RECIFE",
+   "categoria": "MERCADO",
+   "parcela": "-",
+   "valor": 28.61,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-11-14",
+   "mes_fatura": "2025-12",
+   "banco": "XP",
+   "estabelecimento": "MP*LOTERIASONLINEHGZV",
+   "categoria": "LOTERIA",
+   "parcela": "-",
+   "valor": 6.5,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-11-15",
+   "mes_fatura": "2025-12",
+   "banco": "XP",
+   "estabelecimento": "A98  - COMPRA SHELLBOX",
+   "categoria": "COMBUSTÍVEL",
+   "parcela": "DE 1",
+   "valor": 70.87,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-11-15",
+   "mes_fatura": "2025-12",
+   "banco": "XP",
+   "estabelecimento": "CARREFOUR RECIFE",
+   "categoria": "MERCADO",
+   "parcela": "-",
+   "valor": 116.4,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-11-17",
+   "mes_fatura": "2025-12",
+   "banco": "XP",
+   "estabelecimento": "MP*LOTERIASONLINEU2OS",
+   "categoria": "LOTERIA",
+   "parcela": "-",
+   "valor": 3.0,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-11-18",
+   "mes_fatura": "2025-12",
+   "banco": "XP",
+   "estabelecimento": "MP*LOTERIASONLINEHMJB",
+   "categoria": "LOTERIA",
+   "parcela": "-",
+   "valor": 3.5,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-11-19",
+   "mes_fatura": "2025-12",
+   "banco": "XP",
+   "estabelecimento": "MP*LOTERIASONLINE5UKX",
+   "categoria": "LOTERIA",
+   "parcela": "-",
+   "valor": 3.0,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-11-19",
+   "mes_fatura": "2025-12",
+   "banco": "XP",
+   "estabelecimento": "CARREFOUR RECIFE",
+   "categoria": "MERCADO",
+   "parcela": "-",
+   "valor": 59.34,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-11-19",
+   "mes_fatura": "2025-12",
+   "banco": "XP",
+   "estabelecimento": "A98  - COMPRA SHELLBOX",
+   "categoria": "COMBUSTÍVEL",
+   "parcela": "DE 1",
+   "valor": 30.0,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-11-20",
+   "mes_fatura": "2025-12",
+   "banco": "XP",
+   "estabelecimento": "RINALDODASILVA",
+   "categoria": "OUTROS",
+   "parcela": "-",
+   "valor": 28.0,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-11-20",
+   "mes_fatura": "2025-12",
+   "banco": "XP",
+   "estabelecimento": "ZP*ALHO & OLEO",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 50.85,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-11-20",
+   "mes_fatura": "2025-12",
+   "banco": "XP",
+   "estabelecimento": "DM          *SPOTIFY",
+   "categoria": "ASSINATURA",
+   "parcela": "-",
+   "valor": 12.9,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-11-21",
+   "mes_fatura": "2025-12",
+   "banco": "XP",
+   "estabelecimento": "ATACAREJO BONGI",
+   "categoria": "MERCADO",
+   "parcela": "-",
+   "valor": 79.14,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-11-22",
+   "mes_fatura": "2025-12",
+   "banco": "XP",
+   "estabelecimento": "PADARIA PARIS",
+   "categoria": "MERCADO",
+   "parcela": "-",
+   "valor": 25.03,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-11-24",
+   "mes_fatura": "2025-12",
+   "banco": "XP",
+   "estabelecimento": "ATACAREJO BONGI",
+   "categoria": "MERCADO",
+   "parcela": "-",
+   "valor": 84.01,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-11-25",
+   "mes_fatura": "2025-12",
+   "banco": "XP",
+   "estabelecimento": "MP*LOTERIASONLINECRX5",
+   "categoria": "LOTERIA",
+   "parcela": "-",
+   "valor": 3.5,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-11-25",
+   "mes_fatura": "2025-12",
+   "banco": "XP",
+   "estabelecimento": "PADARIA PARIS",
+   "categoria": "MERCADO",
+   "parcela": "-",
+   "valor": 10.5,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-11-25",
+   "mes_fatura": "2025-12",
+   "banco": "XP",
+   "estabelecimento": "ATACAREJO BONGI",
+   "categoria": "MERCADO",
+   "parcela": "-",
+   "valor": 30.99,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-11-25",
+   "mes_fatura": "2025-12",
+   "banco": "XP",
+   "estabelecimento": "NETFLIX.COM",
+   "categoria": "ASSINATURA",
+   "parcela": "-",
+   "valor": 20.9,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-11-27",
+   "mes_fatura": "2025-12",
+   "banco": "XP",
+   "estabelecimento": "ATACAREJO BONGI",
+   "categoria": "MERCADO",
+   "parcela": "-",
+   "valor": 255.78,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-11-27",
+   "mes_fatura": "2025-12",
+   "banco": "XP",
+   "estabelecimento": "SHOPEE *USGURIADVS",
+   "categoria": "COMPRAS ONLINE",
+   "parcela": "-",
+   "valor": 10.49,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-11-29",
+   "mes_fatura": "2025-12",
+   "banco": "XP",
+   "estabelecimento": "RINALDODASILVA",
+   "categoria": "OUTROS",
+   "parcela": "-",
+   "valor": 15.0,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-11-29",
+   "mes_fatura": "2025-12",
+   "banco": "XP",
+   "estabelecimento": "MP*LOTERIASONLINE2WL4",
+   "categoria": "LOTERIA",
+   "parcela": "-",
+   "valor": 10.36,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-11-29",
+   "mes_fatura": "2025-12",
+   "banco": "XP",
+   "estabelecimento": "PADARIA PARIS",
+   "categoria": "MERCADO",
+   "parcela": "-",
+   "valor": 30.2,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-12-01",
+   "mes_fatura": "2025-12",
+   "banco": "XP",
+   "estabelecimento": "GOOGLE CABAL RETURN O",
+   "categoria": "LAZER",
+   "parcela": "-",
+   "valor": 24.99,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-12-02",
+   "mes_fatura": "2025-12",
+   "banco": "XP",
+   "estabelecimento": "ATACAREJO BONGI",
+   "categoria": "MERCADO",
+   "parcela": "-",
+   "valor": 25.49,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-12-04",
+   "mes_fatura": "2026-01",
+   "banco": "XP",
+   "estabelecimento": "PADARIA PARIS",
+   "categoria": "MERCADO",
+   "parcela": "-",
+   "valor": 2.68,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-12-04",
+   "mes_fatura": "2026-01",
+   "banco": "XP",
+   "estabelecimento": "DL*GOOGLE CABAL",
+   "categoria": "LAZER",
+   "parcela": "-",
+   "valor": 24.99,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-12-05",
+   "mes_fatura": "2026-01",
+   "banco": "XP",
+   "estabelecimento": "GOOGLE CABAL RETURN O",
+   "categoria": "LAZER",
+   "parcela": "-",
+   "valor": 9.99,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-12-05",
+   "mes_fatura": "2026-01",
+   "banco": "XP",
+   "estabelecimento": "PASSIRA LANCHES",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 40.99,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-12-05",
+   "mes_fatura": "2026-01",
+   "banco": "XP",
+   "estabelecimento": "CARREFOUR RECIFE",
+   "categoria": "MERCADO",
+   "parcela": "-",
+   "valor": 50.97,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-12-06",
+   "mes_fatura": "2026-01",
+   "banco": "XP",
+   "estabelecimento": "JIM.COM DJALMA GOMES DAS",
+   "categoria": "MANUTENÇÃO VEÍCULO",
+   "parcela": "3 DE 3",
+   "valor": 666.66,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-12-06",
+   "mes_fatura": "2026-01",
+   "banco": "XP",
+   "estabelecimento": "ALBUQUERQUE PNEUS",
+   "categoria": "COMBUSTÍVEL",
+   "parcela": "-",
+   "valor": 30.0,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-12-06",
+   "mes_fatura": "2026-01",
+   "banco": "XP",
+   "estabelecimento": "JIM.COM DJALMA GOMES DAS",
+   "categoria": "MANUTENÇÃO VEÍCULO",
+   "parcela": "2 DE 3",
+   "valor": 666.66,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-12-06",
+   "mes_fatura": "2026-01",
+   "banco": "XP",
+   "estabelecimento": "JIM.COM DJALMA GOMES DAS",
+   "categoria": "MANUTENÇÃO VEÍCULO",
+   "parcela": "1 DE 3",
+   "valor": 666.68,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-12-06",
+   "mes_fatura": "2026-01",
+   "banco": "XP",
+   "estabelecimento": "DELICIAS DA PRAZERES",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 15.22,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-12-07",
+   "mes_fatura": "2026-01",
+   "banco": "XP",
+   "estabelecimento": "CARREFOUR RECIFE",
+   "categoria": "MERCADO",
+   "parcela": "-",
+   "valor": 8.88,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-12-09",
+   "mes_fatura": "2026-01",
+   "banco": "XP",
+   "estabelecimento": "POSTO CUNHA",
+   "categoria": "COMBUSTÍVEL",
+   "parcela": "-",
+   "valor": 19.29,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-12-10",
+   "mes_fatura": "2026-01",
+   "banco": "XP",
+   "estabelecimento": "A98  - COMPRA SHELLBOX",
+   "categoria": "COMBUSTÍVEL",
+   "parcela": "DE 1",
+   "valor": 40.0,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-12-12",
+   "mes_fatura": "2026-01",
+   "banco": "XP",
+   "estabelecimento": "MP*LOTERIASONLINE1CD9",
+   "categoria": "LOTERIA",
+   "parcela": "-",
+   "valor": 9.0,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-12-13",
+   "mes_fatura": "2026-01",
+   "banco": "XP",
+   "estabelecimento": "A98  - COMPRA SHELLBOX",
+   "categoria": "COMBUSTÍVEL",
+   "parcela": "DE 1",
+   "valor": 30.0,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-12-15",
+   "mes_fatura": "2026-01",
+   "banco": "XP",
+   "estabelecimento": "LOGNET",
+   "categoria": "ELETRÔNICOS",
+   "parcela": "2 DE 3",
+   "valor": 24.43,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-12-15",
+   "mes_fatura": "2026-01",
+   "banco": "XP",
+   "estabelecimento": "LOGNET",
+   "categoria": "ELETRÔNICOS",
+   "parcela": "1 DE 3",
+   "valor": 24.44,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-12-15",
+   "mes_fatura": "2026-01",
+   "banco": "XP",
+   "estabelecimento": "LOGNET",
+   "categoria": "ELETRÔNICOS",
+   "parcela": "3 DE 3",
+   "valor": 24.43,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-12-16",
+   "mes_fatura": "2026-01",
+   "banco": "XP",
+   "estabelecimento": "POSTO CUNHA",
+   "categoria": "COMBUSTÍVEL",
+   "parcela": "-",
+   "valor": 14.37,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-12-20",
+   "mes_fatura": "2026-01",
+   "banco": "XP",
+   "estabelecimento": "DM          *SPOTIFY",
+   "categoria": "ASSINATURA",
+   "parcela": "-",
+   "valor": 12.9,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-12-22",
+   "mes_fatura": "2026-01",
+   "banco": "XP",
+   "estabelecimento": "MP*LOTERIASONLINETVUR",
+   "categoria": "LOTERIA",
+   "parcela": "-",
+   "valor": 6.5,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-12-24",
+   "mes_fatura": "2026-01",
+   "banco": "XP",
+   "estabelecimento": "PIZZARIA ATLANTIC",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 100.7,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-12-25",
+   "mes_fatura": "2026-01",
+   "banco": "XP",
+   "estabelecimento": "NETFLIX.COM",
+   "categoria": "ASSINATURA",
+   "parcela": "-",
+   "valor": 20.9,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-12-26",
+   "mes_fatura": "2026-01",
+   "banco": "XP",
+   "estabelecimento": "ATACAREJO BONGI",
+   "categoria": "MERCADO",
+   "parcela": "-",
+   "valor": 99.45,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-12-26",
+   "mes_fatura": "2026-01",
+   "banco": "XP",
+   "estabelecimento": "A98  - COMPRA SHELLBOX",
+   "categoria": "COMBUSTÍVEL",
+   "parcela": "DE 1",
+   "valor": 62.08,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-12-28",
+   "mes_fatura": "2026-01",
+   "banco": "XP",
+   "estabelecimento": "CARREFOUR RECIFE",
+   "categoria": "MERCADO",
+   "parcela": "-",
+   "valor": 67.08,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-12-29",
+   "mes_fatura": "2026-01",
+   "banco": "XP",
+   "estabelecimento": "ASSAI ATACADISTA",
+   "categoria": "MERCADO",
+   "parcela": "-",
+   "valor": 683.09,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-12-29",
+   "mes_fatura": "2026-01",
+   "banco": "XP",
+   "estabelecimento": "MP*LOTERIASONLINEI211",
+   "categoria": "LOTERIA",
+   "parcela": "-",
+   "valor": 9.5,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-01-02",
+   "mes_fatura": "2026-01",
+   "banco": "XP",
+   "estabelecimento": "A98  - COMPRA SHELLBOX",
+   "categoria": "COMBUSTÍVEL",
+   "parcela": "DE 1",
+   "valor": 66.25,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-01-05",
+   "mes_fatura": "2026-02",
+   "banco": "XP",
+   "estabelecimento": "MP*LOTERIASONLINEKASE",
+   "categoria": "LOTERIA",
+   "parcela": "-",
+   "valor": 6.0,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-01-08",
+   "mes_fatura": "2026-02",
+   "banco": "XP",
+   "estabelecimento": "COMERCIAL RECIFE",
+   "categoria": "OUTROS",
+   "parcela": "-",
+   "valor": 10.0,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-01-08",
+   "mes_fatura": "2026-02",
+   "banco": "XP",
+   "estabelecimento": "A98  - COMPRA SHELLBOX",
+   "categoria": "COMBUSTÍVEL",
+   "parcela": "DE 1",
+   "valor": 68.04,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-01-09",
+   "mes_fatura": "2026-02",
+   "banco": "XP",
+   "estabelecimento": "PASSIRA LANCHES",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 51.3,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-01-09",
+   "mes_fatura": "2026-02",
+   "banco": "XP",
+   "estabelecimento": "CLAUDE.AI SUBSCRIPTION",
+   "categoria": "ASSINATURA",
+   "parcela": "-",
+   "valor": 3.85,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-01-09",
+   "mes_fatura": "2026-02",
+   "banco": "XP",
+   "estabelecimento": "PADARIA PARIS",
+   "categoria": "MERCADO",
+   "parcela": "-",
+   "valor": 12.25,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-01-09",
+   "mes_fatura": "2026-02",
+   "banco": "XP",
+   "estabelecimento": "CLAUDE.AI SUBSCRIPTION",
+   "categoria": "ASSINATURA",
+   "parcela": "-",
+   "valor": 110.0,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-01-09",
+   "mes_fatura": "2026-02",
+   "banco": "XP",
+   "estabelecimento": "MP*LOTERIASONLINEDYKT",
+   "categoria": "LOTERIA",
+   "parcela": "-",
+   "valor": 15.0,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-01-11",
+   "mes_fatura": "2026-02",
+   "banco": "XP",
+   "estabelecimento": "ARRETADO.",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 84.0,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-01-12",
+   "mes_fatura": "2026-02",
+   "banco": "XP",
+   "estabelecimento": "MP*LOTERIASONLINE38OV",
+   "categoria": "LOTERIA",
+   "parcela": "-",
+   "valor": 18.0,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-01-13",
+   "mes_fatura": "2026-02",
+   "banco": "XP",
+   "estabelecimento": "ATACAREJO BONGI",
+   "categoria": "MERCADO",
+   "parcela": "-",
+   "valor": 46.19,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-01-14",
+   "mes_fatura": "2026-02",
+   "banco": "XP",
+   "estabelecimento": "PADARIA PARIS",
+   "categoria": "MERCADO",
+   "parcela": "-",
+   "valor": 17.5,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-01-14",
+   "mes_fatura": "2026-02",
+   "banco": "XP",
+   "estabelecimento": "MP*LOTERIASONLINE4Z2V",
+   "categoria": "LOTERIA",
+   "parcela": "-",
+   "valor": 15.0,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-01-15",
+   "mes_fatura": "2026-02",
+   "banco": "XP",
+   "estabelecimento": "MP*LOTERIASONLINEROVU",
+   "categoria": "LOTERIA",
+   "parcela": "-",
+   "valor": 32.13,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-01-17",
+   "mes_fatura": "2026-02",
+   "banco": "XP",
+   "estabelecimento": "PEPEU RACOES",
+   "categoria": "PET",
+   "parcela": "-",
+   "valor": 50.0,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-01-17",
+   "mes_fatura": "2026-02",
+   "banco": "XP",
+   "estabelecimento": "A98  - COMPRA SHELLBOX",
+   "categoria": "COMBUSTÍVEL",
+   "parcela": "DE 1",
+   "valor": 69.67,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-01-19",
+   "mes_fatura": "2026-02",
+   "banco": "XP",
+   "estabelecimento": "MP*LOTERIASONLINECUY6",
+   "categoria": "LOTERIA",
+   "parcela": "-",
+   "valor": 18.0,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-01-20",
+   "mes_fatura": "2026-02",
+   "banco": "XP",
+   "estabelecimento": "DM*SPOTIFY",
+   "categoria": "ASSINATURA",
+   "parcela": "-",
+   "valor": 12.9,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-01-20",
+   "mes_fatura": "2026-02",
+   "banco": "XP",
+   "estabelecimento": "PADARIA PARIS",
+   "categoria": "MERCADO",
+   "parcela": "-",
+   "valor": 9.45,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-01-23",
+   "mes_fatura": "2026-02",
+   "banco": "XP",
+   "estabelecimento": "ATACAREJO BONGI",
+   "categoria": "MERCADO",
+   "parcela": "-",
+   "valor": 54.76,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-01-23",
+   "mes_fatura": "2026-02",
+   "banco": "XP",
+   "estabelecimento": "A98  - COMPRA SHELLBOX",
+   "categoria": "COMBUSTÍVEL",
+   "parcela": "DE 1",
+   "valor": 71.43,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-01-25",
+   "mes_fatura": "2026-02",
+   "banco": "XP",
+   "estabelecimento": "ATACAREJO BONGI",
+   "categoria": "MERCADO",
+   "parcela": "-",
+   "valor": 104.78,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-01-25",
+   "mes_fatura": "2026-02",
+   "banco": "XP",
+   "estabelecimento": "NETFLIX.COM",
+   "categoria": "ASSINATURA",
+   "parcela": "-",
+   "valor": 20.9,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-01-25",
+   "mes_fatura": "2026-02",
+   "banco": "XP",
+   "estabelecimento": "PASSIRA LANCHES",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 79.99,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-01-26",
+   "mes_fatura": "2026-02",
+   "banco": "XP",
+   "estabelecimento": "PADARIA PARIS",
+   "categoria": "MERCADO",
+   "parcela": "-",
+   "valor": 7.13,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-01-27",
+   "mes_fatura": "2026-02",
+   "banco": "XP",
+   "estabelecimento": "MP*LOTERIASONLINE3LSO",
+   "categoria": "LOTERIA",
+   "parcela": "-",
+   "valor": 16.06,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-01-28",
+   "mes_fatura": "2026-02",
+   "banco": "XP",
+   "estabelecimento": "PADARIA PARIS",
+   "categoria": "MERCADO",
+   "parcela": "-",
+   "valor": 9.4,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-01-28",
+   "mes_fatura": "2026-02",
+   "banco": "XP",
+   "estabelecimento": "MP*LOTERIASONLINEIXGV",
+   "categoria": "LOTERIA",
+   "parcela": "-",
+   "valor": 6.0,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-01-28",
+   "mes_fatura": "2026-02",
+   "banco": "XP",
+   "estabelecimento": "ATACAREJO AFOGADOS",
+   "categoria": "MERCADO",
+   "parcela": "-",
+   "valor": 28.91,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-01-30",
+   "mes_fatura": "2026-02",
+   "banco": "XP",
+   "estabelecimento": "PADARIA PARIS",
+   "categoria": "MERCADO",
+   "parcela": "-",
+   "valor": 8.0,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-02-01",
+   "mes_fatura": "2026-02",
+   "banco": "XP",
+   "estabelecimento": "ARRAIAL COM DE COMBUSTI",
+   "categoria": "COMBUSTÍVEL",
+   "parcela": "-",
+   "valor": 20.08,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-02-01",
+   "mes_fatura": "2026-02",
+   "banco": "XP",
+   "estabelecimento": "CARREFOUR REC 45",
+   "categoria": "MERCADO",
+   "parcela": "-",
+   "valor": 9.56,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-02-02",
+   "mes_fatura": "2026-02",
+   "banco": "XP",
+   "estabelecimento": "ATACAREJO BONGI",
+   "categoria": "MERCADO",
+   "parcela": "-",
+   "valor": 367.01,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-02-03",
+   "mes_fatura": "2026-03",
+   "banco": "XP",
+   "estabelecimento": "MP*LOTERIASONLINEJMDN",
+   "categoria": "LOTERIA",
+   "parcela": "-",
+   "valor": 9.0,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-02-04",
+   "mes_fatura": "2026-03",
+   "banco": "XP",
+   "estabelecimento": "POSTO CUNHA",
+   "categoria": "COMBUSTÍVEL",
+   "parcela": "-",
+   "valor": 28.93,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-02-04",
+   "mes_fatura": "2026-03",
+   "banco": "XP",
+   "estabelecimento": "PADARIA PARIS",
+   "categoria": "MERCADO",
+   "parcela": "-",
+   "valor": 7.6,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-02-06",
+   "mes_fatura": "2026-03",
+   "banco": "XP",
+   "estabelecimento": "MP*LOTERIASONLINEMMR8",
+   "categoria": "LOTERIA",
+   "parcela": "-",
+   "valor": 12.0,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-02-07",
+   "mes_fatura": "2026-03",
+   "banco": "XP",
+   "estabelecimento": "ATACAREJO BONGI",
+   "categoria": "MERCADO",
+   "parcela": "-",
+   "valor": 42.97,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-02-07",
+   "mes_fatura": "2026-03",
+   "banco": "XP",
+   "estabelecimento": "CASA DOS DOCES",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 12.31,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-02-07",
+   "mes_fatura": "2026-03",
+   "banco": "XP",
+   "estabelecimento": "DROGASIL 1810",
+   "categoria": "FARMÁCIA",
+   "parcela": "-",
+   "valor": 28.42,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-02-07",
+   "mes_fatura": "2026-03",
+   "banco": "XP",
+   "estabelecimento": "A98  - COMPRA SHELLBOX",
+   "categoria": "COMBUSTÍVEL",
+   "parcela": "DE 1",
+   "valor": 72.19,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-02-08",
+   "mes_fatura": "2026-03",
+   "banco": "XP",
+   "estabelecimento": "RECIFE PARKING",
+   "categoria": "TRANSPORTE",
+   "parcela": "-",
+   "valor": 12.5,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-02-08",
+   "mes_fatura": "2026-03",
+   "banco": "XP",
+   "estabelecimento": "INGRESSO.COM",
+   "categoria": "LAZER",
+   "parcela": "-",
+   "valor": 51.2,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-02-08",
+   "mes_fatura": "2026-03",
+   "banco": "XP",
+   "estabelecimento": "RECIFE 301",
+   "categoria": "OUTROS",
+   "parcela": "-",
+   "valor": 24.0,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-02-09",
+   "mes_fatura": "2026-03",
+   "banco": "XP",
+   "estabelecimento": "CLAUDE.AI SUBSCRIPTION",
+   "categoria": "ASSINATURA",
+   "parcela": "-",
+   "valor": 3.85,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-02-09",
+   "mes_fatura": "2026-03",
+   "banco": "XP",
+   "estabelecimento": "CLAUDE.AI SUBSCRIPTION",
+   "categoria": "ASSINATURA",
+   "parcela": "-",
+   "valor": 110.0,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-02-10",
+   "mes_fatura": "2026-03",
+   "banco": "XP",
+   "estabelecimento": "PADARIA PARIS",
+   "categoria": "MERCADO",
+   "parcela": "-",
+   "valor": 20.0,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-02-11",
+   "mes_fatura": "2026-03",
+   "banco": "XP",
+   "estabelecimento": "MP*LOTERIASONLINEWASH",
+   "categoria": "LOTERIA",
+   "parcela": "-",
+   "valor": 12.0,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-02-11",
+   "mes_fatura": "2026-03",
+   "banco": "XP",
+   "estabelecimento": "SHOPEE *VENDASPOTENCIA",
+   "categoria": "COMPRAS ONLINE",
+   "parcela": "-",
+   "valor": 56.96,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-02-12",
+   "mes_fatura": "2026-03",
+   "banco": "XP",
+   "estabelecimento": "F INDEP MUSTARDINHA",
+   "categoria": "LAZER",
+   "parcela": "-",
+   "valor": 29.99,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-02-12",
+   "mes_fatura": "2026-03",
+   "banco": "XP",
+   "estabelecimento": "MP*LOTERIASONLINEOGOS",
+   "categoria": "LOTERIA",
+   "parcela": "-",
+   "valor": 11.05,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-02-13",
+   "mes_fatura": "2026-03",
+   "banco": "XP",
+   "estabelecimento": "MP*LOTERIASONLINET888",
+   "categoria": "LOTERIA",
+   "parcela": "-",
+   "valor": 39.0,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-02-13",
+   "mes_fatura": "2026-03",
+   "banco": "XP",
+   "estabelecimento": "MP*LOTERIASONLINETDGC",
+   "categoria": "LOTERIA",
+   "parcela": "-",
+   "valor": 28.35,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-02-14",
+   "mes_fatura": "2026-03",
+   "banco": "XP",
+   "estabelecimento": "PASSIRA LANCHES",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 64.49,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-02-14",
+   "mes_fatura": "2026-03",
+   "banco": "XP",
+   "estabelecimento": "PADARIA PARIS",
+   "categoria": "MERCADO",
+   "parcela": "-",
+   "valor": 6.68,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-02-16",
+   "mes_fatura": "2026-03",
+   "banco": "XP",
+   "estabelecimento": "ATACAREJO BONGI",
+   "categoria": "MERCADO",
+   "parcela": "-",
+   "valor": 37.19,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-02-16",
+   "mes_fatura": "2026-03",
+   "banco": "XP",
+   "estabelecimento": "FARMASUL",
+   "categoria": "FARMÁCIA",
+   "parcela": "-",
+   "valor": 4.7,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-02-16",
+   "mes_fatura": "2026-03",
+   "banco": "XP",
+   "estabelecimento": "CARREFOUR REC 45",
+   "categoria": "MERCADO",
+   "parcela": "-",
+   "valor": 25.95,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-02-16",
+   "mes_fatura": "2026-03",
+   "banco": "XP",
+   "estabelecimento": "DROGARIA SAO PAULO SA",
+   "categoria": "FARMÁCIA",
+   "parcela": "-",
+   "valor": 32.58,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-02-17",
+   "mes_fatura": "2026-03",
+   "banco": "XP",
+   "estabelecimento": "A98  - COMPRA SHELLBOX",
+   "categoria": "COMBUSTÍVEL",
+   "parcela": "DE 1",
+   "valor": 61.08,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-02-17",
+   "mes_fatura": "2026-03",
+   "banco": "XP",
+   "estabelecimento": "PASSIRA LANCHES",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 95.0,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-02-18",
+   "mes_fatura": "2026-03",
+   "banco": "XP",
+   "estabelecimento": "MP*LOTERIASONLINEPJUA",
+   "categoria": "LOTERIA",
+   "parcela": "-",
+   "valor": 12.5,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-02-20",
+   "mes_fatura": "2026-03",
+   "banco": "XP",
+   "estabelecimento": "MP*LOTERIASONLINEFW3F",
+   "categoria": "LOTERIA",
+   "parcela": "-",
+   "valor": 12.48,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-02-20",
+   "mes_fatura": "2026-03",
+   "banco": "XP",
+   "estabelecimento": "FERREIRA COSTA",
+   "categoria": "ELETRÔNICOS",
+   "parcela": "-",
+   "valor": 2.05,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-02-20",
+   "mes_fatura": "2026-03",
+   "banco": "XP",
+   "estabelecimento": "DM*SPOTIFY",
+   "categoria": "ASSINATURA",
+   "parcela": "-",
+   "valor": 12.9,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-02-22",
+   "mes_fatura": "2026-03",
+   "banco": "XP",
+   "estabelecimento": "SUPERMERCADO NOVO HORI",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 6.27,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-02-23",
+   "mes_fatura": "2026-03",
+   "banco": "XP",
+   "estabelecimento": "CARREFOUR REC 45",
+   "categoria": "MERCADO",
+   "parcela": "-",
+   "valor": 28.36,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-02-23",
+   "mes_fatura": "2026-03",
+   "banco": "XP",
+   "estabelecimento": "MP*LOTERIASONLINEDWW0",
+   "categoria": "LOTERIA",
+   "parcela": "-",
+   "valor": 3.0,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-02-23",
+   "mes_fatura": "2026-03",
+   "banco": "XP",
+   "estabelecimento": "A98  - COMPRA SHELLBOX",
+   "categoria": "COMBUSTÍVEL",
+   "parcela": "DE 1",
+   "valor": 63.76,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-02-23",
+   "mes_fatura": "2026-03",
+   "banco": "XP",
+   "estabelecimento": "FERREIRA COSTA",
+   "categoria": "ELETRÔNICOS",
+   "parcela": "-",
+   "valor": 12.9,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-02-23",
+   "mes_fatura": "2026-03",
+   "banco": "XP",
+   "estabelecimento": "MP*LOTERIASONLINED9OX",
+   "categoria": "LOTERIA",
+   "parcela": "-",
+   "valor": 3.0,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-02-23",
+   "mes_fatura": "2026-03",
+   "banco": "XP",
+   "estabelecimento": "FERREIRA COSTA",
+   "categoria": "ELETRÔNICOS",
+   "parcela": "-",
+   "valor": 23.8,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-02-23",
+   "mes_fatura": "2026-03",
+   "banco": "XP",
+   "estabelecimento": "MET COMERCIO DE C",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 20.97,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-02-24",
+   "mes_fatura": "2026-03",
+   "banco": "XP",
+   "estabelecimento": "DL*GOOGLE CABAL",
+   "categoria": "LAZER",
+   "parcela": "-",
+   "valor": 4.89,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-02-24",
+   "mes_fatura": "2026-03",
+   "banco": "XP",
+   "estabelecimento": "CARREFOUR REC 45",
+   "categoria": "MERCADO",
+   "parcela": "-",
+   "valor": 12.87,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-02-25",
+   "mes_fatura": "2026-03",
+   "banco": "XP",
+   "estabelecimento": "MP*LOTERIASONLINE7QVS",
+   "categoria": "LOTERIA",
+   "parcela": "-",
+   "valor": 6.0,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-02-25",
+   "mes_fatura": "2026-03",
+   "banco": "XP",
+   "estabelecimento": "NETFLIX ENTRETENIMENTO",
+   "categoria": "ASSINATURA",
+   "parcela": "-",
+   "valor": 20.9,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-02-26",
+   "mes_fatura": "2026-03",
+   "banco": "XP",
+   "estabelecimento": "CACAU SHOW",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 24.99,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-02-26",
+   "mes_fatura": "2026-03",
+   "banco": "XP",
+   "estabelecimento": "PASSIRA",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 76.49,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-02-27",
+   "mes_fatura": "2026-03",
+   "banco": "XP",
+   "estabelecimento": "MP*LOTERIASONLINEPVH5",
+   "categoria": "LOTERIA",
+   "parcela": "-",
+   "valor": 6.0,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-02-27",
+   "mes_fatura": "2026-03",
+   "banco": "XP",
+   "estabelecimento": "ATACAREJO AFOGADOS",
+   "categoria": "MERCADO",
+   "parcela": "-",
+   "valor": 23.19,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-02-28",
+   "mes_fatura": "2026-03",
+   "banco": "XP",
+   "estabelecimento": "PADARIA PARIS",
+   "categoria": "MERCADO",
+   "parcela": "-",
+   "valor": 12.83,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-03-01",
+   "mes_fatura": "2026-03",
+   "banco": "XP",
+   "estabelecimento": "A98  - COMPRA SHELLBOX",
+   "categoria": "COMBUSTÍVEL",
+   "parcela": "DE 1",
+   "valor": 62.22,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-03-03",
+   "mes_fatura": "2026-04",
+   "banco": "XP",
+   "estabelecimento": "ATACAREJO BONGI",
+   "categoria": "MERCADO",
+   "parcela": "-",
+   "valor": 287.88,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-03-04",
+   "mes_fatura": "2026-04",
+   "banco": "XP",
+   "estabelecimento": "MERCADOLIVRE*CASAANZAI",
+   "categoria": "COMPRAS ONLINE",
+   "parcela": "-",
+   "valor": 498.99,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-03-04",
+   "mes_fatura": "2026-04",
+   "banco": "XP",
+   "estabelecimento": "PADARIA NOVA PARI",
+   "categoria": "MERCADO",
+   "parcela": "-",
+   "valor": 15.81,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-03-05",
+   "mes_fatura": "2026-04",
+   "banco": "XP",
+   "estabelecimento": "A98  - Compra ShellBox",
+   "categoria": "COMBUSTÍVEL",
+   "parcela": "de 1",
+   "valor": 63.56,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-03-05",
+   "mes_fatura": "2026-04",
+   "banco": "XP",
+   "estabelecimento": "PADARIA NOVA PARI",
+   "categoria": "MERCADO",
+   "parcela": "-",
+   "valor": 28.35,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-03-06",
+   "mes_fatura": "2026-04",
+   "banco": "XP",
+   "estabelecimento": "CARREFOUR REC 45",
+   "categoria": "MERCADO",
+   "parcela": "-",
+   "valor": 18.27,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-03-08",
+   "mes_fatura": "2026-04",
+   "banco": "XP",
+   "estabelecimento": "RECIFE PARKING",
+   "categoria": "TRANSPORTE",
+   "parcela": "-",
+   "valor": 9.5,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-03-08",
+   "mes_fatura": "2026-04",
+   "banco": "XP",
+   "estabelecimento": "LOJAS AMERICANAS",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 49.72,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-03-08",
+   "mes_fatura": "2026-04",
+   "banco": "XP",
+   "estabelecimento": "INGRESSO.COM",
+   "categoria": "LAZER",
+   "parcela": "-",
+   "valor": 82.08,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-03-08",
+   "mes_fatura": "2026-04",
+   "banco": "XP",
+   "estabelecimento": "DROGASIL 2869",
+   "categoria": "FARMÁCIA",
+   "parcela": "-",
+   "valor": 13.38,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-03-09",
+   "mes_fatura": "2026-04",
+   "banco": "XP",
+   "estabelecimento": "DROGASIL 2869",
+   "categoria": "FARMÁCIA",
+   "parcela": "-",
+   "valor": 13.48,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-03-12",
+   "mes_fatura": "2026-04",
+   "banco": "XP",
+   "estabelecimento": "PETROCAL TORRE",
+   "categoria": "COMBUSTÍVEL",
+   "parcela": "-",
+   "valor": 20.0,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-03-12",
+   "mes_fatura": "2026-04",
+   "banco": "XP",
+   "estabelecimento": "FROSTY SAN MARTIN",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 16.2,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-03-13",
+   "mes_fatura": "2026-04",
+   "banco": "XP",
+   "estabelecimento": "IFD*MATUTO REPRESENTACAO",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 42.9,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-03-13",
+   "mes_fatura": "2026-04",
+   "banco": "XP",
+   "estabelecimento": "A98  - Compra ShellBox",
+   "categoria": "COMBUSTÍVEL",
+   "parcela": "de 1",
+   "valor": 30.0,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-03-13",
+   "mes_fatura": "2026-04",
+   "banco": "XP",
+   "estabelecimento": "MP*LOTERIASONLINEJ051",
+   "categoria": "LOTERIA",
+   "parcela": "-",
+   "valor": 3.0,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-03-14",
+   "mes_fatura": "2026-04",
+   "banco": "XP",
+   "estabelecimento": "ATACAREJO BONGI",
+   "categoria": "MERCADO",
+   "parcela": "-",
+   "valor": 59.43,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-03-15",
+   "mes_fatura": "2026-04",
+   "banco": "XP",
+   "estabelecimento": "A98  - Compra ShellBox",
+   "categoria": "COMBUSTÍVEL",
+   "parcela": "de 1",
+   "valor": 40.0,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-03-20",
+   "mes_fatura": "2026-04",
+   "banco": "XP",
+   "estabelecimento": "DM*SPOTIFY",
+   "categoria": "ASSINATURA",
+   "parcela": "-",
+   "valor": 23.9,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-03-21",
+   "mes_fatura": "2026-04",
+   "banco": "XP",
+   "estabelecimento": "IFD*MATUTO REPRESENTAC",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 58.89,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-03-21",
+   "mes_fatura": "2026-04",
+   "banco": "XP",
+   "estabelecimento": "A98  - Compra ShellBox",
+   "categoria": "COMBUSTÍVEL",
+   "parcela": "de 1",
+   "valor": 79.24,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-03-22",
+   "mes_fatura": "2026-04",
+   "banco": "XP",
+   "estabelecimento": "ALG BORRACHARIA",
+   "categoria": "MANUTENÇÃO VEÍCULO",
+   "parcela": "-",
+   "valor": 60.0,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-03-22",
+   "mes_fatura": "2026-04",
+   "banco": "XP",
+   "estabelecimento": "CASA FORTE",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 37.8,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-03-23",
+   "mes_fatura": "2026-04",
+   "banco": "XP",
+   "estabelecimento": "ATACAREJO BONGI",
+   "categoria": "MERCADO",
+   "parcela": "-",
+   "valor": 48.03,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-03-25",
+   "mes_fatura": "2026-04",
+   "banco": "XP",
+   "estabelecimento": "NETFLIX.COM",
+   "categoria": "ASSINATURA",
+   "parcela": "-",
+   "valor": 20.9,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-03-29",
+   "mes_fatura": "2026-04",
+   "banco": "XP",
+   "estabelecimento": "A98  - Compra ShellBox",
+   "categoria": "COMBUSTÍVEL",
+   "parcela": "de 1",
+   "valor": 80.07,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-04-02",
+   "mes_fatura": "2026-05",
+   "banco": "XP",
+   "estabelecimento": "FERREIRA COSTA",
+   "categoria": "ELETRÔNICOS",
+   "parcela": "-",
+   "valor": 8.9,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-04-02",
+   "mes_fatura": "2026-05",
+   "banco": "XP",
+   "estabelecimento": "ATACAREJO BONGI",
+   "categoria": "MERCADO",
+   "parcela": "-",
+   "valor": 365.29,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-04-03",
+   "mes_fatura": "2026-05",
+   "banco": "XP",
+   "estabelecimento": "IFD*MATUTO REPRESENTAC",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 43.9,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-04-03",
+   "mes_fatura": "2026-05",
+   "banco": "XP",
+   "estabelecimento": "MERCADOLIVRE*CASAANZAI",
+   "categoria": "COMPRAS ONLINE",
+   "parcela": "-",
+   "valor": 498.99,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-04-03",
+   "mes_fatura": "2026-05",
+   "banco": "XP",
+   "estabelecimento": "CARREFOUR REC 45",
+   "categoria": "MERCADO",
+   "parcela": "-",
+   "valor": 99.03,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-04-03",
+   "mes_fatura": "2026-05",
+   "banco": "XP",
+   "estabelecimento": "PADARIA NOVA PARI",
+   "categoria": "MERCADO",
+   "parcela": "-",
+   "valor": 15.81,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-04-07",
+   "mes_fatura": "2026-05",
+   "banco": "XP",
+   "estabelecimento": "BRAZ PETRO COMBUSTIVEIS",
+   "categoria": "COMBUSTÍVEL",
+   "parcela": "-",
+   "valor": 30.02,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-04-08",
+   "mes_fatura": "2026-05",
+   "banco": "XP",
+   "estabelecimento": "MP*LOTERIASONLINE5TQZ",
+   "categoria": "LOTERIA",
+   "parcela": "-",
+   "valor": 3.0,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-04-10",
+   "mes_fatura": "2026-05",
+   "banco": "XP",
+   "estabelecimento": "MG COMERCIO DE AL",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 4.99,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-04-11",
+   "mes_fatura": "2026-05",
+   "banco": "XP",
+   "estabelecimento": "MARBELLA COMERCIO DE M",
+   "categoria": "VESTUÁRIO",
+   "parcela": "1 de 4",
+   "valor": 217.49,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-04-11",
+   "mes_fatura": "2026-05",
+   "banco": "XP",
+   "estabelecimento": "IGUEP INCORPORADO",
+   "categoria": "COMBUSTÍVEL",
+   "parcela": "-",
+   "valor": 20.0,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-04-12",
+   "mes_fatura": "2026-05",
+   "banco": "XP",
+   "estabelecimento": "CARREFOUR REC 45",
+   "categoria": "MERCADO",
+   "parcela": "-",
+   "valor": 110.33,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-04-16",
+   "mes_fatura": "2026-05",
+   "banco": "XP",
+   "estabelecimento": "247 COMERCIO LTDA",
+   "categoria": "COMBUSTÍVEL",
+   "parcela": "-",
+   "valor": 19.82,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-04-18",
+   "mes_fatura": "2026-05",
+   "banco": "XP",
+   "estabelecimento": "IFD*MATUTO REPRESENTAC",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 70.89,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-04-20",
+   "mes_fatura": "2026-05",
+   "banco": "XP",
+   "estabelecimento": "ATACAREJO AFOGADOS",
+   "categoria": "MERCADO",
+   "parcela": "-",
+   "valor": 24.39,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-04-20",
+   "mes_fatura": "2026-05",
+   "banco": "XP",
+   "estabelecimento": "MP*LOTERIASONLINEQ92F",
+   "categoria": "LOTERIA",
+   "parcela": "-",
+   "valor": 6.5,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-04-20",
+   "mes_fatura": "2026-05",
+   "banco": "XP",
+   "estabelecimento": "DM*SPOTIFY",
+   "categoria": "ASSINATURA",
+   "parcela": "-",
+   "valor": 23.9,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-04-23",
+   "mes_fatura": "2026-05",
+   "banco": "XP",
+   "estabelecimento": "MP*LOTERIASONLINE1KWT",
+   "categoria": "LOTERIA",
+   "parcela": "-",
+   "valor": 7.0,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-04-25",
+   "mes_fatura": "2026-05",
+   "banco": "XP",
+   "estabelecimento": "NETFLIX ENTRETENIMENTO",
+   "categoria": "ASSINATURA",
+   "parcela": "-",
+   "valor": 20.9,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-04-25",
+   "mes_fatura": "2026-05",
+   "banco": "XP",
+   "estabelecimento": "PETROCAL TORRE",
+   "categoria": "COMBUSTÍVEL",
+   "parcela": "-",
+   "valor": 50.0,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-05-02",
+   "mes_fatura": "2026-05",
+   "banco": "XP",
+   "estabelecimento": "ATACAREJO BONGI",
+   "categoria": "MERCADO",
+   "parcela": "-",
+   "valor": 235.69,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-08-11",
+   "mes_fatura": "2026-06",
+   "banco": "XP",
+   "estabelecimento": "CLINICASIM",
+   "categoria": "CONSULTA",
+   "parcela": "10 de 10",
+   "valor": 137.78,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-10-20",
+   "mes_fatura": "2026-06",
+   "banco": "XP",
+   "estabelecimento": "FERREIRA COSTA",
+   "categoria": "ELETRÔNICOS",
+   "parcela": "7 de 10",
+   "valor": 438.15,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-11-08",
+   "mes_fatura": "2026-06",
+   "banco": "XP",
+   "estabelecimento": "FERREIRA COSTA",
+   "categoria": "ELETRÔNICOS",
+   "parcela": "7 de 8",
+   "valor": 129.54,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-04-11",
+   "mes_fatura": "2026-06",
+   "banco": "XP",
+   "estabelecimento": "MARBELLA COMERCIO DE M",
+   "categoria": "VESTUÁRIO",
+   "parcela": "2 de 4",
+   "valor": 217.49,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-04-30",
+   "mes_fatura": "2026-06",
+   "banco": "XP",
+   "estabelecimento": "MP*LOTERIASONLINEZIB4",
+   "categoria": "LOTERIA",
+   "parcela": "-",
+   "valor": 7.0,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-05-02",
+   "mes_fatura": "2026-06",
+   "banco": "XP",
+   "estabelecimento": "ATACAREJO BONGI",
+   "categoria": "MERCADO",
+   "parcela": "-",
+   "valor": 471.37,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-05-04",
+   "mes_fatura": "2026-06",
+   "banco": "XP",
+   "estabelecimento": "ALBUQUERQUE PNEUS",
+   "categoria": "COMBUSTÍVEL",
+   "parcela": "-",
+   "valor": 40.0,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-05-05",
+   "mes_fatura": "2026-06",
+   "banco": "XP",
+   "estabelecimento": "MP*LOTERIASONLINEFNVU",
+   "categoria": "LOTERIA",
+   "parcela": "-",
+   "valor": 10.8,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-05-07",
+   "mes_fatura": "2026-06",
+   "banco": "XP",
+   "estabelecimento": "MALUMARKETLTDA",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 3.9,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-05-09",
+   "mes_fatura": "2026-06",
+   "banco": "XP",
+   "estabelecimento": "OREIDASCOXINHAS",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 58.89,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-05-09",
+   "mes_fatura": "2026-06",
+   "banco": "XP",
+   "estabelecimento": "PETROCAL TORRE",
+   "categoria": "COMBUSTÍVEL",
+   "parcela": "-",
+   "valor": 68.09,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-05-10",
+   "mes_fatura": "2026-06",
+   "banco": "XP",
+   "estabelecimento": "MET COMERCIO DE C",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 4.99,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-05-10",
+   "mes_fatura": "2026-06",
+   "banco": "XP",
+   "estabelecimento": "MARBELLA COMERCIO DE M",
+   "categoria": "VESTUÁRIO",
+   "parcela": "1 de 2",
+   "valor": 69.99,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-05-10",
+   "mes_fatura": "2026-06",
+   "banco": "XP",
+   "estabelecimento": "IFD*KANPAI SUSHI",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 3.0,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-05-12",
+   "mes_fatura": "2026-06",
+   "banco": "XP",
+   "estabelecimento": "ATACAREJO BONGI",
+   "categoria": "MERCADO",
+   "parcela": "-",
+   "valor": 48.04,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-05-13",
+   "mes_fatura": "2026-06",
+   "banco": "XP",
+   "estabelecimento": "PADARIA NOVA PARI",
+   "categoria": "MERCADO",
+   "parcela": "-",
+   "valor": 12.0,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-05-18",
+   "mes_fatura": "2026-06",
+   "banco": "XP",
+   "estabelecimento": "POSTO SAO JOSE",
+   "categoria": "COMBUSTÍVEL",
+   "parcela": "-",
+   "valor": 30.0,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-05-20",
+   "mes_fatura": "2026-06",
+   "banco": "XP",
+   "estabelecimento": "MP*ASSIST",
+   "categoria": "ELETRÔNICOS",
+   "parcela": "1 de 5",
+   "valor": 676.79,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-05-20",
+   "mes_fatura": "2026-06",
+   "banco": "XP",
+   "estabelecimento": "DM*SPOTIFY",
+   "categoria": "ASSINATURA",
+   "parcela": "-",
+   "valor": 23.9,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-05-20",
+   "mes_fatura": "2026-06",
+   "banco": "XP",
+   "estabelecimento": "MALUMARKETLTDA",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 3.9,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-05-21",
+   "mes_fatura": "2026-06",
+   "banco": "XP",
+   "estabelecimento": "POSTO SANTO ANTONIO",
+   "categoria": "COMBUSTÍVEL",
+   "parcela": "-",
+   "valor": 20.0,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-05-22",
+   "mes_fatura": "2026-06",
+   "banco": "XP",
+   "estabelecimento": "MP*LOTERIASONLINEPGTO",
+   "categoria": "LOTERIA",
+   "parcela": "-",
+   "valor": 9.07,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-05-23",
+   "mes_fatura": "2026-06",
+   "banco": "XP",
+   "estabelecimento": "MP*LOTERIASONLINE01X8",
+   "categoria": "LOTERIA",
+   "parcela": "-",
+   "valor": 22.68,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-05-23",
+   "mes_fatura": "2026-06",
+   "banco": "XP",
+   "estabelecimento": "KIYOI GALETOS",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 113.3,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-05-23",
+   "mes_fatura": "2026-06",
+   "banco": "XP",
+   "estabelecimento": "CARREFOUR REC 45",
+   "categoria": "MERCADO",
+   "parcela": "-",
+   "valor": 52.16,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-05-23",
+   "mes_fatura": "2026-06",
+   "banco": "XP",
+   "estabelecimento": "PETROCAL TORRE",
+   "categoria": "COMBUSTÍVEL",
+   "parcela": "-",
+   "valor": 50.0,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-05-24",
+   "mes_fatura": "2026-06",
+   "banco": "XP",
+   "estabelecimento": "GOOGLE*PLAY",
+   "categoria": "ELETRÔNICOS",
+   "parcela": "-",
+   "valor": 4.64,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-05-24",
+   "mes_fatura": "2026-06",
+   "banco": "XP",
+   "estabelecimento": "GOOGLE*PLAY",
+   "categoria": "ELETRÔNICOS",
+   "parcela": "-",
+   "valor": 132.69,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-05-25",
+   "mes_fatura": "2026-06",
+   "banco": "XP",
+   "estabelecimento": "NETFLIX.COM",
+   "categoria": "ASSINATURA",
+   "parcela": "-",
+   "valor": 20.9,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-05-26",
+   "mes_fatura": "2026-06",
+   "banco": "XP",
+   "estabelecimento": "CARREFOUR REC 45",
+   "categoria": "MERCADO",
+   "parcela": "-",
+   "valor": 16.83,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-05-29",
+   "mes_fatura": "2026-06",
+   "banco": "XP",
+   "estabelecimento": "POSTO AZUL 5",
+   "categoria": "COMBUSTÍVEL",
+   "parcela": "-",
+   "valor": 20.0,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-05-30",
+   "mes_fatura": "2026-06",
+   "banco": "XP",
+   "estabelecimento": "ATACAREJO BONGI",
+   "categoria": "MERCADO",
+   "parcela": "-",
+   "valor": 97.89,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-10-20",
+   "mes_fatura": "2026-07",
+   "banco": "XP",
+   "estabelecimento": "FERREIRA COSTA",
+   "categoria": "ELETRÔNICOS",
+   "parcela": "8 de 10",
+   "valor": 438.15,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-11-08",
+   "mes_fatura": "2026-07",
+   "banco": "XP",
+   "estabelecimento": "FERREIRA COSTA",
+   "categoria": "ELETRÔNICOS",
+   "parcela": "8 de 8",
+   "valor": 129.54,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-04-11",
+   "mes_fatura": "2026-07",
+   "banco": "XP",
+   "estabelecimento": "MARBELLA COMERCIO DE M",
+   "categoria": "VESTUÁRIO",
+   "parcela": "3 de 4",
+   "valor": 217.49,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-05-10",
+   "mes_fatura": "2026-07",
+   "banco": "XP",
+   "estabelecimento": "MARBELLA COMERCIO DE M",
+   "categoria": "VESTUÁRIO",
+   "parcela": "2 de 2",
+   "valor": 69.99,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-05-20",
+   "mes_fatura": "2026-07",
+   "banco": "XP",
+   "estabelecimento": "MP*ASSIST",
+   "categoria": "ELETRÔNICOS",
+   "parcela": "2 de 5",
+   "valor": 676.75,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-06-03",
+   "mes_fatura": "2026-07",
+   "banco": "XP",
+   "estabelecimento": "CARREFOUR REC 45",
+   "categoria": "MERCADO",
+   "parcela": "-",
+   "valor": 18.27,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-06-03",
+   "mes_fatura": "2026-07",
+   "banco": "XP",
+   "estabelecimento": "ESPERANCA II",
+   "categoria": "FARMÁCIA",
+   "parcela": "-",
+   "valor": 82.91,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-06-04",
+   "mes_fatura": "2026-07",
+   "banco": "XP",
+   "estabelecimento": "INGRESSO.COM",
+   "categoria": "LAZER",
+   "parcela": "-",
+   "valor": 125.4,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-06-04",
+   "mes_fatura": "2026-07",
+   "banco": "XP",
+   "estabelecimento": "PADARIA NOVA PARI",
+   "categoria": "MERCADO",
+   "parcela": "-",
+   "valor": 18.3,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-06-06",
+   "mes_fatura": "2026-07",
+   "banco": "XP",
+   "estabelecimento": "POSTO PARAISO",
+   "categoria": "COMBUSTÍVEL",
+   "parcela": "-",
+   "valor": 20.0,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-06-06",
+   "mes_fatura": "2026-07",
+   "banco": "XP",
+   "estabelecimento": "CARREFOUR REC 45",
+   "categoria": "MERCADO",
+   "parcela": "-",
+   "valor": 20.57,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-06-06",
+   "mes_fatura": "2026-07",
+   "banco": "XP",
+   "estabelecimento": "RECIFE PARKING",
+   "categoria": "TRANSPORTE",
+   "parcela": "-",
+   "valor": 9.5,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-06-07",
+   "mes_fatura": "2026-07",
+   "banco": "XP",
+   "estabelecimento": "POSTO CEMOPEL II",
+   "categoria": "COMBUSTÍVEL",
+   "parcela": "-",
+   "valor": 44.98,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-06-10",
+   "mes_fatura": "2026-07",
+   "banco": "XP",
+   "estabelecimento": "ATACAREJO BONGI",
+   "categoria": "MERCADO",
+   "parcela": "-",
+   "valor": 81.99,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-06-13",
+   "mes_fatura": "2026-07",
+   "banco": "XP",
+   "estabelecimento": "POSTO CEMOPEL II",
+   "categoria": "COMBUSTÍVEL",
+   "parcela": "-",
+   "valor": 47.39,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-06-13",
+   "mes_fatura": "2026-07",
+   "banco": "XP",
+   "estabelecimento": "ASTROS BARBEARIA",
+   "categoria": "BELEZA",
+   "parcela": "-",
+   "valor": 80.0,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-06-16",
+   "mes_fatura": "2026-07",
+   "banco": "XP",
+   "estabelecimento": "MET COMERCIO DE C",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 9.98,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-06-19",
+   "mes_fatura": "2026-07",
+   "banco": "XP",
+   "estabelecimento": "MP*LOTERIASONLINE0O9S",
+   "categoria": "LOTERIA",
+   "parcela": "-",
+   "valor": 3.0,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-06-19",
+   "mes_fatura": "2026-07",
+   "banco": "XP",
+   "estabelecimento": "247 COMERCIO LTDA",
+   "categoria": "COMBUSTÍVEL",
+   "parcela": "-",
+   "valor": 24.73,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-06-20",
+   "mes_fatura": "2026-07",
+   "banco": "XP",
+   "estabelecimento": "DM*SPOTIFY",
+   "categoria": "ASSINATURA",
+   "parcela": "-",
+   "valor": 23.9,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-06-21",
+   "mes_fatura": "2026-07",
+   "banco": "XP",
+   "estabelecimento": "ATACAREJO BONGI",
+   "categoria": "MERCADO",
+   "parcela": "-",
+   "valor": 84.09,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-06-22",
+   "mes_fatura": "2026-07",
+   "banco": "XP",
+   "estabelecimento": "GOOGLE KINGSHOT",
+   "categoria": "LAZER",
+   "parcela": "-",
+   "valor": 18.5,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-06-25",
+   "mes_fatura": "2026-07",
+   "banco": "XP",
+   "estabelecimento": "NETFLIX ENTRETENIMENTO",
+   "categoria": "ASSINATURA",
+   "parcela": "-",
+   "valor": 20.9,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-06-28",
+   "mes_fatura": "2026-07",
+   "banco": "XP",
+   "estabelecimento": "PETROCAL TORRE",
+   "categoria": "COMBUSTÍVEL",
+   "parcela": "-",
+   "valor": 30.0,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-07-01",
+   "mes_fatura": "2026-07",
+   "banco": "XP",
+   "estabelecimento": "247 COMERCIO LTDA",
+   "categoria": "COMBUSTÍVEL",
+   "parcela": "-",
+   "valor": 29.84,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-10-20",
+   "mes_fatura": "2026-08",
+   "banco": "XP",
+   "estabelecimento": "FERREIRA COSTA",
+   "categoria": "ELETRÔNICOS",
+   "parcela": "9 de 10",
+   "valor": 438.15,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-04-11",
+   "mes_fatura": "2026-08",
+   "banco": "XP",
+   "estabelecimento": "MARBELLA COMERCIO DE M",
+   "categoria": "VESTUÁRIO",
+   "parcela": "4 de 4",
+   "valor": 217.49,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-05-20",
+   "mes_fatura": "2026-08",
+   "banco": "XP",
+   "estabelecimento": "MP*ASSIST",
+   "categoria": "ELETRÔNICOS",
+   "parcela": "3 de 5",
+   "valor": 676.75,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-07-03",
+   "mes_fatura": "2026-08",
+   "banco": "XP",
+   "estabelecimento": "MALU MARKET",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 3.9,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-07-04",
+   "mes_fatura": "2026-08",
+   "banco": "XP",
+   "estabelecimento": "ATACADO DOS PRESE",
+   "categoria": "MERCADO",
+   "parcela": "-",
+   "valor": 81.87,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-07-04",
+   "mes_fatura": "2026-08",
+   "banco": "XP",
+   "estabelecimento": "PETROCAL TORRE",
+   "categoria": "COMBUSTÍVEL",
+   "parcela": "-",
+   "valor": 40.0,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-07-04",
+   "mes_fatura": "2026-08",
+   "banco": "XP",
+   "estabelecimento": "ATACAREJO BONGI",
+   "categoria": "MERCADO",
+   "parcela": "-",
+   "valor": 0.0,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-07-06",
+   "mes_fatura": "2026-08",
+   "banco": "XP",
+   "estabelecimento": "MG COMERCIO DE AL",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 9.98,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-07-07",
+   "mes_fatura": "2026-08",
+   "banco": "XP",
+   "estabelecimento": "IFD*PALERMO BURGUER LA",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 1.89,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-07-09",
+   "mes_fatura": "2026-08",
+   "banco": "XP",
+   "estabelecimento": "POSTO AZUL 5",
+   "categoria": "COMBUSTÍVEL",
+   "parcela": "-",
+   "valor": 20.0,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-07-11",
+   "mes_fatura": "2026-08",
+   "banco": "XP",
+   "estabelecimento": "DROG CARREFOUR DRT 494",
+   "categoria": "FARMÁCIA",
+   "parcela": "-",
+   "valor": 30.54,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-07-11",
+   "mes_fatura": "2026-08",
+   "banco": "XP",
+   "estabelecimento": "CARREFOUR REC 45",
+   "categoria": "MERCADO",
+   "parcela": "-",
+   "valor": 58.0,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-07-11",
+   "mes_fatura": "2026-08",
+   "banco": "XP",
+   "estabelecimento": "CARREFOUR P PCR",
+   "categoria": "MERCADO",
+   "parcela": "-",
+   "valor": 65.81,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-07-13",
+   "mes_fatura": "2026-08",
+   "banco": "XP",
+   "estabelecimento": "MERCADOLIVRE*MERCADOLIVRE",
+   "categoria": "COMPRAS ONLINE",
+   "parcela": "-",
+   "valor": 95.39,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-07-14",
+   "mes_fatura": "2026-08",
+   "banco": "XP",
+   "estabelecimento": "DROGASIL 2869",
+   "categoria": "FARMÁCIA",
+   "parcela": "-",
+   "valor": 7.38,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-07-17",
+   "mes_fatura": "2026-08",
+   "banco": "XP",
+   "estabelecimento": "MP*LOTERIASONLINE9W6N",
+   "categoria": "LOTERIA",
+   "parcela": "-",
+   "valor": 12.75,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-07-19",
+   "mes_fatura": "2026-08",
+   "banco": "XP",
+   "estabelecimento": "ATACAREJO BONGI",
+   "categoria": "MERCADO",
+   "parcela": "-",
+   "valor": 161.76,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-07-20",
+   "mes_fatura": "2026-08",
+   "banco": "XP",
+   "estabelecimento": "DM*SPOTIFY",
+   "categoria": "ASSINATURA",
+   "parcela": "-",
+   "valor": 23.9,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-07-23",
+   "mes_fatura": "2026-08",
+   "banco": "XP",
+   "estabelecimento": "PADARIA NOVA PARIS LTD",
+   "categoria": "MERCADO",
+   "parcela": "-",
+   "valor": 17.3,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-07-23",
+   "mes_fatura": "2026-08",
+   "banco": "XP",
+   "estabelecimento": "DROGASIL 2869",
+   "categoria": "FARMÁCIA",
+   "parcela": "-",
+   "valor": 117.28,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-07-24",
+   "mes_fatura": "2026-08",
+   "banco": "XP",
+   "estabelecimento": "PETROCAL CORDEIRO",
+   "categoria": "COMBUSTÍVEL",
+   "parcela": "-",
+   "valor": 10.0,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-07-24",
+   "mes_fatura": "2026-08",
+   "banco": "XP",
+   "estabelecimento": "MERCADOLIVRE*MERCADOLIVRE",
+   "categoria": "COMPRAS ONLINE",
+   "parcela": "-",
+   "valor": 19.0,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-07-24",
+   "mes_fatura": "2026-08",
+   "banco": "XP",
+   "estabelecimento": "FROSTY SAN MARTIN",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 23.7,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-07-25",
+   "mes_fatura": "2026-08",
+   "banco": "XP",
+   "estabelecimento": "NETFLIX ENTRETENIMENTO",
+   "categoria": "ASSINATURA",
+   "parcela": "-",
+   "valor": 20.9,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-07-26",
+   "mes_fatura": "2026-08",
+   "banco": "XP",
+   "estabelecimento": "A98  - Compra ShellBox",
+   "categoria": "COMBUSTÍVEL",
+   "parcela": "de 1",
+   "valor": 63.18,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-07-27",
+   "mes_fatura": "2026-08",
+   "banco": "XP",
+   "estabelecimento": "FERREIRA COSTA",
+   "categoria": "ELETRÔNICOS",
+   "parcela": "-",
+   "valor": 14.5,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-08-01",
+   "mes_fatura": "2026-08",
+   "banco": "XP",
+   "estabelecimento": "ASTROS BARBEARIA",
+   "categoria": "BELEZA",
+   "parcela": "-",
+   "valor": 40.0,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-10-20",
+   "mes_fatura": "2026-09",
+   "banco": "XP",
+   "estabelecimento": "FERREIRA COSTA",
+   "categoria": "ELETRÔNICOS",
+   "parcela": "10 de 10",
+   "valor": 438.15,
+   "fonte": "supabase"
+  },
+  {
+   "data": "2026-05-20",
+   "mes_fatura": "2026-09",
+   "banco": "XP",
+   "estabelecimento": "MP*ASSIST",
+   "categoria": "ELETRÔNICOS",
+   "parcela": "4 de 5",
+   "valor": 676.75,
+   "fonte": "supabase"
+  },
+  {
+   "data": "2026-08-05",
+   "mes_fatura": "2026-09",
+   "banco": "XP",
+   "estabelecimento": "POSTO CUNHA",
+   "categoria": "COMBUSTÍVEL",
+   "parcela": "-",
+   "valor": 20,
+   "fonte": "supabase"
+  },
+  {
+   "data": "2026-08-06",
+   "mes_fatura": "2026-09",
+   "banco": "XP",
+   "estabelecimento": "MERCADOLIVRE*MERCADOLIVRE",
+   "categoria": "COMPRAS ONLINE",
+   "parcela": "-",
+   "valor": -19,
+   "fonte": "supabase"
+  },
+  {
+   "data": "2026-08-07",
+   "mes_fatura": "2026-09",
+   "banco": "XP",
+   "estabelecimento": "247 COMERCIO LTDA",
+   "categoria": "COMBUSTÍVEL",
+   "parcela": "-",
+   "valor": 19.71,
+   "fonte": "supabase"
+  },
+  {
+   "data": "2026-08-08",
+   "mes_fatura": "2026-09",
+   "banco": "XP",
+   "estabelecimento": "ATACAREJO BONGI",
+   "categoria": "MERCADO",
+   "parcela": "-",
+   "valor": 243.07,
+   "fonte": "supabase"
+  },
+  {
+   "data": "2026-08-09",
+   "mes_fatura": "2026-09",
+   "banco": "XP",
+   "estabelecimento": "CARREFOUR REC 45",
+   "categoria": "MERCADO",
+   "parcela": "-",
+   "valor": 34.19,
+   "fonte": "supabase"
+  },
+  {
+   "data": "2026-08-09",
+   "mes_fatura": "2026-09",
+   "banco": "XP",
+   "estabelecimento": "A98  - Compra ShellBox",
+   "categoria": "COMBUSTÍVEL",
+   "parcela": "de 1",
+   "valor": 55.04,
+   "fonte": "supabase"
+  },
+  {
+   "data": "2026-08-11",
+   "mes_fatura": "2026-09",
+   "banco": "XP",
+   "estabelecimento": "MG COMERCIO DE AL",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 4.99,
+   "fonte": "supabase"
+  },
+  {
+   "data": "2026-08-16",
+   "mes_fatura": "2026-09",
+   "banco": "XP",
+   "estabelecimento": "GRAVATINHAGAS24H",
+   "categoria": "MERCADO",
+   "parcela": "-",
+   "valor": 135,
+   "fonte": "supabase"
+  },
+  {
+   "data": "2026-08-16",
+   "mes_fatura": "2026-09",
+   "banco": "XP",
+   "estabelecimento": "PIZZARIA ATLANTIC",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 101.7,
+   "fonte": "supabase"
+  },
+  {
+   "data": "2026-08-16",
+   "mes_fatura": "2026-09",
+   "banco": "XP",
+   "estabelecimento": "A98  - Compra ShellBox",
+   "categoria": "COMBUSTÍVEL",
+   "parcela": "de 1",
+   "valor": 56.64,
+   "fonte": "supabase"
+  },
+  {
+   "data": "2026-08-20",
+   "mes_fatura": "2026-09",
+   "banco": "XP",
+   "estabelecimento": "DL*GOOGLE KINGSH",
+   "categoria": "LAZER",
+   "parcela": "-",
+   "valor": 24.9,
+   "fonte": "supabase"
+  },
+  {
+   "data": "2026-08-20",
+   "mes_fatura": "2026-09",
+   "banco": "XP",
+   "estabelecimento": "DL*GOOGLE KINGSH",
+   "categoria": "LAZER",
+   "parcela": "-",
+   "valor": 6,
+   "fonte": "supabase"
+  },
+  {
+   "data": "2026-08-20",
+   "mes_fatura": "2026-09",
+   "banco": "XP",
+   "estabelecimento": "DM*SPOTIFY",
+   "categoria": "ASSINATURA",
+   "parcela": "-",
+   "valor": 23.9,
+   "fonte": "supabase"
+  },
+  {
+   "data": "2026-08-21",
+   "mes_fatura": "2026-09",
+   "banco": "XP",
+   "estabelecimento": "MP*LOTERIASONLINEXXTP",
+   "categoria": "LOTERIA",
+   "parcela": "-",
+   "valor": 9.75,
+   "fonte": "supabase"
+  },
+  {
+   "data": "2026-08-22",
+   "mes_fatura": "2026-09",
+   "banco": "XP",
+   "estabelecimento": "ATACAREJO BONGI",
+   "categoria": "MERCADO",
+   "parcela": "-",
+   "valor": 136.22,
+   "fonte": "supabase"
+  },
+  {
+   "data": "2026-08-23",
+   "mes_fatura": "2026-09",
+   "banco": "XP",
+   "estabelecimento": "MILK CHURROS",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 64,
+   "fonte": "supabase"
+  },
+  {
+   "data": "2026-08-23",
+   "mes_fatura": "2026-09",
+   "banco": "XP",
+   "estabelecimento": "DROG CARREFOUR DRT 494",
+   "categoria": "FARMÁCIA",
+   "parcela": "-",
+   "valor": 16.9,
+   "fonte": "supabase"
+  },
+  {
+   "data": "2026-08-24",
+   "mes_fatura": "2026-09",
+   "banco": "XP",
+   "estabelecimento": "MERCADOLIVRE*STRONGROCKNE",
+   "categoria": "COMPRAS ONLINE",
+   "parcela": "1 de 5",
+   "valor": 35.83,
+   "fonte": "supabase"
+  },
+  {
+   "data": "2026-08-25",
+   "mes_fatura": "2026-09",
+   "banco": "XP",
+   "estabelecimento": "NETFLIX ENTRETENIMENTO",
+   "categoria": "ASSINATURA",
+   "parcela": "-",
+   "valor": 20.9,
+   "fonte": "supabase"
+  },
+  {
+   "data": "2026-08-26",
+   "mes_fatura": "2026-09",
+   "banco": "XP",
+   "estabelecimento": "POSTO CUNHA",
+   "categoria": "COMBUSTÍVEL",
+   "parcela": "-",
+   "valor": 10,
+   "fonte": "supabase"
+  },
+  {
+   "data": "2026-08-29",
+   "mes_fatura": "2026-09",
+   "banco": "XP",
+   "estabelecimento": "COXINHANOPORTE",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 27,
+   "fonte": "supabase"
+  },
+  {
+   "data": "2026-08-29",
+   "mes_fatura": "2026-09",
+   "banco": "XP",
+   "estabelecimento": "CACAU SHOW",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 57.98,
+   "fonte": "supabase"
+  },
+  {
+   "data": "2026-08-29",
+   "mes_fatura": "2026-09",
+   "banco": "XP",
+   "estabelecimento": "CARREFOUR REC 45",
+   "categoria": "MERCADO",
+   "parcela": "-",
+   "valor": 76.95,
+   "fonte": "supabase"
+  },
+  {
+   "data": "2026-09-01",
+   "mes_fatura": "2026-09",
+   "banco": "XP",
+   "estabelecimento": "RINALDODASILVA",
+   "categoria": "OUTROS",
+   "parcela": "-",
+   "valor": 4,
+   "fonte": "supabase"
+  },
+  {
+   "data": "2026-09-01",
+   "mes_fatura": "2026-09",
+   "banco": "XP",
+   "estabelecimento": "MP*LOTERIASONLINEY7UJ",
+   "categoria": "LOTERIA",
+   "parcela": "-",
+   "valor": 23.62,
+   "fonte": "supabase"
+  },
+  {
+   "data": "2026-09-02",
+   "mes_fatura": "2026-09",
+   "banco": "XP",
+   "estabelecimento": "DESKONTAO",
+   "categoria": "MERCADO",
+   "parcela": "-",
+   "valor": 52.19,
+   "fonte": "supabase"
+  },
+  {
+   "data": "2026-05-20",
+   "mes_fatura": "2026-10",
+   "banco": "XP",
+   "estabelecimento": "MP*ASSIST",
+   "categoria": "ELETRÔNICOS",
+   "parcela": "5 de 5",
+   "valor": 676.75,
+   "fonte": "supabase"
+  },
+  {
+   "data": "2026-08-24",
+   "mes_fatura": "2026-10",
+   "banco": "XP",
+   "estabelecimento": "MERCADOLIVRE*STRONGROCKNE",
+   "categoria": "COMPRAS ONLINE",
+   "parcela": "2 de 5",
+   "valor": 35.79,
+   "fonte": "supabase"
+  },
+  {
+   "data": "2026-09-04",
+   "mes_fatura": "2026-10",
+   "banco": "XP",
+   "estabelecimento": "DL*GOOGLE GOOGLE",
+   "categoria": "ASSINATURA",
+   "parcela": "-",
+   "valor": 35.99,
+   "fonte": "supabase"
+  },
+  {
+   "data": "2026-09-04",
+   "mes_fatura": "2026-10",
+   "banco": "XP",
+   "estabelecimento": "BRAZ PETRO C LT",
+   "categoria": "COMBUSTÍVEL",
+   "parcela": "-",
+   "valor": 30.02,
+   "fonte": "supabase"
+  },
+  {
+   "data": "2026-09-05",
+   "mes_fatura": "2026-10",
+   "banco": "XP",
+   "estabelecimento": "GOOGLE KINGSHOT",
+   "categoria": "LAZER",
+   "parcela": "-",
+   "valor": 6,
+   "fonte": "supabase"
+  },
+  {
+   "data": "2026-09-05",
+   "mes_fatura": "2026-10",
+   "banco": "XP",
+   "estabelecimento": "RINALDODASILVA",
+   "categoria": "OUTROS",
+   "parcela": "-",
+   "valor": 16,
+   "fonte": "supabase"
+  },
+  {
+   "data": "2026-09-05",
+   "mes_fatura": "2026-10",
+   "banco": "XP",
+   "estabelecimento": "FLAVIA MARIA MARQ",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 7,
+   "fonte": "supabase"
+  },
+  {
+   "data": "2026-09-05",
+   "mes_fatura": "2026-10",
+   "banco": "XP",
+   "estabelecimento": "CARREFOUR REC 45",
+   "categoria": "MERCADO",
+   "parcela": "-",
+   "valor": 100.4,
+   "fonte": "supabase"
+  },
+  {
+   "data": "2026-09-06",
+   "mes_fatura": "2026-10",
+   "banco": "XP",
+   "estabelecimento": "GOOGLE KINGSHOT",
+   "categoria": "LAZER",
+   "parcela": "-",
+   "valor": 6,
+   "fonte": "supabase"
+  },
+  {
+   "data": "2026-09-07",
+   "mes_fatura": "2026-10",
+   "banco": "XP",
+   "estabelecimento": "ATACAREJO BONGI",
+   "categoria": "MERCADO",
+   "parcela": "-",
+   "valor": 380.62,
+   "fonte": "supabase"
+  },
+  {
+   "data": "2026-09-08",
+   "mes_fatura": "2026-10",
+   "banco": "XP",
+   "estabelecimento": "CEMOPEL SHOPPING",
+   "categoria": "COMBUSTÍVEL",
+   "parcela": "-",
+   "valor": 10,
+   "fonte": "supabase"
+  },
+  {
+   "data": "2026-09-08",
+   "mes_fatura": "2026-10",
+   "banco": "XP",
+   "estabelecimento": "SAEL",
+   "categoria": "MANUTENÇÃO VEÍCULO",
+   "parcela": "1 de 3",
+   "valor": 400,
+   "fonte": "supabase"
+  },
+  {
+   "data": "2026-09-08",
+   "mes_fatura": "2026-10",
+   "banco": "XP",
+   "estabelecimento": "106 - RIACHUELO - RECI",
+   "categoria": "VESTUÁRIO",
+   "parcela": "1 de 3",
+   "valor": 93.34,
+   "fonte": "supabase"
+  },
+  {
+   "data": "2026-09-08",
+   "mes_fatura": "2026-10",
+   "banco": "XP",
+   "estabelecimento": "IFD*PIZZARIA MATUTA - ZON",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 72.8,
+   "fonte": "supabase"
+  },
+  {
+   "data": "2026-09-08",
+   "mes_fatura": "2026-10",
+   "banco": "XP",
+   "estabelecimento": "Antecipação Parcelado Sem Juros",
+   "categoria": "OUTROS",
+   "parcela": "10 de 1",
+   "valor": 6.99,
+   "fonte": "supabase"
+  },
+  {
+   "data": "2026-09-08",
+   "mes_fatura": "2026-10",
+   "banco": "XP",
+   "estabelecimento": "Antecipação Parcelado Sem Juros",
+   "categoria": "OUTROS",
+   "parcela": "2 de 1",
+   "valor": 6.99,
+   "fonte": "supabase"
+  },
+  {
+   "data": "2026-09-08",
+   "mes_fatura": "2026-10",
+   "banco": "XP",
+   "estabelecimento": "Antecipação Parcelado Sem Juros",
+   "categoria": "OUTROS",
+   "parcela": "3 de 1",
+   "valor": 6.99,
+   "fonte": "supabase"
+  },
+  {
+   "data": "2026-09-08",
+   "mes_fatura": "2026-10",
+   "banco": "XP",
+   "estabelecimento": "Antecipação Parcelado Sem Juros",
+   "categoria": "OUTROS",
+   "parcela": "4 de 1",
+   "valor": 6.99,
+   "fonte": "supabase"
+  },
+  {
+   "data": "2026-09-08",
+   "mes_fatura": "2026-10",
+   "banco": "XP",
+   "estabelecimento": "Antecipação Parcelado Sem Juros",
+   "categoria": "OUTROS",
+   "parcela": "5 de 1",
+   "valor": 6.99,
+   "fonte": "supabase"
+  },
+  {
+   "data": "2026-09-08",
+   "mes_fatura": "2026-10",
+   "banco": "XP",
+   "estabelecimento": "Antecipação Parcelado Sem Juros",
+   "categoria": "OUTROS",
+   "parcela": "6 de 1",
+   "valor": 6.99,
+   "fonte": "supabase"
+  },
+  {
+   "data": "2026-09-08",
+   "mes_fatura": "2026-10",
+   "banco": "XP",
+   "estabelecimento": "Antecipação Parcelado Sem Juros",
+   "categoria": "OUTROS",
+   "parcela": "7 de 1",
+   "valor": 6.99,
+   "fonte": "supabase"
+  },
+  {
+   "data": "2026-09-08",
+   "mes_fatura": "2026-10",
+   "banco": "XP",
+   "estabelecimento": "Antecipação Parcelado Sem Juros",
+   "categoria": "OUTROS",
+   "parcela": "8 de 1",
+   "valor": 6.99,
+   "fonte": "supabase"
+  },
+  {
+   "data": "2026-09-08",
+   "mes_fatura": "2026-10",
+   "banco": "XP",
+   "estabelecimento": "Antecipação Parcelado Sem Juros",
+   "categoria": "OUTROS",
+   "parcela": "9 de 1",
+   "valor": 6.99,
+   "fonte": "supabase"
+  },
+  {
+   "data": "2026-09-09",
+   "mes_fatura": "2026-10",
+   "banco": "XP",
+   "estabelecimento": "FRANCISCO DE ASSI",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 17.99,
+   "fonte": "supabase"
+  },
+  {
+   "data": "2026-09-11",
+   "mes_fatura": "2026-10",
+   "banco": "XP",
+   "estabelecimento": "AMAZONMKTPLC*FERREIRAM",
+   "categoria": "COMPRAS ONLINE",
+   "parcela": "1 de 3",
+   "valor": 37.38,
+   "fonte": "supabase"
+  },
+  {
+   "data": "2026-09-13",
+   "mes_fatura": "2026-10",
+   "banco": "XP",
+   "estabelecimento": "SHOPEE *DIVICALCADOSLT",
+   "categoria": "COMPRAS ONLINE",
+   "parcela": "-",
+   "valor": 26.35,
+   "fonte": "supabase"
+  },
+  {
+   "data": "2026-09-14",
+   "mes_fatura": "2026-10",
+   "banco": "XP",
+   "estabelecimento": "ATACAREJO BONGI",
+   "categoria": "MERCADO",
+   "parcela": "-",
+   "valor": 5.56,
+   "fonte": "supabase"
+  },
+  {
+   "data": "2026-09-14",
+   "mes_fatura": "2026-10",
+   "banco": "XP",
+   "estabelecimento": "ATACAREJO BONGI",
+   "categoria": "MERCADO",
+   "parcela": "-",
+   "valor": 45.47,
+   "fonte": "supabase"
+  },
+  {
+   "data": "2026-09-16",
+   "mes_fatura": "2026-10",
+   "banco": "XP",
+   "estabelecimento": "IGUEP INCORPORADO",
+   "categoria": "COMBUSTÍVEL",
+   "parcela": "-",
+   "valor": 62.38,
+   "fonte": "supabase"
+  },
+  {
+   "data": "2026-09-16",
+   "mes_fatura": "2026-10",
+   "banco": "XP",
+   "estabelecimento": "ATACAREJO BONGI",
+   "categoria": "MERCADO",
+   "parcela": "-",
+   "valor": 51.54,
+   "fonte": "supabase"
+  },
+  {
+   "data": "2026-09-17",
+   "mes_fatura": "2026-10",
+   "banco": "XP",
+   "estabelecimento": "GOOGLE KINGSHOT",
+   "categoria": "LAZER",
+   "parcela": "-",
+   "valor": 6,
+   "fonte": "supabase"
+  },
+  {
+   "data": "2026-09-18",
+   "mes_fatura": "2026-10",
+   "banco": "XP",
+   "estabelecimento": "Desconto Antecipacao de Parcelas",
+   "categoria": "OUTROS",
+   "parcela": "de 1",
+   "valor": -2.38,
+   "fonte": "supabase"
+  },
+  {
+   "data": "2026-09-19",
+   "mes_fatura": "2026-10",
+   "banco": "XP",
+   "estabelecimento": "ATACAREJO BONGI",
+   "categoria": "MERCADO",
+   "parcela": "-",
+   "valor": 56,
+   "fonte": "supabase"
+  },
+  {
+   "data": "2026-09-21",
+   "mes_fatura": "2026-10",
+   "banco": "XP",
+   "estabelecimento": "CARREFOUR REC 45",
+   "categoria": "MERCADO",
+   "parcela": "-",
+   "valor": 21.28,
+   "fonte": "supabase"
+  },
+  {
+   "data": "2026-09-21",
+   "mes_fatura": "2026-10",
+   "banco": "XP",
+   "estabelecimento": "MET COMERCIO DE C",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 7.28,
+   "fonte": "supabase"
+  },
+  {
+   "data": "2026-09-22",
+   "mes_fatura": "2026-10",
+   "banco": "XP",
+   "estabelecimento": "MP*LOTERIASONLINEPR8A",
+   "categoria": "LOTERIA",
+   "parcela": "-",
+   "valor": 6.1,
+   "fonte": "supabase"
+  },
+  {
+   "data": "2026-09-22",
+   "mes_fatura": "2026-10",
+   "banco": "XP",
+   "estabelecimento": "MP*LOTERIASONLINEPGGS",
+   "categoria": "LOTERIA",
+   "parcela": "-",
+   "valor": 3.5,
+   "fonte": "supabase"
+  },
+  {
+   "data": "2026-08-24",
+   "mes_fatura": "2026-11",
+   "banco": "XP",
+   "estabelecimento": "MERCADOLIVRE*STRONGROCKNE",
+   "categoria": "COMPRAS ONLINE",
+   "parcela": "3 de 5",
+   "valor": 35.79,
+   "fonte": "Fatura2026-11-10.csv"
+  },
+  {
+   "data": "2026-09-07",
+   "mes_fatura": "2026-11",
+   "banco": "XP",
+   "estabelecimento": "IMPERIO MOVEIS E ELETR",
+   "categoria": "ELETRÔNICOS",
+   "parcela": "2 de 5",
+   "valor": 232.87,
+   "fonte": "Fatura2026-11-10.csv"
+  },
+  {
+   "data": "2026-09-08",
+   "mes_fatura": "2026-11",
+   "banco": "XP",
+   "estabelecimento": "106 - RIACHUELO - RECI",
+   "categoria": "VESTUÁRIO",
+   "parcela": "2 de 3",
+   "valor": 93.32,
+   "fonte": "Fatura2026-11-10.csv"
+  },
+  {
+   "data": "2026-09-08",
+   "mes_fatura": "2026-11",
+   "banco": "XP",
+   "estabelecimento": "SAEL",
+   "categoria": "MANUTENÇÃO VEÍCULO",
+   "parcela": "2 de 3",
+   "valor": 400.0,
+   "fonte": "Fatura2026-11-10.csv"
+  },
+  {
+   "data": "2026-09-11",
+   "mes_fatura": "2026-11",
+   "banco": "XP",
+   "estabelecimento": "AMAZONMKTPLC*FERREIRAM",
+   "categoria": "COMPRAS ONLINE",
+   "parcela": "2 de 3",
+   "valor": 37.37,
+   "fonte": "Fatura2026-11-10.csv"
+  },
+  {
+   "data": "2026-10-02",
+   "mes_fatura": "2026-11",
+   "banco": "XP",
+   "estabelecimento": "DL*GOOGLE GOOGLE",
+   "categoria": "ASSINATURA",
+   "parcela": "-",
+   "valor": 35.99,
+   "fonte": "Fatura2026-11-10.csv"
+  },
+  {
+   "data": "2026-10-02",
+   "mes_fatura": "2026-11",
+   "banco": "XP",
+   "estabelecimento": "LMSERVICELTDA",
+   "categoria": "OUTROS",
+   "parcela": "-",
+   "valor": 35.26,
+   "fonte": "Fatura2026-11-10.csv",
+   "a_confirmar": true
+  },
+  {
+   "data": "2026-10-02",
+   "mes_fatura": "2026-11",
+   "banco": "XP",
+   "estabelecimento": "POSTO CUNHA",
+   "categoria": "COMBUSTÍVEL",
+   "parcela": "-",
+   "valor": 29.71,
+   "fonte": "Fatura2026-11-10.csv"
+  },
+  {
+   "data": "2026-10-02",
+   "mes_fatura": "2026-11",
+   "banco": "XP",
+   "estabelecimento": "CARREFOUR REC 45",
+   "categoria": "MERCADO",
+   "parcela": "-",
+   "valor": 55.27,
+   "fonte": "Fatura2026-11-10.csv"
+  },
+  {
+   "data": "2026-10-03",
+   "mes_fatura": "2026-11",
+   "banco": "XP",
+   "estabelecimento": "ATACAREJO BONGI",
+   "categoria": "MERCADO",
+   "parcela": "-",
+   "valor": 275.91,
+   "fonte": "Fatura2026-11-10.csv"
+  },
+  {
+   "data": "2026-10-04",
+   "mes_fatura": "2026-11",
+   "banco": "XP",
+   "estabelecimento": "A98  - Compra ShellBox",
+   "categoria": "COMBUSTÍVEL",
+   "parcela": "de 1",
+   "valor": 66.4,
+   "fonte": "Fatura2026-11-10.csv"
+  },
+  {
+   "data": "2026-10-06",
+   "mes_fatura": "2026-11",
+   "banco": "XP",
+   "estabelecimento": "MG COMERCIO DE AL",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 4.99,
+   "fonte": "Fatura2026-11-10.csv"
+  },
+  {
+   "data": "2026-10-08",
+   "mes_fatura": "2026-11",
+   "banco": "XP",
+   "estabelecimento": "ATACAREJO BONGI",
+   "categoria": "MERCADO",
+   "parcela": "-",
+   "valor": 12.16,
+   "fonte": "Fatura2026-11-10.csv"
+  },
+  {
+   "data": "2026-10-08",
+   "mes_fatura": "2026-11",
+   "banco": "XP",
+   "estabelecimento": "DROGASIL 2869",
+   "categoria": "FARMÁCIA",
+   "parcela": "-",
+   "valor": 44.25,
+   "fonte": "Fatura2026-11-10.csv"
+  },
+  {
+   "data": "2026-10-11",
+   "mes_fatura": "2026-11",
+   "banco": "XP",
+   "estabelecimento": "CARREFOUR RECIFE",
+   "categoria": "MERCADO",
+   "parcela": "-",
+   "valor": 32.8,
+   "fonte": "Fatura2026-11-10.csv"
+  },
+  {
+   "data": "2026-10-14",
+   "mes_fatura": "2026-11",
+   "banco": "XP",
+   "estabelecimento": "PADARIA NOVA PARI",
+   "categoria": "MERCADO",
+   "parcela": "-",
+   "valor": 16.0,
+   "fonte": "Fatura2026-11-10.csv"
+  },
+  {
+   "data": "2026-10-15",
+   "mes_fatura": "2026-11",
+   "banco": "XP",
+   "estabelecimento": "BRAZ PETRO C LT",
+   "categoria": "COMBUSTÍVEL",
+   "parcela": "-",
+   "valor": 30.0,
+   "fonte": "Fatura2026-11-10.csv"
+  },
+  {
+   "data": "2026-10-15",
+   "mes_fatura": "2026-11",
+   "banco": "XP",
+   "estabelecimento": "DL*GOOGLE KINGSH",
+   "categoria": "LAZER",
+   "parcela": "-",
+   "valor": 6.0,
+   "fonte": "Fatura2026-11-10.csv"
+  },
+  {
+   "data": "2026-10-17",
+   "mes_fatura": "2026-11",
+   "banco": "XP",
+   "estabelecimento": "GOOGLE CABAL RETURN O",
+   "categoria": "LAZER",
+   "parcela": "-",
+   "valor": 7.0,
+   "fonte": "Fatura2026-11-10.csv"
+  },
+  {
+   "data": "2026-10-17",
+   "mes_fatura": "2026-11",
+   "banco": "XP",
+   "estabelecimento": "ATACAREJO BONGI",
+   "categoria": "MERCADO",
+   "parcela": "-",
+   "valor": 81.17,
+   "fonte": "Fatura2026-11-10.csv"
+  },
+  {
+   "data": "2026-10-18",
+   "mes_fatura": "2026-11",
+   "banco": "XP",
+   "estabelecimento": "GOOGLE CABAL RETURN O",
+   "categoria": "LAZER",
+   "parcela": "-",
+   "valor": 7.0,
+   "fonte": "Fatura2026-11-10.csv"
+  },
+  {
+   "data": "2026-10-19",
+   "mes_fatura": "2026-11",
+   "banco": "XP",
+   "estabelecimento": "247 COMERCIO LTDA",
+   "categoria": "COMBUSTÍVEL",
+   "parcela": "-",
+   "valor": 19.71,
+   "fonte": "Fatura2026-11-10.csv"
+  },
+  {
+   "data": "2026-10-19",
+   "mes_fatura": "2026-11",
+   "banco": "XP",
+   "estabelecimento": "ALEXANDROALVESDA",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 15.0,
+   "fonte": "Fatura2026-11-10.csv"
+  },
+  {
+   "data": "2026-10-21",
+   "mes_fatura": "2026-11",
+   "banco": "XP",
+   "estabelecimento": "MP*LOTERIASONLINE73B7",
+   "categoria": "LOTERIA",
+   "parcela": "-",
+   "valor": 10.5,
+   "fonte": "Fatura2026-11-10.csv"
+  },
+  {
+   "data": "2026-10-22",
+   "mes_fatura": "2026-11",
+   "banco": "XP",
+   "estabelecimento": "ATACAREJO BONGI",
+   "categoria": "MERCADO",
+   "parcela": "-",
+   "valor": 47.9,
+   "fonte": "Fatura2026-11-10.csv"
+  },
+  {
+   "data": "2026-10-22",
+   "mes_fatura": "2026-11",
+   "banco": "XP",
+   "estabelecimento": "DROGASIL 2869",
+   "categoria": "FARMÁCIA",
+   "parcela": "-",
+   "valor": 18.49,
+   "fonte": "Fatura2026-11-10.csv"
+  },
+  {
+   "data": "2026-10-22",
+   "mes_fatura": "2026-11",
+   "banco": "XP",
+   "estabelecimento": "247 COMERCIO LTDA",
+   "categoria": "COMBUSTÍVEL",
+   "parcela": "-",
+   "valor": 19.71,
+   "fonte": "Fatura2026-11-10.csv"
+  },
+  {
+   "data": "2026-10-24",
+   "mes_fatura": "2026-11",
+   "banco": "XP",
+   "estabelecimento": "ARRETADO B.",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 65.0,
+   "fonte": "Fatura2026-11-10.csv"
+  },
+  {
+   "data": "2026-10-25",
+   "mes_fatura": "2026-11",
+   "banco": "XP",
+   "estabelecimento": "NETFLIX.COM",
+   "categoria": "ASSINATURA",
+   "parcela": "-",
+   "valor": 20.9,
+   "fonte": "Fatura2026-11-10.csv"
+  },
+  {
+   "data": "2026-10-25",
+   "mes_fatura": "2026-11",
+   "banco": "XP",
+   "estabelecimento": "CARREFOUR REC 45",
+   "categoria": "MERCADO",
+   "parcela": "-",
+   "valor": 18.48,
+   "fonte": "Fatura2026-11-10.csv"
+  },
+  {
+   "data": "2026-10-25",
+   "mes_fatura": "2026-11",
+   "banco": "XP",
+   "estabelecimento": "PETROCAL TORRE",
+   "categoria": "COMBUSTÍVEL",
+   "parcela": "-",
+   "valor": 64.83,
+   "fonte": "Fatura2026-11-10.csv"
+  },
+  {
+   "data": "2026-10-29",
+   "mes_fatura": "2026-11",
+   "banco": "XP",
+   "estabelecimento": "DROGASIL 2656",
+   "categoria": "FARMÁCIA",
+   "parcela": "-",
+   "valor": 53.89,
+   "fonte": "Fatura2026-11-10.csv"
+  },
+  {
+   "data": "2026-08-24",
+   "mes_fatura": "2026-12",
+   "banco": "XP",
+   "estabelecimento": "MERCADOLIVRE*STRONGROCKNE",
+   "categoria": "COMPRAS ONLINE",
+   "parcela": "4 de 5",
+   "valor": 35.79,
+   "fonte": "Fatura2026-12-10.csv"
+  },
+  {
+   "data": "2026-09-07",
+   "mes_fatura": "2026-12",
+   "banco": "XP",
+   "estabelecimento": "IMPERIO MOVEIS E ELETR",
+   "categoria": "ELETRÔNICOS",
+   "parcela": "3 de 5",
+   "valor": 232.87,
+   "fonte": "Fatura2026-12-10.csv"
+  },
+  {
+   "data": "2026-09-08",
+   "mes_fatura": "2026-12",
+   "banco": "XP",
+   "estabelecimento": "SAEL",
+   "categoria": "MANUTENÇÃO VEÍCULO",
+   "parcela": "3 de 3",
+   "valor": 400.0,
+   "fonte": "Fatura2026-12-10.csv"
+  },
+  {
+   "data": "2026-09-08",
+   "mes_fatura": "2026-12",
+   "banco": "XP",
+   "estabelecimento": "106 - RIACHUELO - RECI",
+   "categoria": "VESTUÁRIO",
+   "parcela": "3 de 3",
+   "valor": 93.32,
+   "fonte": "Fatura2026-12-10.csv"
+  },
+  {
+   "data": "2026-09-11",
+   "mes_fatura": "2026-12",
+   "banco": "XP",
+   "estabelecimento": "AMAZONMKTPLC*FERREIRAM",
+   "categoria": "COMPRAS ONLINE",
+   "parcela": "3 de 3",
+   "valor": 37.37,
+   "fonte": "Fatura2026-12-10.csv"
+  },
+  {
+   "data": "2026-08-24",
+   "mes_fatura": "2027-01",
+   "banco": "XP",
+   "estabelecimento": "MERCADOLIVRE*STRONGROCKNE",
+   "categoria": "COMPRAS ONLINE",
+   "parcela": "5 de 5",
+   "valor": 35.79,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-09-07",
+   "mes_fatura": "2027-01",
+   "banco": "XP",
+   "estabelecimento": "IMPERIO MOVEIS E ELETR",
+   "categoria": "ELETRÔNICOS",
+   "parcela": "4 de 5",
+   "valor": 232.87,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-09-07",
+   "mes_fatura": "2027-02",
+   "banco": "XP",
+   "estabelecimento": "IMPERIO MOVEIS E ELETR",
+   "categoria": "ELETRÔNICOS",
+   "parcela": "5 de 5",
+   "valor": 232.87,
+   "fonte": "historico"
+  }
+ ]
+}

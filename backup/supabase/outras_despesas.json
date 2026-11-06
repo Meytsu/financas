@@ -1,0 +1,110 @@
+[
+ {
+  "Responsavel": "Henrique",
+  "Despesa": "SUHAI SEGURO (Boleto 1/3)",
+  "Valor": 650.91,
+  "Mes_Fatura": "2026-10"
+ },
+ {
+  "Responsavel": "Henrique",
+  "Despesa": "SUHAI SEGURO (Boleto 2/3)",
+  "Valor": 650.93,
+  "Mes_Fatura": "2026-11"
+ },
+ {
+  "Responsavel": "Henrique",
+  "Despesa": "SUHAI SEGURO (Boleto 3/3)",
+  "Valor": 650.93,
+  "Mes_Fatura": "2026-12"
+ },
+ {
+  "Responsavel": "Henrique",
+  "Despesa": "Financiamento BMW (1/12)",
+  "Valor": 1395.93,
+  "Mes_Fatura": "2027-01"
+ },
+ {
+  "Responsavel": "Henrique",
+  "Despesa": "Financiamento BMW (2/12)",
+  "Valor": 1395.93,
+  "Mes_Fatura": "2027-02"
+ },
+ {
+  "Responsavel": "Henrique",
+  "Despesa": "Financiamento BMW (3/12)",
+  "Valor": 1395.93,
+  "Mes_Fatura": "2027-03"
+ },
+ {
+  "Responsavel": "Henrique",
+  "Despesa": "Financiamento BMW (4/12)",
+  "Valor": 1395.93,
+  "Mes_Fatura": "2027-04"
+ },
+ {
+  "Responsavel": "Henrique",
+  "Despesa": "Financiamento BMW (5/12)",
+  "Valor": 1395.93,
+  "Mes_Fatura": "2027-05"
+ },
+ {
+  "Responsavel": "Henrique",
+  "Despesa": "Financiamento BMW (6/12)",
+  "Valor": 1395.93,
+  "Mes_Fatura": "2027-06"
+ },
+ {
+  "Responsavel": "Henrique",
+  "Despesa": "Financiamento BMW (7/12)",
+  "Valor": 1395.93,
+  "Mes_Fatura": "2027-07"
+ },
+ {
+  "Responsavel": "Henrique",
+  "Despesa": "Financiamento BMW (8/12)",
+  "Valor": 1395.93,
+  "Mes_Fatura": "2027-08"
+ },
+ {
+  "Responsavel": "Henrique",
+  "Despesa": "Financiamento BMW (9/12)",
+  "Valor": 1395.93,
+  "Mes_Fatura": "2027-09"
+ },
+ {
+  "Responsavel": "Henrique",
+  "Despesa": "Financiamento BMW (10/12)",
+  "Valor": 1395.93,
+  "Mes_Fatura": "2027-10"
+ },
+ {
+  "Responsavel": "Henrique",
+  "Despesa": "Financiamento BMW (11/12)",
+  "Valor": 1395.93,
+  "Mes_Fatura": "2027-11"
+ },
+ {
+  "Responsavel": "Henrique",
+  "Despesa": "Financiamento BMW (12/12)",
+  "Valor": 1395.93,
+  "Mes_Fatura": "2027-12"
+ },
+ {
+  "Responsavel": "Henrique",
+  "Despesa": "Financiamento Mercado Pago - Kit i3 (1/3)",
+  "Valor": 159.5,
+  "Mes_Fatura": "2026-09"
+ },
+ {
+  "Responsavel": "Henrique",
+  "Despesa": "Financiamento Mercado Pago - Kit i3 (2/3)",
+  "Valor": 159.5,
+  "Mes_Fatura": "2026-10"
+ },
+ {
+  "Responsavel": "Henrique",
+  "Despesa": "Financiamento Mercado Pago - Kit i3 (3/3)",
+  "Valor": 159.5,
+  "Mes_Fatura": "2026-11"
+ }
+]

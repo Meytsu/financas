@@ -1,0 +1,58 @@
+[
+ {
+  "Responsavel": "Henrique",
+  "Despesa": "Aluguel",
+  "Valor": 800,
+  "Pago": "2026-09",
+  "Mes_Inicio": null
+ },
+ {
+  "Responsavel": "Henrique",
+  "Despesa": "Dados móveis",
+  "Valor": 30,
+  "Pago": "2026-09",
+  "Mes_Inicio": null
+ },
+ {
+  "Responsavel": "Henrique",
+  "Despesa": "Feira",
+  "Valor": 250,
+  "Pago": "2026-08",
+  "Mes_Inicio": null
+ },
+ {
+  "Responsavel": "Beatriz",
+  "Despesa": "Ração",
+  "Valor": 40,
+  "Pago": "2026-08",
+  "Mes_Inicio": null
+ },
+ {
+  "Responsavel": "Beatriz",
+  "Despesa": "Energia",
+  "Valor": 150,
+  "Pago": "2026-08",
+  "Mes_Inicio": null
+ },
+ {
+  "Responsavel": "Beatriz",
+  "Despesa": "Celular",
+  "Valor": 42,
+  "Pago": "2026-09",
+  "Mes_Inicio": null
+ },
+ {
+  "Responsavel": "Beatriz",
+  "Despesa": "Internet",
+  "Valor": 80,
+  "Pago": "2026-09",
+  "Mes_Inicio": null
+ },
+ {
+  "Responsavel": "Beatriz",
+  "Despesa": "Feira",
+  "Valor": 250,
+  "Pago": "2026-10",
+  "Mes_Inicio": "\r"
+ }
+]
