@@ -5,6 +5,10 @@ Painel financeiro pessoal. **Refeito do zero em 2026-11-05.** Primeiro a página
 - **Manual do painel** (indicadores, gráficos, regras de design): [dashboard/README.md](dashboard/README.md)
 - **Parâmetros financeiros e decisões do Henrique:** [dashboard/MEMORIES.md](dashboard/MEMORIES.md)
 
+## Git
+
+O trabalho novo está na branch **`painel-novo`** do repo `Meytsu/financas` (público). A `main` publica o site `meytsu.github.io/financas` a cada push — **não fazer merge/push na `main` sem o Henrique decidir publicar.**
+
 ## Como rodar
 
 ```bash

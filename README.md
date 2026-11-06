@@ -138,6 +138,7 @@ Todos os gráficos: dica no hover **e** no foco do teclado (Tab), legenda para �
 
 ## Para continuar (estado em 2026-11-05, fim do dia)
 
+0. **Git:** o trabalho novo está na branch **`painel-novo`** (GitHub: `Meytsu/financas`, repositório **público**). A `main` continua com o painel antigo e é ela que publica o site `meytsu.github.io/financas` (GitHub Actions a cada push). **Não fazer merge/push na `main` sem o Henrique decidir publicar.** Em outro PC: `git clone git@github.com:Meytsu/financas.git && git checkout painel-novo`.
 1. `cd ~/Documentos/Finanças/dashboard && npm run dev` → http://localhost:3000/financas
 2. Se baixar fatura nova: seguir o fluxo do `~/Documentos/Finanças/CLAUDE.md` e rodar `python3 ../scripts/gerar_henrique.py`.
 3. Para o Claude acessar o Supabase de novo: o MCP `supabase` já está configurado no Claude Code (`~/.claude.json`); se pedir login, `/mcp` → supabase → Authenticate.
