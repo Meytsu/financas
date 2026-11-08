@@ -1,5 +1,7 @@
 {
- "gerado_em": "2026-11-06",
+ "gerado_em": "2026-11-08",
+ "pessoa": "henrique",
+ "nome": "Henrique",
  "portador": "HENRIQUE ALVES",
  "renda": {
   "liquida_mensal": 4390.8,
@@ -28,6 +30,7 @@
  "teto_cartao": 1200.0,
  "limite_comprometimento": 0.3,
  "fatura_vencimento_dia": 10,
+ "fatura_vencimento_dia_nubank": 22,
  "reserva": {
   "contas": [
    {
@@ -5450,6 +5453,16 @@
   {
    "data": "2026-03-15",
    "mes_fatura": "2026-04",
+   "banco": "NUBANK",
+   "estabelecimento": "Mmz Comercio de Cosme",
+   "categoria": "BELEZA",
+   "parcela": "2 de 6",
+   "valor": 66.8,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-03-15",
+   "mes_fatura": "2026-04",
    "banco": "XP",
    "estabelecimento": "A98  - Compra ShellBox",
    "categoria": "COMBUSTÍVEL",
@@ -5535,6 +5548,36 @@
    "categoria": "COMBUSTÍVEL",
    "parcela": "de 1",
    "valor": 80.07,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-04-12",
+   "mes_fatura": "2026-04",
+   "banco": "NUBANK",
+   "estabelecimento": "Shopee *Shpstecnologia",
+   "categoria": "COMPRAS ONLINE",
+   "parcela": "-",
+   "valor": 28.6,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-04-13",
+   "mes_fatura": "2026-04",
+   "banco": "NUBANK",
+   "estabelecimento": "Posto Apipucos",
+   "categoria": "COMBUSTÍVEL",
+   "parcela": "-",
+   "valor": 30.0,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-04-14",
+   "mes_fatura": "2026-04",
+   "banco": "NUBANK",
+   "estabelecimento": "Dlknet *Ac Paulo Brega",
+   "categoria": "ENVIO/CORREIOS",
+   "parcela": "1 de 3",
+   "valor": 64.91,
    "fonte": "historico"
   },
   {
@@ -5658,6 +5701,36 @@
    "fonte": "historico"
   },
   {
+   "data": "2026-04-15",
+   "mes_fatura": "2026-05",
+   "banco": "NUBANK",
+   "estabelecimento": "Dlknet *Ac Paulo Brega",
+   "categoria": "ENVIO/CORREIOS",
+   "parcela": "2 de 3",
+   "valor": 64.89,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-04-15",
+   "mes_fatura": "2026-05",
+   "banco": "NUBANK",
+   "estabelecimento": "Mmz Comercio de Cosme",
+   "categoria": "BELEZA",
+   "parcela": "3 de 6",
+   "valor": 66.8,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-04-15",
+   "mes_fatura": "2026-05",
+   "banco": "NUBANK",
+   "estabelecimento": "Atacarejo Bongi",
+   "categoria": "MERCADO",
+   "parcela": "-",
+   "valor": 80.52,
+   "fonte": "historico"
+  },
+  {
    "data": "2026-04-16",
    "mes_fatura": "2026-05",
    "banco": "XP",
@@ -5708,6 +5781,16 @@
    "fonte": "historico"
   },
   {
+   "data": "2026-04-21",
+   "mes_fatura": "2026-05",
+   "banco": "NUBANK",
+   "estabelecimento": "Malumarketltda",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 3.9,
+   "fonte": "historico"
+  },
+  {
    "data": "2026-04-23",
    "mes_fatura": "2026-05",
    "banco": "XP",
@@ -5735,6 +5818,36 @@
    "categoria": "COMBUSTÍVEL",
    "parcela": "-",
    "valor": 50.0,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-04-25",
+   "mes_fatura": "2026-05",
+   "banco": "NUBANK",
+   "estabelecimento": "Malumarketltda",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 3.9,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-04-27",
+   "mes_fatura": "2026-05",
+   "banco": "NUBANK",
+   "estabelecimento": "Amazon",
+   "categoria": "COMPRAS ONLINE",
+   "parcela": "-",
+   "valor": 7.35,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-04-27",
+   "mes_fatura": "2026-05",
+   "banco": "NUBANK",
+   "estabelecimento": "Dl*Google Prime",
+   "categoria": "ASSINATURA",
+   "parcela": "-",
+   "valor": 6.9,
    "fonte": "historico"
   },
   {
@@ -6048,6 +6161,16 @@
    "fonte": "historico"
   },
   {
+   "data": "2026-05-27",
+   "mes_fatura": "2026-06",
+   "banco": "NUBANK",
+   "estabelecimento": "Mmz Comercio de Cosme",
+   "categoria": "BELEZA",
+   "parcela": "4 de 6",
+   "valor": 66.8,
+   "fonte": "historico"
+  },
+  {
    "data": "2026-05-29",
    "mes_fatura": "2026-06",
    "banco": "XP",
@@ -6065,6 +6188,16 @@
    "categoria": "MERCADO",
    "parcela": "-",
    "valor": 97.89,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-06-14",
+   "mes_fatura": "2026-06",
+   "banco": "NUBANK",
+   "estabelecimento": "Dlknet *Ac Paulo Brega",
+   "categoria": "ENVIO/CORREIOS",
+   "parcela": "3 de 3",
+   "valor": 64.89,
    "fonte": "historico"
   },
   {
@@ -6298,6 +6431,16 @@
    "fonte": "historico"
   },
   {
+   "data": "2026-06-27",
+   "mes_fatura": "2026-07",
+   "banco": "NUBANK",
+   "estabelecimento": "Mmz Comercio de Cosme",
+   "categoria": "BELEZA",
+   "parcela": "5 de 6",
+   "valor": 66.8,
+   "fonte": "historico"
+  },
+  {
    "data": "2026-06-28",
    "mes_fatura": "2026-07",
    "banco": "XP",
@@ -6488,6 +6631,16 @@
    "fonte": "historico"
   },
   {
+   "data": "2026-07-19",
+   "mes_fatura": "2026-08",
+   "banco": "NUBANK",
+   "estabelecimento": "Casa dos Doces",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 42.25,
+   "fonte": "historico"
+  },
+  {
    "data": "2026-07-20",
    "mes_fatura": "2026-08",
    "banco": "XP",
@@ -6565,6 +6718,16 @@
    "categoria": "COMBUSTÍVEL",
    "parcela": "de 1",
    "valor": 63.18,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-07-27",
+   "mes_fatura": "2026-08",
+   "banco": "NUBANK",
+   "estabelecimento": "Mmz Comercio de Cosme",
+   "categoria": "BELEZA",
+   "parcela": "6 de 6",
+   "valor": 66.8,
    "fonte": "historico"
   },
   {
@@ -7335,8 +7498,10 @@
    "estabelecimento": "ATACAREJO BONGI",
    "categoria": "MERCADO",
    "parcela": "-",
-   "valor": 275.91,
-   "fonte": "Fatura2026-11-10.csv"
+   "valor": 137.96,
+   "fonte": "Fatura2026-11-10.csv",
+   "valor_bruto": 275.91,
+   "split": "50/50"
   },
   {
    "data": "2026-10-04",

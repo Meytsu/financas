@@ -10,19 +10,26 @@ export interface Transacao {
   parcela: string;
   valor: number;
   a_confirmar?: boolean;
+  /** compra dividida com a Beatriz: `valor` é a parte do Henrique, `valor_bruto` o total da fatura */
+  split?: string;
+  valor_bruto?: number;
 }
 
 export interface Dados {
   gerado_em: string;
+  pessoa: string;
+  nome: string;
   renda: {
     liquida_mensal: number;
     estimado: boolean;
-    entradas: { nome: string; dia: number; valor: number }[];
+    /** `dia`: dia do mês (antecipa para sexta se cair no fim de semana); `dia_util`: n-ésimo dia útil do mês */
+    entradas: { nome: string; dia?: number; dia_util?: number; valor: number }[];
     realizados?: { mes: string; nome: string; valor: number; obs?: string }[];
   };
   teto_cartao: number;
   limite_comprometimento: number;
   fatura_vencimento_dia: number;
+  fatura_vencimento_dia_nubank?: number;
   reserva: { contas: { nome: string; valor: number }[]; meta_meses: number; atualizado: string };
   variaveis_fora_cartao: { nome: string; mes: string; valor: number | null; obs?: string; dia?: number }[];
   despesas_fixas: { nome: string; valor: number; dia?: number }[];
@@ -49,6 +56,11 @@ export const somaMes = (m: string, n: number) => {
   return mesDe(new Date(a, mm - 1 + n, 1));
 };
 export const ddmm = (d: Date) => `${String(d.getDate()).padStart(2, "0")}/${String(d.getMonth() + 1).padStart(2, "0")}`;
+/** "2026-11-05" -> "05 de Novembro de 2026" */
+export const dataLonga = (iso: string) => {
+  const m = MESES_LONGOS[parseInt(iso.slice(5, 7)) - 1];
+  return `${iso.slice(8, 10)} de ${m.charAt(0).toUpperCase() + m.slice(1)} de ${iso.slice(0, 4)}`;
+};
 export const isoParaBR = (iso: string) => `${iso.slice(8, 10)}/${iso.slice(5, 7)}/${iso.slice(2, 4)}`;
 export const soma = (xs: number[]) => xs.reduce((a, b) => a + b, 0);
 
@@ -59,6 +71,21 @@ export function diaUtilAntes(mes: string, dia: number) {
   while (d.getDay() === 0 || d.getDay() === 6) d.setDate(d.getDate() - 1);
   return d;
 }
+
+/** n-ésimo dia útil do mês (seg–sex; não considera feriados). */
+export function nDiaUtil(mes: string, n: number) {
+  const [a, m] = mes.split("-").map(Number);
+  const d = new Date(a, m - 1, 1);
+  let conta = 0;
+  while (true) {
+    if (d.getDay() !== 0 && d.getDay() !== 6) conta++;
+    if (conta === n) return d;
+    d.setDate(d.getDate() + 1);
+  }
+}
+
+/** Data em que uma entrada cai no mês. */
+export const dataEntrada = (mes: string, e: { dia?: number; dia_util?: number }) => (e.dia_util ? nDiaUtil(mes, e.dia_util) : diaUtilAntes(mes, e.dia ?? 1));
 
 /** "3 de 5" com total > 1 = compra parcelada. */
 export function ehParcelado(t: Transacao) {
@@ -72,7 +99,7 @@ export const ehBMW = (nome: string) => /bmw/i.test(nome);
 export function entradasDoMes(d: Dados, mes: string) {
   return d.renda.entradas.map((e) => {
     const real = d.renda.realizados?.find((r) => r.mes === mes && r.nome === e.nome);
-    return { nome: e.nome, dia: e.dia, valor: real ? real.valor : e.valor, real: !!real, obs: real?.obs };
+    return { nome: e.nome, dia: e.dia, dia_util: e.dia_util, valor: real ? real.valor : e.valor, real: !!real, obs: real?.obs };
   });
 }
 
@@ -87,6 +114,8 @@ export function resumoMes(d: Dados, mes: string) {
   const cartao = d.transacoes.filter((t) => t.mes_fatura === mes);
   const totalCartao = soma(cartao.map((t) => t.valor));
   const cartaoParcelado = soma(cartao.filter(ehParcelado).map((t) => t.valor));
+  const cartaoXP = soma(cartao.filter((t) => t.banco === "XP").map((t) => t.valor));
+  const cartaoNubank = soma(cartao.filter((t) => t.banco === "NUBANK").map((t) => t.valor));
   const foraCartao = d.variaveis_fora_cartao.filter((v) => v.mes === mes);
   const totalForaCartao = soma(foraCartao.map((v) => v.valor ?? 0));
   const pendentes = foraCartao.filter((v) => v.valor === null).map((v) => v.nome);
@@ -110,6 +139,8 @@ export function resumoMes(d: Dados, mes: string) {
     bmw,
     cartao,
     totalCartao,
+    cartaoXP,
+    cartaoNubank,
     cartaoParcelado,
     cartaoAVista: totalCartao - cartaoParcelado,
     foraCartao,
@@ -120,7 +151,7 @@ export function resumoMes(d: Dados, mes: string) {
     taxaPoupanca: receitas > 0 ? sobra / receitas : 0,
     comprometido: cartaoParcelado + totalBoletos,
     comprometimento: receitas > 0 ? (cartaoParcelado + totalBoletos) / receitas : 0,
-    usoTeto: d.teto_cartao > 0 ? totalCartao / d.teto_cartao : 0,
+    usoTeto: d.teto_cartao > 0 ? cartaoXP / d.teto_cartao : 0, // o teto vale só para a XP
     categorias,
   };
 }

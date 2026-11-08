@@ -1,13 +1,22 @@
-# Painel de finanças — Henrique
+# Painel de finanças — Henrique e Beatriz
 
-Página única, em Next.js 16, **CSS puro** (sem Tailwind) e **gráficos em SVG próprio** (sem biblioteca). Refeita do zero em 2026-11-05.
+Página única, em Next.js 16, **CSS puro** (sem Tailwind) e **gráficos em SVG próprio** (sem biblioteca). Refeita do zero em 2026-11-05. **Publicada em https://meytsu.github.io/financas/** (GitHub Pages, público — decisão do Henrique em 2026-11-08).
+
+**Duas pessoas, mesma mecânica:** ao abrir, a tela **"Quem está acessando?"** (Henrique / Beatriz) escolhe de quem é a página; ela já entra com o filtro de usuário daquela pessoa (e dá para trocar no painel de Filtros).
 
 ```bash
 npm run dev     # http://localhost:3000/financas
 npx tsc --noEmit -p . && npm run lint   # checagem antes de dar por pronto
 ```
 
-Os dados vêm de `data/henrique.json`, gerado por `../scripts/gerar_henrique.py` (ver o [CLAUDE.md da pasta Finanças](../CLAUDE.md)).
+Os dados vêm de `data/henrique.json` e `data/beatriz.json`, gerados por `../scripts/gerar_dados.py` (ver o [CLAUDE.md da pasta Finanças](../CLAUDE.md)).
+
+| | Henrique | Beatriz |
+|---|---|---|
+| Renda | R$ 4.390,80 (adiantamento dia 20 + fechamento dia 5) | R$ 1.665,75 no **5º dia útil** |
+| Teto do cartão XP | R$ 1.200 | R$ 800 |
+| Fixas fora do cartão | aluguel R$ 800 (dia 20), recarga R$ 30 (dia 20) | ração R$ 40, energia R$ 120 (dia 10), celular R$ 42, internet R$ 80 |
+| Reserva | R$ 5.000 (Caixinha Nubank) | ainda não tem |
 
 > **Fora deste repositório** (ficam só no PC, em `~/Documentos/Finanças/`): o script `scripts/gerar_henrique.py`, o `CLAUDE.md` com o fluxo de atualização, os CSVs das faturas e o `.env` com a chave do Supabase.
 
@@ -47,11 +56,11 @@ Tudo que a página precisa também fica **dentro deste repositório**, em `backu
 ├────────── Cascata do mês ─────────┬──── Calendário ────┤
 ├────────── Sankey ─────────────────┬──── Categorias ────┤
 ├────── Evolução 12 meses ──────────┬─ Compromissos futuros ┤
-└ rodapé: data de geração dos dados ┘
 ```
 
-- **Seletor de mês** (‹ ›, "Hoje"): tudo na página segue o mês escolhido. Abre no mês do calendário de hoje.
-- **Lançamentos**: botão no topo abre uma janela (`<dialog>` nativo) com a tabela da fatura do mês. Fecha com ✕, Esc ou clique fora. O endereço `/financas#lancamentos` abre a janela direto.
+- **Cabeçalho:** usuário (HENRIQUE) à esquerda, **"FINANÇAS" centralizado** (os dois em maiúsculas), e à direita dois botões só com ícone (SVG) — **Lançamentos** e **Filtros** — que, ao passar o mouse, se abrem mostrando o nome.
+- **Filtros** (painel lateral que surge da direita; fecha com ✕, Esc ou clique fora; a página atrás não rola): **mês** (calendário de 12 meses com navegação por ano — substituiu o seletor ‹ › do topo), **usuário** (Beatriz "em breve"), **cartão** (Todos / XP / Nubank) e **categoria**. Cartão e categoria valem para a página toda; quando ativos aparece a faixa "Filtrando: … limpar" no topo e um número no botão de filtros. No rodapé do painel: "Última atualização", com a data dos dados e a da reserva por extenso (ex.: 05 de Novembro de 2026).
+- **Lançamentos**: botão no topo abre uma janela (`<dialog>` nativo) com **duas tabelas**: *Contas fora do cartão* (fixas, boletos/financiamentos e contas variáveis como a energia) e *Cartão XP* (a fatura do mês). **Clicar no cabeçalho ordena** (1º clique crescente, 2º decrescente). **Cada tabela tem a própria barra de rolagem** (cabeçalho fixo no topo e **linha de total fixa no fim**) e, com a janela aberta, **a página de fundo não rola**. Compras divididas com a Beatriz aparecem com a marca **50/50** e só a metade do Henrique (o total fica na dica). Fecha com ✕, Esc ou clique fora. O endereço `/financas#lancamentos` abre a janela direto.
 - Página em **tela cheia** (sem largura máxima).
 
 ## O mês (como cada número é calculado)
@@ -68,14 +77,21 @@ Código: [lib/financas.ts](lib/financas.ts) (`resumoMes`, `entradasDoMes`, `comp
 
 ## Bloco 1 — indicadores
 
-Cada card: **título à esquerda, selo de status no canto superior direito**, número + referência à esquerda, gráfico à direita. O selo sempre tem ícone **e** texto (nunca só cor).
+Cada card: **título à esquerda, selo de status no canto superior direito**, **só o valor principal** e, logo abaixo, o **delta contra o mês anterior**, sem escrever "vs. mês" (verde = melhorou, vermelho = piorou; taxas em pontos percentuais, "p.p."); gráfico à direita. A reserva, que não tem histórico, mostra o **% da meta** no lugar do delta. O selo sempre tem ícone **e** texto (nunca só cor).
+
+**Popover de detalhes:** passar o mouse no card (ou tocar, no celular; ou Tab) abre, com animação, um painel logo abaixo com o máximo de informação:
+- *Sobra*: cada entrada (estimada ou real), cada tipo de saída, sobra do mês anterior e média de 6 meses.
+- *Poupança*: a conta (sobra ÷ receitas), quanto falta/sobra para a meta de 20%, as faixas, mês anterior e média.
+- *Renda comprometida*: parcelas do cartão e cada boleto, limite de 30% em reais e a folga/excesso, os 3 próximos meses.
+- *Cartão × teto*: à vista × parcelas, total, teto e diferença, 4 maiores categorias, fatura do mês anterior.
+- *Reserva*: **Onde está** (contas e total); **Meta** — gasto médio por mês, meta (6 meses de gastos), quanto você já tem (e %), quanto falta; **Previsão** — sobra média por mês, em quantos meses e em que mês a meta é atingida guardando a sobra, e quanto guardar por mês para chegar em 12 e em 24 meses. Valores com centavos. (A data de atualização do saldo vai para os filtros.)
 
 | Card | Fórmula | Status | Gráfico |
 |---|---|---|---|
 | **Sobra do mês** (número herói) | receitas − saídas; variação vs. mês anterior | — | sparkline 6 meses |
 | **Taxa de poupança** | sobra ÷ receitas | ≥ 20% Saudável · ≥ 10% Atenção · ≥ 0 Alto · < 0 Crítico | sparkline 6 meses |
 | **Renda comprometida** | (parcelas do cartão + boletos) ÷ receitas | ≤ 24% Saudável · ≤ 30% Atenção · ≤ 45% Alto · acima Crítico | sparkline 6 meses |
-| **Cartão × teto** | fatura ÷ R$ 1.200 (inclui parcelas) | ≤ 85% Saudável · ≤ 100% Atenção · ≤ 130% Alto · acima Crítico | bullet (barra = fatura, traço vermelho = teto, faixas cinza) |
+| **Cartão × teto** | fatura ÷ R$ 1.200 (inclui parcelas) | ≤ 85% Saudável · ≤ 100% Atenção · ≤ 130% Alto · acima Crítico | medidor no estilo da reserva, de **0 a 200%**: azul até o teto, **vermelho no que passar**, traço no meio = teto (100%) |
 | **Reserva de emergência** | reserva ÷ média das saídas dos 6 meses anteriores | ≥ 6 meses Saudável · ≥ 3 Atenção · ≥ 1 Alto · < 1 Crítico | medidor até a meta (6 × custo mensal) |
 
 Referências (pesquisa de 2026-11-05): taxa de poupança 10–20% "bom começo", 20–30% "sólida"; comprometimento até ~30% da renda líquida (convenção de educação financeira, não norma do BC); reserva de 6 meses para assalariado CLT.
@@ -87,13 +103,13 @@ Referências (pesquisa de 2026-11-05): taxa de poupança 10–20% "bom começo",
 | Gráfico | O que mostra | Detalhes |
 |---|---|---|
 | **Do salário à sobra** (cascata) | receitas → fixas → boletos → cartão à vista → parcelas do cartão → energia → sobra | **verde** = receitas e sobra, **vermelho** = saídas (e sobra negativa); rótulos em reais **sem centavos** (R$ 4.252, −R$ 830); **sem legenda e sem "ver como tabela"** (decisão do Henrique: a cor já explica) |
-| **Calendário** | grade do mês com entradas (+) e vencimentos (−) | **sem lista embaixo**: passar o mouse (ou Tab) num dia mostra cada lançamento com nome e valor exato; todas as linhas com a mesma altura; "Sem dia definido" só aparece se houver conta sem dia |
+| **Calendário** | grade do mês com entradas (+) e vencimentos (−) | **saídas do dia somadas num valor só** (ex.: dia 10 = −2.578), entradas uma a uma; **sem lista embaixo**: passar o mouse (ou Tab) num dia mostra cada lançamento com nome e valor exato; todas as linhas com a mesma altura; "Sem dia definido" só aparece se houver conta sem dia |
 | **Para onde foi o dinheiro** (Sankey) | receitas → contas da casa / boletos / cartão / sobra → 5 maiores categorias do cartão + "Demais" | se faltar dinheiro, aparece o nó "Faltou" à esquerda; **sem legenda e sem tabela** (os nós já têm nome e valor) |
-| **Categorias do cartão** | barra = este mês, traço = média dos 6 meses anteriores, variação em % | mostra as 8 maiores; o resto fica na tabela |
+| **Categorias do cartão** | barra = este mês, traço = média dos 6 meses anteriores, variação em % | **mesma altura do Sankey**: mostra só as linhas que cabem; o excedente (e a categoria "Outros" original) vira uma linha **Outros** com valor e média somados; sem tabela |
 | **Evolução** | 12 meses até o mês escolhido: receitas e saídas (colunas) + sobra (linha) | hover na faixa do mês mostra os três valores |
 | **Compromissos já assumidos** | próximos 12 meses: parcelas do cartão + boletos + BMW (colunas empilhadas) | linha vermelha = 30% da renda |
 
-Todos os gráficos: dica no hover **e** no foco do teclado (Tab), legenda para ≥ 2 séries e um "Ver como tabela" com os mesmos números — **exceto a cascata e o Sankey**, que ficaram só com o gráfico (decisão do Henrique).
+Todos os gráficos: dica no hover **e** no foco do teclado (Tab); legenda só na Evolução e nos Compromissos. **Nenhum gráfico tem "Ver como tabela"** (decisão do Henrique em 2026-11-07: o valor exato fica na dica).
 
 **Números nos gráficos: sempre cheios, nunca "mil"** — eixos e rótulos curtos em inteiro com ponto de milhar (4.000, 1.894); valores exatos com centavos ficam na dica e na tabela.
 
@@ -108,6 +124,11 @@ Todos os gráficos: dica no hover **e** no foco do teclado (Tab), legenda para �
 
 ## Histórico de decisões
 
+**2026-11-08**
+- Página da Beatriz com a mesma mecânica; tela "Quem está acessando?" antes de entrar; script novo `gerar_dados.py` gera um arquivo por pessoa (os dados do Henrique saíram idênticos).
+- Compra dividida 50/50 aparece nas duas páginas (Bongi de 03/10: R$ 137,96 Henrique / R$ 137,95 Beatriz).
+- Publicação no GitHub Pages (público), decidida pelo Henrique.
+
 **2026-11-05**
 - Painel antigo (Tailwind, dados do casal misturados) substituído por uma página só do Henrique. O antigo está no git (commit `de20e64`).
 - Tailwind removido; tudo em CSS puro. Recharts continua instalado, mas não é usado.
@@ -121,6 +142,12 @@ Todos os gráficos: dica no hover **e** no foco do teclado (Tab), legenda para �
 - Sparklines: 6 meses, com bolinhas (raio 3,5) e área preenchida.
 - Cascata em verde/vermelho; números cheios (sem "mil") em todos os gráficos; cascata sem centavos.
 - Calendário com linhas de altura igual.
+- 2026-11-07: cabeçalho centralizado com botões de ícone animados; painel lateral de filtros (mês, usuário, cartão, categoria); Nubank do Henrique (abr–ago/26) incluído — o teto de R$ 1.200 vale só para a XP; legendas centralizadas.
+- 2026-11-07: bloco 1 sem textos de referência — só valor + delta; detalhes num popover animado (hover/toque).
+- 2026-11-07: removidos todos os "Ver como tabela" e o rodapé "Dados gerados em…".
+- 2026-11-07: janela de lançamentos com 2 tabelas ordenáveis; Bongi de 03/10 (R$ 275,91) dividido 50/50 — só o de maior valor.
+- 2026-11-07: cartão × teto virou medidor 0–200% (azul/vermelho); categorias com a altura do Sankey e linha "Outros"; sem tabela nas categorias.
+- 2026-11-07: calendário soma as saídas de cada dia num valor só (detalhe na dica); cascata e calendário com a mesma altura.
 - Dica (tooltip) se reposiciona para não cortar na borda da tela; Sankey sem legenda e sem tabela.
 - Vencimentos: Suhai e energia no dia 10; aluguel e recarga do celular no dia 20. Calendário trocou a lista por dica nos dias.
 - Kabum (Mercado Pago) corrigido: 2 parcelas (set–out/26), já quitado; a parcela de nov/26 saiu.
@@ -131,14 +158,14 @@ Todos os gráficos: dica no hover **e** no foco do teclado (Tab), legenda para �
 - Valores reais do adiantamento (hoje estimado).
 - (resolvido) Dados móveis = recarga do celular, R$ 30 no dia 20.
 - Textos dentro dos gráficos crescem demais em tela cheia (os SVG escalam com a largura) — principalmente Sankey e cascata. Próximo passo de design.
-- Legenda/tabela da Evolução e dos Compromissos: o Henrique tirou das outras; confirmar se tira destas também.
-- Decidir onde a página vai morar: o repositório e o site `meytsu.github.io/financas` são **públicos**.
+- Legenda da Evolução e dos Compromissos: confirmar se fica (as tabelas já saíram).
+- (resolvido 2026-11-08) Publicar: GitHub Pages, público.
 - RLS do Supabase (ver acima).
-- Página da Beatriz.
+- (feito 2026-11-08) Página da Beatriz. Falta confirmar a categoria de SAN PEIXE e ALINESILVEIRADA (compras dela).
 
 ## Para continuar (estado em 2026-11-05, fim do dia)
 
-0. **Git:** o trabalho novo está na branch **`painel-novo`** (GitHub: `Meytsu/financas`, repositório **público**). A `main` continua com o painel antigo e é ela que publica o site `meytsu.github.io/financas` (GitHub Actions a cada push). **Não fazer merge/push na `main` sem o Henrique decidir publicar.** Em outro PC: `git clone git@github.com:Meytsu/financas.git && git checkout painel-novo`.
+0. **Git:** o painel novo está na **`main`** (GitHub: `Meytsu/financas`, **público**), que publica o site a cada push. Em outro PC: `git clone git@github.com:Meytsu/financas.git`.
 1. `cd ~/Documentos/Finanças/dashboard && npm run dev` → http://localhost:3000/financas
 2. Se baixar fatura nova: seguir o fluxo do `~/Documentos/Finanças/CLAUDE.md` e rodar `python3 ../scripts/gerar_henrique.py`.
 3. Para o Claude acessar o Supabase de novo: o MCP `supabase` já está configurado no Claude Code (`~/.claude.json`); se pedir login, `/mcp` → supabase → Authenticate.

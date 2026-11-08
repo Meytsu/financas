@@ -1,0 +1,2886 @@
+{
+ "gerado_em": "2026-11-08",
+ "pessoa": "beatriz",
+ "nome": "Beatriz",
+ "portador": "BEATRIZ WERNECK",
+ "renda": {
+  "liquida_mensal": 1665.75,
+  "estimado": false,
+  "entradas": [
+   {
+    "nome": "Salário",
+    "dia_util": 5,
+    "valor": 1665.75
+   }
+  ],
+  "realizados": []
+ },
+ "teto_cartao": 800.0,
+ "limite_comprometimento": 0.3,
+ "fatura_vencimento_dia": 10,
+ "fatura_vencimento_dia_nubank": 22,
+ "reserva": {
+  "contas": [],
+  "meta_meses": 6,
+  "atualizado": "2026-11-08"
+ },
+ "variaveis_fora_cartao": [],
+ "despesas_fixas": [
+  {
+   "nome": "Ração",
+   "valor": 40.0
+  },
+  {
+   "nome": "Energia",
+   "valor": 120.0,
+   "dia": 10
+  },
+  {
+   "nome": "Celular",
+   "valor": 42.0
+  },
+  {
+   "nome": "Internet",
+   "valor": 80.0
+  }
+ ],
+ "parcelas_boletos": [],
+ "transacoes": [
+  {
+   "data": "2025-08-11",
+   "mes_fatura": "2025-09",
+   "banco": "XP",
+   "estabelecimento": "FARMACIA VEM TRABALHAD",
+   "categoria": "FARMÁCIA",
+   "parcela": "-",
+   "valor": 9.0,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-08-12",
+   "mes_fatura": "2025-09",
+   "banco": "XP",
+   "estabelecimento": "WILLIAMLANCHES",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 16.0,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-08-15",
+   "mes_fatura": "2025-09",
+   "banco": "XP",
+   "estabelecimento": "WILLIAMLANCHES",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 3.0,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-08-15",
+   "mes_fatura": "2025-09",
+   "banco": "XP",
+   "estabelecimento": "LULUCOMEDORIA",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 12.0,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-08-16",
+   "mes_fatura": "2025-09",
+   "banco": "XP",
+   "estabelecimento": "R.R MAKES",
+   "categoria": "BELEZA",
+   "parcela": "-",
+   "valor": 20.74,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-08-16",
+   "mes_fatura": "2025-09",
+   "banco": "XP",
+   "estabelecimento": "STM COMPROFARMA",
+   "categoria": "FARMÁCIA",
+   "parcela": "-",
+   "valor": 6.99,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-08-16",
+   "mes_fatura": "2025-09",
+   "banco": "XP",
+   "estabelecimento": "WILLIAMLANCHES",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 2.0,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-08-16",
+   "mes_fatura": "2025-09",
+   "banco": "XP",
+   "estabelecimento": "PDV*NOVA ERA CASA",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 43.98,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-08-16",
+   "mes_fatura": "2025-09",
+   "banco": "XP",
+   "estabelecimento": "MERCADOPAGO*CATDOGRACOESA",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 40.0,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-08-25",
+   "mes_fatura": "2025-09",
+   "banco": "XP",
+   "estabelecimento": "FABIA LOPES FERRE",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 12.0,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-08-26",
+   "mes_fatura": "2025-09",
+   "banco": "XP",
+   "estabelecimento": "LULUCOMEDORIA",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 17.0,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-08-26",
+   "mes_fatura": "2025-09",
+   "banco": "XP",
+   "estabelecimento": "WILLIAMLANCHES",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 11.5,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-08-27",
+   "mes_fatura": "2025-09",
+   "banco": "XP",
+   "estabelecimento": "UBER * PENDING",
+   "categoria": "TRANSPORTE",
+   "parcela": "-",
+   "valor": 5.85,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-08-27",
+   "mes_fatura": "2025-09",
+   "banco": "XP",
+   "estabelecimento": "WILLIAMLANCHES",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 8.0,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-08-28",
+   "mes_fatura": "2025-09",
+   "banco": "XP",
+   "estabelecimento": "LULU COMEDORIA",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 12.0,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-08-28",
+   "mes_fatura": "2025-09",
+   "banco": "XP",
+   "estabelecimento": "WILLIAMLANCHES",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 6.0,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-08-29",
+   "mes_fatura": "2025-09",
+   "banco": "XP",
+   "estabelecimento": "LULUCOMEDORIA",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 11.5,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-08-29",
+   "mes_fatura": "2025-09",
+   "banco": "XP",
+   "estabelecimento": "UBER * PENDING",
+   "categoria": "TRANSPORTE",
+   "parcela": "-",
+   "valor": 6.61,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-09-01",
+   "mes_fatura": "2025-09",
+   "banco": "XP",
+   "estabelecimento": "HAVAIANAS SHOP TACARUN",
+   "categoria": "VESTUÁRIO",
+   "parcela": "-",
+   "valor": 62.98,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-10-08",
+   "mes_fatura": "2025-11",
+   "banco": "XP",
+   "estabelecimento": "99*",
+   "categoria": "TRANSPORTE",
+   "parcela": "-",
+   "valor": 12.9,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-10-10",
+   "mes_fatura": "2025-11",
+   "banco": "XP",
+   "estabelecimento": "99*",
+   "categoria": "TRANSPORTE",
+   "parcela": "-",
+   "valor": 14.9,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-10-17",
+   "mes_fatura": "2025-11",
+   "banco": "XP",
+   "estabelecimento": "WILLIAMLANCHES",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 7.5,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-10-17",
+   "mes_fatura": "2025-11",
+   "banco": "XP",
+   "estabelecimento": "MIWA SOFIA HIRAMINE KO",
+   "categoria": "LAZER",
+   "parcela": "-",
+   "valor": 12.0,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-10-17",
+   "mes_fatura": "2025-11",
+   "banco": "XP",
+   "estabelecimento": "99*",
+   "categoria": "TRANSPORTE",
+   "parcela": "-",
+   "valor": 13.5,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-10-17",
+   "mes_fatura": "2025-11",
+   "banco": "XP",
+   "estabelecimento": "CAKEMS",
+   "categoria": "OUTROS",
+   "parcela": "-",
+   "valor": 20.0,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-10-17",
+   "mes_fatura": "2025-11",
+   "banco": "XP",
+   "estabelecimento": "NAVENDA",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 12.0,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-10-17",
+   "mes_fatura": "2025-11",
+   "banco": "XP",
+   "estabelecimento": "EMPORIO DO SERTAO",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 33.91,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-10-18",
+   "mes_fatura": "2025-11",
+   "banco": "XP",
+   "estabelecimento": "MATUTO BURGUER",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 9.0,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-10-18",
+   "mes_fatura": "2025-11",
+   "banco": "XP",
+   "estabelecimento": "VAREJAO PRECO BOM",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 11.49,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-10-21",
+   "mes_fatura": "2025-11",
+   "banco": "XP",
+   "estabelecimento": "MERCEARIARIOB",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 13.5,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-10-21",
+   "mes_fatura": "2025-11",
+   "banco": "XP",
+   "estabelecimento": "WILLIAMLANCHES",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 8.5,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-10-21",
+   "mes_fatura": "2025-11",
+   "banco": "XP",
+   "estabelecimento": "GELATTOS",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 13.9,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-10-27",
+   "mes_fatura": "2025-11",
+   "banco": "XP",
+   "estabelecimento": "GELATTOS",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 24.41,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-10-27",
+   "mes_fatura": "2025-11",
+   "banco": "XP",
+   "estabelecimento": "WILLIAMLANCHES",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 10.5,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-10-28",
+   "mes_fatura": "2025-11",
+   "banco": "XP",
+   "estabelecimento": "NAVENDA",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 7.55,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-10-28",
+   "mes_fatura": "2025-11",
+   "banco": "XP",
+   "estabelecimento": "LULU COMEDORIA",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 11.5,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-10-28",
+   "mes_fatura": "2025-11",
+   "banco": "XP",
+   "estabelecimento": "MERCADINHO RIO BRANCO",
+   "categoria": "VIAGEM",
+   "parcela": "-",
+   "valor": 6.0,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-10-28",
+   "mes_fatura": "2025-11",
+   "banco": "XP",
+   "estabelecimento": "WILLIAMLANCHES",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 6.5,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-10-29",
+   "mes_fatura": "2025-11",
+   "banco": "XP",
+   "estabelecimento": "MP*ANDREREFEICOE",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 18.0,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-10-29",
+   "mes_fatura": "2025-11",
+   "banco": "XP",
+   "estabelecimento": "WILLIAMLANCHES",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 11.5,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-10-31",
+   "mes_fatura": "2025-11",
+   "banco": "XP",
+   "estabelecimento": "NAVENDA",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 12.0,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-10-31",
+   "mes_fatura": "2025-11",
+   "banco": "XP",
+   "estabelecimento": "UBER * PENDING",
+   "categoria": "TRANSPORTE",
+   "parcela": "-",
+   "valor": 4.51,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-10-31",
+   "mes_fatura": "2025-11",
+   "banco": "XP",
+   "estabelecimento": "UBER * PENDING",
+   "categoria": "TRANSPORTE",
+   "parcela": "-",
+   "valor": 16.75,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-10-31",
+   "mes_fatura": "2025-11",
+   "banco": "XP",
+   "estabelecimento": "WILLIAMLANCHES",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 4.5,
+   "fonte": "historico"
+  },
+  {
+   "data": "2025-12-31",
+   "mes_fatura": "2026-01",
+   "banco": "XP",
+   "estabelecimento": "99*",
+   "categoria": "TRANSPORTE",
+   "parcela": "-",
+   "valor": 8.24,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-01-02",
+   "mes_fatura": "2026-01",
+   "banco": "XP",
+   "estabelecimento": "99*",
+   "categoria": "TRANSPORTE",
+   "parcela": "-",
+   "valor": 11.8,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-01-06",
+   "mes_fatura": "2026-02",
+   "banco": "XP",
+   "estabelecimento": "GELATTOS",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 20.61,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-01-06",
+   "mes_fatura": "2026-02",
+   "banco": "XP",
+   "estabelecimento": "WILLIAMLANCHES",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 4.5,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-01-06",
+   "mes_fatura": "2026-02",
+   "banco": "XP",
+   "estabelecimento": "LULUCOMEDORIA",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 13.0,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-01-20",
+   "mes_fatura": "2026-02",
+   "banco": "XP",
+   "estabelecimento": "MERCADINHO RIO BRANCO",
+   "categoria": "VIAGEM",
+   "parcela": "-",
+   "valor": 9.5,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-01-20",
+   "mes_fatura": "2026-02",
+   "banco": "XP",
+   "estabelecimento": "WILLIAMLANCHES",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 4.0,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-01-22",
+   "mes_fatura": "2026-02",
+   "banco": "XP",
+   "estabelecimento": "WILLIAMLANCHES",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 7.5,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-01-22",
+   "mes_fatura": "2026-02",
+   "banco": "XP",
+   "estabelecimento": "LULUCOMEDORIA",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 8.0,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-01-23",
+   "mes_fatura": "2026-02",
+   "banco": "XP",
+   "estabelecimento": "UBER * PENDING",
+   "categoria": "TRANSPORTE",
+   "parcela": "-",
+   "valor": 7.12,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-01-23",
+   "mes_fatura": "2026-02",
+   "banco": "XP",
+   "estabelecimento": "VIVABEM PHARMA",
+   "categoria": "FARMÁCIA",
+   "parcela": "-",
+   "valor": 7.98,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-02-03",
+   "mes_fatura": "2026-03",
+   "banco": "XP",
+   "estabelecimento": "WILLIAMLANCHES",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 4.5,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-02-03",
+   "mes_fatura": "2026-03",
+   "banco": "XP",
+   "estabelecimento": "MP*MERCADINHORIO",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 6.0,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-02-03",
+   "mes_fatura": "2026-03",
+   "banco": "XP",
+   "estabelecimento": "LULUCOMEDORIA",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 10.0,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-02-03",
+   "mes_fatura": "2026-03",
+   "banco": "XP",
+   "estabelecimento": "MP*ANDREREFEICOE",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 13.0,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-02-04",
+   "mes_fatura": "2026-03",
+   "banco": "XP",
+   "estabelecimento": "NAVENDA",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 17.0,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-02-05",
+   "mes_fatura": "2026-03",
+   "banco": "XP",
+   "estabelecimento": "99*",
+   "categoria": "TRANSPORTE",
+   "parcela": "-",
+   "valor": 10.7,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-02-06",
+   "mes_fatura": "2026-03",
+   "banco": "XP",
+   "estabelecimento": "GELATTOS",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 26.9,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-02-08",
+   "mes_fatura": "2026-03",
+   "banco": "XP",
+   "estabelecimento": "LOJAS AMERICANAS",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 58.32,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-02-15",
+   "mes_fatura": "2026-03",
+   "banco": "XP",
+   "estabelecimento": "IFD*53.733.438 DANYLLO HE",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 39.93,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-02-19",
+   "mes_fatura": "2026-03",
+   "banco": "XP",
+   "estabelecimento": "MP*ANDREREFEICOE",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 11.0,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-02-20",
+   "mes_fatura": "2026-03",
+   "banco": "XP",
+   "estabelecimento": "WILLIAMLANCHES",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 5.5,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-02-20",
+   "mes_fatura": "2026-03",
+   "banco": "XP",
+   "estabelecimento": "UBER * PENDING",
+   "categoria": "TRANSPORTE",
+   "parcela": "-",
+   "valor": 14.9,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-02-22",
+   "mes_fatura": "2026-03",
+   "banco": "XP",
+   "estabelecimento": "IFD*FMLV RESTAURANTE LTDA",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 35.89,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-02-25",
+   "mes_fatura": "2026-03",
+   "banco": "XP",
+   "estabelecimento": "LULUCOMEDORIA",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 10.0,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-03-12",
+   "mes_fatura": "2026-04",
+   "banco": "XP",
+   "estabelecimento": "99*",
+   "categoria": "TRANSPORTE",
+   "parcela": "-",
+   "valor": 8.8,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-03-13",
+   "mes_fatura": "2026-04",
+   "banco": "XP",
+   "estabelecimento": "CAT DOG RACOES ANIMAIS",
+   "categoria": "PET",
+   "parcela": "-",
+   "valor": 18.0,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-03-13",
+   "mes_fatura": "2026-04",
+   "banco": "XP",
+   "estabelecimento": "99*",
+   "categoria": "TRANSPORTE",
+   "parcela": "-",
+   "valor": 17.0,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-03-14",
+   "mes_fatura": "2026-04",
+   "banco": "XP",
+   "estabelecimento": "ROBERVAL GONCALVE",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 10.99,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-03-14",
+   "mes_fatura": "2026-04",
+   "banco": "XP",
+   "estabelecimento": "TAYLLAFERNANDESRE",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 68.0,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-03-15",
+   "mes_fatura": "2026-04",
+   "banco": "NUBANK",
+   "estabelecimento": "Ph Beauty Studio",
+   "categoria": "BELEZA",
+   "parcela": "3 de 3",
+   "valor": 129.33,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-03-15",
+   "mes_fatura": "2026-04",
+   "banco": "NUBANK",
+   "estabelecimento": "Amazonmktplc*Gamesirte",
+   "categoria": "COMPRAS ONLINE",
+   "parcela": "2 de 8",
+   "valor": 55.11,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-03-15",
+   "mes_fatura": "2026-04",
+   "banco": "NUBANK",
+   "estabelecimento": "Amazon",
+   "categoria": "COMPRAS ONLINE",
+   "parcela": "5 de 5",
+   "valor": 34.46,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-03-15",
+   "mes_fatura": "2026-04",
+   "banco": "NUBANK",
+   "estabelecimento": "Atacado dos Pres e Con",
+   "categoria": "MERCADO",
+   "parcela": "4 de 4",
+   "valor": 48.69,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-03-15",
+   "mes_fatura": "2026-04",
+   "banco": "XP",
+   "estabelecimento": "CARREFOUR REC 45",
+   "categoria": "MERCADO",
+   "parcela": "-",
+   "valor": 87.25,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-03-15",
+   "mes_fatura": "2026-04",
+   "banco": "NUBANK",
+   "estabelecimento": "Figueiras Calcados",
+   "categoria": "VESTUÁRIO",
+   "parcela": "6 de 10",
+   "valor": 19.99,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-03-15",
+   "mes_fatura": "2026-04",
+   "banco": "NUBANK",
+   "estabelecimento": "Marbella Comercio de M",
+   "categoria": "VESTUÁRIO",
+   "parcela": "4 de 4",
+   "valor": 84.99,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-03-16",
+   "mes_fatura": "2026-04",
+   "banco": "XP",
+   "estabelecimento": "PADARIA NOVA PARI",
+   "categoria": "MERCADO",
+   "parcela": "-",
+   "valor": 15.5,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-03-19",
+   "mes_fatura": "2026-04",
+   "banco": "NUBANK",
+   "estabelecimento": "Shopee*Shps Tecnologia",
+   "categoria": "COMPRAS ONLINE",
+   "parcela": "-",
+   "valor": 80.79,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-03-20",
+   "mes_fatura": "2026-04",
+   "banco": "XP",
+   "estabelecimento": "EMPORIO DO SERTAO",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 35.9,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-03-20",
+   "mes_fatura": "2026-04",
+   "banco": "XP",
+   "estabelecimento": "99*",
+   "categoria": "TRANSPORTE",
+   "parcela": "-",
+   "valor": 15.1,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-03-22",
+   "mes_fatura": "2026-04",
+   "banco": "NUBANK",
+   "estabelecimento": "Mp *Alexlimacunha",
+   "categoria": "OUTROS",
+   "parcela": "1 de 2",
+   "valor": 55.0,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-03-22",
+   "mes_fatura": "2026-04",
+   "banco": "NUBANK",
+   "estabelecimento": "Amazonmktplc*Picchisto",
+   "categoria": "COMPRAS ONLINE",
+   "parcela": "-",
+   "valor": 29.9,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-03-23",
+   "mes_fatura": "2026-04",
+   "banco": "NUBANK",
+   "estabelecimento": "Jc Congelados Limitada",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 40.6,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-03-24",
+   "mes_fatura": "2026-04",
+   "banco": "XP",
+   "estabelecimento": "WILLIAMLANCHES",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 4.5,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-03-24",
+   "mes_fatura": "2026-04",
+   "banco": "XP",
+   "estabelecimento": "LULUCOMEDORIA",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 10.0,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-03-24",
+   "mes_fatura": "2026-04",
+   "banco": "XP",
+   "estabelecimento": "CARLOSANDRE",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 11.0,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-03-24",
+   "mes_fatura": "2026-04",
+   "banco": "XP",
+   "estabelecimento": "99*",
+   "categoria": "TRANSPORTE",
+   "parcela": "-",
+   "valor": 13.9,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-03-24",
+   "mes_fatura": "2026-04",
+   "banco": "NUBANK",
+   "estabelecimento": "Donico Coxinhas Artesa",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 56.0,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-03-25",
+   "mes_fatura": "2026-04",
+   "banco": "XP",
+   "estabelecimento": "WILLIAMLANCHES",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 14.5,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-03-26",
+   "mes_fatura": "2026-04",
+   "banco": "XP",
+   "estabelecimento": "EMPORIO DO SERTAO",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 35.9,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-03-27",
+   "mes_fatura": "2026-04",
+   "banco": "XP",
+   "estabelecimento": "DL*UBERRIDES",
+   "categoria": "TRANSPORTE",
+   "parcela": "-",
+   "valor": 14.91,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-03-27",
+   "mes_fatura": "2026-04",
+   "banco": "XP",
+   "estabelecimento": "PADARIA NOVA PARI",
+   "categoria": "MERCADO",
+   "parcela": "-",
+   "valor": 12.08,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-03-27",
+   "mes_fatura": "2026-04",
+   "banco": "XP",
+   "estabelecimento": "DROGASIL 2869",
+   "categoria": "FARMÁCIA",
+   "parcela": "-",
+   "valor": 27.87,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-03-28",
+   "mes_fatura": "2026-04",
+   "banco": "NUBANK",
+   "estabelecimento": "Jim.Com* Pollyanna Na",
+   "categoria": "BELEZA",
+   "parcela": "-",
+   "valor": 172.24,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-04-04",
+   "mes_fatura": "2026-04",
+   "banco": "NUBANK",
+   "estabelecimento": "Drogasil",
+   "categoria": "FARMÁCIA",
+   "parcela": "-",
+   "valor": 29.3,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-04-12",
+   "mes_fatura": "2026-04",
+   "banco": "NUBANK",
+   "estabelecimento": "Mobilidade Recife Park",
+   "categoria": "TRANSPORTE",
+   "parcela": "-",
+   "valor": 9.5,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-04-13",
+   "mes_fatura": "2026-04",
+   "banco": "NUBANK",
+   "estabelecimento": "Carrefour Rec",
+   "categoria": "MERCADO",
+   "parcela": "-",
+   "valor": 14.88,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-04-13",
+   "mes_fatura": "2026-04",
+   "banco": "NUBANK",
+   "estabelecimento": "Amazon",
+   "categoria": "COMPRAS ONLINE",
+   "parcela": "-",
+   "valor": 27.98,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-04-02",
+   "mes_fatura": "2026-05",
+   "banco": "XP",
+   "estabelecimento": "LULUCOMEDORIA",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 12.0,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-04-02",
+   "mes_fatura": "2026-05",
+   "banco": "XP",
+   "estabelecimento": "WILLIAMLANCHES",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 7.0,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-04-02",
+   "mes_fatura": "2026-05",
+   "banco": "XP",
+   "estabelecimento": "EMPORIO DO SERTAO",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 35.9,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-04-05",
+   "mes_fatura": "2026-05",
+   "banco": "XP",
+   "estabelecimento": "IFD*MATUTO REPRESENTAC",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 70.9,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-04-06",
+   "mes_fatura": "2026-05",
+   "banco": "XP",
+   "estabelecimento": "VIVABEM PHARMA",
+   "categoria": "FARMÁCIA",
+   "parcela": "-",
+   "valor": 24.9,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-04-08",
+   "mes_fatura": "2026-05",
+   "banco": "XP",
+   "estabelecimento": "EMPORIO DO SERTAO",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 35.9,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-04-10",
+   "mes_fatura": "2026-05",
+   "banco": "XP",
+   "estabelecimento": "CARLOSANDRE",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 13.0,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-04-10",
+   "mes_fatura": "2026-05",
+   "banco": "XP",
+   "estabelecimento": "R.R MAKES",
+   "categoria": "BELEZA",
+   "parcela": "-",
+   "valor": 51.87,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-04-10",
+   "mes_fatura": "2026-05",
+   "banco": "XP",
+   "estabelecimento": "WILLIAMLANCHES",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 7.0,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-04-10",
+   "mes_fatura": "2026-05",
+   "banco": "XP",
+   "estabelecimento": "UBER* PENDING",
+   "categoria": "TRANSPORTE",
+   "parcela": "-",
+   "valor": 8.9,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-04-11",
+   "mes_fatura": "2026-05",
+   "banco": "XP",
+   "estabelecimento": "PASSIRA LANCHES",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 53.25,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-04-14",
+   "mes_fatura": "2026-05",
+   "banco": "XP",
+   "estabelecimento": "DL*UBERRIDES",
+   "categoria": "TRANSPORTE",
+   "parcela": "-",
+   "valor": 9.92,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-04-15",
+   "mes_fatura": "2026-05",
+   "banco": "NUBANK",
+   "estabelecimento": "Amazonmktplc*Gamesirte",
+   "categoria": "COMPRAS ONLINE",
+   "parcela": "3 de 8",
+   "valor": 55.11,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-04-15",
+   "mes_fatura": "2026-05",
+   "banco": "NUBANK",
+   "estabelecimento": "Figueiras Calcados",
+   "categoria": "VESTUÁRIO",
+   "parcela": "7 de 10",
+   "valor": 19.99,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-04-15",
+   "mes_fatura": "2026-05",
+   "banco": "NUBANK",
+   "estabelecimento": "Mp *Alexlimacunha",
+   "categoria": "OUTROS",
+   "parcela": "2 de 2",
+   "valor": 55.0,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-04-18",
+   "mes_fatura": "2026-05",
+   "banco": "NUBANK",
+   "estabelecimento": "Mg Comercio de Alimen",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 41.98,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-04-19",
+   "mes_fatura": "2026-05",
+   "banco": "NUBANK",
+   "estabelecimento": "Posto Apipucos",
+   "categoria": "COMBUSTÍVEL",
+   "parcela": "-",
+   "valor": 40.0,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-04-19",
+   "mes_fatura": "2026-05",
+   "banco": "NUBANK",
+   "estabelecimento": "Frosty San Martin",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 36.45,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-04-20",
+   "mes_fatura": "2026-05",
+   "banco": "XP",
+   "estabelecimento": "EMPORIO DO SERTAO",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 28.9,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-04-20",
+   "mes_fatura": "2026-05",
+   "banco": "XP",
+   "estabelecimento": "DL*99 RIDE",
+   "categoria": "TRANSPORTE",
+   "parcela": "-",
+   "valor": 19.6,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-04-22",
+   "mes_fatura": "2026-05",
+   "banco": "NUBANK",
+   "estabelecimento": "Donico Coxinhas Artes",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 10.0,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-04-22",
+   "mes_fatura": "2026-05",
+   "banco": "NUBANK",
+   "estabelecimento": "Donico Coxinhas Artes",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 40.0,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-04-24",
+   "mes_fatura": "2026-05",
+   "banco": "XP",
+   "estabelecimento": "99*",
+   "categoria": "TRANSPORTE",
+   "parcela": "-",
+   "valor": 18.4,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-04-24",
+   "mes_fatura": "2026-05",
+   "banco": "XP",
+   "estabelecimento": "MP*ALEXANDRE",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 10.0,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-04-25",
+   "mes_fatura": "2026-05",
+   "banco": "NUBANK",
+   "estabelecimento": "Atacarejo Bongi",
+   "categoria": "MERCADO",
+   "parcela": "-",
+   "valor": 81.91,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-05-02",
+   "mes_fatura": "2026-05",
+   "banco": "XP",
+   "estabelecimento": "ATACAREJO BONGI",
+   "categoria": "MERCADO",
+   "parcela": "-",
+   "valor": 235.68,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-05-05",
+   "mes_fatura": "2026-06",
+   "banco": "XP",
+   "estabelecimento": "IFD*MATUTO REPRESENTAC",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 88.9,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-05-06",
+   "mes_fatura": "2026-06",
+   "banco": "XP",
+   "estabelecimento": "SHOPEE *MUNDOINFANTIL",
+   "categoria": "COMPRAS ONLINE",
+   "parcela": "-",
+   "valor": 329.49,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-05-08",
+   "mes_fatura": "2026-06",
+   "banco": "XP",
+   "estabelecimento": "TUDO PARA PRESENT",
+   "categoria": "MERCADO",
+   "parcela": "-",
+   "valor": 33.0,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-05-10",
+   "mes_fatura": "2026-06",
+   "banco": "XP",
+   "estabelecimento": "MARISA 885",
+   "categoria": "VESTUÁRIO",
+   "parcela": "-",
+   "valor": 59.98,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-05-10",
+   "mes_fatura": "2026-06",
+   "banco": "XP",
+   "estabelecimento": "FIGUEIRAS CALCADOS",
+   "categoria": "VESTUÁRIO",
+   "parcela": "1 de 3",
+   "valor": 91.67,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-05-10",
+   "mes_fatura": "2026-06",
+   "banco": "XP",
+   "estabelecimento": "FIGUEIRAS CALCADOS",
+   "categoria": "VESTUÁRIO",
+   "parcela": "1 de 3",
+   "valor": 91.67,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-05-15",
+   "mes_fatura": "2026-06",
+   "banco": "XP",
+   "estabelecimento": "VIVABEM PHARMA",
+   "categoria": "FARMÁCIA",
+   "parcela": "-",
+   "valor": 33.8,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-05-16",
+   "mes_fatura": "2026-06",
+   "banco": "XP",
+   "estabelecimento": "SHOPEE *CRIAPERSONALIZ",
+   "categoria": "COMPRAS ONLINE",
+   "parcela": "1 de 2",
+   "valor": 72.35,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-05-23",
+   "mes_fatura": "2026-06",
+   "banco": "XP",
+   "estabelecimento": "MP*DOCURASDAVALENTINA",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "1 de 2",
+   "valor": 126.64,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-05-27",
+   "mes_fatura": "2026-06",
+   "banco": "XP",
+   "estabelecimento": "MATUTO BURGUER",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 26.0,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-06-01",
+   "mes_fatura": "2026-06",
+   "banco": "XP",
+   "estabelecimento": "DL*UBERRIDES",
+   "categoria": "TRANSPORTE",
+   "parcela": "-",
+   "valor": 9.52,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-06-05",
+   "mes_fatura": "2026-06",
+   "banco": "NUBANK",
+   "estabelecimento": "Amazonmktplc*Gamesirte",
+   "categoria": "COMPRAS ONLINE",
+   "parcela": "4 de 8",
+   "valor": 55.11,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-07-09",
+   "mes_fatura": "2026-06",
+   "banco": "NUBANK",
+   "estabelecimento": "Figueiras Calcados",
+   "categoria": "VESTUÁRIO",
+   "parcela": "8 de 10",
+   "valor": 19.99,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-05-10",
+   "mes_fatura": "2026-07",
+   "banco": "XP",
+   "estabelecimento": "FIGUEIRAS CALCADOS",
+   "categoria": "VESTUÁRIO",
+   "parcela": "2 de 3",
+   "valor": 91.66,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-05-10",
+   "mes_fatura": "2026-07",
+   "banco": "XP",
+   "estabelecimento": "FIGUEIRAS CALCADOS",
+   "categoria": "VESTUÁRIO",
+   "parcela": "2 de 3",
+   "valor": 91.66,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-05-16",
+   "mes_fatura": "2026-07",
+   "banco": "XP",
+   "estabelecimento": "SHOPEE *CRIAPERSONALIZ",
+   "categoria": "COMPRAS ONLINE",
+   "parcela": "2 de 2",
+   "valor": 72.35,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-05-23",
+   "mes_fatura": "2026-07",
+   "banco": "XP",
+   "estabelecimento": "MP*DOCURASDAVALENTINA",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "2 de 2",
+   "valor": 126.63,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-06-02",
+   "mes_fatura": "2026-07",
+   "banco": "XP",
+   "estabelecimento": "DL*UBERRIDES",
+   "categoria": "TRANSPORTE",
+   "parcela": "-",
+   "valor": 12.92,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-06-02",
+   "mes_fatura": "2026-07",
+   "banco": "XP",
+   "estabelecimento": "DL*UBERRIDES",
+   "categoria": "TRANSPORTE",
+   "parcela": "-",
+   "valor": 8.74,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-06-03",
+   "mes_fatura": "2026-07",
+   "banco": "XP",
+   "estabelecimento": "WILLIAMLANCHES",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 4.5,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-06-06",
+   "mes_fatura": "2026-07",
+   "banco": "XP",
+   "estabelecimento": "PH BEAUTY STUDIO",
+   "categoria": "BELEZA",
+   "parcela": "-",
+   "valor": 125.0,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-06-07",
+   "mes_fatura": "2026-07",
+   "banco": "XP",
+   "estabelecimento": "FERREIRA COSTA",
+   "categoria": "ELETRÔNICOS",
+   "parcela": "1 de 3",
+   "valor": 69.94,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-06-08",
+   "mes_fatura": "2026-07",
+   "banco": "XP",
+   "estabelecimento": "WILLIAMLANCHES",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 16.0,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-06-09",
+   "mes_fatura": "2026-07",
+   "banco": "XP",
+   "estabelecimento": "LULUCOMEDORIA",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 12.0,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-06-09",
+   "mes_fatura": "2026-07",
+   "banco": "XP",
+   "estabelecimento": "LULUCOMEDORIA",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 12.0,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-06-10",
+   "mes_fatura": "2026-07",
+   "banco": "XP",
+   "estabelecimento": "SUCESSO FARMA",
+   "categoria": "FARMÁCIA",
+   "parcela": "-",
+   "valor": 38.97,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-06-10",
+   "mes_fatura": "2026-07",
+   "banco": "XP",
+   "estabelecimento": "ATACADO DOS PRESE",
+   "categoria": "MERCADO",
+   "parcela": "-",
+   "valor": 59.9,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-06-10",
+   "mes_fatura": "2026-07",
+   "banco": "XP",
+   "estabelecimento": "ZP*EMPORIO FERREIRA",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 25.99,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-06-11",
+   "mes_fatura": "2026-07",
+   "banco": "XP",
+   "estabelecimento": "WILLIAMLANCHES",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 6.5,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-06-12",
+   "mes_fatura": "2026-07",
+   "banco": "XP",
+   "estabelecimento": "WILLIAMLANCHES",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 5.5,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-06-13",
+   "mes_fatura": "2026-07",
+   "banco": "XP",
+   "estabelecimento": "IFD*PESTO PROJECTS RES",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 57.79,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-06-15",
+   "mes_fatura": "2026-07",
+   "banco": "XP",
+   "estabelecimento": "WILLIAMLANCHES",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 6.0,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-06-16",
+   "mes_fatura": "2026-07",
+   "banco": "XP",
+   "estabelecimento": "RILSONFRANCISCODA",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 9.0,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-06-17",
+   "mes_fatura": "2026-07",
+   "banco": "XP",
+   "estabelecimento": "WILLIAMLANCHES",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 13.5,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-06-17",
+   "mes_fatura": "2026-07",
+   "banco": "XP",
+   "estabelecimento": "LULUCOMEDORIA",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 8.0,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-06-17",
+   "mes_fatura": "2026-07",
+   "banco": "XP",
+   "estabelecimento": "LULUCOMEDORIA",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 8.0,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-06-18",
+   "mes_fatura": "2026-07",
+   "banco": "XP",
+   "estabelecimento": "WILLIAMLANCHES",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 10.0,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-06-19",
+   "mes_fatura": "2026-07",
+   "banco": "XP",
+   "estabelecimento": "IFD*MATUTO REPRESENTAC",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 77.52,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-06-19",
+   "mes_fatura": "2026-07",
+   "banco": "XP",
+   "estabelecimento": "CARLOSANDRE",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 27.0,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-06-22",
+   "mes_fatura": "2026-07",
+   "banco": "XP",
+   "estabelecimento": "WILLIAMLANCHES",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 5.5,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-06-23",
+   "mes_fatura": "2026-07",
+   "banco": "XP",
+   "estabelecimento": "WILLIAMLANCHES",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 6.5,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-06-25",
+   "mes_fatura": "2026-07",
+   "banco": "XP",
+   "estabelecimento": "WILLIAMLANCHES",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 5.5,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-06-26",
+   "mes_fatura": "2026-07",
+   "banco": "XP",
+   "estabelecimento": "WILLIAMLANCHES",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 11.0,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-06-26",
+   "mes_fatura": "2026-07",
+   "banco": "XP",
+   "estabelecimento": "99*",
+   "categoria": "TRANSPORTE",
+   "parcela": "-",
+   "valor": 13.2,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-06-27",
+   "mes_fatura": "2026-07",
+   "banco": "XP",
+   "estabelecimento": "ATACAREJO BONGI",
+   "categoria": "MERCADO",
+   "parcela": "-",
+   "valor": 76.5,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-07-05",
+   "mes_fatura": "2026-07",
+   "banco": "NUBANK",
+   "estabelecimento": "Amazonmktplc*Gamesirte",
+   "categoria": "COMPRAS ONLINE",
+   "parcela": "5 de 8",
+   "valor": 55.11,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-08-09",
+   "mes_fatura": "2026-07",
+   "banco": "NUBANK",
+   "estabelecimento": "Figueiras Calcados",
+   "categoria": "VESTUÁRIO",
+   "parcela": "9 de 10",
+   "valor": 19.99,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-05-10",
+   "mes_fatura": "2026-08",
+   "banco": "XP",
+   "estabelecimento": "FIGUEIRAS CALCADOS",
+   "categoria": "VESTUÁRIO",
+   "parcela": "3 de 3",
+   "valor": 91.66,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-05-10",
+   "mes_fatura": "2026-08",
+   "banco": "XP",
+   "estabelecimento": "FIGUEIRAS CALCADOS",
+   "categoria": "VESTUÁRIO",
+   "parcela": "3 de 3",
+   "valor": 91.66,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-06-07",
+   "mes_fatura": "2026-08",
+   "banco": "XP",
+   "estabelecimento": "FERREIRA COSTA",
+   "categoria": "ELETRÔNICOS",
+   "parcela": "2 de 3",
+   "valor": 69.93,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-07-02",
+   "mes_fatura": "2026-08",
+   "banco": "XP",
+   "estabelecimento": "EMPORIO DO SERTAO",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 39.9,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-07-03",
+   "mes_fatura": "2026-08",
+   "banco": "XP",
+   "estabelecimento": "MP*LUCICLEIDEALA",
+   "categoria": "BELEZA",
+   "parcela": "-",
+   "valor": 28.9,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-07-03",
+   "mes_fatura": "2026-08",
+   "banco": "XP",
+   "estabelecimento": "WILLIAMLANCHES",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 4.5,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-07-03",
+   "mes_fatura": "2026-08",
+   "banco": "XP",
+   "estabelecimento": "DROGASIL 2869",
+   "categoria": "FARMÁCIA",
+   "parcela": "-",
+   "valor": 19.98,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-07-03",
+   "mes_fatura": "2026-08",
+   "banco": "XP",
+   "estabelecimento": "MUNDO DO CABELEIR",
+   "categoria": "BELEZA",
+   "parcela": "-",
+   "valor": 54.96,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-07-04",
+   "mes_fatura": "2026-08",
+   "banco": "XP",
+   "estabelecimento": "DL*UBERRIDES",
+   "categoria": "TRANSPORTE",
+   "parcela": "-",
+   "valor": 5.94,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-07-04",
+   "mes_fatura": "2026-08",
+   "banco": "XP",
+   "estabelecimento": "MP*FLAVIATATTOOS",
+   "categoria": "BELEZA",
+   "parcela": "-",
+   "valor": 105.0,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-07-04",
+   "mes_fatura": "2026-08",
+   "banco": "XP",
+   "estabelecimento": "ATACADO DOS PRESENTES",
+   "categoria": "MERCADO",
+   "parcela": "1 de 2",
+   "valor": 80.4,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-07-04",
+   "mes_fatura": "2026-08",
+   "banco": "XP",
+   "estabelecimento": "JIM.COM TAIZES MARIA SILV",
+   "categoria": "VESTUÁRIO",
+   "parcela": "1 de 2",
+   "valor": 85.09,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-07-04",
+   "mes_fatura": "2026-08",
+   "banco": "XP",
+   "estabelecimento": "ATACAREJO BONGI",
+   "categoria": "MERCADO",
+   "parcela": "-",
+   "valor": 0.0,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-07-07",
+   "mes_fatura": "2026-08",
+   "banco": "XP",
+   "estabelecimento": "MP*LUCICLEIDEALA",
+   "categoria": "BELEZA",
+   "parcela": "-",
+   "valor": 28.9,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-07-07",
+   "mes_fatura": "2026-08",
+   "banco": "XP",
+   "estabelecimento": "WILLIAMLANCHES",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 4.5,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-07-18",
+   "mes_fatura": "2026-08",
+   "banco": "XP",
+   "estabelecimento": "ROBERVAL GONCALVE",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 44.88,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-07-20",
+   "mes_fatura": "2026-08",
+   "banco": "XP",
+   "estabelecimento": "ROFERA COMBUSTIVEIS",
+   "categoria": "COMBUSTÍVEL",
+   "parcela": "-",
+   "valor": 20.03,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-07-20",
+   "mes_fatura": "2026-08",
+   "banco": "XP",
+   "estabelecimento": "MACAPA MOTO PECAS",
+   "categoria": "MANUTENÇÃO VEÍCULO",
+   "parcela": "1 de 4",
+   "valor": 90.45,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-07-22",
+   "mes_fatura": "2026-08",
+   "banco": "XP",
+   "estabelecimento": "WILLIAMLANCHES",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 11.9,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-07-23",
+   "mes_fatura": "2026-08",
+   "banco": "XP",
+   "estabelecimento": "IFD*MATUTO REPRESENTACAO",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 45.92,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-07-24",
+   "mes_fatura": "2026-08",
+   "banco": "NUBANK",
+   "estabelecimento": "Ifd*Matuto Representac",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 56.85,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-07-25",
+   "mes_fatura": "2026-08",
+   "banco": "XP",
+   "estabelecimento": "ATACAREJO BONGI",
+   "categoria": "MERCADO",
+   "parcela": "-",
+   "valor": 78.34,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-07-25",
+   "mes_fatura": "2026-08",
+   "banco": "XP",
+   "estabelecimento": "MARALCO COMERCIO DE AL",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 8.0,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-07-27",
+   "mes_fatura": "2026-08",
+   "banco": "XP",
+   "estabelecimento": "VIVABEM PHARMA",
+   "categoria": "FARMÁCIA",
+   "parcela": "-",
+   "valor": 6.98,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-07-28",
+   "mes_fatura": "2026-08",
+   "banco": "XP",
+   "estabelecimento": "WILLIAMLANCHES",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 4.5,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-07-28",
+   "mes_fatura": "2026-08",
+   "banco": "XP",
+   "estabelecimento": "MP*TIABELLANCHES",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 7.0,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-07-28",
+   "mes_fatura": "2026-08",
+   "banco": "XP",
+   "estabelecimento": "DL*UBERRIDES",
+   "categoria": "TRANSPORTE",
+   "parcela": "-",
+   "valor": 9.68,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-07-28",
+   "mes_fatura": "2026-08",
+   "banco": "XP",
+   "estabelecimento": "DL*UBERRIDES",
+   "categoria": "TRANSPORTE",
+   "parcela": "-",
+   "valor": 9.54,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-07-29",
+   "mes_fatura": "2026-08",
+   "banco": "XP",
+   "estabelecimento": "DL*99 RIDE",
+   "categoria": "TRANSPORTE",
+   "parcela": "-",
+   "valor": 9.3,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-07-30",
+   "mes_fatura": "2026-08",
+   "banco": "XP",
+   "estabelecimento": "DL*UBERRIDES",
+   "categoria": "TRANSPORTE",
+   "parcela": "-",
+   "valor": 11.13,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-07-31",
+   "mes_fatura": "2026-08",
+   "banco": "XP",
+   "estabelecimento": "DL*UBERRIDES",
+   "categoria": "TRANSPORTE",
+   "parcela": "-",
+   "valor": 9.52,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-08-01",
+   "mes_fatura": "2026-08",
+   "banco": "XP",
+   "estabelecimento": "IFD*ANDRADE E AMORIM C",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 54.98,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-08-05",
+   "mes_fatura": "2026-08",
+   "banco": "NUBANK",
+   "estabelecimento": "Amazonmktplc*Gamesirte",
+   "categoria": "COMPRAS ONLINE",
+   "parcela": "6 de 8",
+   "valor": 55.11,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-09-09",
+   "mes_fatura": "2026-08",
+   "banco": "NUBANK",
+   "estabelecimento": "Figueiras Calcados",
+   "categoria": "VESTUÁRIO",
+   "parcela": "10 de 10",
+   "valor": 19.99,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-06-07",
+   "mes_fatura": "2026-09",
+   "banco": "XP",
+   "estabelecimento": "FERREIRA COSTA",
+   "categoria": "ELETRÔNICOS",
+   "parcela": "3 de 3",
+   "valor": 69.93,
+   "fonte": "supabase"
+  },
+  {
+   "data": "2026-07-04",
+   "mes_fatura": "2026-09",
+   "banco": "XP",
+   "estabelecimento": "JIM.COM TAIZES MARIA SILV",
+   "categoria": "VESTUÁRIO",
+   "parcela": "2 de 2",
+   "valor": 85.08,
+   "fonte": "supabase"
+  },
+  {
+   "data": "2026-07-04",
+   "mes_fatura": "2026-09",
+   "banco": "XP",
+   "estabelecimento": "ATACADO DOS PRESENTES",
+   "categoria": "MERCADO",
+   "parcela": "2 de 2",
+   "valor": 80.4,
+   "fonte": "supabase"
+  },
+  {
+   "data": "2026-07-20",
+   "mes_fatura": "2026-09",
+   "banco": "XP",
+   "estabelecimento": "MACAPA MOTO PECAS",
+   "categoria": "MANUTENÇÃO VEÍCULO",
+   "parcela": "2 de 4",
+   "valor": 90.44,
+   "fonte": "supabase"
+  },
+  {
+   "data": "2026-08-03",
+   "mes_fatura": "2026-09",
+   "banco": "XP",
+   "estabelecimento": "DL*UBERRIDES",
+   "categoria": "TRANSPORTE",
+   "parcela": "-",
+   "valor": 11.12,
+   "fonte": "supabase"
+  },
+  {
+   "data": "2026-08-05",
+   "mes_fatura": "2026-09",
+   "banco": "XP",
+   "estabelecimento": "EMPORIO DO SERTAO",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 25.22,
+   "fonte": "supabase"
+  },
+  {
+   "data": "2026-08-05",
+   "mes_fatura": "2026-09",
+   "banco": "XP",
+   "estabelecimento": "IFD*PESTO PROJECTS RES",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 92.46,
+   "fonte": "supabase"
+  },
+  {
+   "data": "2026-08-06",
+   "mes_fatura": "2026-09",
+   "banco": "XP",
+   "estabelecimento": "CARLOSANDRE",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 27,
+   "fonte": "supabase"
+  },
+  {
+   "data": "2026-08-07",
+   "mes_fatura": "2026-09",
+   "banco": "XP",
+   "estabelecimento": "WILLIAMLANCHES",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 3.5,
+   "fonte": "supabase"
+  },
+  {
+   "data": "2026-08-07",
+   "mes_fatura": "2026-09",
+   "banco": "XP",
+   "estabelecimento": "EMPORIO DO SERTAO",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 28.9,
+   "fonte": "supabase"
+  },
+  {
+   "data": "2026-08-08",
+   "mes_fatura": "2026-09",
+   "banco": "XP",
+   "estabelecimento": "99FOOD *SUSHI DO VASCO PE",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 43.54,
+   "fonte": "supabase"
+  },
+  {
+   "data": "2026-08-08",
+   "mes_fatura": "2026-09",
+   "banco": "XP",
+   "estabelecimento": "ATACAREJO BONGI",
+   "categoria": "MERCADO",
+   "parcela": "-",
+   "valor": 243.07,
+   "fonte": "supabase"
+  },
+  {
+   "data": "2026-08-09",
+   "mes_fatura": "2026-09",
+   "banco": "XP",
+   "estabelecimento": "CARREFOUR REC 45",
+   "categoria": "MERCADO",
+   "parcela": "-",
+   "valor": 67.87,
+   "fonte": "supabase"
+  },
+  {
+   "data": "2026-08-13",
+   "mes_fatura": "2026-09",
+   "banco": "XP",
+   "estabelecimento": "WILLIAMLANCHES",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 6,
+   "fonte": "supabase"
+  },
+  {
+   "data": "2026-08-13",
+   "mes_fatura": "2026-09",
+   "banco": "XP",
+   "estabelecimento": "CARLAANDREADELIMA",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 27,
+   "fonte": "supabase"
+  },
+  {
+   "data": "2026-08-13",
+   "mes_fatura": "2026-09",
+   "banco": "XP",
+   "estabelecimento": "BELLAS FESTAS",
+   "categoria": "LAZER",
+   "parcela": "-",
+   "valor": 9.2,
+   "fonte": "supabase"
+  },
+  {
+   "data": "2026-08-13",
+   "mes_fatura": "2026-09",
+   "banco": "XP",
+   "estabelecimento": "ANGEL COMERCIO",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 22,
+   "fonte": "supabase"
+  },
+  {
+   "data": "2026-08-13",
+   "mes_fatura": "2026-09",
+   "banco": "XP",
+   "estabelecimento": "MP*OATACADAODOSM",
+   "categoria": "OUTROS",
+   "parcela": "-",
+   "valor": 8.85,
+   "fonte": "supabase"
+  },
+  {
+   "data": "2026-08-14",
+   "mes_fatura": "2026-09",
+   "banco": "XP",
+   "estabelecimento": "99FOOD *PESTO PIZZA PENDI",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 72.11,
+   "fonte": "supabase"
+  },
+  {
+   "data": "2026-08-17",
+   "mes_fatura": "2026-09",
+   "banco": "XP",
+   "estabelecimento": "WILLIAMLANCHES",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 6.5,
+   "fonte": "supabase"
+  },
+  {
+   "data": "2026-08-18",
+   "mes_fatura": "2026-09",
+   "banco": "XP",
+   "estabelecimento": "WILLIAMLANCHES",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 6.5,
+   "fonte": "supabase"
+  },
+  {
+   "data": "2026-08-19",
+   "mes_fatura": "2026-09",
+   "banco": "XP",
+   "estabelecimento": "WILLIAMLANCHES",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 4.5,
+   "fonte": "supabase"
+  },
+  {
+   "data": "2026-08-19",
+   "mes_fatura": "2026-09",
+   "banco": "XP",
+   "estabelecimento": "WILLIAMLANCHES",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 6.5,
+   "fonte": "supabase"
+  },
+  {
+   "data": "2026-08-20",
+   "mes_fatura": "2026-09",
+   "banco": "XP",
+   "estabelecimento": "WILLIAMLANCHES",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 6.3,
+   "fonte": "supabase"
+  },
+  {
+   "data": "2026-08-20",
+   "mes_fatura": "2026-09",
+   "banco": "XP",
+   "estabelecimento": "WILLIAMLANCHES",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 10,
+   "fonte": "supabase"
+  },
+  {
+   "data": "2026-08-23",
+   "mes_fatura": "2026-09",
+   "banco": "XP",
+   "estabelecimento": "CARREFOUR REC 45",
+   "categoria": "MERCADO",
+   "parcela": "-",
+   "valor": 21.07,
+   "fonte": "supabase"
+  },
+  {
+   "data": "2026-08-24",
+   "mes_fatura": "2026-09",
+   "banco": "XP",
+   "estabelecimento": "WILLIAMLANCHES",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 4.5,
+   "fonte": "supabase"
+  },
+  {
+   "data": "2026-08-25",
+   "mes_fatura": "2026-09",
+   "banco": "XP",
+   "estabelecimento": "EMPORIO DO SERTAO",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 36.9,
+   "fonte": "supabase"
+  },
+  {
+   "data": "2026-08-26",
+   "mes_fatura": "2026-09",
+   "banco": "XP",
+   "estabelecimento": "WILLIAMLANCHES",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 11.5,
+   "fonte": "supabase"
+  },
+  {
+   "data": "2026-08-26",
+   "mes_fatura": "2026-09",
+   "banco": "XP",
+   "estabelecimento": "99FOOD *PESTO PIZZA PENDI",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 72.11,
+   "fonte": "supabase"
+  },
+  {
+   "data": "2026-08-27",
+   "mes_fatura": "2026-09",
+   "banco": "XP",
+   "estabelecimento": "WILLIAMLANCHES",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 4.7,
+   "fonte": "supabase"
+  },
+  {
+   "data": "2026-08-28",
+   "mes_fatura": "2026-09",
+   "banco": "XP",
+   "estabelecimento": "WILLIAMLANCHES",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 10,
+   "fonte": "supabase"
+  },
+  {
+   "data": "2026-09-01",
+   "mes_fatura": "2026-09",
+   "banco": "XP",
+   "estabelecimento": "IFD*PESTO PROJECTS RES",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 71.58,
+   "fonte": "supabase"
+  },
+  {
+   "data": "2026-09-05",
+   "mes_fatura": "2026-09",
+   "banco": "NUBANK",
+   "estabelecimento": "Amazonmktplc*Gamesirte",
+   "categoria": "COMPRAS ONLINE",
+   "parcela": "7 de 8",
+   "valor": 55.11,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-07-20",
+   "mes_fatura": "2026-10",
+   "banco": "XP",
+   "estabelecimento": "MACAPA MOTO PECAS",
+   "categoria": "MANUTENÇÃO VEÍCULO",
+   "parcela": "3 de 4",
+   "valor": 90.44,
+   "fonte": "supabase"
+  },
+  {
+   "data": "2026-09-07",
+   "mes_fatura": "2026-10",
+   "banco": "XP",
+   "estabelecimento": "IMPERIO MOVEIS E ELETR",
+   "categoria": "ELETRÔNICOS",
+   "parcela": "1 de 5",
+   "valor": 232.87,
+   "fonte": "supabase"
+  },
+  {
+   "data": "2026-09-07",
+   "mes_fatura": "2026-10",
+   "banco": "XP",
+   "estabelecimento": "ATACAREJO BONGI",
+   "categoria": "MERCADO",
+   "parcela": "-",
+   "valor": 380.63,
+   "fonte": "supabase"
+  },
+  {
+   "data": "2026-09-08",
+   "mes_fatura": "2026-10",
+   "banco": "XP",
+   "estabelecimento": "PASSIRA LANCHES",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 42.99,
+   "fonte": "supabase"
+  },
+  {
+   "data": "2026-09-08",
+   "mes_fatura": "2026-10",
+   "banco": "XP",
+   "estabelecimento": "FIGUEIRAS CALCADOS",
+   "categoria": "VESTUÁRIO",
+   "parcela": "1 de 10",
+   "valor": 7.08,
+   "fonte": "supabase"
+  },
+  {
+   "data": "2026-09-10",
+   "mes_fatura": "2026-10",
+   "banco": "XP",
+   "estabelecimento": "SHOPEE *METAISLUMINOX",
+   "categoria": "COMPRAS ONLINE",
+   "parcela": "1 de 3",
+   "valor": 152.31,
+   "fonte": "supabase"
+  },
+  {
+   "data": "2026-07-20",
+   "mes_fatura": "2026-11",
+   "banco": "XP",
+   "estabelecimento": "MACAPA MOTO PECAS",
+   "categoria": "MANUTENÇÃO VEÍCULO",
+   "parcela": "4 de 4",
+   "valor": 90.44,
+   "fonte": "Fatura2026-11-10.csv"
+  },
+  {
+   "data": "2026-09-10",
+   "mes_fatura": "2026-11",
+   "banco": "XP",
+   "estabelecimento": "SHOPEE *METAISLUMINOX",
+   "categoria": "COMPRAS ONLINE",
+   "parcela": "2 de 3",
+   "valor": 152.29,
+   "fonte": "Fatura2026-11-10.csv"
+  },
+  {
+   "data": "2026-09-10",
+   "mes_fatura": "2026-11",
+   "banco": "XP",
+   "estabelecimento": "SHOPEE *METAISLUMINOX",
+   "categoria": "COMPRAS ONLINE",
+   "parcela": "-",
+   "valor": -166.99,
+   "fonte": "Fatura2026-11-10.csv"
+  },
+  {
+   "data": "2026-10-03",
+   "mes_fatura": "2026-11",
+   "banco": "XP",
+   "estabelecimento": "ATACAREJO BONGI",
+   "categoria": "MERCADO",
+   "parcela": "-",
+   "valor": 137.95,
+   "fonte": "Fatura2026-11-10.csv (metade de Henrique)",
+   "valor_bruto": 275.91,
+   "split": "50/50"
+  },
+  {
+   "data": "2026-10-08",
+   "mes_fatura": "2026-11",
+   "banco": "XP",
+   "estabelecimento": "R.R MAKES",
+   "categoria": "BELEZA",
+   "parcela": "-",
+   "valor": 31.12,
+   "fonte": "Fatura2026-11-10.csv"
+  },
+  {
+   "data": "2026-10-10",
+   "mes_fatura": "2026-11",
+   "banco": "XP",
+   "estabelecimento": "SAN PEIXE",
+   "categoria": "OUTROS",
+   "parcela": "-",
+   "valor": 39.64,
+   "fonte": "Fatura2026-11-10.csv",
+   "a_confirmar": true
+  },
+  {
+   "data": "2026-10-10",
+   "mes_fatura": "2026-11",
+   "banco": "XP",
+   "estabelecimento": "LAKASA DO PASTEL",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 28.0,
+   "fonte": "Fatura2026-11-10.csv"
+  },
+  {
+   "data": "2026-10-10",
+   "mes_fatura": "2026-11",
+   "banco": "XP",
+   "estabelecimento": "RINALDODASILVA",
+   "categoria": "OUTROS",
+   "parcela": "-",
+   "valor": 32.0,
+   "fonte": "Fatura2026-11-10.csv"
+  },
+  {
+   "data": "2026-10-11",
+   "mes_fatura": "2026-11",
+   "banco": "XP",
+   "estabelecimento": "CARREFOUR REC 45",
+   "categoria": "MERCADO",
+   "parcela": "-",
+   "valor": 61.14,
+   "fonte": "Fatura2026-11-10.csv"
+  },
+  {
+   "data": "2026-10-11",
+   "mes_fatura": "2026-11",
+   "banco": "XP",
+   "estabelecimento": "DROG CARREFOUR DRT 494",
+   "categoria": "FARMÁCIA",
+   "parcela": "-",
+   "valor": 19.9,
+   "fonte": "Fatura2026-11-10.csv"
+  },
+  {
+   "data": "2026-10-11",
+   "mes_fatura": "2026-11",
+   "banco": "XP",
+   "estabelecimento": "FERREIRA COSTA",
+   "categoria": "ELETRÔNICOS",
+   "parcela": "1 de 3",
+   "valor": 64.93,
+   "fonte": "Fatura2026-11-10.csv"
+  },
+  {
+   "data": "2026-10-11",
+   "mes_fatura": "2026-11",
+   "banco": "XP",
+   "estabelecimento": "IFD*",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 39.89,
+   "fonte": "Fatura2026-11-10.csv"
+  },
+  {
+   "data": "2026-10-14",
+   "mes_fatura": "2026-11",
+   "banco": "XP",
+   "estabelecimento": "MP *FARMACIATRABA",
+   "categoria": "FARMÁCIA",
+   "parcela": "-",
+   "valor": 6.0,
+   "fonte": "Fatura2026-11-10.csv"
+  },
+  {
+   "data": "2026-10-14",
+   "mes_fatura": "2026-11",
+   "banco": "XP",
+   "estabelecimento": "WILLIAMLANCHES",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 6.0,
+   "fonte": "Fatura2026-11-10.csv"
+  },
+  {
+   "data": "2026-10-14",
+   "mes_fatura": "2026-11",
+   "banco": "XP",
+   "estabelecimento": "ALINESILVEIRADA",
+   "categoria": "OUTROS",
+   "parcela": "-",
+   "valor": 27.0,
+   "fonte": "Fatura2026-11-10.csv",
+   "a_confirmar": true
+  },
+  {
+   "data": "2026-10-15",
+   "mes_fatura": "2026-11",
+   "banco": "XP",
+   "estabelecimento": "WILLIAMLANCHES",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 3.5,
+   "fonte": "Fatura2026-11-10.csv"
+  },
+  {
+   "data": "2026-10-17",
+   "mes_fatura": "2026-11",
+   "banco": "XP",
+   "estabelecimento": "99FOOD *TONHO DA MAMINHA",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 76.38,
+   "fonte": "Fatura2026-11-10.csv"
+  },
+  {
+   "data": "2026-10-17",
+   "mes_fatura": "2026-11",
+   "banco": "XP",
+   "estabelecimento": "IFD*MATUTO REPRESENTAC",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 51.4,
+   "fonte": "Fatura2026-11-10.csv"
+  },
+  {
+   "data": "2026-10-18",
+   "mes_fatura": "2026-11",
+   "banco": "XP",
+   "estabelecimento": "99FOOD *CASA DOS BOLOS PE",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 37.17,
+   "fonte": "Fatura2026-11-10.csv"
+  },
+  {
+   "data": "2026-10-21",
+   "mes_fatura": "2026-11",
+   "banco": "XP",
+   "estabelecimento": "DL*99 RIDE",
+   "categoria": "TRANSPORTE",
+   "parcela": "-",
+   "valor": 10.12,
+   "fonte": "Fatura2026-11-10.csv"
+  },
+  {
+   "data": "2026-10-21",
+   "mes_fatura": "2026-11",
+   "banco": "XP",
+   "estabelecimento": "WILLIAMLANCHES",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 4.5,
+   "fonte": "Fatura2026-11-10.csv"
+  },
+  {
+   "data": "2026-10-21",
+   "mes_fatura": "2026-11",
+   "banco": "XP",
+   "estabelecimento": "ALINESILVEIRADA",
+   "categoria": "OUTROS",
+   "parcela": "-",
+   "valor": 24.0,
+   "fonte": "Fatura2026-11-10.csv",
+   "a_confirmar": true
+  },
+  {
+   "data": "2026-10-21",
+   "mes_fatura": "2026-11",
+   "banco": "XP",
+   "estabelecimento": "WILLIAMLANCHES",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 4.5,
+   "fonte": "Fatura2026-11-10.csv"
+  },
+  {
+   "data": "2026-10-22",
+   "mes_fatura": "2026-11",
+   "banco": "XP",
+   "estabelecimento": "WILLIAMLANCHES",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 5.5,
+   "fonte": "Fatura2026-11-10.csv"
+  },
+  {
+   "data": "2026-10-23",
+   "mes_fatura": "2026-11",
+   "banco": "XP",
+   "estabelecimento": "DL*99 RIDE",
+   "categoria": "TRANSPORTE",
+   "parcela": "-",
+   "valor": 16.8,
+   "fonte": "Fatura2026-11-10.csv"
+  },
+  {
+   "data": "2026-10-24",
+   "mes_fatura": "2026-11",
+   "banco": "XP",
+   "estabelecimento": "ATACAREJO BONGI",
+   "categoria": "MERCADO",
+   "parcela": "-",
+   "valor": 96.17,
+   "fonte": "Fatura2026-11-10.csv"
+  },
+  {
+   "data": "2026-10-25",
+   "mes_fatura": "2026-11",
+   "banco": "XP",
+   "estabelecimento": "IFD*MATUTO REPRESENTAC",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 69.4,
+   "fonte": "Fatura2026-11-10.csv"
+  },
+  {
+   "data": "2026-10-27",
+   "mes_fatura": "2026-11",
+   "banco": "XP",
+   "estabelecimento": "DL          *UBERRIDES",
+   "categoria": "TRANSPORTE",
+   "parcela": "-",
+   "valor": 9.91,
+   "fonte": "Fatura2026-11-10.csv"
+  },
+  {
+   "data": "2026-10-30",
+   "mes_fatura": "2026-11",
+   "banco": "XP",
+   "estabelecimento": "ALINESILVEIRADA",
+   "categoria": "OUTROS",
+   "parcela": "-",
+   "valor": 22.0,
+   "fonte": "Fatura2026-11-10.csv",
+   "a_confirmar": true
+  },
+  {
+   "data": "2026-09-10",
+   "mes_fatura": "2026-12",
+   "banco": "XP",
+   "estabelecimento": "SHOPEE *METAISLUMINOX",
+   "categoria": "COMPRAS ONLINE",
+   "parcela": "3 de 3",
+   "valor": 152.29,
+   "fonte": "Fatura2026-12-10.csv"
+  },
+  {
+   "data": "2026-10-11",
+   "mes_fatura": "2026-12",
+   "banco": "XP",
+   "estabelecimento": "FERREIRA COSTA",
+   "categoria": "ELETRÔNICOS",
+   "parcela": "2 de 3",
+   "valor": 64.93,
+   "fonte": "Fatura2026-12-10.csv"
+  },
+  {
+   "data": "2026-09-08",
+   "mes_fatura": "2027-01",
+   "banco": "XP",
+   "estabelecimento": "FIGUEIRAS CALCADOS",
+   "categoria": "VESTUÁRIO",
+   "parcela": "4 de 10",
+   "valor": 6.99,
+   "fonte": "historico"
+  },
+  {
+   "data": "2026-09-08",
+   "mes_fatura": "2027-02",
+   "banco": "XP",
+   "estabelecimento": "FIGUEIRAS CALCADOS",
+   "categoria": "VESTUÁRIO",
+   "parcela": "5 de 10",
+   "valor": 6.99,
+   "fonte": "historico"
+  }
+ ]
+}

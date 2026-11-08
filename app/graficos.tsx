@@ -114,37 +114,6 @@ export function Legenda({ itens, tipo = "barra" }: { itens: { rotulo: string; co
   );
 }
 
-export function TabelaEquivalente({ cabecalho, linhas }: { cabecalho: string[]; linhas: (string | number)[][] }) {
-  return (
-    <details className="ver-tabela">
-      <summary>Ver como tabela</summary>
-      <div className="tabela-wrap">
-        <table>
-          <thead>
-            <tr>
-              {cabecalho.map((c, i) => (
-                <th key={c} className={i > 0 ? "dir" : ""}>
-                  {c}
-                </th>
-              ))}
-            </tr>
-          </thead>
-          <tbody>
-            {linhas.map((l, i) => (
-              <tr key={i}>
-                {l.map((c, j) => (
-                  <td key={j} className={j > 0 ? "dir num" : ""}>
-                    {c}
-                  </td>
-                ))}
-              </tr>
-            ))}
-          </tbody>
-        </table>
-      </div>
-    </details>
-  );
-}
 
 /** Passo "redondo" para os eixos: 1, 2, 2,5 ou 5 × 10ⁿ. */
 function passoBonito(bruto: number) {
@@ -454,7 +423,6 @@ export function Evolucao({ meses }: { meses: { mes: string; receitas: number; sa
         />
         <Legenda itens={[{ rotulo: "Sobra", cor: COR.s3 }]} tipo="linha" />
       </div>
-      <TabelaEquivalente cabecalho={["Mês", "Receitas", "Saídas", "Sobra"]} linhas={meses.map((x) => [rotuloMes(x.mes), brl(x.receitas), brl(x.saidas), brl(x.sobra)])} />
     </>
   );
 }
@@ -465,11 +433,12 @@ export function Futuros({ meses, limite }: { meses: { mes: string; parcelasCarta
   const W = 640,
     H = 250,
     m = { t: 16, r: 8, b: 30, l: 52 };
+  // cores fixas por série (a cor segue a série, não a posição); séries sem nenhum valor saem da legenda
   const series = [
     { chave: "parcelasCartao" as const, rotulo: "Parcelas do cartão", cor: COR.s1 },
     { chave: "boletos" as const, rotulo: "Boletos e financiamentos", cor: COR.s2 },
     { chave: "bmw" as const, rotulo: "BMW", cor: COR.s3 },
-  ];
+  ].filter((s) => meses.some((x) => x[s.chave] > 0.005));
   const max = Math.max(limite * 1.1, ...meses.map((x) => x.total));
   const ticks = marcas(0, max);
   const y1 = ticks[ticks.length - 1];
@@ -515,10 +484,82 @@ export function Futuros({ meses, limite }: { meses: { mes: string; parcelasCarta
         </text>
       </svg>
       <Legenda itens={series.map((s) => ({ rotulo: s.rotulo, cor: s.cor }))} />
-      <TabelaEquivalente
-        cabecalho={["Mês", ...series.map((s) => s.rotulo), "Total"]}
-        linhas={meses.map((x) => [rotuloMes(x.mes), ...series.map((s) => brl(x[s.chave])), brl(x.total)])}
-      />
     </>
+  );
+}
+
+/* ===== Categorias × média, ajustadas à altura do card ===== */
+interface Cat {
+  nome: string;
+  atual: number;
+  media: number;
+}
+const nomeBonito = (n: string) => n.charAt(0) + n.slice(1).toLowerCase();
+
+/** Mostra só as linhas que cabem na altura disponível; o excedente (e a categoria
+    "OUTROS" original) vira uma linha "Outros" com o valor e a média somados. */
+export function CategoriasAjustadas({ cats, formatar, formatarPct }: { cats: Cat[]; formatar: (v: number) => string; formatarPct: (v: number) => string }) {
+  const area = useRef<HTMLDivElement>(null);
+  const [cabem, setCabem] = useState(6); // valor inicial (HTML do servidor); a medição real ajusta logo ao abrir
+
+  useLayoutEffect(() => {
+    const el = area.current;
+    if (!el) return;
+    const medir = () => {
+      const primeira = el.querySelector("li");
+      if (!primeira) return;
+      const gap = 12;
+      const altLinha = primeira.getBoundingClientRect().height + gap;
+      setCabem(Math.max(1, Math.floor((el.clientHeight + gap) / altLinha)));
+    };
+    medir();
+    const ro = new ResizeObserver(medir);
+    ro.observe(el);
+    return () => ro.disconnect();
+  }, []);
+
+  const semOutros = cats.filter((c) => c.nome !== "OUTROS");
+  const outrosOrig = cats.find((c) => c.nome === "OUTROS");
+  let linhas: Cat[];
+  if (cats.length <= cabem && !outrosOrig) linhas = cats;
+  else {
+    const vagas = Math.max(0, cabem - 1);
+    const visiveis = semOutros.slice(0, vagas);
+    const resto = [...semOutros.slice(vagas), ...(outrosOrig ? [outrosOrig] : [])];
+    linhas = resto.length
+      ? [...visiveis, { nome: "OUTROS", atual: soma(resto.map((r) => r.atual)), media: soma(resto.map((r) => r.media)) }]
+      : visiveis;
+  }
+  const max = Math.max(1, ...linhas.map((x) => Math.max(x.atual, x.media)));
+
+  return (
+    <div className="cat-area" ref={area}>
+      <ul className="cat-bullets">
+        {linhas.map((x) => {
+          const dif = x.media > 0 ? (x.atual - x.media) / x.media : null;
+          return (
+            <li key={x.nome}>
+              <div className="cat-linha">
+                <span className="cat-nome">{nomeBonito(x.nome)}</span>
+                <span className="num">{formatar(x.atual)}</span>
+              </div>
+              <div className="cat-trilho" aria-hidden="true">
+                <div className="cat-barra" style={{ width: `${(x.atual / max) * 100}%` }} />
+                {x.media > 0 && <div className="cat-media" style={{ left: `${(x.media / max) * 100}%` }} />}
+              </div>
+              <div className="cat-ref num">
+                média {formatar(x.media)}
+                {dif !== null && Math.abs(dif) >= 0.05 && (
+                  <span className={dif > 0 ? "delta-ruim" : "delta-bom"}>
+                    {" "}
+                    · {dif > 0 ? "▲" : "▼"} {formatarPct(Math.abs(dif))}
+                  </span>
+                )}
+              </div>
+            </li>
+          );
+        })}
+      </ul>
+    </div>
   );
 }
