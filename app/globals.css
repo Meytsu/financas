@@ -1667,3 +1667,27 @@ html:has(.gaveta.aberta) {
     transition: none;
   }
 }
+
+/* janela de lançamentos: total no canto superior direito, ao lado do X */
+.janela-cabecalho {
+  align-items: center;
+}
+.janela-acoes {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.janela-total {
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--tinta);
+}
+/* botão X com borda (janela e painel de filtros) */
+.botao-fechar {
+  border: 1px solid var(--borda);
+  background: var(--superficie);
+}
+.botao-fechar:hover {
+  border-color: color-mix(in srgb, var(--tinta) 30%, transparent);
+}
+

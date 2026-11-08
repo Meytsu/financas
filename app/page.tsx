@@ -701,15 +701,16 @@ function PainelPessoa({ pessoa, trocar }: { pessoa: Pessoa; trocar: (p: Pessoa) 
       >
         <div className="janela-corpo">
           <header className="janela-cabecalho">
-            <div>
-              <h2 id="janela-titulo">Lançamentos de {rotuloMes(mes)}</h2>
-              <p className="num">
-                {brl(totalFixos + r.totalCartao)} no mês · contas {brl(totalFixos)} + cartão {brl(r.totalCartao)}
-              </p>
+            <h2 id="janela-titulo">Lançamentos de {rotuloMes(mes)}</h2>
+            <div className="janela-acoes">
+              {/* total do mês: contas fora do cartão + cartões (o detalhe fica na dica) */}
+              <span className="janela-total num" title={`Contas ${brl(totalFixos)} + cartões ${brl(r.totalCartao)}`}>
+                {brl(totalFixos + r.totalCartao)}
+              </span>
+              <button className="botao-fechar" onClick={() => janela.current?.close()} aria-label="Fechar">
+                ✕
+              </button>
             </div>
-            <button className="botao-fechar" onClick={() => janela.current?.close()} aria-label="Fechar">
-              ✕
-            </button>
           </header>
           <div className="janela-tabelas">
             <section>
