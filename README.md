@@ -156,6 +156,8 @@ Todos os gráficos: dica no hover **e** no foco do teclado (Tab); legenda só na
 
 ## Pendências
 
+- **Automação das compras pelo celular** (Google Carteira → MacroDroid → Supabase → site atualizado sozinho): planejada, ver [docs/automacao-cartao.md](docs/automacao-cartao.md).
+
 - Categoria da LMSERVICELTDA.
 - Valores reais do adiantamento (hoje estimado).
 - (resolvido) Dados móveis = recarga do celular, R$ 30 no dia 20.
