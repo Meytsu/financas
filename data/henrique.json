@@ -7774,6 +7774,71 @@
    "fonte": "Fatura2026-12-10.csv"
   },
   {
+   "data": "2026-11-02",
+   "mes_fatura": "2026-12",
+   "banco": "XP",
+   "estabelecimento": "GOOGLE ONE",
+   "categoria": "ASSINATURA",
+   "parcela": "-",
+   "valor": 35.99,
+   "fonte": "Fatura2026-12-10.csv"
+  },
+  {
+   "data": "2026-11-04",
+   "mes_fatura": "2026-12",
+   "banco": "XP",
+   "estabelecimento": "ATACAREJO BONGI",
+   "categoria": "MERCADO",
+   "parcela": "-",
+   "valor": 324.5,
+   "fonte": "Fatura2026-12-10.csv",
+   "valor_fatura": 798.99,
+   "ajuste": -150.0,
+   "obs": "estorno de R$ 150: 44 macarrões passados por engano no caixa (antecipação de R$ 150 quando o valor for depositado)",
+   "valor_bruto": 648.99,
+   "split": "50/50"
+  },
+  {
+   "data": "2026-11-04",
+   "mes_fatura": "2026-12",
+   "banco": "XP",
+   "estabelecimento": "SAEL",
+   "categoria": "MANUTENÇÃO VEÍCULO",
+   "parcela": "1 de 3",
+   "valor": 326.68,
+   "fonte": "Fatura2026-12-10.csv"
+  },
+  {
+   "data": "2026-11-05",
+   "mes_fatura": "2026-12",
+   "banco": "XP",
+   "estabelecimento": "MG COMERCIO DE AL",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 18.99,
+   "fonte": "Fatura2026-12-10.csv"
+  },
+  {
+   "data": "2026-11-05",
+   "mes_fatura": "2026-12",
+   "banco": "XP",
+   "estabelecimento": "MP*LOTERIASONLINETE5V",
+   "categoria": "LOTERIA",
+   "parcela": "-",
+   "valor": 6.75,
+   "fonte": "Fatura2026-12-10.csv"
+  },
+  {
+   "data": "2026-11-05",
+   "mes_fatura": "2026-12",
+   "banco": "XP",
+   "estabelecimento": "BRAZ PETRO COMBUS",
+   "categoria": "COMBUSTÍVEL",
+   "parcela": "-",
+   "valor": 20.0,
+   "fonte": "Fatura2026-12-10.csv"
+  },
+  {
    "data": "2026-08-24",
    "mes_fatura": "2027-01",
    "banco": "XP",
@@ -7794,6 +7859,16 @@
    "fonte": "historico"
   },
   {
+   "data": "2026-11-04",
+   "mes_fatura": "2027-01",
+   "banco": "XP",
+   "estabelecimento": "SAEL",
+   "categoria": "MANUTENÇÃO VEÍCULO",
+   "parcela": "2 de 3",
+   "valor": 326.68,
+   "fonte": "projeção (parcela futura)"
+  },
+  {
    "data": "2026-09-07",
    "mes_fatura": "2027-02",
    "banco": "XP",
@@ -7802,6 +7877,16 @@
    "parcela": "5 de 5",
    "valor": 232.87,
    "fonte": "historico"
+  },
+  {
+   "data": "2026-11-04",
+   "mes_fatura": "2027-02",
+   "banco": "XP",
+   "estabelecimento": "SAEL",
+   "categoria": "MANUTENÇÃO VEÍCULO",
+   "parcela": "3 de 3",
+   "valor": 326.68,
+   "fonte": "projeção (parcela futura)"
   }
  ]
 }

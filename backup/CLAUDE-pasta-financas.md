@@ -31,6 +31,8 @@ Outros lançamentos manuais ficam em `PESSOAS` no script (um bloco por pessoa):
 - **Energia e outras contas variáveis fora do cartão** → `variaveis_fora_cartao` (`valor: None` enquanto a conta não chega).
 - **Saldo da reserva** → `reserva.contas` (+ `atualizado`).
 - **Compra dividida 50/50** → `DIVIDIR_50_50` (data, loja, valor cheio). O titular fica com a metade arredondada para cima e a outra pessoa com o resto — cada metade aparece na página de cada um. Só as que o Henrique confirmar (a feira grande do mês no Bongi, feita no início do mês quando a fatura XP vira; em nov/26 só a de maior valor).
+- **Ajuste no valor de um lançamento** (estorno, erro na nota) → `AJUSTES` (data, loja, valor na fatura) = (ajuste, motivo). É aplicado **antes** da divisão 50/50 e aparece na tabela de lançamentos com a marca "ajuste" (o motivo fica na dica). Ex.: Bongi 04/11/26 R$ 798,99 − R$ 150 (44 macarrões passados por engano) = R$ 648,99 → R$ 324,50 Henrique / R$ 324,49 Beatriz.
+- **Parcelas futuras:** o script projeta sozinho as parcelas seguintes de cada compra parcelada dos CSVs (ex.: SAEL 1 de 3 em dez → 2/3 em jan e 3/3 em fev), sem duplicar o que já existe; quando a fatura daquele mês chegar, ela substitui a projeção.
 - **Dia de vencimento** das fixas → `dias_fixas` de cada pessoa (Henrique: aluguel e recarga do celular no dia 20; Beatriz: energia no dia 10); dos boletos → `DIAS_BOLETOS` (Suhai: dia 10); das contas variáveis → campo `dia` em `variaveis_fora_cartao` (energia: dia 10).
 
 ## De onde vêm os dados

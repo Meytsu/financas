@@ -13,6 +13,11 @@ export interface Transacao {
   /** compra dividida com a Beatriz: `valor` é a parte do Henrique, `valor_bruto` o total da fatura */
   split?: string;
   valor_bruto?: number;
+  /** valor original na fatura quando houve ajuste (ex.: estorno), o ajuste e o motivo */
+  valor_fatura?: number;
+  ajuste?: number;
+  obs?: string;
+  fonte?: string;
 }
 
 export interface Dados {

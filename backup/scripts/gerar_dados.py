@@ -86,6 +86,14 @@ TOTAL_PARCELAS = {"Kabum (Mercado Pago)": 2}
 # arredondada para cima e a outra pessoa com o resto. Ex.: a feira grande do mês no Bongi.
 DIVIDIR_50_50 = {
     ("2026-10-03", "ATACAREJO BONGI", 275.91),  # fatura nov/26; confirmado em 2026-11-07 (só a de maior valor)
+    ("2026-11-04", "ATACAREJO BONGI", 798.99),  # fatura dez/26; divide DEPOIS do ajuste abaixo (R$ 648,99)
+}
+# Ajustes no valor de um lançamento (data, loja, valor na fatura): (ajuste, motivo). Aplicado antes da divisão 50/50.
+AJUSTES = {
+    ("2026-11-04", "ATACAREJO BONGI", 798.99): (
+        -150.00,
+        "estorno de R$ 150: 44 macarrões passados por engano no caixa (antecipação de R$ 150 quando o valor for depositado)",
+    ),
 }
 
 MESES_SUPABASE = {"2026-09", "2026-10"}
@@ -104,7 +112,16 @@ REGRAS = [
     (r"IFD\*|99FOOD|PASTEL", "ALIMENTAÇÃO"),     # iFood, 99Food, pastelaria
     (r"FARMACIA", "FARMÁCIA"),
     (r"UBER|99 ?RIDE", "TRANSPORTE"),
+    (r"GOOGLE ONE", "ASSINATURA"),
+    (r"PADARIA NOVA PARI", "MERCADO"),
+    (r"BRAZ PETRO", "COMBUSTÍVEL"),
 ]
+
+
+def soma_mes(mes, n):
+    a, m = map(int, mes.split("-"))
+    total = a * 12 + (m - 1) + n
+    return f"{total // 12}-{total % 12 + 1:02d}"
 
 
 # ===================== Supabase + backup =====================
@@ -195,6 +212,7 @@ def main():
         return "OUTROS", True  # a confirmar
 
     tx = {chave: [] for chave in PESSOAS}
+    projecoes = []
 
     def add(portador, data_iso, mes_fatura, estab, valor, parcela, original_cat=None, fonte="", banco="XP"):
         dono = PORTADORES.get(portador)  # portador exato: exclui o teste "Henrique Alves" do Supabase
@@ -209,6 +227,11 @@ def main():
         if confirmar:
             item["a_confirmar"] = True
         chave = (data_iso, estab.strip().upper(), round(valor, 2))
+        if chave in AJUSTES:
+            ajuste, motivo = AJUSTES[chave]
+            item.update({"valor_fatura": round(valor, 2), "ajuste": ajuste, "obs": motivo})
+            valor = round(valor + ajuste, 2)
+            item["valor"] = valor
         if chave in DIVIDIR_50_50:
             metade = round(valor / 2 + 0.001, 2)
             item.update({"valor_bruto": round(valor, 2), "valor": metade, "split": "50/50"})
@@ -237,6 +260,26 @@ def main():
                 continue
             d, m, a = r["Data"].split("/")
             add(r["Portador"].strip().upper(), f"{a}-{m}-{d}", mes, r["Estabelecimento"], brl(r["Valor"]), r["Parcela"], fonte=arq)
+            # parcelas seguintes ainda sem fatura: projeta "k de m" nos meses à frente
+            pm = re.match(r"^(\d+)\s*de\s*(\d+)$", (r["Parcela"] or "").strip())
+            if pm and int(pm.group(1)) < int(pm.group(2)):
+                n, total = int(pm.group(1)), int(pm.group(2))
+                for k in range(n + 1, total + 1):
+                    projecoes.append((r["Portador"].strip().upper(), f"{a}-{m}-{d}", soma_mes(mes, k - n), r["Estabelecimento"], brl(r["Valor"]), f"{k} de {total}"))
+
+    # 4) parcelas projetadas: só meses sem fatura própria e sem o mesmo lançamento já vindo de outra fonte
+    def chave_tx(t):
+        return (t["data"], t["estabelecimento"].upper().strip(), round(t["valor"], 2), t["parcela"].replace(" ", ""))
+
+    existentes = {chave_tx(t) for lista in tx.values() for t in lista}
+    for portador, data_iso, mes_f, estab, valor, parcela in projecoes:
+        if mes_f in CSV_POR_MES or mes_f in MESES_SUPABASE:
+            continue
+        k = (data_iso, estab.upper().strip(), round(valor, 2), parcela.replace(" ", ""))
+        if k in existentes:
+            continue
+        existentes.add(k)
+        add(portador, data_iso, mes_f, estab, valor, parcela, fonte="projeção (parcela futura)")
 
     for chave, p in PESSOAS.items():
         lista = sorted(tx[chave], key=lambda t: (t["mes_fatura"], t["data"]))

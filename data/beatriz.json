@@ -2863,6 +2863,41 @@
    "fonte": "Fatura2026-12-10.csv"
   },
   {
+   "data": "2026-11-03",
+   "mes_fatura": "2026-12",
+   "banco": "XP",
+   "estabelecimento": "DL*99 RIDE",
+   "categoria": "TRANSPORTE",
+   "parcela": "-",
+   "valor": 17.8,
+   "fonte": "Fatura2026-12-10.csv"
+  },
+  {
+   "data": "2026-11-04",
+   "mes_fatura": "2026-12",
+   "banco": "XP",
+   "estabelecimento": "PADARIA NOVA PARIS LTD",
+   "categoria": "MERCADO",
+   "parcela": "-",
+   "valor": 27.64,
+   "fonte": "Fatura2026-12-10.csv"
+  },
+  {
+   "data": "2026-11-04",
+   "mes_fatura": "2026-12",
+   "banco": "XP",
+   "estabelecimento": "ATACAREJO BONGI",
+   "categoria": "MERCADO",
+   "parcela": "-",
+   "valor": 324.49,
+   "fonte": "Fatura2026-12-10.csv (metade de Henrique)",
+   "valor_fatura": 798.99,
+   "ajuste": -150.0,
+   "obs": "estorno de R$ 150: 44 macarrões passados por engano no caixa (antecipação de R$ 150 quando o valor for depositado)",
+   "valor_bruto": 648.99,
+   "split": "50/50"
+  },
+  {
    "data": "2026-09-08",
    "mes_fatura": "2027-01",
    "banco": "XP",
@@ -2871,6 +2906,16 @@
    "parcela": "4 de 10",
    "valor": 6.99,
    "fonte": "historico"
+  },
+  {
+   "data": "2026-10-11",
+   "mes_fatura": "2027-01",
+   "banco": "XP",
+   "estabelecimento": "FERREIRA COSTA",
+   "categoria": "ELETRÔNICOS",
+   "parcela": "3 de 3",
+   "valor": 64.93,
+   "fonte": "projeção (parcela futura)"
   },
   {
    "data": "2026-09-08",

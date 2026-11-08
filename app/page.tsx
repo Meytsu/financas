@@ -765,8 +765,14 @@ function PainelPessoa({ pessoa, trocar }: { pessoa: Pessoa; trocar: (p: Pessoa) 
                       ordem: (t: Transacao) => t.valor,
                       celula: (t: Transacao) =>
                         t.split ? (
-                          <span title={`Total na fatura ${brl(t.valor_bruto ?? 0)}, dividido 50/50`}>
-                            <span className="tag">{t.split}</span> {brl(t.valor)}
+                          <span
+                            title={
+                              t.valor_fatura !== undefined
+                                ? `Na fatura ${brl(t.valor_fatura)} ${(t.ajuste ?? 0) < 0 ? "−" : "+"} ${brl(Math.abs(t.ajuste ?? 0))} (${t.obs ?? "ajuste"}) = ${brl(t.valor_bruto ?? 0)}, dividido 50/50`
+                                : `Total na fatura ${brl(t.valor_bruto ?? 0)}, dividido 50/50`
+                            }
+                          >
+                            {t.valor_fatura !== undefined && <span className="tag">ajuste</span>} <span className="tag">{t.split}</span> {brl(t.valor)}
                           </span>
                         ) : (
                           <span className={t.valor < 0 ? "delta-bom" : ""}>{brl(t.valor)}</span>

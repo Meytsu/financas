@@ -125,6 +125,7 @@ Todos os gráficos: dica no hover **e** no foco do teclado (Tab); legenda só na
 ## Histórico de decisões
 
 **2026-11-08**
+- Fatura de dez/26 parcial (compras de 02 a 05/11): Bongi 04/11 com ajuste de −R$ 150 (estorno de 44 macarrões) e dividido 50/50 (R$ 324,50 / R$ 324,49); parcelas futuras passam a ser projetadas pelo script (SAEL 2/3 e 3/3, Ferreira Costa 3/3 da Beatriz).
 - Página da Beatriz com a mesma mecânica; tela "Quem está acessando?" antes de entrar; script novo `gerar_dados.py` gera um arquivo por pessoa (os dados do Henrique saíram idênticos).
 - Compra dividida 50/50 aparece nas duas páginas (Bongi de 03/10: R$ 137,96 Henrique / R$ 137,95 Beatriz).
 - Publicação no GitHub Pages (público), decidida pelo Henrique.

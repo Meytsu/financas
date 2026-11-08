@@ -14,7 +14,7 @@
 ## Despesas
 - **Teto do cartão XP: R$ 1.200,00/mês, incluindo as parcelas.** ✔ confirmado (gasolina, mercado/feira, saídas, roupas, compras online, assinaturas)
 - **Fixas fora do cartão:** aluguel R$ 800 (vence dia 20) + dados móveis R$ 30 (recarga do celular, dia 20). ~~R$ 1.186,80 com feira e assinaturas~~ — a feira passou para o cartão; Spotify cancelado; Google One/YouTube (R$ 35,99) e Netflix (R$ 20,90) caem no cartão.
-- **Feira grande do mês no Atacarejo Bongi é dividida 50/50 com a Beatriz** (jul, ago, set/26; em nov/26 só a de maior valor, R$ 275,91 em 03/10 → R$ 137,96 do Henrique). As compras menores no Bongi não são divididas.
+- **Feira grande do mês no Atacarejo Bongi é dividida 50/50 com a Beatriz** (jul, ago, set/26; em nov/26 só a de maior valor, R$ 275,91 em 03/10 → R$ 137,96 do Henrique). As compras menores no Bongi não são divididas. Dez/26: feira de 04/11 R$ 798,99 com estorno de R$ 150 (44 macarrões passados por engano; o Henrique antecipa os R$ 150 quando o valor for depositado) → R$ 648,99 dividido: R$ 324,50 Henrique / R$ 324,49 Beatriz.
 - **Energia (variável):** a Beatriz paga R$ 120 da conta; o resto fica com o Henrique (nov/26: R$ 153,88 → R$ 33,88), vence **dia 10**.
 - **Boletos e financiamentos fora do cartão:**
   - Seguro Suhai: 3 × ~R$ 650,93, **set–nov/26**, vence **dia 10** (última em 10/11/26).
