@@ -4,6 +4,8 @@ Painel financeiro pessoal. **Refeito do zero em 2026-11-05.** Uma página por pe
 
 - **Manual do painel** (indicadores, gráficos, regras de design): [dashboard/README.md](dashboard/README.md)
 - **Parâmetros financeiros e decisões (Henrique e Beatriz):** [dashboard/MEMORIES.md](dashboard/MEMORIES.md)
+- **Planos:** [dashboard/docs/automacao-cartao.md](dashboard/docs/automacao-cartao.md) — compras do celular (Google Carteira) direto para o painel
+- **Pendências e histórico de decisões:** seções 6 e 7 do [dashboard/README.md](dashboard/README.md)
 
 ## Git
 
@@ -24,7 +26,7 @@ npm run dev          # http://localhost:3000/financas  (basePath /financas)
 3. Registre o arquivo em `CSV_POR_MES` em [scripts/gerar_dados.py](scripts/gerar_dados.py). O mesmo CSV traz as compras das duas pessoas (o script separa pelo titular: HENRIQUE ALVES / BEATRIZ WERNECK).
 4. Rode `python3 scripts/gerar_dados.py` — gera `henrique.json` e `beatriz.json` e imprime, por pessoa, o total por fatura e as lojas **sem categoria** (marcadas "a confirmar"). (`gerar_henrique.py` ainda funciona: só chama o novo.)
 5. **Mostre ao Henrique o resumo e pergunte a categoria das lojas novas** antes de considerar pronto. Lojas confirmadas viram regra em `REGRAS` no script.
-6. Confira em http://localhost:3000/financas.
+6. Confira em http://localhost:3000/financas, rode `npx tsc --noEmit -p . && npm run lint && npm run build` em `dashboard/`, faça commit e **push na `main`** (publica o site em ~2 min).
 
 Outros lançamentos manuais ficam em `PESSOAS` no script (um bloco por pessoa):
 - **Salário que caiu na conta** → `renda.realizados` (substitui a estimativa daquele mês).
@@ -79,7 +81,9 @@ Finanças/
 │   └── gerar_henrique.py     nome antigo (só chama o gerar_dados.py)
 ├── data/                     planilhas e JSONs antigos (histórico, não usados pela página nova)
 └── dashboard/                Next.js 16 (repo git: github.com/Meytsu/financas)
-    ├── README.md             manual do painel
+    ├── README.md             manual do painel (tudo: pessoas, fluxo, fontes, página, histórico, pendências)
+    ├── docs/                 planos (automacao-cartao.md)
+    ├── backup/               cópia das tabelas do Supabase, faturas, scripts e deste guia
     ├── MEMORIES.md           parâmetros e decisões financeiras
     ├── data/henrique.json    dados do Henrique (gerado)
     ├── data/beatriz.json     dados da Beatriz (gerado)
