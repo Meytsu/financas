@@ -7846,7 +7846,7 @@
    "categoria": "COMPRAS ONLINE",
    "parcela": "5 de 5",
    "valor": 35.79,
-   "fonte": "historico"
+   "fonte": "Fatura2027-01-10.csv"
   },
   {
    "data": "2026-09-07",
@@ -7856,7 +7856,7 @@
    "categoria": "ELETRÔNICOS",
    "parcela": "4 de 5",
    "valor": 232.87,
-   "fonte": "historico"
+   "fonte": "Fatura2027-01-10.csv"
   },
   {
    "data": "2026-11-04",
@@ -7865,8 +7865,8 @@
    "estabelecimento": "SAEL",
    "categoria": "MANUTENÇÃO VEÍCULO",
    "parcela": "2 de 3",
-   "valor": 326.68,
-   "fonte": "projeção (parcela futura)"
+   "valor": 326.66,
+   "fonte": "Fatura2027-01-10.csv"
   },
   {
    "data": "2026-09-07",
@@ -7876,7 +7876,7 @@
    "categoria": "ELETRÔNICOS",
    "parcela": "5 de 5",
    "valor": 232.87,
-   "fonte": "historico"
+   "fonte": "Fatura2027-02-10.csv"
   },
   {
    "data": "2026-11-04",
@@ -7885,8 +7885,8 @@
    "estabelecimento": "SAEL",
    "categoria": "MANUTENÇÃO VEÍCULO",
    "parcela": "3 de 3",
-   "valor": 326.68,
-   "fonte": "projeção (parcela futura)"
+   "valor": 326.66,
+   "fonte": "Fatura2027-02-10.csv"
   }
  ]
 }

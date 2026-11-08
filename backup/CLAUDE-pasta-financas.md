@@ -41,7 +41,7 @@ Outros lançamentos manuais ficam em `PESSOAS` no script (um bloco por pessoa):
 |---|---|
 | Faturas XP até ago/26 e de jan/27 em diante + Nubank (Henrique abr–ago/26, Beatriz até set/26) | `dashboard/public/data.json` (histórico antigo, só leitura) |
 | Faturas set–out/26 | Supabase, tabela `transacoes_variaveis` (mais completo que o data.json) |
-| Faturas nov–dez/26 | CSVs `Fatura2026-11-10.csv`, `Fatura2026-12-10.csv` |
+| Faturas de nov/26 em diante | CSVs `FaturaAAAA-MM-10.csv` (nov/26, dez/26 parcial, jan/27 e fev/27 só com parcelas) — registrados em `CSV_POR_MES`; o CSV da XP é a fonte oficial e substitui o histórico e as projeções daquele mês |
 | Despesas fixas | Supabase `despesas_fixas` (sem a Feira — a feira agora é gasta no cartão) |
 | Boletos e financiamentos (Suhai, Kabum, BMW) | Supabase `outras_despesas` |
 | Renda, teto, reserva, energia | `PESSOAS` em `scripts/gerar_dados.py` |

@@ -4,7 +4,7 @@
 Fontes de cada fatura do cartão (separadas pelo titular — HENRIQUE ALVES / BEATRIZ WERNECK):
   - até 2026-08 e de 2027-01 em diante: dashboard/public/data.json (histórico antigo; XP e Nubank)
   - 2026-09 e 2026-10: Supabase (transacoes_variaveis) — mais completo que o data.json
-  - 2026-11 e 2026-12: CSVs da XP (Fatura2026-11-10.csv, Fatura2026-12-10.csv)
+  - 2026-11 a 2027-02: CSVs da XP (FaturaAAAA-MM-10.csv; ver CSV_POR_MES)
 Fixas e parcelas/boletos vêm do Supabase (com as correções confirmadas abaixo).
 Renda, teto, reserva e contas variáveis ficam em PESSOAS.
 
@@ -97,7 +97,12 @@ AJUSTES = {
 }
 
 MESES_SUPABASE = {"2026-09", "2026-10"}
-CSV_POR_MES = {"2026-11": "Fatura2026-11-10.csv", "2026-12": "Fatura2026-12-10.csv"}
+CSV_POR_MES = {
+    "2026-11": "Fatura2026-11-10.csv",
+    "2026-12": "Fatura2026-12-10.csv",  # parcial (compras até 05/11)
+    "2027-01": "Fatura2027-01-10.csv",  # só parcelas (baixada em 08/11/26)
+    "2027-02": "Fatura2027-02-10.csv",  # só parcelas (baixada em 08/11/26)
+}
 
 # Regras de categoria que vencem o histórico (o histórico tinha erros nesses casos)
 REGRAS = [
@@ -253,7 +258,7 @@ def main():
             continue
         add(t["portador"], t["data"], t["mes_fatura"], t["estabelecimento"], t["valor"], t["parcela"], t["categoria"], "supabase")
 
-    # 3) CSVs da XP nov–dez/26
+    # 3) CSVs da XP (nov/26 em diante)
     for mes, arq in CSV_POR_MES.items():
         for r in csv.DictReader(open(RAIZ / arq, encoding="utf-8-sig"), delimiter=";"):
             if "Pagamento de fatura" in r["Estabelecimento"]:
