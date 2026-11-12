@@ -61,7 +61,7 @@ npm run build                                # o mesmo build que o GitHub Action
 | Correções sobre o Supabase | `RECUAR_UM_MES`, `TOTAL_PARCELAS` |
 | Categoria de uma loja | `REGRAS` |
 
-**Parcelas futuras:** o script projeta sozinho as parcelas seguintes de cada compra parcelada dos CSVs (sem duplicar); quando a fatura daquele mês chega, ela substitui a projeção.
+**Parcelas futuras:** o script projeta sozinho as parcelas seguintes de cada compra parcelada dos CSVs — inclusive em meses cujo CSV foi baixado antes da compra — e só descarta a projeção quando a mesma parcela já está na fatura (data + loja + parcela, tolerância de R$ 0,05 no valor).
 
 > O script e os CSVs ficam no PC, em `~/Documentos/Finanças/` (fora do repositório), com cópia automática em [backup/](backup/) a cada execução. O guia da pasta (`CLAUDE.md`) também está copiado em [backup/CLAUDE-pasta-financas.md](backup/CLAUDE-pasta-financas.md).
 
@@ -73,7 +73,7 @@ npm run build                                # o mesmo build que o GitHub Action
 |---|---|
 | Faturas XP até ago/26 + Nubank (histórico) | `public/data.json` (dados do painel antigo, só leitura) |
 | Faturas XP set e out/26 | Supabase, `transacoes_variaveis` (mais completo que o histórico) |
-| Faturas XP de nov/26 em diante | CSVs oficiais da XP (`FaturaAAAA-MM-10.csv`): nov/26, dez/26 (parcial, compras até 05/11), jan/27 e fev/27 (só parcelas) |
+| Faturas XP de nov/26 em diante | CSVs oficiais da XP (`FaturaAAAA-MM-10.csv`): nov/26, dez/26 (parcial, compras até 10/11), jan/27 e fev/27 (só parcelas) |
 | Despesas fixas | Supabase, `despesas_fixas` (sem a Feira — agora é gasta no cartão) |
 | Boletos e financiamentos | Supabase, `outras_despesas` |
 | Renda, teto, reserva, energia | `PESSOAS` no script |
@@ -254,15 +254,21 @@ dashboard/                       (este repositório)
 
 ---
 
+**2026-11-12 — fatura de dez/26 atualizada**
+- CSV de dez/26 baixado de novo (compras até 10/11). Pagamento da fatura de nov/26 conferido: **R$ 2.756,38 em 08/11** = total da fatura (R$ 1.893,67 Henrique + R$ 862,71 Beatriz).
+- Dez/26 até agora: Henrique **R$ 1.810,87** (151% do teto), Beatriz **R$ 706,32** (88%).
+- Projeção de parcelas corrigida: a Shein 1/3 da Beatriz (08/11) gera 2/3 em jan e 3/3 em fev, mesmo com os CSVs de jan/fev baixados antes da compra.
+- Categorias novas por regra: VIVABEM PHARMA = Farmácia; POSTO SAO SEBASTI e PETROCAL CORDEIRO = Combustível.
+
 ## 7. Pendências
 
 1. **Automação das compras pelo celular** (Google Carteira → MacroDroid → Supabase → site atualizado sozinho) — falta o print de uma notificação real; ver [docs/automacao-cartao.md](docs/automacao-cartao.md).
-2. **Categorias a confirmar:** LMSERVICELTDA (Henrique, R$ 35,26); SAN PEIXE e ALINESILVEIRADA (Beatriz).
+2. **Categorias a confirmar:** LMSERVICELTDA (R$ 35,26) e MP*ANDREANTONIOD (R$ 4,20) do Henrique; SAN PEIXE, ALINESILVEIRADA e SHEIN (Beatriz).
 3. **Adiantamento real** do Henrique (hoje estimado em R$ 2.158,32).
 4. **Feriados** no 5º dia útil da Beatriz (hoje só pula sábado e domingo).
 5. **Textos dentro dos gráficos** crescem em tela cheia (os SVG escalam com a largura) — principalmente Sankey e cascata.
 6. **RLS do Supabase** nas tabelas antigas.
-7. **Fatura de dez/26** ainda parcial — baixar de novo quando fechar (dia 02/12).
+7. **Fatura de dez/26** ainda parcial (compras até 10/11) — baixar de novo quando fechar (dia 02/12).
 
 ## 8. Para continuar
 

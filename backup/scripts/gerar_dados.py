@@ -120,6 +120,8 @@ REGRAS = [
     (r"GOOGLE ONE", "ASSINATURA"),
     (r"PADARIA NOVA PARI", "MERCADO"),
     (r"BRAZ PETRO", "COMBUSTÍVEL"),
+    (r"PHARMA", "FARMÁCIA"),
+    (r"^POSTO |PETROCAL", "COMBUSTÍVEL"),
 ]
 
 
@@ -272,18 +274,20 @@ def main():
                 for k in range(n + 1, total + 1):
                     projecoes.append((r["Portador"].strip().upper(), f"{a}-{m}-{d}", soma_mes(mes, k - n), r["Estabelecimento"], brl(r["Valor"]), f"{k} de {total}"))
 
-    # 4) parcelas projetadas: só meses sem fatura própria e sem o mesmo lançamento já vindo de outra fonte
-    def chave_tx(t):
-        return (t["data"], t["estabelecimento"].upper().strip(), round(t["valor"], 2), t["parcela"].replace(" ", ""))
-
-    existentes = {chave_tx(t) for lista in tx.values() for t in lista}
+    # 4) parcelas projetadas: entram em qualquer mês futuro (mesmo com CSV já baixado, que pode ser
+    #    anterior à compra), a não ser que a mesma parcela já exista — casando data + loja + parcela,
+    #    com tolerância de centavos no valor (a XP às vezes arredonda diferente: SAEL 326,68 × 326,66).
+    existentes = collections.defaultdict(list)
+    for lista in tx.values():
+        for t in lista:
+            existentes[(t["data"], t["estabelecimento"].upper().strip(), t["parcela"].replace(" ", ""))].append(t["valor"])
     for portador, data_iso, mes_f, estab, valor, parcela in projecoes:
-        if mes_f in CSV_POR_MES or mes_f in MESES_SUPABASE:
+        if mes_f in MESES_SUPABASE:
             continue
-        k = (data_iso, estab.upper().strip(), round(valor, 2), parcela.replace(" ", ""))
-        if k in existentes:
+        k = (data_iso, estab.upper().strip(), parcela.replace(" ", ""))
+        if any(abs(v - valor) <= 0.05 for v in existentes[k]):
             continue
-        existentes.add(k)
+        existentes[k].append(valor)
         add(portador, data_iso, mes_f, estab, valor, parcela, fonte="projeção (parcela futura)")
 
     for chave, p in PESSOAS.items():

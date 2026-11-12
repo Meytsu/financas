@@ -1,5 +1,5 @@
 {
- "gerado_em": "2026-11-08",
+ "gerado_em": "2026-11-12",
  "pessoa": "beatriz",
  "nome": "Beatriz",
  "portador": "BEATRIZ WERNECK",
@@ -2898,6 +2898,47 @@
    "split": "50/50"
   },
   {
+   "data": "2026-11-06",
+   "mes_fatura": "2026-12",
+   "banco": "XP",
+   "estabelecimento": "VIVABEM PHARMA",
+   "categoria": "FARMÁCIA",
+   "parcela": "-",
+   "valor": 19.5,
+   "fonte": "Fatura2026-12-10.csv"
+  },
+  {
+   "data": "2026-11-06",
+   "mes_fatura": "2026-12",
+   "banco": "XP",
+   "estabelecimento": "DL          *UBERRIDES",
+   "categoria": "TRANSPORTE",
+   "parcela": "-",
+   "valor": 16.91,
+   "fonte": "Fatura2026-12-10.csv"
+  },
+  {
+   "data": "2026-11-08",
+   "mes_fatura": "2026-12",
+   "banco": "XP",
+   "estabelecimento": "SHEIN  *SHEIN.CO",
+   "categoria": "OUTROS",
+   "parcela": "1 de 3",
+   "valor": 69.86,
+   "fonte": "Fatura2026-12-10.csv",
+   "a_confirmar": true
+  },
+  {
+   "data": "2026-11-09",
+   "mes_fatura": "2026-12",
+   "banco": "XP",
+   "estabelecimento": "DL          *UBERRIDES",
+   "categoria": "TRANSPORTE",
+   "parcela": "-",
+   "valor": 12.9,
+   "fonte": "Fatura2026-12-10.csv"
+  },
+  {
    "data": "2026-10-11",
    "mes_fatura": "2027-01",
    "banco": "XP",
@@ -2906,6 +2947,28 @@
    "parcela": "3 de 3",
    "valor": 64.93,
    "fonte": "Fatura2027-01-10.csv"
+  },
+  {
+   "data": "2026-11-08",
+   "mes_fatura": "2027-01",
+   "banco": "XP",
+   "estabelecimento": "SHEIN  *SHEIN.CO",
+   "categoria": "OUTROS",
+   "parcela": "2 de 3",
+   "valor": 69.86,
+   "fonte": "projeção (parcela futura)",
+   "a_confirmar": true
+  },
+  {
+   "data": "2026-11-08",
+   "mes_fatura": "2027-02",
+   "banco": "XP",
+   "estabelecimento": "SHEIN  *SHEIN.CO",
+   "categoria": "OUTROS",
+   "parcela": "3 de 3",
+   "valor": 69.86,
+   "fonte": "projeção (parcela futura)",
+   "a_confirmar": true
   }
  ]
 }

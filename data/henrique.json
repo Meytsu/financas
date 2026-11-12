@@ -1,5 +1,5 @@
 {
- "gerado_em": "2026-11-08",
+ "gerado_em": "2026-11-12",
  "pessoa": "henrique",
  "nome": "Henrique",
  "portador": "HENRIQUE ALVES",
@@ -1235,7 +1235,7 @@
    "mes_fatura": "2025-06",
    "banco": "XP",
    "estabelecimento": "POSTO MAIS",
-   "categoria": "MOTEL",
+   "categoria": "COMBUSTÍVEL",
    "parcela": "-",
    "valor": 77.0,
    "fonte": "historico"
@@ -1295,7 +1295,7 @@
    "mes_fatura": "2025-06",
    "banco": "XP",
    "estabelecimento": "POSTO MAIS",
-   "categoria": "MOTEL",
+   "categoria": "COMBUSTÍVEL",
    "parcela": "-",
    "valor": 124.0,
    "fonte": "historico"
@@ -1345,7 +1345,7 @@
    "mes_fatura": "2025-07",
    "banco": "XP",
    "estabelecimento": "POSTO MAIS",
-   "categoria": "MOTEL",
+   "categoria": "COMBUSTÍVEL",
    "parcela": "-",
    "valor": 116.0,
    "fonte": "historico"
@@ -1475,7 +1475,7 @@
    "mes_fatura": "2025-07",
    "banco": "XP",
    "estabelecimento": "POSTO MAIS",
-   "categoria": "MOTEL",
+   "categoria": "COMBUSTÍVEL",
    "parcela": "-",
    "valor": 147.0,
    "fonte": "historico"
@@ -1505,7 +1505,7 @@
    "mes_fatura": "2025-07",
    "banco": "XP",
    "estabelecimento": "POSTO PROGRESSO",
-   "categoria": "MOTEL",
+   "categoria": "COMBUSTÍVEL",
    "parcela": "-",
    "valor": 85.0,
    "fonte": "historico"
@@ -1765,7 +1765,7 @@
    "mes_fatura": "2025-08",
    "banco": "XP",
    "estabelecimento": "POSTO MAIS",
-   "categoria": "MOTEL",
+   "categoria": "COMBUSTÍVEL",
    "parcela": "-",
    "valor": 95.0,
    "fonte": "historico"
@@ -1825,7 +1825,7 @@
    "mes_fatura": "2025-08",
    "banco": "XP",
    "estabelecimento": "POSTO MAIS",
-   "categoria": "MOTEL",
+   "categoria": "COMBUSTÍVEL",
    "parcela": "-",
    "valor": 119.0,
    "fonte": "historico"
@@ -1955,7 +1955,7 @@
    "mes_fatura": "2025-08",
    "banco": "XP",
    "estabelecimento": "POSTO MAIS",
-   "categoria": "MOTEL",
+   "categoria": "COMBUSTÍVEL",
    "parcela": "-",
    "valor": 131.0,
    "fonte": "historico"
@@ -2375,7 +2375,7 @@
    "mes_fatura": "2025-09",
    "banco": "XP",
    "estabelecimento": "POSTO PROGRESSO",
-   "categoria": "MOTEL",
+   "categoria": "COMBUSTÍVEL",
    "parcela": "-",
    "valor": 160.0,
    "fonte": "historico"
@@ -2435,7 +2435,7 @@
    "mes_fatura": "2025-09",
    "banco": "XP",
    "estabelecimento": "POSTO PROGRESSO",
-   "categoria": "MOTEL",
+   "categoria": "COMBUSTÍVEL",
    "parcela": "-",
    "valor": 305.0,
    "fonte": "historico"
@@ -2555,7 +2555,7 @@
    "mes_fatura": "2025-09",
    "banco": "XP",
    "estabelecimento": "POSTO PROGRESSO",
-   "categoria": "MOTEL",
+   "categoria": "COMBUSTÍVEL",
    "parcela": "-",
    "valor": 136.8,
    "fonte": "historico"
@@ -2925,7 +2925,7 @@
    "mes_fatura": "2025-10",
    "banco": "XP",
    "estabelecimento": "POSTO MAIS",
-   "categoria": "MOTEL",
+   "categoria": "COMBUSTÍVEL",
    "parcela": "-",
    "valor": 135.0,
    "fonte": "historico"
@@ -2985,7 +2985,7 @@
    "mes_fatura": "2025-10",
    "banco": "XP",
    "estabelecimento": "POSTO MAIS",
-   "categoria": "MOTEL",
+   "categoria": "COMBUSTÍVEL",
    "parcela": "-",
    "valor": 119.0,
    "fonte": "historico"
@@ -3065,7 +3065,7 @@
    "mes_fatura": "2025-10",
    "banco": "XP",
    "estabelecimento": "POSTO MAIS",
-   "categoria": "MOTEL",
+   "categoria": "COMBUSTÍVEL",
    "parcela": "-",
    "valor": 132.0,
    "fonte": "historico"
@@ -3225,7 +3225,7 @@
    "mes_fatura": "2025-11",
    "banco": "XP",
    "estabelecimento": "POSTO MAIS",
-   "categoria": "MOTEL",
+   "categoria": "COMBUSTÍVEL",
    "parcela": "-",
    "valor": 119.0,
    "fonte": "historico"
@@ -3415,7 +3415,7 @@
    "mes_fatura": "2025-11",
    "banco": "XP",
    "estabelecimento": "POSTO MAIS",
-   "categoria": "MOTEL",
+   "categoria": "COMBUSTÍVEL",
    "parcela": "-",
    "valor": 95.0,
    "fonte": "historico"
@@ -7837,6 +7837,57 @@
    "parcela": "-",
    "valor": 20.0,
    "fonte": "Fatura2026-12-10.csv"
+  },
+  {
+   "data": "2026-11-07",
+   "mes_fatura": "2026-12",
+   "banco": "XP",
+   "estabelecimento": "ATACAREJO BONGI",
+   "categoria": "MERCADO",
+   "parcela": "-",
+   "valor": 32.72,
+   "fonte": "Fatura2026-12-10.csv"
+  },
+  {
+   "data": "2026-11-07",
+   "mes_fatura": "2026-12",
+   "banco": "XP",
+   "estabelecimento": "POSTO SAO SEBASTI",
+   "categoria": "COMBUSTÍVEL",
+   "parcela": "-",
+   "valor": 20.0,
+   "fonte": "Fatura2026-12-10.csv"
+  },
+  {
+   "data": "2026-11-08",
+   "mes_fatura": "2026-12",
+   "banco": "XP",
+   "estabelecimento": "PETROCAL CORDEIRO",
+   "categoria": "COMBUSTÍVEL",
+   "parcela": "-",
+   "valor": 58.81,
+   "fonte": "Fatura2026-12-10.csv"
+  },
+  {
+   "data": "2026-11-09",
+   "mes_fatura": "2026-12",
+   "banco": "XP",
+   "estabelecimento": "MERCADOLIVRE*MERCADOLIVRE",
+   "categoria": "COMPRAS ONLINE",
+   "parcela": "-",
+   "valor": 162.88,
+   "fonte": "Fatura2026-12-10.csv"
+  },
+  {
+   "data": "2026-11-10",
+   "mes_fatura": "2026-12",
+   "banco": "XP",
+   "estabelecimento": "MP*ANDREANTONIOD",
+   "categoria": "OUTROS",
+   "parcela": "-",
+   "valor": 4.2,
+   "fonte": "Fatura2026-12-10.csv",
+   "a_confirmar": true
   },
   {
    "data": "2026-08-24",
