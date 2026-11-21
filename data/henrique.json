@@ -1,5 +1,5 @@
 {
- "gerado_em": "2026-11-12",
+ "gerado_em": "2026-11-21",
  "pessoa": "henrique",
  "nome": "Henrique",
  "portador": "HENRIQUE ALVES",
@@ -7888,6 +7888,56 @@
    "valor": 4.2,
    "fonte": "Fatura2026-12-10.csv",
    "a_confirmar": true
+  },
+  {
+   "data": "2026-11-11",
+   "mes_fatura": "2026-12",
+   "banco": "XP",
+   "estabelecimento": "GOOGLE KINGSHOT",
+   "categoria": "LAZER",
+   "parcela": "-",
+   "valor": 6.0,
+   "fonte": "Fatura2026-12-10.csv"
+  },
+  {
+   "data": "2026-11-14",
+   "mes_fatura": "2026-12",
+   "banco": "XP",
+   "estabelecimento": "ATACAREJO BONGI",
+   "categoria": "MERCADO",
+   "parcela": "-",
+   "valor": 75.12,
+   "fonte": "Fatura2026-12-10.csv"
+  },
+  {
+   "data": "2026-11-14",
+   "mes_fatura": "2026-12",
+   "banco": "XP",
+   "estabelecimento": "ATACAREJO BONGI",
+   "categoria": "MERCADO",
+   "parcela": "-",
+   "valor": 35.49,
+   "fonte": "Fatura2026-12-10.csv"
+  },
+  {
+   "data": "2026-11-14",
+   "mes_fatura": "2026-12",
+   "banco": "XP",
+   "estabelecimento": "PETROCAL TORRE",
+   "categoria": "COMBUSTÍVEL",
+   "parcela": "-",
+   "valor": 57.85,
+   "fonte": "Fatura2026-12-10.csv"
+  },
+  {
+   "data": "2026-11-16",
+   "mes_fatura": "2026-12",
+   "banco": "XP",
+   "estabelecimento": "CARREFOUR REC 45",
+   "categoria": "MERCADO",
+   "parcela": "-",
+   "valor": 95.01,
+   "fonte": "Fatura2026-12-10.csv"
   },
   {
    "data": "2026-08-24",

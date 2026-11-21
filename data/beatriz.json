@@ -1,5 +1,5 @@
 {
- "gerado_em": "2026-11-12",
+ "gerado_em": "2026-11-21",
  "pessoa": "beatriz",
  "nome": "Beatriz",
  "portador": "BEATRIZ WERNECK",
@@ -2936,6 +2936,69 @@
    "categoria": "TRANSPORTE",
    "parcela": "-",
    "valor": 12.9,
+   "fonte": "Fatura2026-12-10.csv"
+  },
+  {
+   "data": "2026-11-13",
+   "mes_fatura": "2026-12",
+   "banco": "XP",
+   "estabelecimento": "IFD*VERIDIANA MACIEL M",
+   "categoria": "ALIMENTAÇÃO",
+   "parcela": "-",
+   "valor": 47.52,
+   "fonte": "Fatura2026-12-10.csv"
+  },
+  {
+   "data": "2026-11-13",
+   "mes_fatura": "2026-12",
+   "banco": "XP",
+   "estabelecimento": "DL*UBERRIDES",
+   "categoria": "TRANSPORTE",
+   "parcela": "-",
+   "valor": 13.92,
+   "fonte": "Fatura2026-12-10.csv"
+  },
+  {
+   "data": "2026-11-17",
+   "mes_fatura": "2026-12",
+   "banco": "XP",
+   "estabelecimento": "LUCICLEIDEALAIDE",
+   "categoria": "OUTROS",
+   "parcela": "-",
+   "valor": 29.9,
+   "fonte": "Fatura2026-12-10.csv",
+   "a_confirmar": true
+  },
+  {
+   "data": "2026-11-17",
+   "mes_fatura": "2026-12",
+   "banco": "XP",
+   "estabelecimento": "LUCICLEIDEALAIDE",
+   "categoria": "OUTROS",
+   "parcela": "-",
+   "valor": 29.9,
+   "fonte": "Fatura2026-12-10.csv",
+   "a_confirmar": true
+  },
+  {
+   "data": "2026-11-17",
+   "mes_fatura": "2026-12",
+   "banco": "XP",
+   "estabelecimento": "A FELICIDADE",
+   "categoria": "OUTROS",
+   "parcela": "-",
+   "valor": 4.5,
+   "fonte": "Fatura2026-12-10.csv",
+   "a_confirmar": true
+  },
+  {
+   "data": "2026-11-18",
+   "mes_fatura": "2026-12",
+   "banco": "XP",
+   "estabelecimento": "PADARIA NOVA PARI",
+   "categoria": "MERCADO",
+   "parcela": "-",
+   "valor": 18.64,
    "fonte": "Fatura2026-12-10.csv"
   },
   {

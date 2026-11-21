@@ -73,7 +73,7 @@ npm run build                                # o mesmo build que o GitHub Action
 |---|---|
 | Faturas XP até ago/26 + Nubank (histórico) | `public/data.json` (dados do painel antigo, só leitura) |
 | Faturas XP set e out/26 | Supabase, `transacoes_variaveis` (mais completo que o histórico) |
-| Faturas XP de nov/26 em diante | CSVs oficiais da XP (`FaturaAAAA-MM-10.csv`): nov/26, dez/26 (parcial, compras até 10/11), jan/27 e fev/27 (só parcelas) |
+| Faturas XP de nov/26 em diante | CSVs oficiais da XP (`FaturaAAAA-MM-10.csv`): nov/26, dez/26 (parcial, compras até 18/11), jan/27 e fev/27 (só parcelas) |
 | Despesas fixas | Supabase, `despesas_fixas` (sem a Feira — agora é gasta no cartão) |
 | Boletos e financiamentos | Supabase, `outras_despesas` |
 | Renda, teto, reserva, energia | `PESSOAS` no script |
@@ -260,15 +260,20 @@ dashboard/                       (este repositório)
 - Projeção de parcelas corrigida: a Shein 1/3 da Beatriz (08/11) gera 2/3 em jan e 3/3 em fev, mesmo com os CSVs de jan/fev baixados antes da compra.
 - Categorias novas por regra: VIVABEM PHARMA = Farmácia; POSTO SAO SEBASTI e PETROCAL CORDEIRO = Combustível.
 
+**2026-11-21 — fatura de dez/26 atualizada de novo**
+- CSV de dez/26 com compras até 18/11 (11 lançamentos a mais). Dez/26 até agora: Henrique **R$ 2.080,34** (173% do teto de R$ 1.200); Beatriz **R$ 850,70** (106% do teto de R$ 800).
+- Bongi de 14/11 (R$ 75,12 e R$ 35,49) são compras pequenas: não divididas.
+- LUCICLEIDEALAIDE aparece duas vezes em 17/11 (R$ 29,90 cada) — são duas linhas na fatura oficial, mantidas.
+
 ## 7. Pendências
 
 1. **Automação das compras pelo celular** (Google Carteira → MacroDroid → Supabase → site atualizado sozinho) — falta o print de uma notificação real; ver [docs/automacao-cartao.md](docs/automacao-cartao.md).
-2. **Categorias a confirmar:** LMSERVICELTDA (R$ 35,26) e MP*ANDREANTONIOD (R$ 4,20) do Henrique; SAN PEIXE, ALINESILVEIRADA e SHEIN (Beatriz).
+2. **Categorias a confirmar:** LMSERVICELTDA (R$ 35,26) e MP*ANDREANTONIOD (R$ 4,20) do Henrique; SAN PEIXE, ALINESILVEIRADA, SHEIN, LUCICLEIDEALAIDE e A FELICIDADE (Beatriz).
 3. **Adiantamento real** do Henrique (hoje estimado em R$ 2.158,32).
 4. **Feriados** no 5º dia útil da Beatriz (hoje só pula sábado e domingo).
 5. **Textos dentro dos gráficos** crescem em tela cheia (os SVG escalam com a largura) — principalmente Sankey e cascata.
 6. **RLS do Supabase** nas tabelas antigas.
-7. **Fatura de dez/26** ainda parcial (compras até 10/11) — baixar de novo quando fechar (dia 02/12).
+7. **Fatura de dez/26** ainda parcial (compras até 18/11) — baixar de novo quando fechar (dia 02/12).
 
 ## 8. Para continuar
 
